@@ -1,0 +1,120 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+	font-family: tahoma, Verdana;
+	/*color:#a4a4a4;*/
+	font-size: 13px;
+}
+
+select,
+input {
+	/*width: 276px;*/
+	background-color: rgba(255, 255, 255, .7);
+	border-radius: 2px;
+	border: 1px solid gray;
+	color: #222;
+	padding: 7px 5px 7px 5px;
+}
+
+select {
+	option {
+		color: #222;
+		font-size: 14px;
+		background-color: white;
+
+		&:checked {
+			background-color: #559;
+		}
+	}
+}
+
+input {
+	/*padding:5px;*/
+	width: 264px;
+}
+
+@font-face {
+	font-family: 'Bravura Text';
+	src: url('../../../resources/fonts/bravuratext.woff') format('woff');
+}
+
+.buttonizer {
+	.option {
+		border: solid 1px gray;
+		margin: 2px;
+		padding: 6px 2px 2px 2px;
+		border-radius: 3px;
+		display: inline-block;
+		min-height: 20px;
+		min-width: 60px;
+		vertical-align: top;
+		text-align: center;
+		cursor: pointer;
+		font-family: 'Bravura Text';
+		-webkit-user-select: none; /* Safari */
+		-ms-user-select: none; /* IE 10 and IE 11 */
+		user-select: none; /* Standard syntax */
+		/*font-size: 12px;*/
+
+		&:hover {
+			border-color: #eee;
+			background-color: #555;
+		}
+
+		&.selected {
+			border-color: #555;
+			/*background-color: #555;*/
+			background-color: #559;
+		}
+	}
+}
+
+.button {
+	border: solid 1px gray;
+	margin: 2px;
+	padding: 6px 2px 2px 2px;
+	border-radius: 3px;
+	display: inline-block;
+	min-height: 20px;
+	min-width: 60px;
+	vertical-align: top;
+	text-align: center;
+	cursor: pointer;
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
+	/*font-family: 'Bravura Text';*/
+	/*font-size: 12px;*/
+
+	&:hover {
+		border-color: #eee;
+		background-color: #555;
+	}
+
+	&.selected {
+		border-color: #555;
+		/*background-color: #555;*/
+		background-color: #559;
+	}
+}
+
+.item {
+	border: solid 1px gray;
+	margin: 2px;
+	padding: 0px 20px 0px 20px;
+	border-radius: 3px;
+	display: inline-block;
+	font-size: 45px;
+	min-width: 100px;
+	height: 65px;
+	vertical-align: top;
+	/*text-align: center;*/
+	font-family: 'Bravura Text';
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
+
+	& sup {
+		font-family: 'Bravura Text';
+	}
+}

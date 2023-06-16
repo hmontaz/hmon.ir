@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159979228-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-159979228-2');
+	</script>
+	<title>H.M.</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<meta name="description" content="Hossein Montazeri's Personal Website" />
+	<meta name="robots" content="index, follow" />
+	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="keywords" content="music,digitech,whammy,line 6 helix,calculate,midi,main" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:site_name" content="hmon.ir" />
+	<meta property="og:title" content="Personal Website for Hossein Montazeri" />
+	<meta property="og:url" content="http://hmon.ir/default.html" />
+	<meta property="article:publisher" content="https://instagram.com/h.montaz/" />
+	<meta property="article:author" content="https://instagram.com/h.montaz/" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<style>
+		* {
+			font-family: 'Raleway',Verdana,sans-serif;
+			padding: 0;
+			margin: 0;
+		}
+
+		h3, h4 {
+			color: black; /*light*/
+			color: white; /*dark*/
+		}
+
+		body {
+			background-color: #f5f5f5; /*light*/
+			background-color: #333; /*dark*/
+		}
+
+		a {
+			color: lightblue;
+			color: #008ae7;
+			text-decoration: none;
+		}
+
+		.card {
+			background-color: white; /*light*/
+			background-color: black; /*dark*/
+			color: black; /*light*/
+			color: #aaa; /*dark*/
+
+			vertical-align: top;
+			display: inline-block;
+			width: 350px;
+			min-height: 100px;
+			padding: 1em;
+			/*margin:0 10px 10px 10px;*/
+			box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 2px 5px 0 rgba(0,0,0,0.12);
+			z-index: 1;
+			position: relative;
+			margin: 0 7px 7px 7px;
+			font-size: 14px;
+		}
+
+		.section_button {
+			background-color: white; /*light*/
+			background-color: black; /*dark*/
+			color: #d9d9d9; /*light*/
+			color: #999; /*dark*/
+			display: inline-block;
+			padding: 7px;
+			border-radius: 10px 10px 0 0;
+			margin: 0;
+			font-size: 13px;
+			z-index: 1;
+			position: relative;
+			cursor: pointer;
+		}
+
+			.section_button:hover {
+				color: #c9c9ff; /*light*/
+				color: #aa5555; /*dark*/
+			}
+
+			.section_button.selected {
+				color: #333; /*light*/
+				color: #ddd; /*light*/
+				z-index: 2;
+			}
+	</style>
+</head>
+<body>
+	<div style="padding:20px">
+		<h3>Hossein Montazeri</h3>
+	</div>
+	<div style="padding:0 10px 0 10px">
+		<div>
+			<div class="section_button selected" name="main">My Projects</div>
+			<!--
+			<div class="section_button" name="music">My Music</div>
+			<div class="section_button" name="projects">Projects</div>
+				-->
+			<div class="section_button" name="about">About</div>
+		</div>
+	</div>
+	<section style="vertical-align:top;">
+		<div class="card" name="main" style="height:480px;">
+			<h4>Helix Effect Finder</h4>
+			<br>
+			<div>
+				<div>
+					List of Line 6 Helix effects & blocks with search and filter capability, including images, description and real world counterparts
+				</div>
+				<a href="helix/fx_finder.htm" title="Helix Effect Finder">
+					<img src="resources/images/helix-fx-finder.png" style="width:250px" />
+				</a>
+				<br />
+				<br />
+				<iframe width="350" height="200" src="https://www.youtube.com/embed/WGa3Yyb-j4s"></iframe>
+			</div>
+		</div>
+		<div class="card" name="main" style="height:480px;">
+			<h4>Whammy MIDI Assistant</h4>
+			<br>
+			<div>Interactive tool to easily find actual PC number to switch Digitech Whammy Pedal. It also allows you to directly control the pedal using a MIDI cable</div>
+			<div>
+				<!--<span>⚠</span>-->
+				<!--<span>⚠️</span>
+				<span>the link bellow is using HTTPS to allow midi capability, proceed to page when prompted.</span>-->
+			</div>
+			<br />
+			<br />
+			<!--<a href="https:/hmon.ir/digitech/whammy.htm" title="Whammy MIDI Assistant">-->
+			<a href="digitech/whammy.htm" title="Whammy MIDI Assistant">
+				<img src="resources/images/digitech-whammy.png" style="height:300px" />
+			</a>
+		</div>
+		<div class="card" name="main" style="height:480px;">
+			<h4>Naturium</h4>
+			<br />
+			<div style="text-align:center;">
+				<img src="resources/images/naturium-band.jpg" style="width:280px;" />
+			</div>
+			<table>
+				<tr valign="top">
+					<td>
+						<a href="https://open.spotify.com/album/6YvOX4mTnMe3RBzSBnGC2g" target="_blank">
+							<img src="resources/images/naturium-album.jpg" style="width:170px; border: solid 1px gray; border-radius: 3px;" />
+						</a>
+					</td>
+					<td style="padding:5px;">
+						<div>
+							<a href="http://naturium.ir" target="_blank">Naturium</a>
+							<span>is a Persian progressive rock band that I co-founded and am a member of, you can listen to our debut album on </span>
+							<span>
+								<a href="https://open.spotify.com/album/6YvOX4mTnMe3RBzSBnGC2g" target="_blank">Spotify</a><span>, </span>
+							</span>
+							<a href="https://music.apple.com/us/album/1614859573" target="_blank">Apple Music</a>
+							<span>and</span>
+							<a href="https://www.amazon.com/music/player/albums/B09VTKPLQX" target="_blank">Amazon</a>.
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="card" name="main">
+			<h4>Guitar Chord Voicings</h4>
+			<br />
+			<div>
+				Guitar Chord Voicing Reference
+			</div>
+			<br />
+			<a href="chords/default.htm">
+				<img src="resources/images/chord-voicings.png" style="width:350px" />
+			</a>
+		</div>
+		<div class="card" name="main">
+			<h4>Beat Calculator</h4>
+			<br />
+			<div>
+				Convert BPM to ms and vise versa using this tool
+			</div>
+			<br />
+			<a href="beat/calculator.htm">
+				<img src="resources/images/beat-calculator.png" style="width:200px" />
+			</a>
+		</div>
+		<div class="card" name="main">
+			<h4>Black Folder Icons</h4>
+			<a href="icons/index.html">
+				<img src="resources/images/thumbnail-black folder.png" />
+			</a>
+		</div>
+	</section>
+	<section>
+		<div class="card" name="about">
+			<table>
+				<!--<tr>
+					<td>
+						<div>
+							<span class="fa fa-envelope-o"></span>
+							<span colspan=3>
+								<a href = "mailto: hm.webmaster@gmail.com">hm.webmaster<span class="fa fa-at"></span>gmail.co</a>
+							</span>
+						</div>
+					</td>
+					<td><a class="fa fa-linkedin-square fa-2x"target="_blank" href="https://www.linkedin.com/in/hossein-montazeri-412b5155/"></a></td>
+					<td><a class="fa fa-instagram fa-2x" target="_blank" href="https://www.instagram.com/h.montaz"></a></td>
+					<td><a class="fa fa-twitter-square fa-2x"target="_blank" href="https://twitter.com/HozMon"></a></td>
+					<td><a class="fa fa-facebook-square fa-2x"target="_blank" href="https://www.facebook.com/h.montaz"></a></td>
+					<td class="fa fa-linkedin"></td>
+					<td><a target="_blank" href="https://www.linkedin.com/in/hossein-montazeri-412b5155/">LinkedIn</a></td>
+				</tr>-->
+				<tr>
+					<td class="fa fa-instagram"></td>
+					<td><a target="_blank" href="https://www.instagram.com/h.montaz">Instagram</a></td>
+				</tr>
+				<tr>
+					<td class="fa fa-twitter"></td>
+					<td><a target="_blank" href="https://twitter.com/HozMon">Twitter</a></td>
+				</tr>
+				<tr>
+					<td class="fa fa-facebook"></td>
+					<td><a target="_blank" href="https://www.facebook.com/h.montaz">Facebook</a></td>
+				</tr>
+				<tr>
+					<td class="fa fa-linkedin"></td>
+					<td><a target="_blank" href="https://www.linkedin.com/in/hossein-montazeri-412b5155/">Linkedin</a></td>
+				</tr>
+				<tr>
+					<td class="fa fa-envelope-o"></td>
+					<td>
+						<a href="mailto: hm.webmaster@gmail.com">hm.webmaster<span class="fa fa-at"></span>gmail.co</a>
+					</td>
+				</tr>
+				<tr>
+				</tr>
+			</table>
+		</div>
+	</section>
+	<script>
+		function init() {
+			var name = localStorage.getItem('current_tab') || 'main';
+			if (['main', 'misc', 'about'].indexOf(name) == -1) name = 'main';
+			var sections = $('.card');
+			function update() {
+				for (var i = 0; i < sections.length; i++) {
+					var section = $(sections[i]);
+					var n = section.attr('name');
+					if (n == name)
+						$(section).show();
+					else
+						$(section).hide();
+				}
+				buttons.removeClass('selected');
+				$('.section_button[name=' + name + ']').addClass('selected');
+			}
+			var buttons = $('.section_button');
+			buttons.click(function () {
+				buttons.removeClass('selected');
+				$(this).addClass('selected');
+				name = $(this).attr('name');
+				localStorage.setItem('current_tab', name);
+				update();
+			});
+			update();
+		}
+		init();
+	</script>
+</body>
+</html>

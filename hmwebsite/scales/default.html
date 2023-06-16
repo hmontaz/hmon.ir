@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="theme-color" content="black" /><!-- Chrome, Firefox OS and Opera-->
+	<meta name="msapplication-navbutton-color" content="black" /><!-- Windows Phone -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- iOS Safari -->
+	<!--<meta name="description" content="List of Line 6 Helix effects & blocks with search and filter capability, including images, description and real world names. Find your favorite bass & guitar amps and pedals in Helix" />
+	<meta name="robots" content="index, follow" />
+	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="keywords" content="Line 6,helix,guitar,bass,synth,distortion,amp,cab,list,models,digital,modeling,HX,effect,hx,manual,documentation,cheatsheet,real names,guide,help" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content="https://hmon.ir/helix/resources/images/icon.png?a=5" />
+	<meta property="og:site_name" content="hmon.ir" />
+	<meta property="og:title" content="Line 6 Helix Effect Finder" />
+	<meta property="og:url" content="https://hmon.ir/helix/fx_finder.htm" />
+	<meta property="og:description" content="Find actual effect models in Line 6 Helix Family" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="article:publisher" content="https://instagram.com/hmdpurple/" />
+	<meta property="article:author" content="https://instagram.com/hmontaz/" />-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="resources/scripts/ui_handler.js"></script>
+	<script src="../resources/plugins/$.fn.buttonize.js"></script>
+	<link href="resources/stylesheets/theme_default.css" rel="stylesheet" />
+	<link href="resources/stylesheets/theme_dark.css" rel="stylesheet" />
+</head>
+<body style="zoom:2.5;">
+	<table>
+		<tr>
+			<td>
+				<span id="btnSeedDecrease" class="button">-</span>
+			</td>
+			<td id="spanRandomSeed" style="font-size:20px;"></td>
+			<td>
+				<span id="btnSeedIncrease" class="button">+</span>
+			</td>
+		</tr>
+	</table>
+	<table style="display:none;">
+		<tr>
+			<td>Root</td>
+			<td><select id="ddlRoots" multiple="multiple"></select></td>
+		</tr>
+		<tr>
+			<td>Accidentals</td>
+			<td><select id="ddlAccidentals" multiple="multiple"></select></td>
+		</tr>
+		<tr>
+			<td>Modes</td>
+			<td><select id="ddlModes" multiple="multiple"></select></td>
+		</tr>
+		<tr>
+			<td>Chords</td>
+			<td><select id="ddlChords" multiple="multiple"></select></td>
+		</tr>
+	</table>
+	<div id="divOutput">
+
+	</div>
+
+
+</body>
+</html>

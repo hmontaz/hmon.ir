@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/hmwebsite/obj/Debug
+/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1
+/hmwebsite/helix/resources/.ignore
+/hmwebsite/bin
+/hmwebsite/hmwebsite.csproj.user
+/hmwebsite/beat/resources/.ignore
+/hmwebsite/digitech/resources/.ignore
+/hmwebsite/chords/resources/.ignore
+/hmwebsite/icons/resources/.ignore
+/.vs

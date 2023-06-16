@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Metronome</title>
+	<link href="resources/stylesheets/theme-default.css" rel="stylesheet" />
+	<link href="resources/stylesheets/theme-dark.css" rel="stylesheet" />
+	<link href="resources/stylesheets/slider.css" rel="stylesheet" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.js"></script>
+
+	<script src="resources/scripts/Metronome.js"></script>
+	<script src="resources/scripts/MetronomeUI.js"></script>
+
+	<script>
+		var ui = null;
+		var metronome = metronome = new Metronome({});
+		$(document).ready(function () {
+			ui = new MetronomeUI({ metronome: metronome });
+		});
+
+	</script>
+</head>
+<body>
+	<div style="padding:10px;">
+		<div style="zoom:4;">
+			<div id="div_tempo">
+
+			</div>
+			<div onclick="metronome.toggle()" class="button">
+				Play
+			</div>
+			<!--<div onclick="metronome.start()" class="button">
+				▶
+			</div>
+			<div onclick="metronome.stop()" class="button">
+				■
+			</div>-->
+		</div>
+		<table>
+			<tr>
+				<td>
+					<div id="div_volume_container" style="border_:solid 1px red;min-height:20px;">
+						<div id="div_volume"></div>
+					</div>
+				</td>
+				<td style="min-width:100px;">Volume</td>
+			</tr>
+		</table>
+
+	</div>
+</body>
+</html>
