@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159979228-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-159979228-2');
+	</script>
+	<title>Helix Effect Finder</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="resources/scripts/mustache.js?v=20230427"></script>
+	<script src="resources/scripts/line 6.js?v=20230427" charset="utf-8"></script>
+	<script src="resources/scripts/categories.js?v=20230427"></script>
+	<script src="resources/scripts/fx_finder.js?v=20230427"></script>
+	<link id='theme-default' href="./resources/css/theme_default.css?v=20230427" rel="stylesheet" />
+	<style id="dynamic_style"></style>
+	<link id='theme-dark' href="./resources/css/theme_dark.css?v=20230427" rel="stylesheet" />
+
+	<link rel="shortcut icon" href="../helix/resources/images/favicon.ico" type="image/x-icon">
+	<!--<link rel="shortcut icon" href="../helix/resources/images/app_icon.ico" />-->
+	<link rel="apple-touch-icon" sizes="256x256" href="resources/images/app_icon.png" />
+	<link rel="icon" href="../helix/resources/images/app_icon.png">
+
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="theme-color" content="black" /><!-- Chrome, Firefox OS and Opera-->
+	<meta name="msapplication-navbutton-color" content="black" /><!-- Windows Phone -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- iOS Safari -->
+	<meta name="description" content="List of Line 6 Helix effects & blocks with search and filter capability, including images, description and real world names. Find your favorite bass & guitar amps and pedals in Helix" />
+	<meta name="robots" content="index, follow" />
+	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="keywords" content="Line 6,helix,guitar,bass,synth,distortion,amp,cab,list,models,digital,modeling,HX,effect,hx,manual,documentation,cheatsheet,real names,guide,help" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content="http://hmon.ir/helix/resources/images/icon.png?a=5" />
+	<meta property="og:site_name" content="hmon.ir" />
+	<meta property="og:title" content="Line 6 Helix Effect Finder" />
+	<meta property="og:url" content="http://hmon.ir/helix/fx_finder.htm" />
+	<meta property="og:description" content="Find actual effect models in Line 6 Helix Family" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="article:publisher" content="https://instagram.com/hmdpurple/" />
+	<meta property="article:author" content="https://instagram.com/hmontaz/" />
+
+	<script>
+		$(document).ready(function () {
+			FxFinder.init();
+			//FxFinder.applyTheme();
+			//setTimeout(function () { FxFinder.init(); }, 50);
+			$('#btnTheme').click(function () { FxFinder.nextTheme(); });
+		});
+	</script>
+</head>
+
+<body style="display:none;">
+	<div class="page_title">
+		<span id='divTitle'>Helix Effect Finder</span>
+		<span style="width:40px;display:inline-block;"></span>
+		<span>
+			<a href="https://www.paypal.com/paypalme/hmontaz" target="_blank" style="text-decoration:none;">
+				<img src="./resources/images/paypal-donate.svg" style="display:inline-block; height:30px;margin-bottom:-10px;" />
+			</a>
+		</span>
+		<!--<span id="btnTheme">Switch Theme</span>-->
+		<div class='page-info'>by <a href="https://www.hmon.ir">Hossein Montazeri</a></div>
+	</div>
+	
+	<div id='divPreview' style="display:none;" class="preview" onClick="//FxFinder.hidePreview();">
+		<div style="display:none;cursor:pointer;padding-right:2px;text-align:right;color:white;">x</div>
+		<div style="padding:10px 20px 10px 20px;">
+			<img id='imgPreview' />
+		</div>
+	</div>
+	<table>
+		<tr>
+			<td><label>Version</label></td>
+			<td>
+				<select id='ddlVersion'>
+					<option>ALL</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><label>Type</label></td>
+			<td>
+				<select id='ddlType'>
+					<option>ALL</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><label>Brand</label></td>
+			<td>
+				<select id='ddlBrand'>
+					<option>ALL</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><label>Model</label></td>
+			<td>
+				<select id='ddlModel'>
+					<option>ALL</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><label>Search</label></td>
+			<td><input id='txtSearch' type='text' placeholder='Type to Search...' /></td>
+		</tr>
+	</table>
+	<div id='info' style="height:500px;"></div>
+</body>
+
+</html>
