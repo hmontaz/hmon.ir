@@ -1,0 +1,838 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7B6CFD0C-42AE-4742-A16B-71587DF86F63}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestWeb</RootNamespace>
+    <AssemblyName>TestWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44308</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="beat\calculator.htm" />
+    <Content Include="beat\resources\scripts\calculator.js" />
+    <Content Include="beat\resources\images\angle-down.svg" />
+    <Content Include="beat\resources\images\angle-up.svg" />
+    <Content Include="beat\resources\images\note-eighth.svg" />
+    <Content Include="beat\resources\images\note-quarter.svg" />
+    <Content Include="beat\resources\images\note-sixteenth.svg" />
+    <Content Include="chords\default.htm" />
+    <Content Include="chords\resources\images\drop2\R7.svg" />
+    <Content Include="chords\resources\images\drop2\Rm7.svg" />
+    <Content Include="chords\resources\images\drop2\Rm7b5.svg" />
+    <Content Include="chords\resources\images\drop2\RMaj7.svg" />
+    <Content Include="chords\resources\images\drop3\R7.svg" />
+    <Content Include="chords\resources\images\drop3\Rm7.svg" />
+    <Content Include="chords\resources\images\drop3\Rm7b5.svg" />
+    <Content Include="chords\resources\images\drop3\RMaj7.svg" />
+    <Content Include="chords\resources\images\triads\R.svg" />
+    <Content Include="chords\resources\images\triads\Raug.svg" />
+    <Content Include="chords\resources\images\triads\Rdim.svg" />
+    <Content Include="chords\resources\images\triads\Rm.svg" />
+    <Content Include="chords\resources\scripts\data.js" />
+    <Content Include="chords\resources\scripts\init.js" />
+    <Content Include="chords\resources\stylesheets\theme_dark.css" />
+    <Content Include="chords\resources\stylesheets\theme_default.css" />
+    <Content Include="default.html" />
+    <Content Include="digitech\resources\images\led-off.svg" />
+    <Content Include="digitech\resources\images\led-on.svg" />
+    <Content Include="digitech\resources\scripts\midi.js" />
+    <Content Include="icons\resources\icons\112db.ico" />
+    <Content Include="icons\resources\icons\adobe photoshop.ico" />
+    <Content Include="icons\resources\icons\adobe.ico" />
+    <Content Include="icons\resources\icons\amiga.ico" />
+    <Content Include="icons\resources\icons\amplitube 3.ico" />
+    <Content Include="icons\resources\icons\amplitube 4.ico" />
+    <Content Include="icons\resources\icons\antares.ico" />
+    <Content Include="icons\resources\icons\arduino.ico" />
+    <Content Include="icons\resources\icons\arturia.ico" />
+    <Content Include="icons\resources\icons\audio fx.ico" />
+    <Content Include="icons\resources\icons\audio modeling.ico" />
+    <Content Include="icons\resources\icons\audio.ico" />
+    <Content Include="icons\resources\icons\audiority.ico" />
+    <Content Include="icons\resources\icons\backing tracks.ico" />
+    <Content Include="icons\resources\icons\bank 1.ico" />
+    <Content Include="icons\resources\icons\bank 2.ico" />
+    <Content Include="icons\resources\icons\blackrooster.ico" />
+    <Content Include="icons\resources\icons\blue cat audio.ico" />
+    <Content Include="icons\resources\icons\building.ico" />
+    <Content Include="icons\resources\icons\celemony.ico" />
+    <Content Include="icons\resources\icons\cleanup.ico" />
+    <Content Include="icons\resources\icons\cubase-naturium.ico" />
+    <Content Include="icons\resources\icons\cubase.ico" />
+    <Content Include="icons\resources\icons\daw.ico" />
+    <Content Include="icons\resources\icons\digitech.ico" />
+    <Content Include="icons\resources\icons\do not enter.ico" />
+    <Content Include="icons\resources\icons\drivers.ico" />
+    <Content Include="icons\resources\icons\ebook.ico" />
+    <Content Include="icons\resources\icons\edirol.ico" />
+    <Content Include="icons\resources\icons\eventide.ico" />
+    <Content Include="icons\resources\icons\ezdrummer.ico" />
+    <Content Include="icons\resources\icons\ezkeys.ico" />
+    <Content Include="icons\resources\icons\fabfilter.ico" />
+    <Content Include="icons\resources\icons\favorites.ico" />
+    <Content Include="icons\resources\icons\flux.ico" />
+    <Content Include="icons\resources\icons\focusrite.ico" />
+    <Content Include="icons\resources\icons\Folder Black Caution.ico" />
+    <Content Include="icons\resources\icons\Folder Black Video.ico" />
+    <Content Include="icons\resources\icons\Folder Green Caution.ico" />
+    <Content Include="icons\resources\icons\fritzing.ico" />
+    <Content Include="icons\resources\icons\game.ico" />
+    <Content Include="icons\resources\icons\generic.ico" />
+    <Content Include="icons\resources\icons\graphics.ico" />
+    <Content Include="icons\resources\icons\guitar pro 1.ico" />
+    <Content Include="icons\resources\icons\guitar pro 2.ico" />
+    <Content Include="icons\resources\icons\guitar rig.ico" />
+    <Content Include="icons\resources\icons\hofa.ico" />
+    <Content Include="icons\resources\icons\html tools.ico" />
+    <Content Include="icons\resources\icons\idea.ico" />
+    <Content Include="icons\resources\icons\ik multimedia.ico" />
+    <Content Include="icons\resources\icons\Illustrator.ico" />
+    <Content Include="icons\resources\icons\impulse response.ico" />
+    <Content Include="icons\resources\icons\instrument.ico" />
+    <Content Include="icons\resources\icons\internet.ico" />
+    <Content Include="icons\resources\icons\izotope.ico" />
+    <Content Include="icons\resources\icons\korg.ico" />
+    <Content Include="icons\resources\icons\kuassa.ico" />
+    <Content Include="icons\resources\icons\kush audio.ico" />
+    <Content Include="icons\resources\icons\line 6 - helix.ico" />
+    <Content Include="icons\resources\icons\line 6.ico" />
+    <Content Include="icons\resources\icons\m-audio.ico" />
+    <Content Include="icons\resources\icons\metronome.ico" />
+    <Content Include="icons\resources\icons\midi.ico" />
+    <Content Include="icons\resources\icons\misc.ico" />
+    <Content Include="icons\resources\icons\mix.ico" />
+    <Content Include="icons\resources\icons\music.ico" />
+    <Content Include="icons\resources\icons\musician on a mission.ico" />
+    <Content Include="icons\resources\icons\my design.ico" />
+    <Content Include="icons\resources\icons\my documents.ico" />
+    <Content Include="icons\resources\icons\native instruments.ico" />
+    <Content Include="icons\resources\icons\naturium.ico" />
+    <Content Include="icons\resources\icons\nuendo.ico" />
+    <Content Include="icons\resources\icons\photos.ico" />
+    <Content Include="icons\resources\icons\photoshop.ico" />
+    <Content Include="icons\resources\icons\plugin alliance.ico" />
+    <Content Include="icons\resources\icons\positivegrid.ico" />
+    <Content Include="icons\resources\icons\presets.ico" />
+    <Content Include="icons\resources\icons\presonus.ico" />
+    <Content Include="icons\resources\icons\progress.ico" />
+    <Content Include="icons\resources\icons\reaper.ico" />
+    <Content Include="icons\resources\icons\regedit.ico" />
+    <Content Include="icons\resources\icons\rescue.ico" />
+    <Content Include="icons\resources\icons\roland.ico" />
+    <Content Include="icons\resources\icons\roli.ico" />
+    <Content Include="icons\resources\icons\scanner.ico" />
+    <Content Include="icons\resources\icons\sfx.ico" />
+    <Content Include="icons\resources\icons\Sites alt.ico" />
+    <Content Include="icons\resources\icons\soundtoys.ico" />
+    <Content Include="icons\resources\icons\steinberg.ico" />
+    <Content Include="icons\resources\icons\tc electronic.ico" />
+    <Content Include="icons\resources\icons\tdr.ico" />
+    <Content Include="icons\resources\icons\toontrack.ico" />
+    <Content Include="icons\resources\icons\transcript.ico" />
+    <Content Include="icons\resources\icons\tutorial.ico" />
+    <Content Include="icons\resources\icons\valhalla.ico" />
+    <Content Include="icons\resources\icons\vector.ico" />
+    <Content Include="icons\resources\icons\vst.ico" />
+    <Content Include="icons\resources\icons\waves.ico" />
+    <Content Include="icons\resources\icons\x64.ico" />
+    <Content Include="icons\resources\icons\x86.ico" />
+    <Content Include="icons\resources\icons\xfer.ico" />
+    <Content Include="icons\resources\icons\xln audio.ico" />
+    <Content Include="icons\resources\icons\yamaha.ico" />
+    <Content Include="icons\index.html" />
+    <Content Include="icons\resources\scripts\data.js" />
+    <Content Include="icons\resources\scripts\handler.js" />
+    <Content Include="icons\resources\stylesheets\theme_dark.css" />
+    <Content Include="icons\resources\stylesheets\theme_default.css" />
+    <Content Include="metronome\metronome.html" />
+    <Content Include="metronome\resources\audio\style-woodblock\click-hi.wav" />
+    <Content Include="metronome\resources\audio\style-woodblock\click-low.wav" />
+    <Content Include="metronome\resources\scripts\Metronome.js" />
+    <Content Include="metronome\resources\scripts\MetronomeUI.js" />
+    <Content Include="metronome\resources\stylesheets\slider.css">
+      <DependentUpon>slider.less</DependentUpon>
+    </Content>
+    <Content Include="metronome\resources\stylesheets\slider.min.css">
+      <DependentUpon>slider.css</DependentUpon>
+    </Content>
+    <Content Include="metronome\resources\stylesheets\theme-dark.css" />
+    <Content Include="resources\hm-glyphs\fonts\hm-glyphs.svg" />
+    <Content Include="resources\hm-glyphs\style.css" />
+    <Content Include="resources\images\seven-segments\0.svg" />
+    <Content Include="resources\images\seven-segments\0d.svg" />
+    <Content Include="resources\images\seven-segments\1.svg" />
+    <Content Include="resources\images\seven-segments\1d.svg" />
+    <Content Include="resources\images\seven-segments\2.svg" />
+    <Content Include="resources\images\seven-segments\2d.svg" />
+    <Content Include="resources\images\seven-segments\3.svg" />
+    <Content Include="resources\images\seven-segments\3d.svg" />
+    <Content Include="resources\images\seven-segments\4.svg" />
+    <Content Include="resources\images\seven-segments\4d.svg" />
+    <Content Include="resources\images\seven-segments\5.svg" />
+    <Content Include="resources\images\seven-segments\5d.svg" />
+    <Content Include="resources\images\seven-segments\6.svg" />
+    <Content Include="resources\images\seven-segments\6d.svg" />
+    <Content Include="resources\images\seven-segments\7.svg" />
+    <Content Include="resources\images\seven-segments\7d.svg" />
+    <Content Include="resources\images\seven-segments\8.svg" />
+    <Content Include="resources\images\seven-segments\8d.svg" />
+    <Content Include="resources\images\seven-segments\9.svg" />
+    <Content Include="resources\images\seven-segments\9d.svg" />
+    <Content Include="resources\images\seven-segments\color test.svg" />
+    <Content Include="digitech\resources\stylesheets\default.css" />
+    <Content Include="digitech\resources\images\whammy.svg" />
+    <Content Include="digitech\resources\scripts\ui_handler.js" />
+    <Content Include="digitech\whammy.htm" />
+    <Content Include="helix\fx_finder.htm" />
+    <Content Include="helix\resources\actual_models\Ampeg® - B-15NF Portaflex®.png" />
+    <Content Include="helix\resources\actual_models\Ampeg® - Scrambler Bass Overdrive.png" />
+    <Content Include="helix\resources\actual_models\Ampeg® - SVT Brt.png" />
+    <Content Include="helix\resources\actual_models\Ampeg® - SVT Nrm.png" />
+    <Content Include="helix\resources\actual_models\Ampeg® - SVT-4 Pro.png" />
+    <Content Include="helix\resources\actual_models\Ampeg® - SVT.png" />
+    <Content Include="helix\resources\actual_models\Analogman® - King of Tone V4.png" />
+    <Content Include="helix\resources\actual_models\Analogman® - Prince of Tone.png" />
+    <Content Include="helix\resources\actual_models\Arbiter® - Fuzz Face®.png" />
+    <Content Include="helix\resources\actual_models\Ashly® - CLX-52.png" />
+    <Content Include="helix\resources\actual_models\Bogner® - Shiva®.png" />
+    <Content Include="helix\resources\actual_models\Bogner® - Überschall®.png" />
+    <Content Include="helix\resources\actual_models\Boss® - AC-3.png" />
+    <Content Include="helix\resources\actual_models\Boss® - CE-1.png" />
+    <Content Include="helix\resources\actual_models\Boss® - DM-2.png" />
+    <Content Include="helix\resources\actual_models\Boss® - HM-2.png" />
+    <Content Include="helix\resources\actual_models\Boss® - RV6.png" />
+    <Content Include="helix\resources\actual_models\Boss® - VB-2.png" />
+    <Content Include="helix\resources\actual_models\Chandler® - Tube Driver®.png" />
+    <Content Include="helix\resources\actual_models\Diezel Amplification® - VH4.png" />
+    <Content Include="helix\resources\actual_models\DOD® - OD-250.png" />
+    <Content Include="helix\resources\actual_models\Dr Z® - Route 66.png" />
+    <Content Include="helix\resources\actual_models\Electro-Harmonix® - Big Muff Pi®.png" />
+    <Content Include="helix\resources\actual_models\ENGL® Fireball 100.png" />
+    <Content Include="helix\resources\actual_models\Fender® - 1×12″ Deluxe Oxford.png" />
+    <Content Include="helix\resources\actual_models\Fender® - Deluxe Reverb®.png" />
+    <Content Include="helix\resources\actual_models\Fender® - Princeton Reverb®.png" />
+    <Content Include="helix\resources\actual_models\Fender® - Twin Reverb®.png" />
+    <Content Include="helix\resources\actual_models\Fulltone® - OCD.png" />
+    <Content Include="helix\resources\actual_models\Gallien-Krueger® - GK 800RB.png" />
+    <Content Include="helix\resources\actual_models\Gibson® - EH-185.png" />
+    <Content Include="helix\resources\actual_models\Hermida® - Zendrive.png" />
+    <Content Include="helix\resources\actual_models\Hiwatt® - DR-103 Brill.png" />
+    <Content Include="helix\resources\actual_models\Horizon Devices® - Precision Drive.png" />
+    <Content Include="helix\resources\actual_models\Ibanez® - TS808.png" />
+    <Content Include="helix\resources\actual_models\Klon® - Centaur.png" />
+    <Content Include="helix\resources\actual_models\Maestro® - Echoplex EP-3.png" />
+    <Content Include="helix\resources\actual_models\Maestro® - Fuzz Tone.png" />
+    <Content Include="helix\resources\actual_models\Marshall® - JCM-800.png" />
+    <Content Include="helix\resources\actual_models\Marshall® - JTM-45.png" />
+    <Content Include="helix\resources\actual_models\Marshall® - Plexi Tremolo 50.png" />
+    <Content Include="helix\resources\actual_models\Marshall® - Super Lead 100.png" />
+    <Content Include="helix\resources\actual_models\MAXON® - SD9 Sonic Distortion.png" />
+    <Content Include="helix\resources\actual_models\MESA Boogie® - Bass 400+ Ch1.png" />
+    <Content Include="helix\resources\actual_models\MESA Boogie® - Bass 400+ Ch2.png" />
+    <Content Include="helix\resources\actual_models\MESA Boogie® - Dual Rectifier®.png" />
+    <Content Include="helix\resources\actual_models\MESA Boogie® - M9 Carbine.png" />
+    <Content Include="helix\resources\actual_models\Musitronics® - Mu-Tron®.png" />
+    <Content Include="helix\resources\actual_models\MXR® - 10-Band Graphic EQ.png" />
+    <Content Include="helix\resources\actual_models\MXR® - Dyna Comp.png" />
+    <Content Include="helix\resources\actual_models\Orange™ - OR80.png" />
+    <Content Include="helix\resources\actual_models\Park® - Park 75.png" />
+    <Content Include="helix\resources\actual_models\Peavey® - 5150®.png" />
+    <Content Include="helix\resources\actual_models\Peavey® - 6505®.png" />
+    <Content Include="helix\resources\actual_models\Pro Co® - Pro Co RAT.png" />
+    <Content Include="helix\resources\actual_models\Revv® - Generator 120 Blue.png" />
+    <Content Include="helix\resources\actual_models\Revv® - Generator 120 Purple.png" />
+    <Content Include="helix\resources\actual_models\Revv® - Generator 120 Red.png" />
+    <Content Include="helix\resources\actual_models\Roland® - JC-120 Jazz Chorus Cab.png" />
+    <Content Include="helix\resources\actual_models\Roland® - JC-120 Jazz Chorus.png" />
+    <Content Include="helix\resources\actual_models\Soldano® - SLO-100.png" />
+    <Content Include="helix\resources\actual_models\Subdecay® - Harmonic Antagonizer Fuzz copy.png" />
+    <Content Include="helix\resources\actual_models\Supro® - S6616.png" />
+    <Content Include="helix\resources\actual_models\TC Electronic® - TC 2290.png" />
+    <Content Include="helix\resources\actual_models\Tech 21® - SansAmp Bass Driver DI V1.png" />
+    <Content Include="helix\resources\actual_models\Tycobrahe® - Octavia.png" />
+    <Content Include="helix\resources\actual_models\Vox® - AC-15.png" />
+    <Content Include="helix\resources\actual_models\Vox® - AC-30 Fawn Brt.png" />
+    <Content Include="helix\resources\actual_models\Vox® - AC-30 Fawn Nrm.png" />
+    <Content Include="helix\resources\actual_models\Vox® - AC-30.png" />
+    <Content Include="helix\resources\actual_models\Z.Vex® - Fuzz Factory.png" />
+    <Content Include="helix\resources\css\bg-dark.jpg" />
+    <Content Include="helix\resources\css\bg-default.jpg" />
+    <Content Include="helix\resources\css\theme_dark.css" />
+    <Content Include="helix\resources\css\theme_default.css" />
+    <Content Include="helix\resources\icon_models\AMP_HX_BASS_Agua_51.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_BASS_Ampeg_B-15NF.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_BASS_Ampeg_SVT-4_PRO.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_BASS_Ampeg_SVT_Brt.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_BASS_Ampeg_SVT_Nrm.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_BASS_Busy_One_Ch1.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_BASS_Busy_One_Ch2.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_BASS_Busy_One_Jump.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_BASS_Cali_400_Ch1.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_BASS_Cali_400_Ch2.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_BASS_Cali_Bass.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_BASS_Del_Sol_300.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_BASS_G_Cougar_800.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_BASS_Woody_Blue.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_A-30_Fawn_Brt.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_A-30_Fawn_Nrm.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_ANGL_Meteor.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Archetype_Clean.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Archetype_Lead.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Brit_2204.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Brit_J-45_Brt.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Brit_J-45_Nrm.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Brit_P-75_Brt.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Brit_P-75_Nrm.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Brit_Plexi_Brt.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Brit_Plexi_Jump.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Brit_Plexi_Nrm.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Brit_Trem_Brt.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Brit_Trem_Jump.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Brit_Trem_Nrm.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Cali_IV_Lead.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Cali_IV_Rhythm_1.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Cali_IV_Rhythm_2.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Cali_Rectifire.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Cali_Texas_Ch1.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Cali_Texas_Ch2.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Cartographer.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Das_Benzin_Lead.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Das_Benzin_Mega.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Derailed_Ingrid.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Divided_Duo.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Essex_A-15.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Essex_A-30.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Fullerton_Brt.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Fullerton_Jump.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Fullerton_Nrm.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_German_Mahadeva.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_German_Ubersonic.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Grammatico_Brt.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Grammatico_Jump.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Grammatico_Nrm.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Interstate_Zed.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Jazz_Rivet_120.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Line_6_2204_Mod.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Line_6_Badonk.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Line_6_Doom.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Line_6_Elektrik.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Line_6_Epic.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Line_6_Fatality.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Line_6_Litigator.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Line_6_Ventoux.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Mail_Order_Twin.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Mandarin_80.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Mandarin_Rocker.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Matchstick_Ch1.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Matchstick_Ch2.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Matchstick_Jump.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_MOO%29%29%29N_T_Brt.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_MOO%29%29%29N_T_Jump.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_MOO%29%29%29N_T_Nrm.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Placater_Clean.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Placater_Dirty.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_PV_Panama.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_PV_Vitriol_Crunch.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_PV_Vitriol_Lead.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Revv_Gen_Purple.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Revv_Gen_Red.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Solo_Lead_Clean.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Solo_Lead_Crunch.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Solo_Lead_OD.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Soup_Pro.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Stone_Age_185.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Tweed_Blues_Brt.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Tweed_Blues_Nrm.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_US_Deluxe_Nrm.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_US_Deluxe_Vib.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_US_Double_Nrm.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_US_Double_Vib.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_US_Princess.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_US_Small_Tweed.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_Voltage_Queen.png" />
+    <Content Include="helix\resources\icon_models\AMP_HX_GTR_WhoWatt_100.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_1x12CaliEXT.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_1x12Grammatico.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_1x12USDeluxe.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_1x12USPrincess.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_1x15AmpegB15.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_2x12BlueBell.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_2x12DoubleC12N.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_2x12JazzRivet.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_2x12MailC12Q.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_2x12Mandarin30.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_2x15Brute.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_4x10Garden.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_4x10TweedP10R.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_4x121960AT75.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_4x12Blackback30.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_4x12BritV30.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_4x12CaliV30.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_4x12Greenback25.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_4x12MandarinEM.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_4x12MOONT75.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_4x12UberT75.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_4x12UberV30.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_4x12XXLV30.png" />
+    <Content Include="helix\resources\icon_models\CABMICIR_HX_8x10SVTAV.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_1x10_US_Princess.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_1x12_Blue_Bell.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_1x12_Cali_EXT.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_1x12_Cali_IV.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_1x12_Celest_12H.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_1x12_Del_Sol.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_1x12_Field_Coil.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_1x12_Fullerton.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_1x12_Grammatico.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_1x12_Lead_80.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_1x12_US_Deluxe.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_1x12_US_Princess.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_1x15_Ampeg_B-15.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_1x15_TuckNGo.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_1x18_Del_Sol.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_1x18_Woody_Blue.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_1x8_Small_Tweed.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_2x12_Blue_Bell.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_2x12_Double_C12N.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_2x12_Interstate.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_2x12_Jazz_Rivet.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_2x12_Mail_C12Q.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_2x12_Match_G25.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_2x12_Match_H30.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_2x12_Silver_Bell.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_2x15_Brute.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_4x10_Ampeg_HLF.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_4x10_Tweed.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_4x10_Tweed_P10R.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_4x12_1960_T75.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_4x12_Blackback30.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_4x12_Cali_V30.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_4x12_Greenback20.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_4x12_Greenback25.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_4x12_Mandarin_EM.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_4x12_SoloLead_EM.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_4x12_Uber_T75.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_4x12_Uber_V30.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_4x12_WhoWatt_100.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_4x12_XXL_V30.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_6x10_Cali_Power.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_8x10_Ampeg_SVT_E.png" />
+    <Content Include="helix\resources\icon_models\CAB_HX_Soup_Pro_Ellipse.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_112_Dynamic.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_121_Ribbon.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_12_Dynamic.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_160_Ribbon.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_20_Dynamic.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_30_Dynamic.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_4038_Ribbon.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_409_Dynamic.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_40_Dynamic.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_414_Cond.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_421_Dynamic.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_47_Cond.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_47_Cond_FET.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_52_Dynamic.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_57_Dynamic.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_67_Cond.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_7_Dynamic.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_84_Cond.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_87_Cond.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_88_Dynamic.png" />
+    <Content Include="helix\resources\icon_models\CAB_MIC_D6_Dynamic.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Adriatic_Delay.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Adriatic_Swell.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_ADT.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Bucket_Brigade.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Cosmos_Echo.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Crisscross.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Dual_Delay.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Ducked_Delay.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Elephant_Man.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Euclidean_Delay.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Glitch_Delay.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Harmony_Delay.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Heliosphere.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Mod_Chorus_Echo.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Multitap_4.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Multitap_6.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Multi_Pass.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Ping_Pong.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Pitch_Echo.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Poly_Sustain.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Ratchet.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Reverse_Delay.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Simple_Delay.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Sweep_Echo.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Tesselator.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Transistor_Tape.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Vintage_Digital.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DELAY_Vintage_Swell.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Alpaca_Rouge.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Ampeg_Scrambler.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Arbitrator_Fuzz.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Ballistic_Fuzz.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Bighorn_Fuzz.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Bitcrusher.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Clawthorn_Drive.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Compulsive_Drive.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Deez_One_Mod.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Deez_One_Vintage.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Deranged_Master.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Dhyana_Drive.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Hedgehog_D9.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Heir_Apparent.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Horizon_Drive.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Industrial_Fuzz.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Kinky_Boost.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_KWB.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Legendary_Drive.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Megaphone.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Minotaur.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Obsidian_7000.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Pillars_OD.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Pocket_Fuzz.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Ratatouille_Dist.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Scream_808.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Stupor_OD.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Swedish_Chainsaw.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Teemah!.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Thrifter_Fuzz.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Tone_Sovereign.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Top_Secret_OD.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Triangle_Fuzz.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Tycoctavia_Fuzz.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Valve_Driver.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Vermin_Dist.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Vital_Boost.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Vital_Dist.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Wringer_Fuzz.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_Xenomorph_Fuzz.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DIST_ZeroAmp_Bass_DI.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DYN_3-Band_Comp.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DYN_Ampeg_Opto_Comp.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DYN_Autoswell.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DYN_Deluxe_Comp.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DYN_Hard_Gate.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DYN_Horizon_Gate.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DYN_Kinky_Comp.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DYN_LA_Studio_Comp.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DYN_Noise_Gate.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DYN_Red_Squeeze.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_DYN_Rochester_Comp.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_EQ_10-Band_Graphic.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_EQ_Acoustic_Sim.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_EQ_Cali_Q_Graphic.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_EQ_Low_Cut_High_Cut.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_EQ_Low_High_Shelf.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_EQ_Parametric.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_EQ_Simple_EQ.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_EQ_Tilt.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_FILTER_Asheville_Pattrn.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_FILTER_Autofilter.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_FILTER_III_Mystery_Filter.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_FILTER_Mutant_Filter.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_IR_1024.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_IR_2048.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_Mixer.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_122_Rotary.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_145_Rotary.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_4-Voice_Chorus.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_60s_Bias_Trem.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_70s_Chorus.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Ampeg_Liquifier.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_AM_Ring_Mod.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Bleat_Chop_Trem.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Bubble_Vibrato.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Chorus.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Courtesan_Flange.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Deluxe_Phaser.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Double_Take.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Dynamix_Flanger.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_FlexoVibe.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Gray_Flanger.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Harmonic_Flanger.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Harmonic_Tremolo.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Optical_Trem.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Pebble_Phaser.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Pitch_Ring_Mod.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_PlastiChorus.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Poly_Detune.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Retro_Reel.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Script_Mod_Phase.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Tremolo.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Tremolo_Autopan.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Trinity_Chorus.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Ubiquitous_Vibe.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_MOD_Vibe_Rotary.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_None.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_PITCH_12_String.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_PITCH_3_Note_Generator.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_PITCH_3_OSC_Synth.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_PITCH_4_OSC_Generator.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_PITCH_Boctaver.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_PITCH_Dual_Pitch.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_PITCH_Pitch_Wham.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_PITCH_Poly_Bass_Wham.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_PITCH_Poly_Capo.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_PITCH_Poly_Pitch.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_PITCH_Poly_Wham.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_PITCH_Simple_Pitch.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_PITCH_Twin_Harmony.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_REVERB_Double_Tank.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_REVERB_Dynamic_Ambience.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_REVERB_Dynamic_Hall.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_REVERB_Dynamic_Plate.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_REVERB_Dynamic_Room.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_REVERB_Ganymede.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_REVERB_Glitz.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_REVERB_Hot_Springs.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_REVERB_Plateaux.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_REVERB_Searchlights.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_REVERB_Shimmer.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_Split_A_B.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_Split_Crossover.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_Split_Dynamic.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_Split_Y.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_WAH_Chrome.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_WAH_Chrome_Custom.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_WAH_Colorful.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_WAH_Conductor.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_WAH_Fassel.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_WAH_Teardrop_310.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_WAH_Throaty.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_WAH_UK_Wah_846.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_WAH_Vetta_Wah.png" />
+    <Content Include="helix\resources\icon_models\FX_HX_WAH_Weeper.png" />
+    <Content Include="helix\resources\icon_models\FX_M_Delay.png" />
+    <Content Include="helix\resources\icon_models\FX_M_Distortion.png" />
+    <Content Include="helix\resources\icon_models\FX_M_Dynamics.png" />
+    <Content Include="helix\resources\icon_models\FX_M_Filter.png" />
+    <Content Include="helix\resources\icon_models\FX_M_Modulation.png" />
+    <Content Include="helix\resources\icon_models\FX_M_PitchSynth.png" />
+    <Content Include="helix\resources\icon_models\FX_M_Reverb.png" />
+    <Content Include="helix\resources\icon_models\FX_M_REVERB_63_Spring.png" />
+    <Content Include="helix\resources\icon_models\FX_M_REVERB_Cave.png" />
+    <Content Include="helix\resources\icon_models\FX_M_REVERB_Chamber.png" />
+    <Content Include="helix\resources\icon_models\FX_M_REVERB_Ducking.png" />
+    <Content Include="helix\resources\icon_models\FX_M_REVERB_Echo.png" />
+    <Content Include="helix\resources\icon_models\FX_M_REVERB_Hall.png" />
+    <Content Include="helix\resources\icon_models\FX_M_REVERB_Octo.png" />
+    <Content Include="helix\resources\icon_models\FX_M_REVERB_Particle_Verb.png" />
+    <Content Include="helix\resources\icon_models\FX_M_REVERB_Plate.png" />
+    <Content Include="helix\resources\icon_models\FX_M_REVERB_Room.png" />
+    <Content Include="helix\resources\icon_models\FX_M_REVERB_Spring.png" />
+    <Content Include="helix\resources\icon_models\FX_M_REVERB_Tile.png" />
+    <Content Include="helix\resources\icon_models\LOOPER_HX_1_Switch_Looper.png" />
+    <Content Include="helix\resources\icon_models\LOOPER_HX_6_Switch_Looper.png" />
+    <Content Include="helix\resources\icon_models\LOOPER_HX_Shuffling_Looper.png" />
+    <Content Include="helix\resources\icon_models\PRE_HX_Divided_Duo.png" />
+    <Content Include="helix\resources\icon_models\PRE_HX_Soup_Pro.png" />
+    <Content Include="helix\resources\icon_models\PRE_HX_Stone_Age_185.png" />
+    <Content Include="helix\resources\icon_models\PRE_HX_Studio_Tube_Pre.png" />
+    <Content Include="helix\resources\icon_models\PRE_HX_US_Deluxe_Nrm.png" />
+    <Content Include="helix\resources\icon_models\PRE_HX_US_Deluxe_Vib.png" />
+    <Content Include="helix\resources\icon_models\PRE_HX_US_Double_Nrm.png" />
+    <Content Include="helix\resources\icon_models\PRE_HX_US_Double_Vib.png" />
+    <Content Include="helix\resources\icon_models\PRE_HX_US_Princess.png" />
+    <Content Include="helix\resources\icon_models\PRE_HX_US_Small_Tweed.png" />
+    <Content Include="helix\resources\icon_models\PRE_HX_WhoWatt_100.png" />
+    <Content Include="helix\resources\icon_models\SENDRETURN_HX_FX_Loop_1.png" />
+    <Content Include="helix\resources\icon_models\SENDRETURN_HX_FX_Loop_1_2.png" />
+    <Content Include="helix\resources\icon_models\SENDRETURN_HX_FX_Loop_2.png" />
+    <Content Include="helix\resources\icon_models\SENDRETURN_HX_FX_Loop_3.png" />
+    <Content Include="helix\resources\icon_models\SENDRETURN_HX_FX_Loop_3_4.png" />
+    <Content Include="helix\resources\icon_models\SENDRETURN_HX_FX_Loop_4.png" />
+    <Content Include="helix\resources\icon_models\SENDRETURN_HX_Return_1.png" />
+    <Content Include="helix\resources\icon_models\SENDRETURN_HX_Return_1_2.png" />
+    <Content Include="helix\resources\icon_models\SENDRETURN_HX_Return_2.png" />
+    <Content Include="helix\resources\icon_models\SENDRETURN_HX_Return_3.png" />
+    <Content Include="helix\resources\icon_models\SENDRETURN_HX_Return_3_4.png" />
+    <Content Include="helix\resources\icon_models\SENDRETURN_HX_Return_4.png" />
+    <Content Include="helix\resources\icon_models\SENDRETURN_HX_Send_1.png" />
+    <Content Include="helix\resources\icon_models\SENDRETURN_HX_Send_1_2.png" />
+    <Content Include="helix\resources\icon_models\SENDRETURN_HX_Send_2.png" />
+    <Content Include="helix\resources\icon_models\SENDRETURN_HX_Send_3.png" />
+    <Content Include="helix\resources\icon_models\SENDRETURN_HX_Send_3_4.png" />
+    <Content Include="helix\resources\icon_models\SENDRETURN_HX_Send_4.png" />
+    <Content Include="helix\resources\icon_models\VOL_HX_Gain.png" />
+    <Content Include="helix\resources\icon_models\VOL_HX_Pan.png" />
+    <Content Include="helix\resources\icon_models\VOL_HX_Stereo_Imager.png" />
+    <Content Include="helix\resources\icon_models\VOL_HX_Stereo_Width.png" />
+    <Content Include="helix\resources\icon_models\VOL_HX_Volume_Pedal.png" />
+    <Content Include="helix\resources\icon_models\_.png" />
+    <Content Include="helix\resources\images\app_icon small.png" />
+    <Content Include="helix\resources\images\app_icon.ico" />
+    <Content Include="helix\resources\images\app_icon.png" />
+    <Content Include="helix\resources\images\blank.svg" />
+    <Content Include="helix\resources\images\favicon.ico" />
+    <Content Include="helix\resources\images\icon.png" />
+    <Content Include="helix\resources\images\legacy.svg" />
+    <Content Include="helix\resources\images\legacy_.svg" />
+    <Content Include="helix\resources\images\paypal-donate.svg" />
+    <Content Include="helix\resources\images\PayPal.svg" />
+    <Content Include="helix\resources\images\_bg-0.jpg" />
+    <Content Include="helix\resources\scripts\categories.js" />
+    <Content Include="helix\resources\scripts\fx_finder.js" />
+    <Content Include="helix\resources\scripts\line 6.js" />
+    <Content Include="helix\resources\scripts\mustache.js" />
+    <Content Include="resources\images\beat-calculator.png" />
+    <Content Include="resources\images\chord-voicings.PNG" />
+    <Content Include="resources\images\digitech-whammy.png" />
+    <Content Include="resources\images\donate.svg" />
+    <Content Include="resources\images\helix-fx-finder.png" />
+    <Content Include="resources\images\naturium-album.jpg" />
+    <Content Include="resources\images\naturium-band.jpg" />
+    <Content Include="resources\images\PayPal.svg" />
+    <Content Include="resources\images\thumbnail-black folder.png" />
+    <Content Include="resources\lib\hmlib.js" />
+    <Content Include="resources\lib\hmlib.min.js" />
+    <Content Include="resources\lib\source\hmlib.0.js" />
+    <Content Include="resources\lib\source\js2.js" />
+    <Content Include="scales\default.html" />
+    <Content Include="resources\plugins\%24.fn.buttonize.js" />
+    <Content Include="scales\resources\scripts\ui_handler.js" />
+    <Content Include="scales\resources\stylesheets\theme_dark.css">
+      <DependentUpon>theme_dark.less</DependentUpon>
+    </Content>
+    <Content Include="scales\resources\stylesheets\theme_dark.min.css">
+      <DependentUpon>theme_dark.css</DependentUpon>
+    </Content>
+    <Content Include="scales\resources\stylesheets\theme_default.css">
+      <DependentUpon>theme_default.less</DependentUpon>
+    </Content>
+    <Content Include="scales\resources\stylesheets\theme_default.min.css">
+      <DependentUpon>theme_default.css</DependentUpon>
+    </Content>
+    <Content Include="screenfill\resources\handler.js" />
+    <Content Include="screenfill\screenfill.html" />
+    <Content Include="theory\circle_of_fifths.html" />
+    <Content Include="theory\resources\images\circle of fifths.svg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <Content Include="metronome\resources\stylesheets\theme-default.css" />
+    <None Include="metronome\resources\stylesheets\slider.less" />
+    <None Include="packages.config" />
+    <Content Include="resources\lib\bundleconfig.json" />
+    <Content Include="resources\lib\hmlib.min.js.map" />
+    <Content Include="scales\resources\stylesheets\theme_default.less" />
+    <Content Include="scales\resources\stylesheets\theme_dark.less" />
+    <Content Include="resources\fonts\BravuraText.woff" />
+    <Content Include="resources\hm-glyphs\fonts\hm-glyphs.eot" />
+    <Content Include="resources\hm-glyphs\fonts\hm-glyphs.ttf" />
+    <Content Include="resources\hm-glyphs\fonts\hm-glyphs.woff" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="helix\resources\actual_models\_\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52063</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44308/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

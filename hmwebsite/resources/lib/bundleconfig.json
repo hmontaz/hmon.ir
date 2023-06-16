@@ -1,0 +1,17 @@
+[
+	{
+		"inputFiles": [
+			"source/hmlib.0.js",
+			"source/js2.js"
+
+		],
+		"outputFileName": "hmlib.js",
+		"minify": {
+			"enabled": true,
+			"renameLocals": true
+		},
+		"includeInProject": true,
+		"sourceMap": true
+	}
+
+]
