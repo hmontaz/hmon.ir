@@ -1,0 +1,185 @@
+﻿<html>
+<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159979228-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-159979228-2');
+	</script>
+	<title>Whammy V & DT</title>
+	<meta charset="Unicode">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#202e3b">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#202e3b">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#202e3b">
+
+	<meta name="description" content="Find MIDI,PC Commands for Digitech Whammy V,IV and DT" />
+	<meta name="robots" content="index, follow" />
+	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="keywords" content="Digitech Whammy,Whammy,Find MIDI,MIDI,Program Change,PC,Whammy DT,Line 6 Helix" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:site_name" content="hmon.ir" />
+	<meta property="og:title" content="Whammy MIDI Assistant|PC Finder" />
+	<meta property="og:url" content="http://hmon.ir/digitech/whammy.htm" />
+	<meta property="article:publisher" content="https://instagram.com/hmontaz/" />
+	<meta property="article:author" content="https://instagram.com/hmontaz/" />
+	<script src="./resources/scripts/midi.js?version=2" type="text/javascript"></script>
+	<script src="./resources/scripts/ui_handler.js?version=2" type="text/javascript"></script>
+	<link href="resources/stylesheets/default.css?version=2" rel="stylesheet" />
+</head>
+<body style="zoom: 1.1;">
+	<div style="margin-top: 2vh; text-align: center;">
+		<div style="display:inline-block;">
+			<div id='panel' style='display:none;margin-bottom:10px;'>
+				<section id="pnlWH" class="section-container">
+					<table class="noborder">
+						<tr style="vertical-align:top;">
+							<td style="background-color:#c01b15;padding:5px;">
+								<div id='column_h'>
+									<div style="font-size:14px;color:white;margin:10 0 10 5;">HARMONY</div>
+								</div>
+							</td>
+							<td style="background-color:#c01b15;"><div style="width:4px;"></div></td>
+							<td style="background-color:black;"><div style="width:5px;"></div></td>
+							<td style="background-color:black;padding:5px;">
+								<div id="column_c">
+									<div style="font-size:14px;color:white;margin:10 5 10 0;text-align:right;">WHAMMY</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section id="pnlDT" class="section-container">
+					<table>
+						<tr>
+							<td style="width:240px;background-color:#c01b15;padding:5px;">
+								<div>
+									<div style="font-size:14px;color:white;margin:5 0 10 4;">SHIFT UP</div>
+									<table id='row_up'>
+									</table>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="background-color:black;padding:5px;">
+								<div>
+									<div style="font-size:14px;color:white;margin:4 0 10 4;">SHIFT DOWN</div>
+									<table id='row_down'>
+									</table>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</section>
+			</div>
+			<div>
+				<section id="pnlBase" class="optionSet section-container" title="Base">
+					<div class="optionContainer">
+						<div id="btnBase_0" class="option" style="padding:9px 9px 9px 9px;">0</div>
+						<div id="btnBase_1" class="option" style="padding:9px 9px 8px 9px;">1</div>
+					</div>
+				</section>
+				<section id="pnlMode" class="optionSet section-container" title="Mode">
+					<div class="optionContainer">
+						<div id="btnCLASSIC" class="option">CLASSIC</div>
+						<div id="btnCHORDS" class="option">CHORDS</div>
+						<div id="btnDT" class="option">DT</div>
+					</div>
+				</section>
+				<section style="padding:0 6px 0 6px;" class="section-container">
+					<div>
+						<div style="background-color:black;display:inline-block;">
+							<table style="padding-top:1px;">
+								<tr>
+									<td colspan=2 style="color:white;text-align:center;font-size:11px;">ACTIVE</td>
+								</tr>
+								<tr>
+									<td><img id="digit_a_1" src='../resources/images/seven-segments/0.svg' style="width:30px;"></td>
+									<td><img id="digit_a_0" src='../resources/images/seven-segments/0.svg' style="width:30px;"></td>
+								</tr>
+								<tr>
+									<td colspan=2 style="color:white;text-align:center;font-size:11px;">PC</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</section>
+				<section style="padding:0 6px 0 6px;" class="section-container">
+					<div>
+						<div style="background-color:black;display:inline-block;">
+							<table style="padding-top:1px;">
+								<tr>
+									<td colspan=2 style="color:white;text-align:center;font-size:11px;">BYPASS</td>
+								</tr>
+								<tr>
+									<td><img id="digit_b_1" src='../resources/images/seven-segments/0.svg' style="width:30px;"></td>
+									<td><img id="digit_b_0" src='../resources/images/seven-segments/0.svg' style="width:30px;"></td>
+								</tr>
+								<tr>
+									<td colspan=2 style="color:white;text-align:center;font-size:11px;">PC</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</section>
+			</div>
+			<table class="noborder">
+				<tr>
+					<td><div class="section-label">Command</div></td>
+					<td>&nbsp;</td>
+					<td><div class="section-label">Live Midi Output</div></td>
+				</tr>
+				<tr>
+					<td>
+						<section id="pnlCommand" class="optionSet section-container" title="Command">
+							<div class="optionContainer">
+								<div id="btnMUTE" class="option">OFF</div>
+								<div id="btnACTIVE" class="option">ACTIVE</div>
+								<div id="btnBYPASS" class="option">BYPASS</div>
+							</div>
+						</section>
+					</td>
+					<td></td>
+					<td>
+						<section id="pnlOutput" class="optionSet section-container" title="Output" style="width:190px;height:63px;">
+							<div id="output_options" class="optionContainer">
+							</div>
+						</section>
+					</td>
+				</tr>
+			</table>
+
+			<div>
+
+
+			</div>
+			<div><img style="width:253px;" src='resources/images/whammy.svg' /></div>
+			<br>
+			<div class='page-info' style="font-size:10px;color:#fdd;">
+				by <a href="https://www.hmon.ir" style="color:white;">Hossein Montazeri</a>
+			</div>
+		</div>
+	</div>
+	<script>
+		var handler = null;
+
+		$(document).ready(function () {
+
+			MIDI.init(function () {
+				//console.log(MIDI.getOutputs());
+				handler = new WhammyHandler();
+			});
+
+		});
+	</script>
+</body>
+</html>

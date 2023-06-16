@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "scales/resources/stylesheets/theme_dark.css",
+    "inputFile": "scales/resources/stylesheets/theme_dark.less"
+  },
+  {
+    "outputFile": "scales/resources/stylesheets/theme_default.css",
+    "inputFile": "scales/resources/stylesheets/theme_default.less"
+  },
+  {
+    "outputFile": "metronome/resources/stylesheets/slider.css",
+    "inputFile": "metronome/resources/stylesheets/slider.less"
+  }
+]
