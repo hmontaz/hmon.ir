@@ -3,7 +3,7 @@
 ################################################################################
 
 /hmwebsite/obj/Debug
-/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1
+/packages
 /hmwebsite/helix/resources/.ignore
 /hmwebsite/bin
 /hmwebsite/hmwebsite.csproj.user
