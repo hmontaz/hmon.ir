@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link href="resources/stylesheets/theme-default.css" rel="stylesheet" />
+	<link href="resources/stylesheets/theme-dark.css" rel="stylesheet" />
+	<script src="../resources/jquery/jquery.3.2.1_jquery.js"></script>
+	<script src="resources/scripts/RandomGenerator.js"></script>
+	<script src="resources/scripts/GuitarNeck.js"></script>
+	<script src="resources/scripts/GuitarNote.js"></script>
+</head>
+<body>
+
+	<!--<input type="range" min="1" max="60" value="20" oninput="//moveSlider(this, 'x')" />-->
+	<table>
+		<tr>
+			<td><label>Number of Strings</label></td>
+			<td><input type="number" value="7" id="txtNumberOfStrings" /></td>
+		</tr>
+	</table>
+	<div id="guitar-neck-container">
+
+	</div>
+	<table style="width:100%">
+		<tr>
+			<td>
+				<div id="form1">
+					<fieldset>
+						<legend>All Neck</legend>
+						<table>
+							<tr>
+								<td><label>Strings</label></td>
+								<td><input type="text" value="1,2,3" id="txtStringNumbers" /></td>
+							</tr>
+							<tr>
+								<td><label>Frets</label></td>
+								<td><input type="text" value="3,5,7,9" id="txtFretNumbers" /></td>
+							</tr>
+							<tr>
+								<td><label>Delay</label></td>
+								<td><input type="text" value="2" id="txtDelay" /></td>
+							</tr>
+						</table>
+						<br />
+						<input type="button" value="Generate" onclick="generate()" />
+					</fieldset>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		function generate() {
+			$('#guitar-neck-container').html('');
+			let guitarNeck = new GuitarNeck({
+				numberOfStrings: parseInt($('#txtNumberOfStrings').val()),
+				container: $('#guitar-neck-container')
+			});
+			let generator = new RandomGenerator(guitarNeck.options.numberOfStrings, guitarNeck.options.numberOfFrets);
+			//generator.generate();
+			let f = function () {
+				var note = generator.generate({
+					stringNumbers: $('#txtStringNumbers').val().split(',').map(a => parseInt(a)),
+					fretNumbers: $('#txtFretNumbers').val().split(',').map(a => parseInt(a)),
+				});
+				guitarNeck.clear();
+				let item = guitarNeck.addNote(note.stringNumber, note.fretNumber, ' ');
+				//let item = guitarNeck.addNote(1, 1);
+
+				setTimeout(function () {
+					item.setText(item.note)
+				}, 2000)
+			};
+			f();
+			//generate(f4);*/
+		};
+		generate();
+
+	</script>
+
+</body>
+</html>

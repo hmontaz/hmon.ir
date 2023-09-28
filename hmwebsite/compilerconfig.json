@@ -10,5 +10,13 @@
   {
     "outputFile": "metronome/resources/stylesheets/slider.css",
     "inputFile": "metronome/resources/stylesheets/slider.less"
+  },
+  {
+    "outputFile": "random_generator/resources/stylesheets/theme-default.css",
+    "inputFile": "random_generator/resources/stylesheets/theme-default.less"
+  },
+  {
+    "outputFile": "random_generator/resources/stylesheets/theme-dark.css",
+    "inputFile": "random_generator/resources/stylesheets/theme-dark.less"
   }
 ]
