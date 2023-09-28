@@ -51,28 +51,32 @@
 	</table>
 	<script type="text/javascript">
 		function generate() {
+			let prev = null;
 			$('#guitar-neck-container').html('');
 			let guitarNeck = new GuitarNeck({
 				numberOfStrings: parseInt($('#txtNumberOfStrings').val()),
 				container: $('#guitar-neck-container')
 			});
 			let generator = new RandomGenerator(guitarNeck.options.numberOfStrings, guitarNeck.options.numberOfFrets);
-			//generator.generate();
+			let delay = +$('#txtDelay').val() * 1000;
 			let f = function () {
-				var note = generator.generate({
-					stringNumbers: $('#txtStringNumbers').val().split(',').map(a => parseInt(a)),
-					fretNumbers: $('#txtFretNumbers').val().split(',').map(a => parseInt(a)),
-				});
+				let note = null;
+				do {
+					note = generator.generate({
+						stringNumbers: $('#txtStringNumbers').val().split(',').map(a => +a),
+						fretNumbers: $('#txtFretNumbers').val().split(',').map(a => +a),
+					});
+				} while (prev && prev.stringNumber == note.stringNumber && prev.fretNumber == note.fretNumber)
+				prev = note;
+
 				guitarNeck.clear();
 				let item = guitarNeck.addNote(note.stringNumber, note.fretNumber, ' ');
-				//let item = guitarNeck.addNote(1, 1);
 
 				setTimeout(function () {
 					item.setText(item.note)
-				}, 2000)
+				}, delay)
 			};
 			f();
-			//generate(f4);*/
 		};
 		generate();
 

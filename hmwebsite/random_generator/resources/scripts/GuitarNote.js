@@ -37,7 +37,7 @@ class GuitarNote {
 			.attr({
 				x: '50%',
 				y: '50%',
-				'dy': '0.3em',
+				'dy': '0.32em',
 				'text-anchor': 'middle',
 				textLength: size,
 			})
