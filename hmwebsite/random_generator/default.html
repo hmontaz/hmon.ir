@@ -51,8 +51,25 @@
 		</tr>
 	</table>
 	<script type="text/javascript">
-		function splitNumbers(s) {
-			return s.split(',').map(a => +a)
+		function parseRange(s) {
+			if (s.indexOf(',') != -1) {
+				let result = []
+				let split = s.split(',').map(a => parseRange(a));
+				for (var item of split) {
+					if (Array.isArray(item))
+						result.push(...item);
+					else
+						result.push(item);
+				}
+				return result;
+			}
+			if (s.indexOf('-') != -1) {
+				let start = +s.split('-')[0];
+				let stop = +s.split('-')[1];
+				return Array.from({ length: stop - start + 1 }, (value, index) => start + index);
+			}
+			return + s;
+
 		}
 		function generate() {
 			let prev = null;
@@ -65,17 +82,17 @@
 			let delay = +$('#txtDelay').val() * 1000;
 			let f = function () {
 				let note = null;
-				do {
-					let o = {
-						stringNumbers: [],
-						fretNumbers: [],
-					};
-
-					note = generator.generate({
-						stringNumbers: splitNumbers($('#txtStringNumbers').val()).filter(a => a > 0),
-						fretNumbers: splitNumbers($('#txtFretNumbers').val()),
-					});
-				} while (prev && prev.stringNumber == note.stringNumber && prev.fretNumber == note.fretNumber)
+				//do {
+				let o = {
+					stringNumbers: [],
+					fretNumbers: [],
+				};
+				let s_stringNumbers = $('#txtStringNumbers').val()
+				let s_fretNumbers = $('#txtFretNumbers').val()
+				if (s_stringNumbers != '') o.stringNumbers = parseRange(s_stringNumbers)
+				if (s_fretNumbers != '') o.fretNumbers = parseRange(s_fretNumbers)
+				note = generator.generate(o);
+				//} while (prev && prev.stringNumber == note.stringNumber && prev.fretNumber == note.fretNumber)
 				prev = note;
 				guitarNeck.clear();
 				let item = guitarNeck.addNote(note.stringNumber, note.fretNumber, ' ');
