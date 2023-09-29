@@ -1,4 +1,5 @@
 ﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.TypeScript.MSBuild.5.2.2\build\Microsoft.TypeScript.MSBuild.props" Condition="Exists('..\packages\Microsoft.TypeScript.MSBuild.5.2.2\build\Microsoft.TypeScript.MSBuild.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -89,6 +90,18 @@
     <Content Include="digitech\resources\images\led-off.svg" />
     <Content Include="digitech\resources\images\led-on.svg" />
     <Content Include="digitech\resources\scripts\midi.js" />
+    <Content Include="helix\resources\css\theme_dark.css">
+      <DependentUpon>theme_dark.less</DependentUpon>
+    </Content>
+    <Content Include="helix\resources\css\theme_dark.min.css">
+      <DependentUpon>theme_dark.css</DependentUpon>
+    </Content>
+    <Content Include="helix\resources\css\theme_default.css">
+      <DependentUpon>theme_default.less</DependentUpon>
+    </Content>
+    <Content Include="helix\resources\css\theme_default.min.css">
+      <DependentUpon>theme_default.css</DependentUpon>
+    </Content>
     <Content Include="icons\resources\icons\112db.ico" />
     <Content Include="icons\resources\icons\adobe photoshop.ico" />
     <Content Include="icons\resources\icons\adobe.ico" />
@@ -209,6 +222,24 @@
       <DependentUpon>slider.css</DependentUpon>
     </Content>
     <Content Include="metronome\resources\stylesheets\theme-dark.css" />
+    <Content Include="random_generator\default.html" />
+    <TypeScriptCompile Include="random_generator\resources\scripts\GuitarNote.ts" />
+    <Content Include="resources\jquery\jquery.3.2.1_jquery.js" />
+    <TypeScriptCompile Include="random_generator\resources\scripts\MusicalNote.ts" />
+    <TypeScriptCompile Include="random_generator\resources\scripts\RandomGenerator.ts" />
+    <None Include="random_generator\resources\stylesheets\theme-dark.less" />
+    <Content Include="random_generator\resources\stylesheets\theme-dark.css">
+      <DependentUpon>theme-dark.less</DependentUpon>
+    </Content>
+    <Content Include="random_generator\resources\stylesheets\theme-dark.min.css">
+      <DependentUpon>theme-dark.css</DependentUpon>
+    </Content>
+    <Content Include="random_generator\resources\stylesheets\theme-default.css">
+      <DependentUpon>theme-default.less</DependentUpon>
+    </Content>
+    <Content Include="random_generator\resources\stylesheets\theme-default.min.css">
+      <DependentUpon>theme-default.css</DependentUpon>
+    </Content>
     <Content Include="resources\hm-glyphs\fonts\hm-glyphs.svg" />
     <Content Include="resources\hm-glyphs\style.css" />
     <Content Include="resources\images\seven-segments\0.svg" />
@@ -310,8 +341,8 @@
     <Content Include="helix\resources\actual_models\Z.Vex® - Fuzz Factory.png" />
     <Content Include="helix\resources\css\bg-dark.jpg" />
     <Content Include="helix\resources\css\bg-default.jpg" />
-    <Content Include="helix\resources\css\theme_dark.css" />
-    <Content Include="helix\resources\css\theme_default.css" />
+    <None Include="helix\resources\css\theme_dark.less" />
+    <None Include="helix\resources\css\theme_default.less" />
     <Content Include="helix\resources\icon_models\AMP_HX_BASS_Agua_51.png" />
     <Content Include="helix\resources\icon_models\AMP_HX_BASS_Ampeg_B-15NF.png" />
     <Content Include="helix\resources\icon_models\AMP_HX_BASS_Ampeg_SVT-4_PRO.png" />
@@ -780,6 +811,9 @@
     <Content Include="resources\hm-glyphs\fonts\hm-glyphs.eot" />
     <Content Include="resources\hm-glyphs\fonts\hm-glyphs.ttf" />
     <Content Include="resources\hm-glyphs\fonts\hm-glyphs.woff" />
+    <None Include="packages.config" />
+    <Content Include="random_generator\resources\stylesheets\theme-default.less" />
+    <Content Include="tsconfig.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -789,6 +823,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="helix\resources\actual_models\_\" />
+    <Folder Include="random_generator\resources\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="random_generator\resources\scripts\GuitarNeck.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -815,6 +856,14 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.TypeScript.MSBuild.5.2.2\build\Microsoft.TypeScript.MSBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.TypeScript.MSBuild.5.2.2\build\Microsoft.TypeScript.MSBuild.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.TypeScript.MSBuild.5.2.2\build\Microsoft.TypeScript.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.TypeScript.MSBuild.5.2.2\build\Microsoft.TypeScript.MSBuild.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.TypeScript.MSBuild.5.2.2\build\Microsoft.TypeScript.MSBuild.targets" Condition="Exists('..\packages\Microsoft.TypeScript.MSBuild.5.2.2\build\Microsoft.TypeScript.MSBuild.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -9,6 +9,7 @@
 	<script src="resources/scripts/RandomGenerator.js"></script>
 	<script src="resources/scripts/GuitarNeck.js"></script>
 	<script src="resources/scripts/GuitarNote.js"></script>
+	<script src="resources/scripts/MusicalNote.js"></script>
 </head>
 <body>
 
@@ -38,7 +39,7 @@
 								<td><input type="text" value="3,5,7,9" id="txtFretNumbers" /></td>
 							</tr>
 							<tr>
-								<td><label>Delay</label></td>
+								<td><label>Delay<sup>(sec)</sup></label></td>
 								<td><input type="text" value="2" id="txtDelay" /></td>
 							</tr>
 						</table>
@@ -50,6 +51,9 @@
 		</tr>
 	</table>
 	<script type="text/javascript">
+		function splitNumbers(s) {
+			return s.split(',').map(a => +a)
+		}
 		function generate() {
 			let prev = null;
 			$('#guitar-neck-container').html('');
@@ -62,18 +66,22 @@
 			let f = function () {
 				let note = null;
 				do {
+					let o = {
+						stringNumbers: [],
+						fretNumbers: [],
+					};
+
 					note = generator.generate({
-						stringNumbers: $('#txtStringNumbers').val().split(',').map(a => +a),
-						fretNumbers: $('#txtFretNumbers').val().split(',').map(a => +a),
+						stringNumbers: splitNumbers($('#txtStringNumbers').val()).filter(a => a > 0),
+						fretNumbers: splitNumbers($('#txtFretNumbers').val()),
 					});
 				} while (prev && prev.stringNumber == note.stringNumber && prev.fretNumber == note.fretNumber)
 				prev = note;
-
 				guitarNeck.clear();
 				let item = guitarNeck.addNote(note.stringNumber, note.fretNumber, ' ');
 
 				setTimeout(function () {
-					item.setText(item.note)
+					item.setText(item.musicalNote.toString())
 				}, delay)
 			};
 			f();

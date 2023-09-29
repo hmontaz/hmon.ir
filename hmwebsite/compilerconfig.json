@@ -18,5 +18,13 @@
   {
     "outputFile": "random_generator/resources/stylesheets/theme-dark.css",
     "inputFile": "random_generator/resources/stylesheets/theme-dark.less"
+  },
+  {
+    "outputFile": "helix/resources/css/theme_dark.css",
+    "inputFile": "helix/resources/css/theme_dark.less"
+  },
+  {
+    "outputFile": "helix/resources/css/theme_default.css",
+    "inputFile": "helix/resources/css/theme_default.less"
   }
 ]
