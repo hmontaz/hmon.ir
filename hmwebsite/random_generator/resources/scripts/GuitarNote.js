@@ -45,7 +45,7 @@ class GuitarNote {
         this.ui.circleElement.appendTo(this.ui.group);
         this.ui.textElement.appendTo(this.ui.group);
         this.musicalNote = MusicalNote.parse(o.openStrings[this.stringNumber - 1]);
-        this.musicalNote = this.musicalNote.addSemitones(this.fretNumber);
+        this.musicalNote.addSemitones(this.fretNumber);
         this.setText(this.musicalNote.toString());
     }
     setText(text) {

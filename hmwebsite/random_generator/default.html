@@ -68,7 +68,7 @@
 				let stop = +s.split('-')[1];
 				return Array.from({ length: stop - start + 1 }, (value, index) => start + index);
 			}
-			return + s;
+			return [+s];
 
 		}
 		function generate() {

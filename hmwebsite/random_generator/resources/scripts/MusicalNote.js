@@ -36,7 +36,9 @@ class MusicalNote {
             result = ['A', 'Bb', 'B', 'C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab'][index];
         else
             result = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#'][index];
-        return MusicalNote.parse(result);
+        let temp = MusicalNote.parse(result);
+        this.noteName = temp.noteName;
+        this.accidental = temp.accidental;
     }
     toString() {
         return this.noteName + this.accidental;
