@@ -48,12 +48,12 @@ label {
   font-size: 12px;
   padding-left: 2px;
   color: #222;
-  min-width: 78px;
+  min-width: 73px;
   display: inline-block;
 }
 select,
 input {
-  width: 276px;
+  width: 270px;
   /*min-height:35px;*/
   /*background-color:#0c0c0c;*/
   background-color: rgba(255, 255, 255, 0.7);
@@ -69,7 +69,7 @@ select option {
 }
 input {
   /*padding:5px;*/
-  width: 264px;
+  width: 258px;
 }
 .item {
   border: solid 1px #999;

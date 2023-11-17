@@ -3912,7 +3912,7 @@ data_line6['Line 6 Helix'] = [
 		"Original Brand": "Fender®",
 		"Original Model": "1×12 Princeton Reverb with Alnico Blue driver",
 		"Type": "Guitar Cab,Cab",
-		"Description": "based on the Fender® Princeton Reverb with a 12\" Alnico Blue driver"
+		"Description": "based on the Fender® Princeton Reverb with a 12″ Alnico Blue driver"
 	},
 	{
 		"Version": "3.00",
@@ -3922,8 +3922,8 @@ data_line6['Line 6 Helix'] = [
 		"Image": "Horizon Devices® - Precision Drive",
 		"Original Brand": "Horizon Devices®",
 		"Original Model": "Precision Drive",
-		"Type": "Distortion",
-		"Description": "based on the Horizon Devices® Precision Drive. Includes an extra Gate Range parameter that, when set to \"Extended,\" drops the gate's threshold down to -90dB"
+		"Type": "Distortion,Noise Gate,Dynamics",
+		"Description": "based on the Horizon Devices® Precision Drive. Includes an extra Gate Range parameter that, when set to \"Extended\" drops the gate's threshold down to -90dB"
 	},
 	{
 		"Version": "3.00",
@@ -4000,7 +4000,7 @@ data_line6['Line 6 Helix'] = [
 		"Name": "Poly Sustain",
 		"Original Brand": "Line 6®",
 		"Type": "Delay",
-		"Description": "Line 6 Original infinite sustain with a modulated poly pitch engine built in.\r\nSimilar to EHX® Freeze pedal"
+		"Description": "Line 6 Original infinite sustain with a modulated poly pitch engine built in. Similar to EHX® Freeze pedal"
 	},
 	{
 		"Version": "3.00",
@@ -4075,7 +4075,8 @@ data_line6['Line 6 Helix'] = [
 		"Original Brand": "Orange®",
 		"Original Model": "Rockerverb 100 MKIII",
 		"Type": "Guitar Amp,Amp",
-		"Description": "based on the Orange® Rockerverb 100 MKIII (Dirty Channel)\r\nNOTE: We decided to slightly alter the model so that at lower settings, the Drive knob's taper exhibits a smoother transition into distortion."
+		"Description": "based on the Orange® Rockerverb 100 MKIII (Dirty Channel)",
+		"Notes": "NOTE: We decided to slightly alter the model so that at lower settings, the Drive knob's taper exhibits a smoother transition into distortion."
 	},
 	{
 		"Version": "3.10",
@@ -4093,7 +4094,8 @@ data_line6['Line 6 Helix'] = [
 		"Subcategory": "Mono, Stereo",
 		"Name": "Retro Reel",
 		"Original Brand": "Line 6®",
-		"Description": "Line 6 Original effect that simulates playing a signal back from an analog tape machine. This signal can be distorted, filtered to sound older or more lo-fi, and modulated with wow and flutter.\r\nTIP: users should definitely try it on vocals, drums, keyboards, strings, busses, effects returns, you name it. Anything that needs a bit more punch or vibe."
+		"Description": "Line 6 Original effect that simulates playing a signal back from an analog tape machine. This signal can be distorted, filtered to sound older or more lo-fi, and modulated with wow and flutter.",
+		"Notes": "TIP: users should definitely try it on vocals, drums, keyboards, strings, busses, effects returns, you name it. Anything that needs a bit more punch or vibe."
 	},
 	{
 		"Version": "3.10",
@@ -4102,7 +4104,8 @@ data_line6['Line 6 Helix'] = [
 		"Name": "Euclidean Delay",
 		"Original Brand": "Line 6®",
 		"Type": "Delay",
-		"Description": "Line 6 Original delay based on Euclidean algorithms. Creates multitap patterns by setting the length of the pattern (Steps) and the number of taps (Fill) in the pattern. The Euclidean algorithm spaces taps as evenly as possible throughout the pattern, resulting in rhythms from traditional to highly complex. Settle in because this one'll require diagrams and charts and whatnot.\r\nTIP: Add two Euclidean Delays in parallel (with different settings) for interesting polyrhythm patterns. When using a stereo playback system, try panning Paths A and B in the Mixer to L100 and R100"
+		"Description": "Line 6 Original delay based on Euclidean algorithms. Creates multitap patterns by setting the length of the pattern (Steps) and the number of taps (Fill) in the pattern. The Euclidean algorithm spaces taps as evenly as possible throughout the pattern, resulting in rhythms from traditional to highly complex. Settle in because this one'll require diagrams and charts and whatnot.",
+		"Notes": "TIP: Add two Euclidean Delays in parallel (with different settings) for interesting polyrhythm patterns. When using a stereo playback system, try panning Paths A and B in the Mixer to L100 and R100"
 	},
 	{
 		"Version": "3.10",
@@ -4412,9 +4415,9 @@ data_line6['Line 6 Helix'] = [
 		"Name": "1×10 US Princess",
 		"Icon": "CABMICIR_HX_1x12USPrincess",
 		"Original Brand": "Fender®",
-		"Original Model": "1x10\" Fender Princeton Eminence Copperhead",
+		"Original Model": "1×10″ Fender Princeton Eminence Copperhead",
 		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* the 1x10\" Fender® Princeton Eminence Copperhead"
+		"Description": "captured from* the 1×10″ Fender® Princeton Eminence Copperhead"
 	},
 	{
 		"Version": "3.50",
@@ -4423,9 +4426,9 @@ data_line6['Line 6 Helix'] = [
 		"Name": "1×12 Grammatico",
 		"Icon": "CABMICIR_HX_1x12Grammatico",
 		"Original Brand": "Grammatico®",
-		"Original Model": "1x12\" Grammatico LaGrange P12Q",
+		"Original Model": "1×12″ Grammatico LaGrange P12Q",
 		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* the 1x12\" Grammatico LaGrange P12Q"
+		"Description": "captured from* the 1×12″ Grammatico LaGrange P12Q"
 	},
 	{
 		"Version": "3.50",
@@ -4434,7 +4437,7 @@ data_line6['Line 6 Helix'] = [
 		"Name": "1×12 US Deluxe",
 		"Icon": "CABMICIR_HX_1x12USDeluxe",
 		"Original Brand": "Fender®",
-		"Original Model": "1x12″ Fender® Deluxe Oxford",
+		"Original Model": "1×12″ Fender® Deluxe Oxford",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 1×12″ Fender® Deluxe Oxford"
 	},
@@ -4445,9 +4448,9 @@ data_line6['Line 6 Helix'] = [
 		"Name": "1×12 Cali EXT",
 		"Icon": "CABMICIR_HX_1x12CaliEXT",
 		"Original Brand": "MESA/Boogie®",
-		"Original Model": "1x12\" Mesa Boogie Extension Cab",
+		"Original Model": "1×12″ Mesa Boogie Extension Cab",
 		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* the 1x12\" Mesa Boogie Extension Cab"
+		"Description": "captured from* the 1×12″ Mesa Boogie Extension Cab"
 	},
 	{
 		"Version": "3.50",
@@ -4456,7 +4459,7 @@ data_line6['Line 6 Helix'] = [
 		"Name": "2×12 Blue Bell",
 		"Icon": "CABMICIR_HX_2x12BlueBell",
 		"Original Brand": "Vox®",
-		"Original Model": "2x12″ Vox® AC-30 Fawn Blue",
+		"Original Model": "2×12″ Vox® AC-30 Fawn Blue",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 2×12″ Vox® AC-30 Fawn Blue"
 	},
@@ -4467,7 +4470,7 @@ data_line6['Line 6 Helix'] = [
 		"Name": "2×12 Double C12N",
 		"Icon": "CABMICIR_HX_2x12DoubleC12N",
 		"Original Brand": "Fender®",
-		"Original Model": "2x12″ Fender Twin C12N",
+		"Original Model": "2×12″ Fender Twin C12N",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 2×12″ Fender Twin C12N"
 	},
@@ -4478,7 +4481,7 @@ data_line6['Line 6 Helix'] = [
 		"Name": "2×12 Jazz Rivet",
 		"Icon": "CABMICIR_HX_2x12JazzRivet",
 		"Original Brand": "Roland®",
-		"Original Model": "2x12″ Roland® JC-120",
+		"Original Model": "2×12″ Roland® JC-120",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 2×12″ Roland® JC-120"
 	},
@@ -4489,7 +4492,7 @@ data_line6['Line 6 Helix'] = [
 		"Name": "2×12 Mail C12Q",
 		"Icon": "CABMICIR_HX_2x12MailC12Q",
 		"Original Brand": "Silvertone®",
-		"Original Model": "2x12″ Silvertone® 1484",
+		"Original Model": "2×12″ Silvertone® 1484",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 2×12″ Silvertone® 1484"
 	},
@@ -4500,9 +4503,9 @@ data_line6['Line 6 Helix'] = [
 		"Name": "2×12 Mandarin 30",
 		"Icon": "CABMICIR_HX_2x12Mandarin30",
 		"Original Brand": "Orange®",
-		"Original Model": "2x12\" Orange PPC212 V30",
+		"Original Model": "2×12″ Orange PPC212 V30",
 		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* the 2x12\" Orange PPC212 V30"
+		"Description": "captured from* the 2×12″ Orange PPC212 V30"
 	},
 	{
 		"Version": "3.50",
@@ -4511,7 +4514,7 @@ data_line6['Line 6 Helix'] = [
 		"Name": "4×10 Tweed P10R",
 		"Icon": "CABMICIR_HX_4x10TweedP10R",
 		"Original Brand": "Fender®",
-		"Original Model": "4x10″ Fender Bassman® P10R",
+		"Original Model": "4×10″ Fender Bassman® P10R",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 4×10″ Fender Bassman® P10R"
 	},
@@ -4522,7 +4525,7 @@ data_line6['Line 6 Helix'] = [
 		"Name": "4×12 Greenback25",
 		"Icon": "CABMICIR_HX_4x12Greenback25",
 		"Original Brand": "Marshall®",
-		"Original Model": "4x12″ Marshall® Basketweave G12 M25",
+		"Original Model": "4×12″ Marshall® Basketweave G12 M25",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 4×12″ Marshall® Basketweave G12 M25"
 	},
@@ -4533,7 +4536,7 @@ data_line6['Line 6 Helix'] = [
 		"Name": "4×12 1960A T75",
 		"Icon": "CABMICIR_HX_4x121960AT75",
 		"Original Brand": "Marshall®",
-		"Original Model": "4x12″ Marshall 1960A T75",
+		"Original Model": "4×12″ Marshall 1960A T75",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 4×12″ Marshall 1960A T75"
 	},
@@ -4544,7 +4547,7 @@ data_line6['Line 6 Helix'] = [
 		"Name": "4×12 Blackback 30",
 		"Icon": "CABMICIR_HX_4x12Blackback30",
 		"Original Brand": "Park®",
-		"Original Model": "4x12″ Park® 75 G12 H30",
+		"Original Model": "4×12″ Park® 75 G12 H30",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 4×12″ Park® 75 G12 H30"
 	},
@@ -4555,7 +4558,7 @@ data_line6['Line 6 Helix'] = [
 		"Name": "4×12 Brit V30",
 		"Icon": "CABMICIR_HX_4x12BritV30",
 		"Original Brand": "Marshall®",
-		"Original Model": "4x12″ Marshall® 1960AV V30",
+		"Original Model": "4×12″ Marshall® 1960AV V30",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 4×12″ Marshall® 1960AV V30"
 	},
@@ -4566,7 +4569,7 @@ data_line6['Line 6 Helix'] = [
 		"Name": "4×12 Cali V30",
 		"Icon": "CABMICIR_HX_4x12CaliV30",
 		"Original Brand": "MESA®",
-		"Original Model": "4x12″ MESA/Boogie® 4FB V30",
+		"Original Model": "4×12″ MESA/Boogie® 4FB V30",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 4×12″ MESA/Boogie® 4FB V30"
 	},
@@ -4577,7 +4580,7 @@ data_line6['Line 6 Helix'] = [
 		"Name": "4×12 Mandarin EM",
 		"Icon": "CABMICIR_HX_4x12MandarinEM",
 		"Original Brand": "Orange®",
-		"Original Model": "4x12″ Orange Eminence",
+		"Original Model": "4×12″ Orange Eminence",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 4×12″ Orange Eminence"
 	},
@@ -4588,9 +4591,9 @@ data_line6['Line 6 Helix'] = [
 		"Name": "4×12 MOO)))N T75",
 		"Icon": "CABMICIR_HX_4x12MOONT75",
 		"Original Brand": "Sunn®",
-		"Original Model": "4x12\" Sunn Cab w/G75T",
+		"Original Model": "4×12″ Sunn® Cab w/G75T",
 		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* the 4x12\" Sunn Cab w/G75T"
+		"Description": "captured from* the 4×12″ Sunn Cab w/G75T"
 	},
 	{
 		"Version": "3.50",
@@ -4599,7 +4602,7 @@ data_line6['Line 6 Helix'] = [
 		"Name": "4×12 Uber T75",
 		"Icon": "CABMICIR_HX_4x12UberT75",
 		"Original Brand": "Bogner®",
-		"Original Model": "4x12″ Bogner® Uberkab T75",
+		"Original Model": "4×12″ Bogner® Uberkab T75",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 4×12″ Bogner® Uberkab T75"
 	},
@@ -4610,7 +4613,7 @@ data_line6['Line 6 Helix'] = [
 		"Name": "4×12 Uber V30",
 		"Icon": "CABMICIR_HX_4x12UberV30",
 		"Original Brand": "Bogner®",
-		"Original Model": "4x12″ Bogner Uberkab V30",
+		"Original Model": "4×12″ Bogner Uberkab V30",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 4×12″ Bogner Uberkab V30"
 	},
@@ -4621,7 +4624,7 @@ data_line6['Line 6 Helix'] = [
 		"Name": "4×12 XXL V30",
 		"Icon": "CABMICIR_HX_4x12XXLV30",
 		"Original Brand": "ENGL®",
-		"Original Model": "4x12″ ENGL® XXL V30",
+		"Original Model": "4×12″ ENGL® XXL V30",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 4×12″ ENGL® XXL V30"
 	},
@@ -4632,9 +4635,9 @@ data_line6['Line 6 Helix'] = [
 		"Name": "1×15 Ampeg B-15",
 		"Icon": "CABMICIR_HX_1x15AmpegB15",
 		"Original Brand": "Ampeg®",
-		"Original Model": "1x15″ Ampeg® B-15",
+		"Original Model": "1×15″ Ampeg® B-15",
 		"Type": "Bass Cab,Cab",
-		"Description": "captured from* the 1x15″ Ampeg® B-15"
+		"Description": "captured from* the 1×15″ Ampeg® B-15"
 	},
 	{
 		"Version": "3.50",
@@ -4643,9 +4646,9 @@ data_line6['Line 6 Helix'] = [
 		"Name": "2×15 Brute",
 		"Icon": "CABMICIR_HX_2x15Brute",
 		"Original Brand": "MESA/Boogie®",
-		"Original Model": "2x15″ MESA/Boogie® 2x15 EV",
+		"Original Model": "2×15″ MESA/Boogie® 2×15 EV",
 		"Type": "Bass Cab,Cab",
-		"Description": "captured from* the 2x15″ MESA/Boogie® 2x15 EV"
+		"Description": "captured from* the 2×15″ MESA/Boogie® 2×15 EV"
 	},
 	{
 		"Version": "3.50",
@@ -4654,9 +4657,9 @@ data_line6['Line 6 Helix'] = [
 		"Name": "4×10 Garden",
 		"Icon": "CABMICIR_HX_4x10Garden",
 		"Original Brand": "Eden®",
-		"Original Model": "4x10\" Eden D410XLT",
+		"Original Model": "4×10″ Eden D410XLT",
 		"Type": "Bass Cab,Cab",
-		"Description": "captured from* the 4x10\" Eden D410XLT"
+		"Description": "captured from* the 4×10″ Eden D410XLT"
 	},
 	{
 		"Version": "3.50",
@@ -4665,9 +4668,9 @@ data_line6['Line 6 Helix'] = [
 		"Name": "8×10 SVT AV",
 		"Icon": "CABMICIR_HX_8x10SVTAV",
 		"Original Brand": "Ampeg®",
-		"Original Model": "8x10″ Ampeg® SVT® (SVT-810AV Heritage Edition)",
+		"Original Model": "8×10″ Ampeg® SVT® (SVT-810AV Heritage Edition)",
 		"Type": "Bass Cab,Cab",
-		"Description": "captured from* the 8x10″ Ampeg® SVT® (SVT-810AV Heritage Edition)"
+		"Description": "captured from* the 8×10″ Ampeg® SVT® (SVT-810AV Heritage Edition)"
 	},
 	{
 		"Version": "3.50",
@@ -4677,7 +4680,7 @@ data_line6['Line 6 Helix'] = [
 		"Original Brand": "Sunn®",
 		"Original Model": "Model T - Normal Channel",
 		"Type": "Guitar Amp,Amp",
-		"Description": "based on* the normal channel of the Sunn® Model T.\r\n\r\n\"The Moon model is based on a 1974, silver knob Sunn Model T amplifier. This is the early version with the more traditional tone stack. Though it has been repaired over the years, the circuit has every component at stock value. This specific unit has been well used, well maintained, and regularly enveloped in fog.\r\n\r\n\r\n\"This amp circuit can best be described as a Fender Tweed Bassman/Marshall JTM45 preamp mated with a very high volume, very flat, ultralinear power amp that uses 6550 tubes. The result of this configuration is a tone with a raw growl that really has a strong punch to the gut. In addition, this configuration takes pedals very well; adding a distortion or booster can turn the amp into a high gain, doom machine.\"\r\n\r\n \r\n\r\n—Ben Adrian, Sound Design Manager"
+		"Description": "based on* the normal channel of the Sunn® Model T.\r\n\r\n\"The Moon model is based on a 1974, silver knob Sunn Model T amplifier. This is the early version with the more traditional tone stack. Though it has been repaired over the years, the circuit has every component at stock value. This specific unit has been well used, well maintained, and regularly enveloped in fog.\r\n\r\n\"This amp circuit can best be described as a Fender Tweed Bassman/Marshall JTM45 preamp mated with a very high volume, very flat, ultralinear power amp that uses 6550 tubes. The result of this configuration is a tone with a raw growl that really has a strong punch to the gut. In addition, this configuration takes pedals very well; adding a distortion or booster can turn the amp into a high gain, doom machine.\"\r\n\r\n—Ben Adrian, Sound Design Manager"
 	},
 	{
 		"Version": "3.50",
@@ -4883,7 +4886,7 @@ data_line6['Line 6 Helix'] = [
 		"Original Brand": "Celestion®",
 		"Original Model": "G12M-65",
 		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* a custom 1x12\" open back cabinet G12M-65"
+		"Description": "captured from* a custom 1×12″ open back cabinet G12M-65"
 	},
 	{
 		"Version": "3.60",
@@ -4893,7 +4896,7 @@ data_line6['Line 6 Helix'] = [
 		"Original Brand": "Eminence®",
 		"Original Model": "EVM12L",
 		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* a custom 1x12\" open back cabinet EVM12L"
+		"Description": "captured from* a custom 1×12″ open back cabinet EVM12L"
 	},
 	{
 		"Version": "3.60",
@@ -4915,7 +4918,7 @@ data_line6['Line 6 Helix'] = [
 		"Original Brand": "Matchless®",
 		"Original Model": "G12H-30",
 		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* the 2x12\" Matchless® DC-30 custom G12H-30"
+		"Description": "captured from* the 2×12″ Matchless® DC-30 custom G12H-30"
 	},
 	{
 		"Version": "3.60",
@@ -4926,7 +4929,7 @@ data_line6['Line 6 Helix'] = [
 		"Original Brand": "Matchless®",
 		"Original Model": "G12M-25",
 		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* the 2x12\" Matchless® DC-30 custom G12M-25"
+		"Description": "captured from* the 2×12″ Matchless® DC-30 custom G12M-25"
 	},
 	{
 		"Version": "3.60",
@@ -4945,7 +4948,7 @@ data_line6['Line 6 Helix'] = [
 		"Name": "1×12 Epicenter",
 		"Original Brand": "Epifani®",
 		"Type": "Bass Cab,Cab",
-		"Description": "captured from* the 1x12\" Epifani® Ultralight series cabinet"
+		"Description": "captured from* the 1×12″ Epifani® Ultralight series cabinet"
 	},
 	{
 		"Version": "3.60",
@@ -4955,7 +4958,7 @@ data_line6['Line 6 Helix'] = [
 		"Original Brand": "Ampeg®",
 		"Original Model": "PR-410HLF",
 		"Type": "Bass Cab,Cab",
-		"Description": "captured from* the 4x10\" Ampeg® PR-410HLF"
+		"Description": "captured from* the 4×10″ Ampeg® PR-410HLF"
 	},
 	{
 		"Version": "3.60",
@@ -4996,5 +4999,243 @@ data_line6['Line 6 Helix'] = [
 		"Original Model": "R84",
 		"Type": "Microphone",
 		"Description": "AEA® R84"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Line 6 Clarity",
+		"Original Brand": "Line 6®",
+		"Type": "Guitar Amp,Amp",
+		"Description": "Original Amp Design inspired by classic clean solid-state and tube amps. Lots of clean headroom with just a touch of overdrive at the very end of the Drive knob's range."
+	},
+	{
+		"Version": "3.70",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Line 6 Aristocrat",
+		"Original Brand": "Line 6®",
+		"Type": "Guitar Amp,Amp",
+		"Description": "Original Amp Design inspired by rare, unobtainable boutique mid-gain black-panel amps. Features aren’t limited by what can be done with analog circuits."
+	},
+	{
+		"Version": "3.70",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Line 6 Carillon",
+		"Original Brand": "Line 6®",
+		"Type": "Guitar Amp,Amp",
+		"Description": "Line 6® Original inspired by modern and vintage versions of a popular EL84 driven tube amp with added grit at higher gain settings. We kept the good quirks and eliminated the ugly ones, while also making the tone controls more flexible."
+	},
+	{
+		"Version": "3.70",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Line 6 Voltage",
+		"Original Brand": "Line 6®",
+		"Type": "Guitar Amp,Amp",
+		"Description": "Line 6® Original inspired by the classic British \"plexi\" amp, but with an additional gain stage and more tonal versatility."
+	},
+	{
+		"Version": "3.70",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Line 6 Kinetic",
+		"Original Brand": "Line 6®",
+		"Type": "Guitar Amp,Amp",
+		"Description": "Line 6® Original where all the preamp stages clip at roughly the same time, allowing the amp to go from mostly clean to heavily distorted using the guitar's volume control."
+	},
+	{
+		"Version": "3.70",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Line 6 Oblivion",
+		"Original Brand": "Line 6®",
+		"Type": "Guitar Amp,Amp",
+		"Description": "Line 6® Original designed to cover both modern metal and old-school '80s thrash. We took out a lot of the noise associated with high gain, retaining just enough so that it doesn’t sound sterile or artificial.",
+		"Notes": "TIP: Use snapshots (or a Stomp switch) to change the 2203's Input parameter between Low and High"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Brit 2203",
+		"Original Brand": "Marshall®",
+		"Original Model": "JCM800 2203 (Stock)",
+		"Type": "Guitar Amp,Amp",
+		"Description": "based on* the Marshall® JCM800 2203 (Stock)."
+	},
+	{
+		"Version": "3.70",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "PV Vitriol Clean",
+		"Original Brand": "Peavey®",
+		"Original Model": "Invective (Clean Channel)",
+		"Type": "Guitar Amp,Amp",
+		"Description": "based on* the Peavey® Invective (Clean Channel)"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Amp",
+		"Subcategory": "Bass",
+		"Name": "US Dripman Nrm",
+		"Original Brand": "Fender®",
+		"Original Model": "Bassman",
+		"Type": "Bass Amp,Amp",
+		"Description": "based on* the Fender® Bassman (Silver Panel)"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Amp",
+		"Subcategory": "Bass",
+		"Name": "Mandarin 200",
+		"Original Brand": "Orange®",
+		"Original Model": "AD200 MkIII",
+		"Type": "Bass Amp,Amp",
+		"Description": "based on* the Orange® AD200 MkIII bass amp"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "Soup Pro Ellipse",
+		"Icon": "CAB_HX_Soup_Pro_Ellipse_NEW",
+		"Original Brand": "Supro®",
+		"Original Model": "1×6×9″ Supro® S6616",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the 1×6×9″ Supro® S6616"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "1x8 Small Tweed",
+		"Icon": "CAB_HX_1x8_Small_Tweed_NEW",
+		"Original Brand": "Fender®",
+		"Original Model": "1×8″ Fender® Champ",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the 1×8″ Fender® Champ"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "1×12 Fullerton",
+		"Icon": "CAB_HX_1x12_Fullerton_NEW",
+		"Original Brand": "Fender®",
+		"Original Model": "1×12″ Fender® 5C3 Tweed Deluxe",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the 1×12″ Fender® 5C3 Tweed Deluxe"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "1×12 Cali IV",
+		"Icon": "CAB_HX_1x12_Cali_IV_NEW",
+		"Original Brand": "MESA/Boogie®",
+		"Original Model": "1×12″ MESA/Boogie® Mk IV combo",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the 1×12″ MESA/Boogie® Mk IV combo"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "2×12 Interstate",
+		"Icon": "CAB_HX_2x12_Interstate_NEW",
+		"Original Brand": "Dr Z®",
+		"Original Model": "2×12″ Dr Z® Z Best V30",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the 2×12″ Dr Z® Z Best V30"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "4×12 WhoWatt 100",
+		"Icon": "CAB_HX_4x12_WhoWatt_100_NEW",
+		"Original Brand": "Hiwatt® AP Fane®",
+		"Original Model": "4×12″ Hiwatt® AP Fane®",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the 4×12″ Hiwatt® AP Fane®"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "4×12 Greenback 30",
+		"Original Brand": "Marshall®",
+		"Original Model": "4×12″ Marshall® Basketweave G12H-30",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the 4×12″ Marshall® Basketweave G12H-30"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "2×15 Dripman",
+		"Original Brand": "Fender®",
+		"Original Model": "2×15″ Fender® Bassman JBL D130",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the 2×15″ Fender® Bassman JBL D130"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "6×10 Cali Power",
+		"Icon": "CAB_HX_6x10_Cali_Power_NEW",
+		"Original Brand": "MESA/Boogie®",
+		"Original Model": "6×10″ MESA/Boogie® Power House",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the 6×10″ MESA/Boogie® Power House"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Distortion",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Prize Drive",
+		"Original Brand": "Nobles®",
+		"Original Model": "ODR-1",
+		"Type": "Distortion",
+		"Description": "based on* the Nobels® ODR-1"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Distortion",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Regal Bass DI",
+		"Original Brand": "Noble®",
+		"Original Model": "Preamp bass DI",
+		"Type": "Distortion",
+		"Description": "based on* the Noble® Preamp bass DI"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Dynamics",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Feedbacker",
+		"Original Brand": "Line 6®",
+		"Description": "Line 6® Original feedback generator"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Reverb",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Dynamic Bloom",
+		"Original Brand": "Line 6®",
+		"Type": "Reverb",
+		"Description": "Line 6® Original bloom reverb."
+	},
+	{
+		"Version": "3.70",
+		"Category": "Reverb",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Nonlinear",
+		"Original Brand": "Line 6®",
+		"Type": "Reverb",
+		"Description": "Line 6® Original nonlinear reverb with a variety of decay tail shapes (including multiple reverse reverb shapes)."
 	}
 ];
