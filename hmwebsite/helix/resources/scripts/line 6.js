@@ -5197,7 +5197,7 @@ data_line6['Line 6 Helix'] = [
 		"Category": "Distortion",
 		"Subcategory": "Mono, Stereo",
 		"Name": "Prize Drive",
-		"Original Brand": "Nobles®",
+		"Original Brand": "Nobels®",
 		"Original Model": "ODR-1",
 		"Type": "Distortion",
 		"Description": "based on* the Nobels® ODR-1"
