@@ -38,7 +38,7 @@ class GuitarNeck {
 			neckMargin: 3,
 			fretboardColor: 'hsl(40,65%,55%)',
 			fretWidth: 4,
-			firstFretWidth: 64.23,
+			firstFretWidth: 61.9,//64.23,
 			verticalPadding: 20,
 			horizontalPadding: 30,
 			fretColor: '#777',
@@ -148,7 +148,7 @@ class GuitarNeck {
 	}
 	getFretWidth(index: number) {
 		const o = this.options;
-		return .94 ** index * o.firstFretWidth;// o.neckWidth / o.numberOfFrets;
+		return 0.943890218 ** index * o.firstFretWidth;// o.neckWidth / o.numberOfFrets;
 	}
 	getFretCX(index: number) {
 		const o = this.options;

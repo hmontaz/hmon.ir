@@ -1,5 +1,4 @@
-/* <reference path="GuitarNeck.js" />*/
-class RandomGenerator {
+class RandomGuitarNoteGenerator {
     constructor(numberOfStrings, numberOfFrets) {
         this.numberOfStrings = numberOfStrings;
         this.numberOfFrets = numberOfFrets;
@@ -11,10 +10,6 @@ class RandomGenerator {
             result[i] = start + i * step;
         }
         return result;
-        /*return Array.from(
-            { length: (stop - start) / step + 1 },
-            (value, index) => start + index * step
-        );*/
     }
     getRandom(max) {
         return Math.floor(Math.random() * max);
@@ -36,4 +31,4 @@ class RandomGenerator {
         return result;
     }
 }
-//# sourceMappingURL=RandomGenerator.js.map
+//# sourceMappingURL=RandomGuitarNoteGenerator.js.map

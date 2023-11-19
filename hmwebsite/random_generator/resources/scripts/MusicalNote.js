@@ -1,5 +1,5 @@
 class MusicalNote {
-    constructor(noteName, accidental) {
+    constructor(noteName = 'C', accidental = '') {
         this.noteName = noteName;
         this.accidental = accidental;
     }

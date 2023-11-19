@@ -222,11 +222,13 @@
       <DependentUpon>slider.css</DependentUpon>
     </Content>
     <Content Include="metronome\resources\stylesheets\theme-dark.css" />
-    <Content Include="random_generator\default.html" />
+    <Content Include="random_generator\randomnote.html" />
+    <Content Include="random_generator\guitarneck.html" />
+    <TypeScriptCompile Include="random_generator\resources\scripts\RandomNoteGenerator.ts" />
     <TypeScriptCompile Include="random_generator\resources\scripts\GuitarNote.ts" />
     <Content Include="resources\jquery\jquery.3.2.1_jquery.js" />
     <TypeScriptCompile Include="random_generator\resources\scripts\MusicalNote.ts" />
-    <TypeScriptCompile Include="random_generator\resources\scripts\RandomGenerator.ts" />
+    <TypeScriptCompile Include="random_generator\resources\scripts\RandomGuitarNoteGenerator.ts" />
     <None Include="random_generator\resources\stylesheets\theme-dark.less" />
     <Content Include="random_generator\resources\stylesheets\theme-dark.css">
       <DependentUpon>theme-dark.less</DependentUpon>

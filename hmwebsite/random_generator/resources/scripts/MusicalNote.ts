@@ -3,7 +3,7 @@ type NoteName = 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G';
 class MusicalNote {
 	noteName: NoteName
 	accidental: Acctidental
-	constructor(noteName: NoteName, accidental: Acctidental) {
+	constructor(noteName: NoteName = 'C', accidental: Acctidental = '') {
 		this.noteName = noteName
 		this.accidental = accidental
 	}
