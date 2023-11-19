@@ -1,5 +1,4 @@
 body {
-	/*background-color:#243341;*/
 	background-color: white;
 	background-image: none;
 	background-image: url("bg-default.jpg");
@@ -9,8 +8,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: tahoma, Verdana;
-	/*color:#a4a4a4;*/
-	/*font-size:16px;*/
+	box-sizing: border-box;
 }
 
 .preview {
@@ -28,7 +26,6 @@ body {
 }
 
 a {
-	/*text-decoration:none;*/
 	color: inherit;
 }
 
@@ -63,8 +60,6 @@ label {
 select,
 input {
 	width: 270px;
-	/*min-height:35px;*/
-	/*background-color:#0c0c0c;*/
 	background-color: rgba(255, 255, 255, .7);
 	border-radius: 2px;
 	border: 1px solid gray;
@@ -79,7 +74,6 @@ select option {
 }
 
 input {
-	/*padding:5px;*/
 	width: 258px;
 }
 
@@ -87,62 +81,46 @@ input {
 	border: solid 1px #999;
 	padding: 2px;
 	border-radius: 2px;
-	margin-top: 1px;
-	margin-right: 1px;
-	width: 97%;
-	width: calc(100% - 6px);
-	width: -webkit-calc(100% - 6px);
-	width: -moz-calc(100% - 6px);
-	/*max-width:414px;
-				max-width:335px;
-				max-width:309px;*/
+	margin: 1px 1px 0 0;
 	background-color: #f5f5f5;
 	display: inline-block;
-	/*height: 142px;*/
-}
 
-.item-description {
-	font-size: 12px;
-	color: #333;
-	/*max-height: 50px;*/
-	height: 53px;
-	overflow-y: auto;
-}
+	.description {
+		font-size: 12px;
+		color: #333;
+		height: 68px;
+		overflow-y: auto;
+	}
 
-.item-version {
-	font-size: 12px;
-	color: #333;
-	/*max-height: 50px;*/
-}
+	.version {
+		font-size: 12px;
+		color: #333;
+		position: absolute;
+	}
 
-.item-title {
-	font-size: 12px;
-	font-weight: bold;
-	color: black;
-}
+	.title {
+		font-size: 12px;
+		font-weight: bold;
+		color: black;
+	}
 
-.item-path {
-	font-size: 12px;
-	color: #005;
-	/*max-width: 300px;
-	border: solid 1px red;*/
-}
-
-.item {
-	.box, .image-box {
-		padding: 5px;
-		border-radius: 2px;
+	.path {
+		font-size: 12px;
+		color: #005;
 	}
 
 	.box {
 		background-color: rgba(255, 255, 255, .9);
+		padding: 0px 5px 0px 5px;
+		border-radius: 2px;
 	}
 
 	.image-box {
+		padding: 0px 3px 0px 3px;
+		border-radius: 2px;
 		background-color: rgba(255, 255, 255, .9);
 	}
 }
-
 
 .small-icon {
 	width: 16px;

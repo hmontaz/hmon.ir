@@ -31,10 +31,11 @@ var FxFinder = {
 		});*/
 	},
 	resize: function () {
-		var ww = window.innerWidth;
-		var min = 390;
-		var n = Math.round(ww / min);
-		var w = ww / n - 15;
+		let ww = window.innerWidth;
+		let min = 426;
+		let n = Math.round(ww / min);
+		let offset=([0,6,5,4,3][n-1])||3;
+		let w = Math.floor(ww / n)-offset;
 		if (n == 1) w = ww;
 		//console.log(n,w,ww);
 		$('#dynamic_style').html('.item{max-width:' + w + 'px;}');
@@ -258,7 +259,7 @@ var FxFinder = {
 	},
 	fillVersions: function () {
 		this.fill_ddl('ddlVersion', function (a) { return a.version; }, null, function (a, b) { return a.text > b.text ? -1 : 1; });
-		//$('#ddlVersion').val('3.50');
+		//$('#ddlVersion').val('3.70');
 		this.fillTypes();
 	},
 	fillTypes: function () {
@@ -340,16 +341,16 @@ var FxFinder = {
 				<img src="{{src}}" preview_src="{{preview_src}}" loading="lazy" style="max-height:96px;max-width:96px;cursor:pointer;" class="icon" onClick="on_image_click(this)"/>
 			</td>
 			<td style="width:1500px;" class="box">
-				<div class="item-title">{{title}}</div>
-				<div class="item-description">{{description}}</div>
-				<div class="item-version">Since v{{version}}</div>
+				<div class="title">{{title}}</div>
+				<div class="description">{{description}}</div>
+				<div class="version">Since v{{version}}</div>
 			</td>
 		</tr>
 		<tr>
 			<td class="box" colspan='2'>
 				<table class="noborder" style="width:100%;">
 					<tr>
-						<td class="item-path" style="color:{{color}};">
+						<td class="path" style="color:{{color}};">
 							{{path}}
 						</td>
 						<td style="width:20px;">

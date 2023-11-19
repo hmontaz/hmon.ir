@@ -38,16 +38,16 @@ hr {
   background-color: #3f506155;
   color: #8fa5bb;
 }
-.item-description {
+.item .description {
   color: gray;
 }
-.item-version {
+.item .version {
   color: gray;
 }
-.item-title {
+.item .title {
   color: #cfdae5;
 }
-.item-path {
+.item .path {
   color: #7a9fcc;
 }
 .item .box {
