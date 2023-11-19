@@ -309,7 +309,7 @@ var FxFinder = {
 	<table>
 		<tr valign=top>
 			<td class="image-box">
-				<img src="{{src}}" preview_src="{{preview_src}}" loading="lazy" style="max-height:96px;max-width:96px;cursor:pointer;" class="icon" onClick="on_image_click(this)"/>
+				<img src="{{src}}" preview_src="{{preview_src}}" loading="lazy" style="height:96px;width:96px;cursor:pointer;" class="icon" onClick="on_image_click(this)"/>
 			</td>
 			<td style="width:1500px;" class="box">
 				<div class="title">{{title}}</div>
