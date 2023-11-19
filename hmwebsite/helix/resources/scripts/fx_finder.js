@@ -18,26 +18,14 @@ var FxFinder = {
 
 		this.divPreview = $('#divPreview');
 		this.imgPreview = $('#imgPreview');
-		/*if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-			this.applyTheme('theme-dark');
-		}
-		else {
-			this.applyTheme('theme-default');
-		}
-		window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-			const theme = event.matches ? "theme-dark" : "theme-default";
-			//console.log(theme);
-			_this.applyTheme(theme);
-		});*/
 	},
 	resize: function () {
 		let ww = window.innerWidth;
 		let min = 426;
 		let n = Math.round(ww / min);
-		let offset=([0,6,5,4,3][n-1])||3;
-		let w = Math.floor(ww / n)-offset;
+		let offset = ([0, 6, 5, 4, 3][n - 1]) || 3;
+		let w = Math.floor(ww / n) - offset;
 		if (n == 1) w = ww;
-		//console.log(n,w,ww);
 		$('#dynamic_style').html('.item{max-width:' + w + 'px;}');
 	},
 	applyTheme: function (id) {
@@ -51,13 +39,11 @@ var FxFinder = {
 		var index = localStorage.getItem('theme-index') || 0;
 		index++;
 		index = index % 2;
-		//console.log(index);
 		localStorage.setItem('theme-index', index);
 		this.applyTheme();
 	},
 	readData: function (name) {
 		var _this = this;
-		//console.log(data);
 		this.read(data_line6[name]);
 		this.fillVersions();
 		this.fillTypes();
@@ -72,7 +58,6 @@ var FxFinder = {
 		});
 	},
 	showPreview: function (d) {
-		//console.log(d.src);
 		var _this = this;
 		this.imgPreview.attr('src', d.src)
 			.css({
@@ -127,8 +112,7 @@ var FxFinder = {
 					if (preview && this.imageUrl) return this.imageUrl;
 					switch (this.category) {
 						case 'Preamp':
-							//cat = 'PRE_HX'; break;
-							if (/*this.subcategory == 'Mic' ||*/
+							if (
 								['Divided Duo', 'Soup Pro', 'Stone Age 185', 'US Deluxe Nrm', 'US Deluxe Vib', 'US Double Nrm', 'US Double Vib', 'US Small Tweed', 'WhoWatt 100', 'Studio Tube Pre', 'US Princess'].indexOf(this.name) != -1) {
 								cat = 'PRE_HX';
 								break;
@@ -187,16 +171,7 @@ var FxFinder = {
 						case 'Split': cat = 'FX_HX'; break;
 						case 'Merge': cat = 'FX_HX'; break;
 					}
-					//if(!cat)return src;
-					//console.log(cat);
 					return './resources/icon_models/' + cat + name + '.png';
-					//if (this.subcategory=='LEGACY')
-					//var src=(categories_[this.subcategory]||categories_[this.category]).imageUrl;
-					//var src=(categories_[item.subcategory]||categories_[item.category]).imageUrl;
-					//var src='resources/icon_models/'+(item.category+"_HX_"+item.name).replace(/ /g,'')+'.png';
-					//if(item.icon) src='resources/icon_models/'+item.icon+'.png';
-					//console.log(src);
-					//return src;
 				}
 			};
 			if (d.types.indexOf(item.Category) == -1) d.types.push(item.Category);
@@ -230,7 +205,6 @@ var FxFinder = {
 		this.divTitle.html(window.document.title);
 	},
 	fill_ddl(id, getText, match, sort) {
-		//console.log('here');
 		var items = [];
 		var ddl = $('#' + id).html('<option value="">ALL</option>');
 		for (var i = 0; i < this.data.length; i++) {
@@ -242,7 +216,6 @@ var FxFinder = {
 				};
 				if (items.find(function (a) { return a.text == item.text; })) continue;
 				if (match && !match(this.data[i])) continue;
-				//console.log(data[i]);
 				items.push(item);
 			}
 		}
@@ -288,7 +261,6 @@ var FxFinder = {
 				&& (a.brand == brand || !brand);
 		};
 		this.fill_ddl('ddlModel', function (a) { return a.model; }, match);
-		//$('#txtSearch').val('');
 		this.fillInfo();
 	},
 	fillInfo: function () {
@@ -330,7 +302,6 @@ var FxFinder = {
 			var d = {
 				src: $(element).attr('preview_src')
 			};
-			//console.log(element);
 			_this.showPreview(d);
 		};
 		var template = `
@@ -365,7 +336,6 @@ var FxFinder = {
 </div>
 `;
 		var categ = categories_[item.category];
-		//console.log(item);
 		var o = {
 			title: item.title,
 			src: item.getImageUrl(false),
@@ -378,33 +348,4 @@ var FxFinder = {
 		};
 		return $(Mustache.render(template, o));
 	},
-	/*getItem_element_: function (item) {
-		var item_div = $('<div>').addClass('item');
-		var table = $('<table style="">').appendTo(item_div);
-		var tr = $('<tr valign=top>').appendTo(table);
-		var td0 = $('<td class="image-box"></td>').appendTo(tr);
-		var img = $('<img loading="lazy" style="width:96px;cursor:pointer;" class="icon"/>').appendTo(td0)
-			.attr('src', item.getImageUrl(false))
-			.attr('preview_src', item.getImageUrl(true));
-		img.click(function () {
-			var d = {
-				src: $(this).attr('preview_src')
-			};
-			_this.showPreview(d);
-		});
-		//$(document).click(function(){hidePreview();});
-		var td = $('<td style="width:1500px;" class="box">').appendTo(tr);
-		td.append('<div class="item-title">' + item.title + '</div>');
-		//item_div.append('<div style="color:black;">'+item.model+'</div>');
-		td.append('<div class="item-description">' + item.description + '</div>');
-		td.append('<div class="item-version">Since v' + item.version + '</div>');
-		var categ = categories_[item.category];
-		var color = 'default';
-		if (categ && categ.color) color = categ.color;
-		var legacy = '<img src="./resources/images/legacy.svg" class="small-icon" />';
-
-		item_div.append('<div class="item-path box" style="margin:0 2 0 2;color:' + color + ';">'
-			+ item.path + legacy + '</div>');
-		return item_div;
-	},*/
 }
