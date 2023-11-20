@@ -15,17 +15,25 @@
 		<div id="divNote" style="font-size:200px;text-align:center;height:300px;">
 			C
 		</div>
+		<div id="divHistory" j style="overflow-wrap:break-word;"></div>
 		<div style="text-align:center;">
 			<input id="btnGenerate" type="button" value="Generate" onclick="generate()" />
 		</div>
 	</div>
 	<script type="text/javascript">
+		let prev = null;
 		function generate() {
 			let div = $('#divNote').html('');
 
 			let generator = new RandomNoteGenerator()
 			let note = generator.generate()
-			console.log(note)
+			if (prev == note) {
+				generate()
+				return
+			}
+			prev = note
+			let historyElement = $('<span>').css({ 'margin': '5px' }).html(note)
+			$('#divHistory').append(historyElement)
 			div.html(note)
 			$('#btnGenerate').focus()
 		}
