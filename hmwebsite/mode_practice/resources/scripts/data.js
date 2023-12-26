@@ -1,0 +1,262 @@
+﻿var modes = [
+	{
+		"tonic": "A",
+		"mode": "Major",
+		"videoId": "jm23B5NgPLY"
+	},
+	{
+		"tonic": "A",
+		"mode": "Mixolydian",
+		"videoId": "NXCaBnzSTyo"
+	},
+	{
+		"tonic": "A",
+		"mode": "Dorian",
+		"videoId": "QOZYjxy4JuI",
+		startTime: 2,
+		volume: 60,
+	},
+	{
+		"tonic": "A",
+		"mode": "Minor",
+		"videoId": "HzOvm5Kod8A"
+	},
+	{
+		"tonic": "A",
+		"mode": "Phrygian",
+		"videoId": "5jMiI1EzcDQ"
+	},
+	{
+		"tonic": "A",
+		"mode": "Locrian",
+		"videoId": "UdwoVlUmfBI"
+	},
+	{
+		"tonic": "A",
+		"mode": "Lydian",
+		"videoId": "SDxj4pBcYfU"
+	},
+	{
+		"tonic": "B",
+		"mode": "Major",
+		"videoId": "OmbWAsQaxzA"
+	},
+	{
+		"tonic": "B",
+		"mode": "Mixolydian",
+		"videoId": "vrQiD6Mpi78",
+		startTime: 1.2,
+	},
+	{
+		"tonic": "B",
+		"mode": "Dorian",
+		"videoId": "UmH_agT5ajA"
+	},
+	{
+		"tonic": "B",
+		"mode": "Minor",
+		"videoId": "y3DTSp850DU"
+	},
+	{
+		"tonic": "B",
+		"mode": "Phrygian",
+		"videoId": "rUOoGTxVSuU"
+	},
+	{
+		"tonic": "B",
+		"mode": "Locrian",
+		"videoId": "8BJI9UxR9B4"
+	},
+	{
+		"tonic": "B",
+		"mode": "Lydian",
+		"videoId": "aDwr_R5bWY0"
+	},
+	{
+		"tonic": "C",
+		"mode": "Major",
+		"videoId": "4q7h2SwIyLg"
+	},
+	{
+		"tonic": "C",
+		"mode": "Mixolydian",
+		"startTime": "22",
+		"videoId": "ibdMDfUP1XY"
+	},
+	{
+		"tonic": "C",
+		"mode": "Dorian",
+		"videoId": "1GD9ZrLU05g"
+	},
+	{
+		"tonic": "C",
+		"mode": "Minor",
+		"videoId": "Vfq-n8r8eMg"
+	},
+	{
+		"tonic": "C",
+		"mode": "Phrygian",
+		"startTime": "15",
+		"videoId": "attihThGL6M"
+	},
+	{
+		"tonic": "C",
+		"mode": "Locrian",
+		"videoId": "UsMIZv_pyh4"
+	},
+	{
+		"tonic": "C",
+		"mode": "Lydian",
+		"startTime": "56",
+		"videoId": "fz7sqfVbTm4"
+	},
+	{
+		"tonic": "D",
+		"mode": "Major",
+		"videoId": "sD_bJGJd1_k"
+	},
+	{
+		"tonic": "D",
+		"mode": "Mixolydian",
+		"videoId": "jAjQkIjVhUQ"
+	},
+	{
+		"tonic": "D",
+		"mode": "Dorian",
+		"startTime": "4",
+		"videoId": "OfvCw3IcbSs"
+	},
+	{
+		"tonic": "D",
+		"mode": "Minor",
+		"videoId": "RRuL6f75Hsw"
+	},
+	{
+		"tonic": "D",
+		"mode": "Phrygian",
+		"videoId": "2RgVvsfS0tc"
+	},
+	{
+		"tonic": "D",
+		"mode": "Locrian",
+		"videoId": "6rPeQwS1q8Q"
+	},
+	{
+		"tonic": "D",
+		"mode": "Lydian",
+		"videoId": "InKiCXLPbtY"
+	},
+	{
+		"tonic": "E",
+		"mode": "Major",
+		"videoId": "fMpGhuES7dc"
+	},
+	{
+		"tonic": "E",
+		"mode": "Mixolydian",
+		"startTime": "36",
+		"videoId": "j_N-aJTWfYk"
+	},
+	{
+		"tonic": "E",
+		"mode": "Dorian",
+		"startTime": "82",
+		"videoId": "xathvHCyRMk"
+	},
+	{
+		"tonic": "E",
+		"mode": "Minor",
+		"videoId": "qHV1MEna0xE"
+	},
+	{
+		"tonic": "E",
+		"mode": "Phrygian",
+		"startTime": "3",
+		"videoId": "c3wUGLaoSWQ"
+	},
+	{
+		"tonic": "E",
+		"mode": "Locrian",
+		"videoId": "GFoXjXUCG6o"
+	},
+	{
+		"tonic": "E",
+		"mode": "Lydian",
+		"videoId": "bLF6xJdPzWw"
+	},
+	{
+		"tonic": "F",
+		"mode": "Major",
+		"videoId": "wKbg6iDSXJQ"
+	},
+	{
+		"tonic": "F",
+		"mode": "Mixolydian",
+		"startTime": "41",
+		"videoId": "FI8PDZxxxoo"
+	},
+	{
+		"tonic": "F",
+		"mode": "Dorian",
+		"videoId": "NxEErh6dazQ"
+	},
+	{
+		"tonic": "F",
+		"mode": "Minor",
+		"videoId": "rQRB3MBmJCg"
+	},
+	{
+		"tonic": "F",
+		"mode": "Phrygian",
+		"videoId": "ejt3gVYWADo"
+	},
+	{
+		"tonic": "F",
+		"mode": "Locrian",
+		"videoId": "56YFP7jR9pY"
+	},
+	{
+		"tonic": "F",
+		"mode": "Lydian",
+		"startTime": "22",
+		"videoId": "kixzv2mLRGU"
+	},
+	{
+		"tonic": "G",
+		"mode": "Major",
+		"videoId": "LJeCVSiteNU"
+	},
+	{
+		"tonic": "G",
+		"mode": "Mixolydian",
+		"startTime": "12",
+		"videoId": "9ZlAHkPE71k"
+	},
+	{
+		"tonic": "G",
+		"mode": "Dorian",
+		"startTime": "32",
+		"videoId": "qoG7Nquw-Yg"
+	},
+	{
+		"tonic": "G",
+		"mode": "Minor",
+		"videoId": "_Xtb5aCJtK0"
+	},
+	{
+		"tonic": "G",
+		"mode": "Phrygian",
+		"videoId": "nxsfJca5iag"
+	},
+	{
+		"tonic": "G",
+		"mode": "Locrian",
+		"startTime": "19",
+		"videoId": "45ifEFAVWM0"
+	},
+	{
+		"tonic": "G",
+		"mode": "Lydian",
+		"videoId": "y1FixHBPoaM"
+	}
+].map(function (a, i) { return { ...a, index: i } })
