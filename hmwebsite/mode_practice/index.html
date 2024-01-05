@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title></title>
+	<title>Mode Practice</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 	<script src="resources/scripts/data.js"></script>
 	<script src="resources/scripts/ModePracticeUI.js"></script>
@@ -11,18 +11,20 @@
 	<link href="resources/css/theme_dark.css" rel="stylesheet" />
 	<link href="../resources/hm-glyphs/style.css" rel="stylesheet" />
 </head>
-<body style="padding:5px;">
+<body style="padding:5px; zoom:2;">
 	<div id="div_title" style="font-size:40px;height:50px;"></div>
 	<ul id="list_tonics"></ul>
 	<ul id="list_modes"></ul>
 	<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-	<div id="player" style="display:none;"></div>
+	<div id="player"></div>
 	<div></div>
 
 	<i onclick="ui.playVideo()" class="button hmg-action-start-alt" id="action-play"></i>
 	<i onclick="ui.pauseVideo()" class="button hmg-action-pause-alt" id="action-pause"></i>
 	<i onclick="ui.stopVideo()" class="button hmg-action-stop-alt" id="action-stop"></i>
 	<i onclick="ui.toggleShuffle()" class="button hmg-dice" id="action-toggle-shuffle"></i>
+	<i onclick="ui.togglePlayer()" class="button hmg-display" id="action-toggle-player"></i>
+	<!--<i onclick="ui.toggleMute()" class="button hmg-speaker-disabled"></i>-->
 	<script>
 		//let index = 0;
 		//let video = modes[0]

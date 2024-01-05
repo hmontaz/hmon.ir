@@ -55,22 +55,24 @@
 	{
 		"tonic": "B",
 		"mode": "Minor",
-		"videoId": "y3DTSp850DU"
+		"videoId": "d9iTlGeK3G0"
 	},
 	{
 		"tonic": "B",
 		"mode": "Phrygian",
-		"videoId": "rUOoGTxVSuU"
+		"videoId": "rUOoGTxVSuU",
+		startTime: 8,
 	},
 	{
 		"tonic": "B",
 		"mode": "Locrian",
-		"videoId": "8BJI9UxR9B4"
+		"videoId": "aDwr_R5bWY0",
+		startTime: 21.5,
 	},
 	{
 		"tonic": "B",
 		"mode": "Lydian",
-		"videoId": "aDwr_R5bWY0"
+		"videoId": "8BJI9UxR9B4"
 	},
 	{
 		"tonic": "C",
@@ -102,7 +104,7 @@
 	{
 		"tonic": "C",
 		"mode": "Locrian",
-		"videoId": "UsMIZv_pyh4"
+		"videoId": "Wm89grsd_Mk"
 	},
 	{
 		"tonic": "C",
@@ -160,7 +162,7 @@
 	{
 		"tonic": "E",
 		"mode": "Dorian",
-		"startTime": "82",
+		"startTime": ".7",
 		"videoId": "xathvHCyRMk"
 	},
 	{
@@ -177,7 +179,8 @@
 	{
 		"tonic": "E",
 		"mode": "Locrian",
-		"videoId": "GFoXjXUCG6o"
+		"videoId": "GFoXjXUCG6o",
+		volume: 100
 	},
 	{
 		"tonic": "E",
@@ -246,7 +249,9 @@
 	{
 		"tonic": "G",
 		"mode": "Phrygian",
-		"videoId": "nxsfJca5iag"
+		"startTime": "21.5",
+		"videoId": "memgJJnBO4Q",
+		volume: 100,
 	},
 	{
 		"tonic": "G",

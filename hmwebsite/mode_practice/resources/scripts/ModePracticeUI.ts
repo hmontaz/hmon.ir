@@ -15,8 +15,18 @@ class ModePracticeUI {
 	options: ModePracticeOptions
 	currentTonic: null
 	shuffleEnabled: boolean
+	showPlayer: boolean
+	muted: boolean
 	ui: {
-		//container: any
+		player: JQuery<HTMLElement>
+		title: JQuery<HTMLElement>
+		tonics: JQuery<HTMLElement>
+		modes: JQuery<HTMLElement>
+		actionToggleShuffle: JQuery<HTMLElement>
+		actionTogglePlayer: JQuery<HTMLElement>
+		actionPlay: JQuery<HTMLElement>
+		actionPause: JQuery<HTMLElement>
+		actionStop: JQuery<HTMLElement>
 	}
 	constructor(o) {
 		const defaults = {
@@ -33,26 +43,34 @@ class ModePracticeUI {
 		this.modes = [...new Set(this.options.data.map(a => a.mode))];
 		this.player = o.player;
 		this.shuffleEnabled = false
+		this.showPlayer = false
+		this.muted = false
 		this.ui = {
-			//container: o.container,
+			player: $('#player').hide(),
+			title: $('#div_title'),
+			tonics: $('#list_tonics'),
+			modes: $('#list_modes'),
+			actionToggleShuffle: $('#action-toggle-shuffle'),
+			actionTogglePlayer: $('#action-toggle-player'),
+			actionPlay: $('#action-play').hide(),
+			actionPause: $('#action-pause').hide(),
+			actionStop: $('#action-stop').hide(),
 		}
-		$(document).on('keypress', function (e) {
+		$(document).on('keypress', function (e: any) {
 			if (e.which == 32) _this.togglePlayVideo()
 		})
 		this.fillTonics()
 	}
-	//changeVideo() { loadVideo(this.data[index++]) }
 	changeVideo() { this.loadVideo(this.data[0]) }
 	loadVideo(video: ModeData) {
 		//player.cueVideoById('NXCaBnzSTyo', 0)
 		this.player.loadVideoById(video.videoId, video.startTime || 0)
 		this.player.setVolume(video.volume || 80);
-		$('#div_title').html(`${video.tonic} ${video.mode}`)
-		//player.playVideo()
+		this.ui.title.html(`${video.tonic} ${video.mode}`)
 	}
 	fillTonics() {
 		let _this = this
-		let target = $('#list_tonics').empty()
+		let target = this.ui.tonics.empty()
 		for (let i = 0; i < this.tonics.length; i++) {
 			let tonic = this.tonics[i]
 			let element = $('<li>')
@@ -68,7 +86,7 @@ class ModePracticeUI {
 	}
 	fillModes() {
 		let _this = this
-		let target = $('#list_modes').empty()
+		let target = this.ui.modes.empty()
 		let modes = this.data.filter(a => a.tonic == this.currentTonic);
 		if (this.shuffleEnabled) modes = this.shuffle(modes)
 		//console.log(modes)
@@ -106,20 +124,30 @@ class ModePracticeUI {
 	updateUIState() {
 		let state = this.player.getPlayerState()
 		//console.log(state)
-		//$('#action-play').toggleClass('active-red', state == 1)
-		//$('#action-pause').toggleClass('active-red', state == 2)
-		//$('#action-stop').toggleClass('active-red', state == 5)
+		//this.ui.actionPlay.toggleClass('active-red', state == 1)
+		//this.ui.actionPause.toggleClass('active-red', state == 2)
+		//this.ui.actionStop.toggleClass('active-red', state == 5)
 
-		$('#action-toggle-shuffle').toggleClass('active-green', this.shuffleEnabled)
+		this.ui.actionToggleShuffle.toggleClass('active-green', this.shuffleEnabled)
+		this.ui.player.toggle(this.showPlayer)
+		this.ui.actionTogglePlayer.toggleClass('active-green', this.showPlayer)
 
-		$('#action-play').toggle(state != 1)
-		$('#action-pause').toggle(state == 1)
-		$('#action-stop').toggle(state == 1 || state == 2)
+		this.ui.actionPlay.toggle(state != 1)
+		this.ui.actionPause.toggle(state == 1)
+		this.ui.actionStop.toggle(state == 1 || state == 2)
 	}
 	toggleShuffle() {
 		this.shuffleEnabled = !this.shuffleEnabled;
 		this.updateUIState()
 		this.fillModes()
+	}
+	togglePlayer() {
+		this.showPlayer = !this.showPlayer
+		this.updateUIState()
+	}
+	toggleMute() {
+		this.muted = !this.muted
+		this.updateUIState()
 	}
 	shuffle(array) {
 		let currentIndex = array.length, randomIndex;
