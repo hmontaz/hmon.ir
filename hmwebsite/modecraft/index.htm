@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="resources/scripts/data.js"></script>
+	<script src="resources/scripts/ModePracticeUI.js"></script>
+
+	<link href="resources/css/theme_default.css" rel="stylesheet" />
+	<link href="resources/css/theme_dark.css" rel="stylesheet" />
+	<link href="../resources/hm-glyphs/style.css" rel="stylesheet" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159979228-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-159979228-2');
+	</script>
+	<title>Mode Craft</title>
+
+	<link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="256x256" href="resources/images/app_icon.png" />
+	<link rel="icon" href="resources/images/app_icon.png">
+
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="theme-color" content="black" /><!-- Chrome, Firefox OS and Opera-->
+	<meta name="msapplication-navbutton-color" content="black" /><!-- Windows Phone -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- iOS Safari -->
+	<meta name="description" content="practice modes with backing tracks in every key" />
+	<meta name="robots" content="index, follow" />
+	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="keywords" content="mode,practice,scales,train,guitar,neck,improvisation" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content="http://hmon.ir/modecraft/resources/images/icon.png" />
+	<meta property="og:site_name" content="hmon.ir" />
+	<meta property="og:title" content="Mode Craft" />
+	<meta property="og:url" content="http://hmon.ir/modecraft/index.htm" />
+	<meta property="og:description" content="Play backing tracks in every key and mode" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="article:publisher" content="https://instagram.com/hmdpurple/" />
+	<meta property="article:author" content="https://instagram.com/hmontaz/" />
+</head>
+<body style="padding: 5px;">
+	<div id="div_title" style="font-size:40px;">Select a key and mode</div>
+	<div class='page-info'>by <a href="https://www.hmon.ir">Hossein Montazeri</a></div>
+	<div style=" zoom:2;">
+		<ul id="list_tonics"></ul>
+		<ul id="list_modes"></ul>
+		<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+		<div id="player"></div>
+		<div></div>
+
+		<i onclick="ui.playVideo()" class="button hmg-action-start-alt" id="action-play"></i>
+		<i onclick="ui.pauseVideo()" class="button hmg-action-pause-alt" id="action-pause"></i>
+		<i onclick="ui.stopVideo()" class="button hmg-action-stop-alt" id="action-stop"></i>
+		<i onclick="ui.toggleShuffle()" class="button hmg-dice" id="action-toggle-shuffle"></i>
+		<i onclick="ui.togglePlayer()" class="button hmg-display" id="action-toggle-player"></i>
+		<!--<i onclick="ui.toggleMute()" class="button hmg-speaker-disabled"></i>-->
+	</div>
+	<script>
+		//let index = 0;
+		//let video = modes[0]
+		// 2. This code loads the IFrame Player API code asynchronously.
+		var tag = document.createElement('script');
+
+		tag.src = "https://www.youtube.com/iframe_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+		// 3. This function creates an <iframe> (and YouTube player)
+		//    after the API code downloads.
+		let ui;
+		function onYouTubeIframeAPIReady() {
+			const player = new YT.Player('player', {
+				width: '400',
+				height: '200',
+				videoId: '8tPnX7OPo0Q',//blank video
+				playerVars: {
+					'playsinline': 1,
+				},
+				events: {
+					'onReady': onPlayerReady,
+					'onStateChange': onPlayerStateChange
+				}
+			});
+			ui = new ModePracticeUI({
+				data: modes,
+				player: player
+			})
+			//player.playVideo()
+		}
+
+		// 4. The API will call this function when the video player is ready.
+		function onPlayerReady(event) {
+			ui.updateUIState()
+			//event.target.playVideo();
+			//player.playVideo()
+		}
+
+		// 5. The API calls this function when the player's state changes.
+		//    The function indicates that when playing a video (state=1),
+		//    the player should play for six seconds and then stop.
+		//var done = false;
+		function onPlayerStateChange(event) {
+			ui.updateUIState()
+			//if (event.data == YT.PlayerState.PLAYING && !done) {
+			//	setTimeout(stopVideo, 6000);
+			//	done = true;
+			//}
+		}
+
+	</script>
+</body>
+</html>

@@ -9,6 +9,9 @@
   /*color:#a4a4a4;*/
   /*font-size:16px;*/
 }
+a {
+  color: inherit;
+}
 .button {
   cursor: pointer;
   padding: 3px 6px 3px 6px;
@@ -51,4 +54,10 @@ select option {
   padding: 3px;
   min-width: 40px;
   text-align: center;
+}
+.page-info {
+  color: #333;
+  font-size: 12px;
+  padding: 2px;
+  /*background-color: rgba(255, 255, 255, .5);*/
 }
