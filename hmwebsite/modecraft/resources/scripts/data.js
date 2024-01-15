@@ -29,7 +29,8 @@
 	{
 		"tonic": "A",
 		"mode": "Locrian",
-		"videoId": "UdwoVlUmfBI"
+		"videoId": "UdwoVlUmfBI",
+		startTime: 8.5
 	},
 	{
 		"tonic": "A",
