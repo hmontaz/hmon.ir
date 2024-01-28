@@ -25,11 +25,11 @@ class ModePracticeUI {
             title: $('#div_title'),
             tonics: $('#list_tonics'),
             modes: $('#list_modes'),
-            actionToggleShuffle: $('#action-toggle-shuffle'),
-            actionTogglePlayer: $('#action-toggle-player'),
-            actionPlay: $('#action-play').hide(),
-            actionPause: $('#action-pause').hide(),
-            actionStop: $('#action-stop').hide(),
+            actionToggleShuffle: $('#action-toggle-shuffle').prop('title', 'Shuffle Modes'),
+            actionTogglePlayer: $('#action-toggle-player').prop('title', 'Toggle Player'),
+            actionPlay: $('#action-play').prop('title', 'Play').hide(),
+            actionPause: $('#action-pause').prop('title', 'Pause').hide(),
+            actionStop: $('#action-stop').prop('title', 'Stop').hide(),
         };
         $(document).on('keypress', function (e) {
             if (e.which == 32)
