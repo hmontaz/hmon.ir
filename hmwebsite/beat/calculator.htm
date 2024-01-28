@@ -9,7 +9,7 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-159979228-2');
 	</script>
-	<script src="resources/scripts/calculator.js?v=20221119"></script>
+	<script src="resources/scripts/calculator.js?v=20240128"></script>
 	<title>Calculator</title>
 	<meta charset="Unicode" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
@@ -90,25 +90,6 @@
 		<div style="zoom:1.75;text-align:center;">
 			<table>
 				<tr>
-					<td></td>
-					<td>
-						<div class="button" id="btn_base_4">
-							<div><img style="max-width:16px;" src="resources/images/note-quarter.svg" /></div>
-							<div><img id="led_base_4" src="../resources/images/leds/rect-red-off.svg" /></div>
-						</div>
-					</td>
-					<td>
-						<div class="button" id="btn_base_8">
-							<div><img style="max-width:16px;" src="resources/images/note-eighth.svg" /></div>
-							<div><img id="led_base_8" src="../resources/images/leds/rect-red-off.svg" /></div>
-						</div>
-					</td>
-					<td>
-						<div class="button" id="btn_base_16">
-							<div><img style="max-width:16px;" src="resources/images/note-sixteenth.svg" /></div>
-							<div><img id="led_base_16" src="../resources/images/leds/rect-red-off.svg" /></div>
-						</div>
-					</td>
 					<td>
 						<div class="button" style="padding:0px;overflow:hidden;">
 							<table style="font-size:8px;color:#d33;">
@@ -125,6 +106,48 @@
 									<td>3</td>
 								</tr>
 							</table>
+						</div>
+					</td>
+					<td></td>
+					<td>
+						<div class="button" id="btn_base_1">
+							<div><img style="max-width:16px;" src="resources/images/note-whole.svg" /></div>
+							<div><img id="led_base_1" src="../resources/images/leds/rect-red-off.svg" /></div>
+						</div>
+					</td>
+					<td>
+						<div class="button" id="btn_base_2">
+							<div><img style="max-width:16px;" src="resources/images/note-half.svg" /></div>
+							<div><img id="led_base_2" src="../resources/images/leds/rect-red-off.svg" /></div>
+						</div>
+					</td>
+					<td>
+						<div class="button" id="btn_base_4">
+							<div><img style="max-width:16px;" src="resources/images/note-quarter.svg" /></div>
+							<div><img id="led_base_4" src="../resources/images/leds/rect-red-off.svg" /></div>
+						</div>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>
+						<div class="button" id="btn_base_8">
+							<div><img style="max-width:16px;" src="resources/images/note-eighth.svg" /></div>
+							<div><img id="led_base_8" src="../resources/images/leds/rect-red-off.svg" /></div>
+						</div>
+					</td>
+					<td>
+						<div class="button" id="btn_base_16">
+							<div><img style="max-width:16px;" src="resources/images/note-sixteenth.svg" /></div>
+							<div><img id="led_base_16" src="../resources/images/leds/rect-red-off.svg" /></div>
+						</div>
+					</td>
+					<td>
+						<div class="button" id="btn_base_32">
+							<div><img style="max-width:16px;" src="resources/images/note-32nd.svg" /></div>
+							<div><img id="led_base_32" src="../resources/images/leds/rect-red-off.svg" /></div>
 						</div>
 					</td>
 					<td></td>
@@ -179,7 +202,7 @@
 				<tr>
 				<tr>
 					<td>
-						<div class="button" onClick="BeatCalculator.add_ms(+1000);"><img src="resources/images/angle-up.svg" style="width:16px;" /></div>
+						<div class="button" onClick="BeatCalculator.add_ms(+10000);"><img src="resources/images/angle-up.svg" style="width:16px;" /></div>
 					</td>
 					<td>
 						<div class="button" onClick="BeatCalculator.add_ms(+1000);"><img src="resources/images/angle-up.svg" style="width:16px;" /></div>
@@ -205,7 +228,7 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="button" onClick="BeatCalculator.add_ms(-1000);"><img src="resources/images/angle-down.svg" style="width:16px;" /></div>
+						<div class="button" onClick="BeatCalculator.add_ms(-10000);"><img src="resources/images/angle-down.svg" style="width:16px;" /></div>
 					</td>
 					<td>
 						<div class="button" onClick="BeatCalculator.add_ms(-1000);"><img src="resources/images/angle-down.svg" style="width:16px;" /></div>

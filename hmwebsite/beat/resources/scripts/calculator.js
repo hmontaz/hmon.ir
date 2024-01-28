@@ -3,7 +3,7 @@
 	factor: 1,//1, 1.5 (dotted), 2/3 (triplet)
 	bpm: 60,
 	min_bpm: 10,
-	max_bpm: 400,
+	max_bpm: 800,
 	init: function () {
 		var _this = this;
 		$('img.digit').bind('mousewheel', function (e) {
@@ -15,15 +15,24 @@
 			//index+=Math.sign(e.originalEvent.wheelDelta);
 			//update();
 		});
+		$('#btn_base_1').click(function () { _this.setBase(1); });
+		$('#btn_base_2').click(function () { _this.setBase(2); });
 		$('#btn_base_4').click(function () { _this.setBase(4); });
 		$('#btn_base_8').click(function () { _this.setBase(8); });
 		$('#btn_base_16').click(function () { _this.setBase(16); });
+		$('#btn_base_32').click(function () { _this.setBase(32); });
+
 		$('#btn_factor_1').click(function () { _this.setFactor(1); });
 		$('#btn_factor_d').click(function () { _this.setFactor(1.5); });
 		$('#btn_factor_t').click(function () { _this.setFactor(2 / 3); });
+
+		this.led_base_1 = $('#led_base_1');
+		this.led_base_2 = $('#led_base_2');
 		this.led_base_4 = $('#led_base_4');
 		this.led_base_8 = $('#led_base_8');
 		this.led_base_16 = $('#led_base_16');
+		this.led_base_32 = $('#led_base_32');
+
 		this.led_factor_1 = $('#led_factor_1');
 		this.led_factor_d = $('#led_factor_d');
 		this.led_factor_t = $('#led_factor_t');
@@ -31,20 +40,24 @@
 		this.setFactor();
 		this.show_values();
 	},
-	led_base_url: '../resources/images/leds/rect-red-',
+	led_base_url: '../resources/images/leds',
 	seven_segment_path: '../resources/images/seven-segments/',
 	setBase: function (value) {
 		this.base = value || this.base;
-		this.led_base_4.attr('src', this.led_base_url + (this.base === 4 ? 'on' : 'off') + '.svg');
-		this.led_base_8.attr('src', this.led_base_url + (this.base === 8 ? 'on' : 'off') + '.svg');
-		this.led_base_16.attr('src', this.led_base_url + (this.base === 16 ? 'on' : 'off') + '.svg');
+		this.led_base_1.attr('src', `${this.led_base_url}/rect-red-${this.base === 1 ? 'on' : 'off'}.svg`);
+		this.led_base_2.attr('src', `${this.led_base_url}/rect-red-${this.base === 2 ? 'on' : 'off'}.svg`);
+		this.led_base_4.attr('src', `${this.led_base_url}/rect-red-${this.base === 4 ? 'on' : 'off'}.svg`);
+		this.led_base_8.attr('src', `${this.led_base_url}/rect-red-${this.base === 8 ? 'on' : 'off'}.svg`);
+		this.led_base_16.attr('src', `${this.led_base_url}/rect-red-${this.base === 16 ? 'on' : 'off'}.svg`);
+		this.led_base_32.attr('src', `${this.led_base_url}/rect-red-${this.base === 32 ? 'on' : 'off'}.svg`);
 		this.show_values();
 	},
 	setFactor: function (factor) {
 		this.factor = factor || this.factor;
-		this.led_factor_1.attr('src', this.led_base_url + (this.factor === 1 ? 'on' : 'off') + '.svg');
-		this.led_factor_d.attr('src', this.led_base_url + (this.factor === 1.5 ? 'on' : 'off') + '.svg');
-		this.led_factor_t.attr('src', this.led_base_url + (this.factor === 2 / 3 ? 'on' : 'off') + '.svg');
+		this.led_factor_1.attr('src', `${this.led_base_url}/rect-green-${this.factor === 1 ? 'on' : 'off'}.svg`);
+		this.led_factor_d.attr('src', `${this.led_base_url}/rect-green-${this.factor === 1.5 ? 'on' : 'off'}.svg`);
+		this.led_factor_t.attr('src', `${this.led_base_url}/rect-green-${this.factor === 2 / 3 ? 'on' : 'off'}.svg`);
+
 		this.show_values();
 	},
 	error_blink: function (n) {
@@ -81,7 +94,7 @@
 	set_bpm: function (bpm) {
 		var _this = this;
 		//if (bpm >= 7 && bpm <= 983.6) {
-		if (bpm < this.min_bpm || bpm > this.max_bpm) {
+		if (bpm < this.min_bpm || bpm > this.max_bpm + .0001) {
 			this.error_blink(2);
 			return;
 		}
@@ -97,8 +110,10 @@
 	},
 	get_digits: function (num, len, fractionDigits) {
 		var _this = this;
-		num = Math.round(num * 10) / 10;
-		var s = num.toFixed(fractionDigits || 0).toString().padStart(len, '0');
+		fractionDigits = fractionDigits || 0
+		let factor = 10 ** fractionDigits
+		num = Math.round(num * factor) / factor;
+		var s = num.toFixed(fractionDigits).toString().padStart(len, '0');
 		if (s.indexOf('.') !== -1)
 			s = s.padStart(len + 1, '0');
 		var list = [];
