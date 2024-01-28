@@ -265,4 +265,4 @@
 		"mode": "Lydian",
 		"videoId": "y1FixHBPoaM"
 	}
-].map(function (a, i) { return { ...a, index: i } })
+].map(function (a, index) { return { id: index, ...a } })

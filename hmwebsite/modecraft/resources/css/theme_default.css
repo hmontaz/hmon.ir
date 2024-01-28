@@ -55,6 +55,9 @@ select option {
   min-width: 40px;
   text-align: center;
 }
+.option_button.touched {
+  background-color: gray;
+}
 .option_button.selected {
   background-color: red;
 }

@@ -16,9 +16,15 @@ select option {
   background-color: #243341;
   color: #cfdae5;
 }
+.option_button.touched {
+  background-color: #242;
+  border-color: #242;
+  color: gray;
+}
 .option_button.selected {
   background-color: #080;
   border-color: #080;
+  color: white;
 }
 .button.active-red {
   background-color: #e00;

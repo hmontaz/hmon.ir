@@ -1,5 +1,5 @@
 ﻿type ModeData = {
-	index: number,
+	id: number,
 	tonic: string,
 	mode: string,
 	startTime: number,
