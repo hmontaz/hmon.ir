@@ -93,10 +93,23 @@
     <Content Include="digitech\resources\images\led-off.svg" />
     <Content Include="digitech\resources\images\led-on.svg" />
     <Content Include="digitech\resources\scripts\midi.js" />
-    <Content Include="helix\resources\css\theme_dark.css">
-      <DependentUpon>theme_dark.less</DependentUpon>
+    <Content Include="harmoniousmayhem\index.html" />
+    <Content Include="harmoniousmayhem\resources\images\logo_dark.svg" />
+    <Content Include="harmoniousmayhem\resources\images\artworks\perpetual_departures.png" />
+    <Content Include="harmoniousmayhem\resources\stylesheets\base\dark.css">
+      <DependentUpon>dark.less</DependentUpon>
     </Content>
-    <Content Include="helix\resources\css\theme_dark.min.css">
+    <Content Include="harmoniousmayhem\resources\stylesheets\base\dark.min.css">
+      <DependentUpon>dark.css</DependentUpon>
+    </Content>
+    <Content Include="harmoniousmayhem\resources\stylesheets\base\default.css">
+      <DependentUpon>default.less</DependentUpon>
+    </Content>
+    <Content Include="harmoniousmayhem\resources\stylesheets\base\default.min.css">
+      <DependentUpon>default.css</DependentUpon>
+    </Content>
+    <Content Include="harmoniousmayhem\resources\stylesheets\theme_dark.css" />
+    <Content Include="harmoniousmayhem\resources\stylesheets\theme_dark.min.css">
       <DependentUpon>theme_dark.css</DependentUpon>
     </Content>
     <Content Include="helix\resources\css\theme_default.css">
@@ -260,6 +273,12 @@
     <TypeScriptCompile Include="random_generator\resources\scripts\RandomNoteGenerator.ts" />
     <TypeScriptCompile Include="random_generator\resources\scripts\GuitarNote.ts" />
     <Content Include="resources\hm-glyphs\test.html" />
+    <Content Include="resources\images\harmonious_mayhem_small_white.svg" />
+    <Content Include="resources\images\icons\amazon-music.svg" />
+    <Content Include="resources\images\icons\apple-music.svg" />
+    <Content Include="resources\images\icons\spotify.svg" />
+    <Content Include="resources\images\icons\youtube-music.svg" />
+    <Content Include="resources\images\mode-craft.png" />
     <Content Include="resources\images\leds\rect-green-off.svg" />
     <Content Include="resources\images\leds\rect-green-on.svg" />
     <Content Include="resources\images\leds\rect-red-off.svg" />
@@ -273,6 +292,9 @@
     <Content Include="modecraft\resources\scripts\YTPlayer.js.map" />
     <Content Include="modecraft\resources\css\less\theme_dark.less" />
     <Content Include="modecraft\resources\css\less\theme_default.less" />
+    <None Include="bundleconfig.json" />
+    <Content Include="harmoniousmayhem\resources\stylesheets\base\default.less" />
+    <Content Include="harmoniousmayhem\resources\stylesheets\base\dark.less" />
     <None Include="random_generator\resources\stylesheets\theme-dark.less" />
     <Content Include="random_generator\resources\stylesheets\theme-dark.css">
       <DependentUpon>theme-dark.less</DependentUpon>

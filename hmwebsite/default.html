@@ -30,74 +30,8 @@
 	<meta property="article:author" content="https://instagram.com/h.montaz/" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-	<style>
-		* {
-			font-family: 'Raleway',Verdana,sans-serif;
-			padding: 0;
-			margin: 0;
-		}
+	<link href="resources/stylesheets/bundle_dark.css" rel="stylesheet" />
 
-		h3, h4 {
-			color: black; /*light*/
-			color: white; /*dark*/
-		}
-
-		body {
-			background-color: #f5f5f5; /*light*/
-			background-color: #333; /*dark*/
-		}
-
-		a {
-			color: lightblue;
-			color: #008ae7;
-			text-decoration: none;
-		}
-
-		.card {
-			background-color: white; /*light*/
-			background-color: black; /*dark*/
-			color: black; /*light*/
-			color: #aaa; /*dark*/
-
-			vertical-align: top;
-			display: inline-block;
-			width: 350px;
-			min-height: 100px;
-			padding: 1em;
-			/*margin:0 10px 10px 10px;*/
-			box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 2px 5px 0 rgba(0,0,0,0.12);
-			z-index: 1;
-			position: relative;
-			margin: 0 7px 7px 7px;
-			font-size: 14px;
-		}
-
-		.section_button {
-			background-color: white; /*light*/
-			background-color: black; /*dark*/
-			color: #d9d9d9; /*light*/
-			color: #999; /*dark*/
-			display: inline-block;
-			padding: 7px;
-			border-radius: 10px 10px 0 0;
-			margin: 0;
-			font-size: 13px;
-			z-index: 1;
-			position: relative;
-			cursor: pointer;
-		}
-
-			.section_button:hover {
-				color: #c9c9ff; /*light*/
-				color: #aa5555; /*dark*/
-			}
-
-			.section_button.selected {
-				color: #333; /*light*/
-				color: #ddd; /*light*/
-				z-index: 2;
-			}
-	</style>
 </head>
 <body>
 	<div style="padding:20px">
@@ -114,8 +48,10 @@
 		</div>
 	</div>
 	<section style="vertical-align:top;">
-		<div class="card" name="main" style="height:480px;">
-			<h4>Helix Effect Finder</h4>
+		<div class="card" name="main">
+			<a href="helix/fx_finder.htm" title="Helix Effect Finder">
+				<h4>Helix Effect Finder</h4>
+			</a>
 			<br>
 			<div>
 				<div>
@@ -126,10 +62,11 @@
 				</a>
 				<br />
 				<br />
-				<iframe width="350" height="200" src="https://www.youtube.com/embed/WGa3Yyb-j4s"></iframe>
+				<iframe width="350" height="150" src="https://www.youtube.com/embed/WGa3Yyb-j4s"></iframe>
+				<iframe width="350" height="150" src="https://www.youtube.com/embed/wgsdMF9ZyEs"></iframe>
 			</div>
 		</div>
-		<div class="card" name="main" style="height:480px;">
+		<div class="card" name="main">
 			<h4>Whammy MIDI Assistant</h4>
 			<br>
 			<div>Interactive tool to easily find actual PC number to switch Digitech Whammy Pedal. It also allows you to directly control the pedal using a MIDI cable</div>
@@ -145,13 +82,38 @@
 				<img src="resources/images/digitech-whammy.png" style="height:300px" />
 			</a>
 		</div>
-		<div class="card" name="main" style="height:480px;">
-			<h4>Naturium</h4>
+		<div class="card" name="main">
+			<h4>Beat Calculator</h4>
 			<br />
-			<div style="text-align:center;">
-				<img src="resources/images/naturium-band.jpg" style="width:280px;" />
+			<div>
+				Convert BPM to ms and vise versa using this tool
 			</div>
+			<br />
+			<a href="beat/calculator.htm">
+				<img src="resources/images/beat-calculator.png" style="width:250px;" />
+			</a>
+		</div>
+		<div class="card" name="main">
+			<h4>Mode Craft</h4>
+			<br />
+			<div>
+				Enhance your mode mastery with diverse backing tracks covering every key. Explore and practice modes seamlessly, supported by dynamic backing arrangements designed to elevate your musical journey.
+			</div>
+			<br />
+			<a href="modecraft/index.htm">
+				<img src="resources/images/mode-craft.png" style="width:200px" />
+			</a>
+		</div>
+		<div class="card" name="main">
+			<h4>Naturium</h4>
 			<table>
+				<tr>
+					<td colspan="2">
+						<div style="text-align:center;">
+							<img src="resources/images/naturium-band.jpg" style="height:220px;" />
+						</div>
+					</td>
+				</tr>
 				<tr valign="top">
 					<td>
 						<a href="https://open.spotify.com/album/6YvOX4mTnMe3RBzSBnGC2g" target="_blank">
@@ -174,6 +136,21 @@
 			</table>
 		</div>
 		<div class="card" name="main">
+			<a href="harmoniousmayhem/index.html">
+				<h4>Harmonious Mayhem</h4>
+			</a>
+			<br />
+			<div>
+				Harmonious Mayhem
+			</div>
+			<br />
+			<div style="text-align:center;">
+				<a href="harmoniousmayhem/index.html">
+					<img src="resources/images/harmonious_mayhem_small_white.svg" style="width:250px;" />
+				</a>
+			</div>
+		</div>
+		<div class="card" name="main">
 			<h4>Guitar Chord Voicings</h4>
 			<br />
 			<div>
@@ -182,28 +159,6 @@
 			<br />
 			<a href="chords/default.htm">
 				<img src="resources/images/chord-voicings.png" style="width:350px" />
-			</a>
-		</div>
-		<div class="card" name="main">
-			<h4>Mode Craft</h4>
-			<br />
-			<div>
-				Enhance your mode mastery with diverse backing tracks covering every key. Explore and practice modes seamlessly, supported by dynamic backing arrangements designed to elevate your musical journey.
-			</div>
-			<br />
-			<a href="modecraft/index.htm">
-				<img src="resources/images/mode-craft.png" style="width:250px" />
-			</a>
-		</div>
-		<div class="card" name="main">
-			<h4>Beat Calculator</h4>
-			<br />
-			<div>
-				Convert BPM to ms and vise versa using this tool
-			</div>
-			<br />
-			<a href="beat/calculator.htm">
-				<img src="resources/images/beat-calculator.png" style="width:200px" />
 			</a>
 		</div>
 		<div class="card" name="main">

@@ -1,0 +1,26 @@
+﻿body {
+}
+
+.album {
+	border: solid 1px gray;
+	border-radius: 3px;
+	padding: 10px;
+	margin: 2px;
+	display: inline-block;
+
+	.album-cover {
+		width: 250px;
+		@media (max-width : 400px) {
+			width: 100%;
+		}
+	}
+
+	.platform_link {
+		display: inline-block;
+		margin-top: 5px;
+
+		img {
+			height: 20px
+		}
+	}
+}

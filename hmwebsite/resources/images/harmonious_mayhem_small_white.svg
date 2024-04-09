@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="512"
+   height="511.99988"
+   viewBox="0 0 511.99999 511.99988"
+   sodipodi:docname="HM_Logo_Condensed_Black.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   inkscape:export-filename="HM_Logo_Condensed_Black.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2747257"
+     inkscape:cx="201.21976"
+     inkscape:cy="309.87059"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="3832"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     showgrid="false">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="7.9999998"
+       spacingy="8"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="4"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="false" />
+  </sodipodi:namedview>
+  <rect
+     style="display:none;vector-effect:non-scaling-stroke;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-linecap:round;-inkscape-stroke:hairline;paint-order:stroke fill markers"
+     id="rect2"
+     width="512"
+     height="512"
+     x="0"
+     y="0" />
+  <path
+     d="m 502.58621,256.00055 c 0,136.1883 -110.39845,246.58555 -246.58534,246.58555 -136.18689,0 -246.58708,-110.39725 -246.58708,-246.58555 0,-136.18476 110.40019,-246.5867621 246.58708,-246.5867621 136.18689,0 246.58534,110.4020021 246.58534,246.5867621"
+     style="fill:#231f20;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.133333"
+     id="path1"
+     sodipodi:nodetypes="csssc" />
+  <path
+     d="M 323.79405,219.97548 219.14917,146.77499 v 49.31971 l 104.56883,73.14649 0.0761,-0.10912 0.0774,0.10912 104.56773,-73.14649 V 146.77499 Z M 208.48475,230.2512 H 103.11647 V 151.03312 H 63.790691 v 185.49459 h 39.325779 v -66.94925 h 105.36828 v 94.18104 l 39.32577,40.65908 v -67.89087 -78.52079 z m 180.6284,27.75572 V 404.41858 L 428.4393,363.7595 V 230.2512 Z M 512,256.00057 C 512,397.38806 397.38693,511.99989 256.0009,511.99989 114.61488,511.99989 0,397.38806 0,256.00057 0,114.61676 114.61488,0 256.0009,0 397.38693,0 512,114.61676 512,256.00057"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.133333"
+     id="path12" />
+  <rect
+     style="vector-effect:non-scaling-stroke;fill:#231f20;fill-rule:evenodd;stroke:none;stroke-linecap:round;-inkscape-stroke:hairline;paint-order:stroke fill markers;fill-opacity:1"
+     id="rect1"
+     width="32"
+     height="32"
+     x="-128"
+     y="0" />
+</svg>

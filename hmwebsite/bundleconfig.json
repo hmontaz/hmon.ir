@@ -1,0 +1,31 @@
+[
+  {
+    "outputFileName": "resources/stylesheets/bundle_dark.css",
+    "inputFiles": [
+      "resources/stylesheets/theme_dark.css",
+      "resources/stylesheets/scroll_dark.css"
+    ]
+  },
+  {
+    "outputFileName": "helix/resources/css/bundle_default.css",
+    "inputFiles": [
+      "helix/resources/css/theme_default.css",
+      "resources/stylesheets/scroll_default.css"
+    ]
+  },
+  {
+    "outputFileName": "helix/resources/css/bundle_dark.css",
+    "inputFiles": [
+      "helix/resources/css/theme_dark.css",
+      "resources/stylesheets/scroll_dark.css"
+    ]
+  },
+  //Harmonious Mayhem
+  {
+    "outputFileName": "harmoniousmayhem/resources/stylesheets/theme_dark.css",
+    "inputFiles": [
+      "harmoniousmayhem/resources/stylesheets/base/default.css",
+      "harmoniousmayhem/resources/stylesheets/base/dark.css"
+    ]
+  }
+]
