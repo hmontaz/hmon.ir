@@ -13,61 +13,62 @@
 		"inputFile": "resources/stylesheets/scroll/default.less"
 	},
 	// Scales
-  {
-    "outputFile": "scales/resources/stylesheets/theme_dark.css",
-    "inputFile": "scales/resources/stylesheets/theme_dark.less"
-  },
-  {
-    "outputFile": "scales/resources/stylesheets/theme_default.css",
-    "inputFile": "scales/resources/stylesheets/theme_default.less"
-  },
+	{
+		"outputFile": "scales/resources/stylesheets/theme_dark.css",
+		"inputFile": "scales/resources/stylesheets/theme_dark.less"
+	},
+	{
+		"outputFile": "scales/resources/stylesheets/theme_default.css",
+		"inputFile": "scales/resources/stylesheets/theme_default.less"
+	},
 	//Metronome
-  {
-    "outputFile": "metronome/resources/stylesheets/slider.css",
-    "inputFile": "metronome/resources/stylesheets/slider.less"
-  },
+	{
+		"outputFile": "metronome/resources/stylesheets/slider.css",
+		"inputFile": "metronome/resources/stylesheets/slider.less"
+	},
 	//Random Generator
-  {
-    "outputFile": "random_generator/resources/stylesheets/theme-default.css",
-    "inputFile": "random_generator/resources/stylesheets/theme-default.less"
-  },
-  {
-    "outputFile": "random_generator/resources/stylesheets/theme-dark.css",
-    "inputFile": "random_generator/resources/stylesheets/theme-dark.less"
-  },
-  {
-    "outputFile": "helix/resources/css/theme_dark.css",
-    "inputFile": "helix/resources/css/theme_dark.less"
-  },
-  {
-    "outputFile": "helix/resources/css/theme_default.css",
-    "inputFile": "helix/resources/css/theme_default.less"
-  },
+	{
+		"outputFile": "random_generator/resources/stylesheets/theme-default.css",
+		"inputFile": "random_generator/resources/stylesheets/theme-default.less"
+	},
+	{
+		"outputFile": "random_generator/resources/stylesheets/theme-dark.css",
+		"inputFile": "random_generator/resources/stylesheets/theme-dark.less"
+	},
+	//Helix
+	{
+		"outputFile": "helix/resources/css/base/dark.css",
+		"inputFile": "helix/resources/css/base/dark.less"
+	},
+	{
+		"outputFile": "helix/resources/css/base/default.css",
+		"inputFile": "helix/resources/css/base/default.less"
+	},
 	//Modes on Guitar
-  {
-    "outputFile": "modes_on_guitar/resources/css/theme_default.css",
-    "inputFile": "modes_on_guitar/resources/css/theme_default.less"
-  },
-  {
-    "outputFile": "modes_on_guitar/resources/css/theme_dark.css",
-    "inputFile": "modes_on_guitar/resources/css/theme_dark.less"
-  },
+	{
+		"outputFile": "modes_on_guitar/resources/css/theme_default.css",
+		"inputFile": "modes_on_guitar/resources/css/theme_default.less"
+	},
+	{
+		"outputFile": "modes_on_guitar/resources/css/theme_dark.css",
+		"inputFile": "modes_on_guitar/resources/css/theme_dark.less"
+	},
 	//Mode Craft
-  {
-    "outputFile": "modecraft/resources/css/theme_dark.css",
-    "inputFile": "modecraft/resources/css/less/theme_dark.less"
-  },
-  {
-    "outputFile": "modecraft/resources/css/theme_default.css",
-    "inputFile": "modecraft/resources/css/less/theme_default.less"
-  },
+	{
+		"outputFile": "modecraft/resources/css/theme_dark.css",
+		"inputFile": "modecraft/resources/css/less/theme_dark.less"
+	},
+	{
+		"outputFile": "modecraft/resources/css/theme_default.css",
+		"inputFile": "modecraft/resources/css/less/theme_default.less"
+	},
 	//Harmonious Mayhem
-  {
+	{
 		"outputFile": "harmoniousmayhem/resources/stylesheets/base/dark.css",
 		"inputFile": "harmoniousmayhem/resources/stylesheets/base/dark.less"
-  },
-  {
+	},
+	{
 		"outputFile": "harmoniousmayhem/resources/stylesheets/base/default.css",
 		"inputFile": "harmoniousmayhem/resources/stylesheets/base/default.less"
-  }
+	}
 ]
