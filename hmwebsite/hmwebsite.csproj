@@ -122,9 +122,23 @@
     <Content Include="harmoniousmayhem\resources\stylesheets\theme_dark.min.css">
       <DependentUpon>theme_dark.css</DependentUpon>
     </Content>
-    <Content Include="helix\resources\css\theme_default.css">
-      <DependentUpon>theme_default.less</DependentUpon>
+    <Content Include="helix\resources\css\base\dark.css">
+      <DependentUpon>dark.less</DependentUpon>
     </Content>
+    <Content Include="helix\resources\css\base\dark.min.css">
+      <DependentUpon>dark.css</DependentUpon>
+    </Content>
+    <Content Include="helix\resources\css\base\default.css">
+      <DependentUpon>default.less</DependentUpon>
+    </Content>
+    <Content Include="helix\resources\css\base\default.min.css">
+      <DependentUpon>default.css</DependentUpon>
+    </Content>
+    <Content Include="helix\resources\css\theme_dark.css" />
+    <Content Include="helix\resources\css\theme_dark.min.css">
+      <DependentUpon>theme_dark.css</DependentUpon>
+    </Content>
+    <Content Include="helix\resources\css\theme_default.css" />
     <Content Include="helix\resources\css\theme_default.min.css">
       <DependentUpon>theme_default.css</DependentUpon>
     </Content>
@@ -420,8 +434,8 @@
     <Content Include="helix\resources\actual_models\Z.Vex® - Fuzz Factory.png" />
     <Content Include="helix\resources\css\bg-dark.jpg" />
     <Content Include="helix\resources\css\bg-default.jpg" />
-    <None Include="helix\resources\css\theme_dark.less" />
-    <None Include="helix\resources\css\theme_default.less" />
+    <None Include="helix\resources\css\base\dark.less" />
+    <None Include="helix\resources\css\base\default.less" />
     <Content Include="helix\resources\icon_models\AMP_HX_BASS_Agua_51.png" />
     <Content Include="helix\resources\icon_models\AMP_HX_BASS_Ampeg_B-15NF.png" />
     <Content Include="helix\resources\icon_models\AMP_HX_BASS_Ampeg_SVT-4_PRO.png" />

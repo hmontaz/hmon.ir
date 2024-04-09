@@ -1,7 +1,7 @@
-body {
+﻿body {
   /*background-color:#243341;*/
   background-color: #141d25;
-  background-image: url("base/bg-dark.jpg");
+  background-image: url("bg-dark.jpg");
   background-repeat: repeat-y;
   background-size: cover;
 }
@@ -55,36 +55,4 @@ hr {
 }
 .item .image-box {
   background-color: rgba(0, 0, 0, 0.7);
-}
-/*https://css-tricks.com/custom-scrollbars-in-webkit/*/
-::-webkit-scrollbar {
-  /* 1 */
-  width: 10px;
-}
-::-webkit-scrollbar-button {
-  /* 2 */
-  background-color: #222;
-  height: 0px;
-}
-::-webkit-scrollbar-track {
-  /* 3 */
-  background-color: #222;
-}
-::-webkit-scrollbar-track-piece {
-  /* 4 */
-  background-color: transparent;
-}
-::-webkit-scrollbar-thumb {
-  /* 5 */
-  background-color: #444;
-  border: solid 1px black;
-  border-radius: 3px;
-  width: 8px;
-  margin: 1px;
-}
-::-webkit-scrollbar-corner {
-  /* 6 */
-}
-::-webkit-resizer {
-  /* 7 */
 }
