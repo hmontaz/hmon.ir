@@ -1,9 +1,10 @@
 [
+  //Root
   {
-    "outputFileName": "resources/stylesheets/bundle_dark.css",
+    "outputFileName": "resources/stylesheets/theme_dark.css",
     "inputFiles": [
-      "resources/stylesheets/theme_dark.css",
-      "resources/stylesheets/scroll_dark.css"
+      "resources/stylesheets/base/dark.css",
+      "resources/stylesheets/scroll/dark.css"
     ]
   },
   {

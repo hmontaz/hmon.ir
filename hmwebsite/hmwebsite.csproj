@@ -77,6 +77,16 @@
     <Content Include="chords\resources\images\drop2\Rm7.svg" />
     <Content Include="chords\resources\images\drop2\Rm7b5.svg" />
     <Content Include="chords\resources\images\drop2\RMaj7.svg" />
+    <Content Include="chords\resources\images\drop2_3\R7.svg" />
+    <Content Include="chords\resources\images\drop2_3\Rdim7.svg" />
+    <Content Include="chords\resources\images\drop2_3\Rm7.svg" />
+    <Content Include="chords\resources\images\drop2_3\Rm7b5.svg" />
+    <Content Include="chords\resources\images\drop2_3\RMaj7.svg" />
+    <Content Include="chords\resources\images\drop2_4\R7.svg" />
+    <Content Include="chords\resources\images\drop2_4\Rdim7.svg" />
+    <Content Include="chords\resources\images\drop2_4\Rm7.svg" />
+    <Content Include="chords\resources\images\drop2_4\Rm7b5.svg" />
+    <Content Include="chords\resources\images\drop2_4\RMaj7.svg" />
     <Content Include="chords\resources\images\drop3\R7.svg" />
     <Content Include="chords\resources\images\drop3\Rm7.svg" />
     <Content Include="chords\resources\images\drop3\Rm7b5.svg" />
@@ -286,7 +296,8 @@
     <Content Include="resources\jquery\jquery.3.2.1_jquery.js" />
     <TypeScriptCompile Include="random_generator\resources\scripts\MusicalNote.ts" />
     <TypeScriptCompile Include="random_generator\resources\scripts\RandomGuitarNoteGenerator.ts" />
-    <Content Include="modecraft\resources\data.xlsx" />
+    <Content Include="modes_on_guitar\resources\css\theme_default.less" />
+    <Content Include="modes_on_guitar\resources\css\theme_dark.less" />
     <Content Include="modecraft\resources\scripts\ModePracticeOptions.js.map" />
     <Content Include="modecraft\resources\scripts\ModePracticeUI.js.map" />
     <Content Include="modecraft\resources\scripts\YTPlayer.js.map" />
@@ -839,6 +850,28 @@
     <Content Include="resources\lib\hmlib.min.js" />
     <Content Include="resources\lib\source\hmlib.0.js" />
     <Content Include="resources\lib\source\js2.js" />
+    <Content Include="resources\stylesheets\base\dark.css">
+      <DependentUpon>dark.less</DependentUpon>
+    </Content>
+    <Content Include="resources\stylesheets\base\dark.min.css">
+      <DependentUpon>dark.css</DependentUpon>
+    </Content>
+    <Content Include="resources\stylesheets\scroll\dark.css">
+      <DependentUpon>dark.less</DependentUpon>
+    </Content>
+    <Content Include="resources\stylesheets\scroll\dark.min.css">
+      <DependentUpon>dark.css</DependentUpon>
+    </Content>
+    <Content Include="resources\stylesheets\scroll\default.css">
+      <DependentUpon>default.less</DependentUpon>
+    </Content>
+    <Content Include="resources\stylesheets\scroll\default.min.css">
+      <DependentUpon>default.css</DependentUpon>
+    </Content>
+    <Content Include="resources\stylesheets\theme_dark.css" />
+    <Content Include="resources\stylesheets\theme_dark.min.css">
+      <DependentUpon>theme_dark.css</DependentUpon>
+    </Content>
     <Content Include="scales\default.html" />
     <Content Include="resources\plugins\%24.fn.buttonize.js" />
     <Content Include="scales\resources\scripts\ui_handler.js" />
@@ -881,6 +914,9 @@
     <None Include="packages.config" />
     <Content Include="random_generator\resources\stylesheets\theme-default.less" />
     <Content Include="tsconfig.json" />
+    <Content Include="resources\stylesheets\base\dark.less" />
+    <Content Include="resources\stylesheets\scroll\default.less" />
+    <Content Include="resources\stylesheets\scroll\dark.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -43,6 +43,7 @@
     "outputFile": "helix/resources/css/theme_default.css",
     "inputFile": "helix/resources/css/theme_default.less"
   },
+	//Modes on Guitar
   {
     "outputFile": "modes_on_guitar/resources/css/theme_default.css",
     "inputFile": "modes_on_guitar/resources/css/theme_default.less"
@@ -51,6 +52,7 @@
     "outputFile": "modes_on_guitar/resources/css/theme_dark.css",
     "inputFile": "modes_on_guitar/resources/css/theme_dark.less"
   },
+	//Mode Craft
   {
     "outputFile": "modecraft/resources/css/theme_dark.css",
     "inputFile": "modecraft/resources/css/less/theme_dark.less"
