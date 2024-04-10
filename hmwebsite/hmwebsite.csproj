@@ -104,6 +104,7 @@
     <Content Include="digitech\resources\images\led-on.svg" />
     <Content Include="digitech\resources\scripts\midi.js" />
     <Content Include="harmoniousmayhem\index.html" />
+    <Content Include="harmoniousmayhem\resources\images\icon.png" />
     <Content Include="harmoniousmayhem\resources\images\logo_dark.svg" />
     <Content Include="harmoniousmayhem\resources\images\artworks\perpetual_departures.png" />
     <Content Include="harmoniousmayhem\resources\stylesheets\base\dark.css">
