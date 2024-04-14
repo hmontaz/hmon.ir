@@ -106,7 +106,7 @@
     <Content Include="harmoniousmayhem\index.html" />
     <Content Include="harmoniousmayhem\resources\images\icon.png" />
     <Content Include="harmoniousmayhem\resources\images\logo_dark.svg" />
-    <Content Include="harmoniousmayhem\resources\images\artworks\perpetual_departures.png" />
+    <Content Include="harmoniousmayhem\resources\images\artworks\perpetual_departures.jpg" />
     <Content Include="harmoniousmayhem\resources\stylesheets\base\dark.css">
       <DependentUpon>dark.less</DependentUpon>
     </Content>
@@ -301,8 +301,10 @@
     <Content Include="resources\images\harmonious_mayhem_small_white.svg" />
     <Content Include="resources\images\icons\amazon-music.svg" />
     <Content Include="resources\images\icons\apple-music.svg" />
+    <Content Include="resources\images\icons\instagram.svg" />
     <Content Include="resources\images\icons\spotify.svg" />
     <Content Include="resources\images\icons\youtube-music.svg" />
+    <Content Include="resources\images\icons\youtube.svg" />
     <Content Include="resources\images\mode-craft.png" />
     <Content Include="resources\images\leds\rect-green-off.svg" />
     <Content Include="resources\images\leds\rect-green-on.svg" />
