@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<title></title>
+	<link id='theme-default' href="./resources/css/theme_default.css" rel="stylesheet" />
+	<style id="dynamic_style"></style>
+	<link id='theme-dark' href="./resources/css/theme_dark.css" rel="stylesheet" />
+	<script src="resources/scripts/Settings.js"></script>
+	<script src="resources/scripts/ThemeHandler.js"></script>
+</head>
+<body style="padding:5px;">
+	<style>
+		body {
+			background-image: none
+		}
+
+		select {
+			width: 200px;
+		}
+	</style>
+	<div class="page_title">
+		Preferences
+	</div>
+	<script>
+		const settings = new Settings()
+		const theme = new ThemeHandler()
+		$(document).ready(() => {
+			$('#ddlTheme')
+				.change((e) => {
+					theme.current = $(e.target).val()
+				}).val(theme.current)
+
+			$('#ddlDevice')
+				.change((e) => {
+					settings.device = $(e.target).val()
+				}).val(settings.device)
+			theme.apply()
+			theme.change(() => { theme.apply() })
+		})
+	</script>
+	<table>
+		<tr>
+			<td>
+				<label>Theme</label>
+			</td>
+			<td>
+				<select id='ddlTheme'>
+					<option value="dark">Dark</option>
+					<option value="default">Default</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Device</label>
+			</td>
+			<td>
+				<select id='ddlDevice'>
+					<option value="helix_floor">Helix Floor/LT/Rack</option>
+					<!--<option value="hx_stomp">HX Stomp</option>-->
+					<option value="hx_effects">HX Effects</option>
+				</select>
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>

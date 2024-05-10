@@ -14,6 +14,8 @@
 	<title>Helix Effect Finder</title>
 	<meta charset="utf-8" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="resources/scripts/ThemeHandler.js"></script>
+	<script src="resources/scripts/Settings.js"></script>
 	<script src="resources/scripts/mustache.js?v=20231118_3"></script>
 	<script src="resources/scripts/line 6.js?v=20231118_3" charset="utf-8"></script>
 	<script src="resources/scripts/categories.js?v=20231118_3"></script>
@@ -50,20 +52,18 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta property="article:publisher" content="https://instagram.com/hmdpurple/" />
 	<meta property="article:author" content="https://instagram.com/hmontaz/" />
+	<link href="../resources/hm-glyphs/style.css" rel="stylesheet" />
 
 	<script>
 		$(document).ready(function () {
 			FxFinder.init();
-			//FxFinder.applyTheme();
-			//setTimeout(function () { FxFinder.init(); }, 50);
-			$('#btnTheme').click(function () { FxFinder.nextTheme(); });
 		});
 	</script>
 </head>
 
 <body style="display:none;">
 	<div class="page_title">
-		<table class="noborder" style="width:100%;max-width:600px;">
+		<table class="noborder" style="width:100%;">
 			<tr>
 				<td><span id='divTitle'>Helix Effect Finder</span></td>
 				<td style="text-align:right;">
@@ -79,9 +79,20 @@
 			</tr>
 		</table>
 		<!--<span id="btnTheme">Switch Theme</span>-->
-		<div class='page-info'>by <a href="https://www.hmon.ir">Hossein Montazeri</a></div>
+		<table style="width:100%;">
+			<tr>
+				<td>
+					<div class='page-info'>by <a href="https://www.hmon.ir">Hossein Montazeri</a></div>
+				</td>
+				<td style="text-align:right;">
+					<span class="hmg-cog small-button" onclick="$('#divPreferences').toggle()"></span>
+				</td>
+			</tr>
+		</table>
 	</div>
-
+	<div id="divPreferences" class="popup_element" style="position: absolute; left: calc(50% - 150px); top: calc(50% - 150px);display:none;">
+		<iframe src="preferences.html" style="width:300px;height:250px;"></iframe>
+	</div>
 	<div id='divPreview' style="display:none;" class="preview" onClick="//FxFinder.hidePreview();">
 		<div style="display:none;cursor:pointer;padding-right:2px;text-align:right;color:white;">x</div>
 		<div style="padding:10px 20px 10px 20px;">

@@ -6,15 +6,20 @@ var FxFinder = {
 	data: [],
 	search_busy: false,
 	keep_preview_open: false,
+	theme: new ThemeHandler(),
 	init: function () {
 		var _this = this;
-		this.applyTheme();
+		this.theme.apply()
 		$(document.body).show().click(function () { _this.hidePreview(); });
 		setTimeout(function () { _this.readData('Line 6 Helix'); }, 30);
 		this.divTitle = $('#divTitle');
 		$(window).resize(function () { _this.resize(); });
 		$(document).scroll(function () { _this.hidePreview(); });
 		this.resize();
+
+		this.theme.change(() => {
+			this.theme.apply()
+		})
 
 		this.divPreview = $('#divPreview');
 		this.imgPreview = $('#imgPreview');
@@ -28,20 +33,13 @@ var FxFinder = {
 		if (n == 1) w = ww;
 		$('#dynamic_style').html('.item{max-width:' + w + 'px;}');
 	},
-	applyTheme: function (id) {
-		var list = ['theme-default', 'theme-dark'];
-		var index = localStorage.getItem('theme-index') || 1;
-		localStorage.setItem('theme-index', index);
-		id = id || list[index];
-		$('#' + id).removeAttr('disabled').appendTo(document.head);
-	},
-	nextTheme: function () {
+	/*nextTheme: function () {
 		var index = localStorage.getItem('theme-index') || 0;
 		index++;
 		index = index % 2;
 		localStorage.setItem('theme-index', index);
 		this.applyTheme();
-	},
+	},*/
 	readData: function (name) {
 		var _this = this;
 		this.read(data_line6[name]);
