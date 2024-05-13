@@ -10,6 +10,7 @@
 
 	.album-cover {
 		width: 250px;
+
 		@media (max-width : 400px) {
 			width: 100%;
 		}
@@ -22,5 +23,36 @@
 		img {
 			height: 20px
 		}
+	}
+}
+
+.info-label, .info-value {
+	font-family: Consolas;
+	color: #bbb;
+	font-size: 12px;
+
+	> a {
+		color: #bbb;
+	}
+}
+
+.info-label {
+	text-align: right;
+	font-weight: bold;
+}
+
+
+.links-panel {
+	//width: 50px;
+	position: fixed;
+	top: 120px;
+	right: 0;
+	padding: 5px;
+	border-radius: 10px;
+
+	.social-button {
+		font-size: 50px;
+		-webkit-text-decoration: none;
+		text-decoration: none;
 	}
 }

@@ -20,3 +20,29 @@
 .album .platform_link img {
   height: 20px;
 }
+.info-label,
+.info-value {
+  font-family: Consolas;
+  color: #bbb;
+  font-size: 12px;
+}
+.info-label > a,
+.info-value > a {
+  color: #bbb;
+}
+.info-label {
+  text-align: right;
+  font-weight: bold;
+}
+.links-panel {
+  position: fixed;
+  top: 120px;
+  right: 0;
+  padding: 5px;
+  border-radius: 10px;
+}
+.links-panel .social-button {
+  font-size: 50px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}

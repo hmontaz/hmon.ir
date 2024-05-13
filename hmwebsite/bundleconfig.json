@@ -1,33 +1,34 @@
 [
-  //Root
-  {
-    "outputFileName": "resources/stylesheets/theme_dark.css",
-    "inputFiles": [
-      "resources/stylesheets/base/dark.css",
-      "resources/stylesheets/scroll/dark.css"
-    ]
-  },
-  //Helix
-  {
-    "outputFileName": "helix/resources/css/theme_default.css",
-    "inputFiles": [
-      "helix/resources/css/base/default.css",
-      "resources/stylesheets/scroll/default.css"
-    ]
-  },
-  {
-    "outputFileName": "helix/resources/css/theme_dark.css",
-    "inputFiles": [
-      "helix/resources/css/base/dark.css",
-      "resources/stylesheets/scroll/dark.css"
-    ]
-  },
-  //Harmonious Mayhem
-  {
-    "outputFileName": "harmoniousmayhem/resources/stylesheets/theme_dark.css",
-    "inputFiles": [
-      "harmoniousmayhem/resources/stylesheets/base/default.css",
-      "harmoniousmayhem/resources/stylesheets/base/dark.css"
-    ]
-  }
+	//Root
+	{
+		"outputFileName": "resources/stylesheets/theme_dark.css",
+		"inputFiles": [
+			"resources/stylesheets/base/dark.css",
+			"resources/stylesheets/scroll/dark.css"
+		]
+	},
+	//Helix
+	{
+		"outputFileName": "helix/resources/css/theme_default.css",
+		"inputFiles": [
+			"helix/resources/css/base/default.css",
+			"resources/stylesheets/scroll/default.css"
+		]
+	},
+	{
+		"outputFileName": "helix/resources/css/theme_dark.css",
+		"inputFiles": [
+			"helix/resources/css/base/dark.css",
+			"resources/stylesheets/scroll/dark.css"
+		]
+	},
+	//Harmonious Mayhem
+	{
+		"outputFileName": "harmoniousmayhem/resources/stylesheets/theme_dark.css",
+		"inputFiles": [
+			"resources/hm-glyphs/style.css",
+			"harmoniousmayhem/resources/stylesheets/base/default.css",
+			"harmoniousmayhem/resources/stylesheets/base/dark.css"
+		]
+	}
 ]

@@ -1,1 +1,1 @@
-﻿body,html{background-color:#000;}.album{background-color:#333;}
+﻿body,html{background-color:#000;color:#eee;font-family:Arial;font-size:14px;}.album{background-color:#333;}.info-label,.info-value{color:#bbb;}.info-label>a,.info-value>a{color:#bbb;}.links-panel{background-color:rgba(2,2,2,.4);}.links-panel .social-button{color:#aaa;}.links-panel .social-button :hover{color:#fff;}

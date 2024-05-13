@@ -123,6 +123,7 @@
     <Content Include="harmoniousmayhem\resources\stylesheets\theme_dark.min.css">
       <DependentUpon>theme_dark.css</DependentUpon>
     </Content>
+    <Content Include="helix\preferences.html" />
     <Content Include="helix\resources\css\base\dark.css">
       <DependentUpon>dark.less</DependentUpon>
     </Content>
@@ -293,6 +294,8 @@
     <Content Include="modes_on_guitar\resources\images\modes on guitar neck 1,3.svg" />
     <Content Include="random_generator\randomnote.html" />
     <Content Include="random_generator\guitarneck.html" />
+    <TypeScriptCompile Include="helix\resources\scripts\Settings.ts" />
+    <TypeScriptCompile Include="helix\resources\scripts\ThemeHandler.ts" />
     <TypeScriptCompile Include="modecraft\resources\scripts\ModePracticeOptions.ts" />
     <TypeScriptCompile Include="modecraft\resources\scripts\ModePracticeUI.ts" />
     <TypeScriptCompile Include="random_generator\resources\scripts\RandomNoteGenerator.ts" />

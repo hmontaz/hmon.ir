@@ -12,7 +12,7 @@
 		"outputFile": "resources/stylesheets/scroll/default.css",
 		"inputFile": "resources/stylesheets/scroll/default.less"
 	},
-	// Scales
+	//Scales
 	{
 		"outputFile": "scales/resources/stylesheets/theme_dark.css",
 		"inputFile": "scales/resources/stylesheets/theme_dark.less"

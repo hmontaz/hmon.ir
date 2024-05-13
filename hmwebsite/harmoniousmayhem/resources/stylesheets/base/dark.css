@@ -1,7 +1,27 @@
 ﻿body,
 html {
   background-color: black;
+  color: #eee;
+  font-family: Arial;
+  font-size: 14px;
 }
 .album {
   background-color: #333;
+}
+.info-label,
+.info-value {
+  color: #bbb;
+}
+.info-label > a,
+.info-value > a {
+  color: #bbb;
+}
+.links-panel {
+  background-color: rgba(2, 2, 2, 0.4);
+}
+.links-panel .social-button {
+  color: #aaa;
+}
+.links-panel .social-button :hover {
+  color: #fff;
 }
