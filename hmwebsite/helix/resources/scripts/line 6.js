@@ -6,87 +6,34 @@ data_line6['Line 6 Helix'] = [
 	{
 		"Version": "1.00",
 		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "German Mahadeva",
-		"Image": "Bogner® - Shiva®",
-		"Original Brand": "Bogner®",
-		"Original Model": "Shiva®",
-		"Type": "Guitar Amp,Amp",
-		"Description": "Bogner® Shiva®"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "German Ubersonic",
-		"Image": "Bogner® - Überschall®",
-		"Original Brand": "Bogner®",
-		"Original Model": "Überschall®",
-		"Type": "Guitar Amp,Amp",
-		"Description": "Bogner® Überschall®"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "PV Panama",
-		"Image": "Peavey® - 5150®",
-		"Original Brand": "Peavey®",
-		"Original Model": "5150®",
-		"Type": "Guitar Amp,Amp"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Essex A-15",
-		"Image": "Vox® - AC-15",
-		"Original Brand": "Vox®",
-		"Original Model": "AC-15",
-		"Type": "Guitar Amp,Amp"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Essex A-30",
-		"Image": "Vox® - AC-30",
-		"Original Brand": "Vox®",
-		"Original Model": "AC-30",
-		"Type": "Guitar Amp,Amp",
-		"Description": "with top boost"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "A-30 Fawn Brt",
-		"Image": "Vox® - AC-30 Fawn Brt",
-		"Original Brand": "Vox®",
-		"Original Model": "AC-30 Fawn",
-		"Type": "Guitar Amp,Amp",
-		"Description": "bright channel"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "A-30 Fawn Nrm",
-		"Image": "Vox® - AC-30 Fawn Nrm",
-		"Original Brand": "Vox®",
-		"Original Model": "AC-30 Fawn",
-		"Type": "Guitar Amp,Amp",
-		"Description": "normal channel"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
 		"Subcategory": "Bass",
 		"Name": "Ampeg B-15NF",
 		"Image": "Ampeg® - B-15NF Portaflex®",
 		"Original Brand": "Ampeg®",
 		"Original Model": "B-15NF Portaflex®",
 		"Type": "Bass Amp,Amp"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Bass",
+		"Name": "Ampeg SVT Brt",
+		"Image": "Ampeg® - SVT Brt",
+		"Original Brand": "Ampeg®",
+		"Original Model": "SVT",
+		"Type": "Bass Amp,Amp",
+		"Description": "bright channel"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Bass",
+		"Name": "Ampeg SVT Nrm",
+		"Image": "Ampeg® - SVT Nrm",
+		"Original Brand": "Ampeg®",
+		"Original Model": "SVT",
+		"Type": "Bass Amp,Amp",
+		"Description": "normal channel"
 	},
 	{
 		"Version": "1.00",
@@ -113,123 +60,11 @@ data_line6['Line 6 Helix'] = [
 	{
 		"Version": "1.00",
 		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Tweed Blues Brt",
-		"Original Brand": "Fender®",
-		"Original Model": "Bassman®",
-		"Type": "Guitar Amp,Amp",
-		"Description": "bright channel"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Tweed Blues Nrm",
-		"Original Brand": "Fender®",
-		"Original Model": "Bassman®",
-		"Type": "Guitar Amp,Amp",
-		"Description": "normal channel"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "US Small Tweed",
-		"Original Brand": "Fender®",
-		"Original Model": "Champ",
-		"Type": "Guitar Amp,Amp"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "US Deluxe Nrm",
-		"Image": "Fender® - Deluxe Reverb®",
-		"Original Brand": "Fender®",
-		"Original Model": "Deluxe Reverb®",
-		"Type": "Guitar Amp,Amp",
-		"Description": "normal channel"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "US Deluxe Vib",
-		"Image": "Fender® - Deluxe Reverb®",
-		"Original Brand": "Fender®",
-		"Original Model": "Deluxe Reverb®",
-		"Type": "Guitar Amp,Amp",
-		"Description": "vibrato channel"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Line 6 Doom",
-		"Original Brand": "Line 6®",
-		"Original Model": "Doom",
-		"Type": "Guitar Amp,Amp",
-		"Description": "Line 6 Original"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "WhoWatt 100",
-		"Image": "Hiwatt® - DR-103 Brill",
-		"Original Brand": "Hiwatt®",
-		"Original Model": "DR-103 Brill",
-		"Type": "Guitar Amp,Amp"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Cali Rectifire",
+		"Subcategory": "Bass",
+		"Name": "Cali Bass",
 		"Original Brand": "MESA/Boogie®",
-		"Original Model": "Dual Rectifier®",
-		"Type": "Guitar Amp,Amp",
-		"Description": "Dual Rectifier®"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Stone Age 185",
-		"Image": "Gibson® - EH-185",
-		"Original Brand": "Gibson®",
-		"Original Model": "EH-185",
-		"Type": "Guitar Amp,Amp"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Line 6 Elektrik",
-		"Original Brand": "Line 6®",
-		"Original Model": "Elektrik",
-		"Type": "Guitar Amp,Amp",
-		"Description": "Line 6 Original"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "ANGL Meteor",
-		"Image": "ENGL® Fireball 100",
-		"Original Brand": "ENGL®",
-		"Original Model": "ENGL® Fireball 100",
-		"Type": "Guitar Amp,Amp"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Line 6 Epic",
-		"Original Brand": "Line 6®",
-		"Original Model": "Epic",
-		"Type": "Guitar Amp,Amp",
-		"Description": "Line 6 Original"
+		"Original Model": "M9 Carbine",
+		"Type": "Bass Amp,Amp"
 	},
 	{
 		"Version": "1.00",
@@ -246,10 +81,32 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Amp",
 		"Subcategory": "Guitar",
-		"Name": "Jazz Rivet 120",
-		"Image": "Roland® - JC-120 Jazz Chorus",
-		"Original Brand": "Roland®",
-		"Original Model": "JC-120 Jazz Chorus",
+		"Name": "A-30 Fawn Brt",
+		"Image": "Vox® - AC-30 Fawn Brt",
+		"Original Brand": "Vox®",
+		"Original Model": "AC-30 Fawn",
+		"Type": "Guitar Amp,Amp",
+		"Description": "bright channel"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "A-30 Fawn Nrm",
+		"Image": "Vox® - AC-30 Fawn Nrm",
+		"Original Brand": "Vox®",
+		"Original Model": "AC-30 Fawn",
+		"Type": "Guitar Amp,Amp",
+		"Description": "normal channel"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "ANGL Meteor",
+		"Image": "ENGL® Fireball 100",
+		"Original Brand": "ENGL®",
+		"Original Model": "ENGL® Fireball 100",
 		"Type": "Guitar Amp,Amp"
 	},
 	{
@@ -261,16 +118,6 @@ data_line6['Line 6 Helix'] = [
 		"Original Brand": "Marshall®",
 		"Original Model": "JCM-800",
 		"Type": "Guitar Amp,Amp"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Divided Duo",
-		"Original Brand": "÷13®",
-		"Original Model": "JRT 9/15",
-		"Type": "Guitar Amp,Amp",
-		"Description": "÷13 JRT 9/15"
 	},
 	{
 		"Version": "1.00",
@@ -293,25 +140,6 @@ data_line6['Line 6 Helix'] = [
 		"Original Model": "JTM-45",
 		"Type": "Guitar Amp,Amp",
 		"Description": "normal channel"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Bass",
-		"Name": "Cali Bass",
-		"Original Brand": "MESA/Boogie®",
-		"Original Model": "M9 Carbine",
-		"Type": "Bass Amp,Amp"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Mandarin 80",
-		"Image": "Orange™ - OR80",
-		"Original Brand": "Orange®",
-		"Original Model": "OR80",
-		"Type": "Guitar Amp,Amp"
 	},
 	{
 		"Version": "1.00",
@@ -339,6 +167,102 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Amp",
 		"Subcategory": "Guitar",
+		"Name": "Brit Plexi Brt",
+		"Image": "Marshall® - Super Lead 100",
+		"Original Brand": "Marshall®",
+		"Original Model": "Super Lead 100",
+		"Type": "Guitar Amp,Amp",
+		"Description": "bright channel"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Brit Plexi Jump",
+		"Image": "Marshall® - Super Lead 100",
+		"Original Brand": "Marshall®",
+		"Original Model": "Super Lead 100",
+		"Type": "Guitar Amp,Amp",
+		"Description": "jumped"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Brit Plexi Nrm",
+		"Image": "Marshall® - Super Lead 100",
+		"Original Brand": "Marshall®",
+		"Original Model": "Super Lead 100",
+		"Type": "Guitar Amp,Amp",
+		"Description": "normal channel"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Cali Rectifire",
+		"Original Brand": "MESA/Boogie®",
+		"Original Model": "Dual Rectifier®",
+		"Type": "Guitar Amp,Amp",
+		"Description": "Dual Rectifier®"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Divided Duo",
+		"Original Brand": "÷13®",
+		"Original Model": "JRT 9/15",
+		"Type": "Guitar Amp,Amp",
+		"Description": "÷13 JRT 9/15"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Essex A-15",
+		"Image": "Vox® - AC-15",
+		"Original Brand": "Vox®",
+		"Original Model": "AC-15",
+		"Type": "Guitar Amp,Amp"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Essex A-30",
+		"Image": "Vox® - AC-30",
+		"Original Brand": "Vox®",
+		"Original Model": "AC-30",
+		"Type": "Guitar Amp,Amp",
+		"Description": "with top boost"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "German Mahadeva",
+		"Image": "Bogner® - Shiva®",
+		"Original Brand": "Bogner®",
+		"Original Model": "Shiva®",
+		"Type": "Guitar Amp,Amp",
+		"Description": "Bogner® Shiva®"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "German Ubersonic",
+		"Image": "Bogner® - Überschall®",
+		"Original Brand": "Bogner®",
+		"Original Model": "Überschall®",
+		"Type": "Guitar Amp,Amp",
+		"Description": "Bogner® Überschall®"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
 		"Name": "Interstate Zed",
 		"Image": "Dr Z® - Route 66",
 		"Original Brand": "Dr Z®",
@@ -349,11 +273,41 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Amp",
 		"Subcategory": "Guitar",
-		"Name": "Soup Pro",
-		"Image": "Supro® - S6616",
-		"Original Brand": "Supro®",
-		"Original Model": "S6616",
+		"Name": "Jazz Rivet 120",
+		"Image": "Roland® - JC-120 Jazz Chorus",
+		"Original Brand": "Roland®",
+		"Original Model": "JC-120 Jazz Chorus",
 		"Type": "Guitar Amp,Amp"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Line 6 Doom",
+		"Original Brand": "Line 6®",
+		"Original Model": "Doom",
+		"Type": "Guitar Amp,Amp",
+		"Description": "Line 6 Original"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Line 6 Elektrik",
+		"Original Brand": "Line 6®",
+		"Original Model": "Elektrik",
+		"Type": "Guitar Amp,Amp",
+		"Description": "Line 6 Original"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Line 6 Epic",
+		"Original Brand": "Line 6®",
+		"Original Model": "Epic",
+		"Type": "Guitar Amp,Amp",
+		"Description": "Line 6 Original"
 	},
 	{
 		"Version": "1.00",
@@ -362,6 +316,26 @@ data_line6['Line 6 Helix'] = [
 		"Name": "Mail Order Twin",
 		"Original Brand": "Silverstone®",
 		"Original Model": "Silvertone® 1484",
+		"Type": "Guitar Amp,Amp"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Mandarin 80",
+		"Image": "Orange™ - OR80",
+		"Original Brand": "Orange®",
+		"Original Model": "OR80",
+		"Type": "Guitar Amp,Amp"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "PV Panama",
+		"Image": "Peavey® - 5150®",
+		"Original Brand": "Peavey®",
+		"Original Model": "5150®",
 		"Type": "Guitar Amp,Amp"
 	},
 	{
@@ -401,10 +375,29 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Amp",
 		"Subcategory": "Guitar",
-		"Name": "Brit Plexi Brt",
-		"Image": "Marshall® - Super Lead 100",
-		"Original Brand": "Marshall®",
-		"Original Model": "Super Lead 100",
+		"Name": "Soup Pro",
+		"Image": "Supro® - S6616",
+		"Original Brand": "Supro®",
+		"Original Model": "S6616",
+		"Type": "Guitar Amp,Amp"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Stone Age 185",
+		"Image": "Gibson® - EH-185",
+		"Original Brand": "Gibson®",
+		"Original Model": "EH-185",
+		"Type": "Guitar Amp,Amp"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Tweed Blues Brt",
+		"Original Brand": "Fender®",
+		"Original Model": "Bassman®",
 		"Type": "Guitar Amp,Amp",
 		"Description": "bright channel"
 	},
@@ -412,45 +405,33 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Amp",
 		"Subcategory": "Guitar",
-		"Name": "Brit Plexi Jump",
-		"Image": "Marshall® - Super Lead 100",
-		"Original Brand": "Marshall®",
-		"Original Model": "Super Lead 100",
+		"Name": "Tweed Blues Nrm",
+		"Original Brand": "Fender®",
+		"Original Model": "Bassman®",
 		"Type": "Guitar Amp,Amp",
-		"Description": "jumped"
+		"Description": "normal channel"
 	},
 	{
 		"Version": "1.00",
 		"Category": "Amp",
 		"Subcategory": "Guitar",
-		"Name": "Brit Plexi Nrm",
-		"Image": "Marshall® - Super Lead 100",
-		"Original Brand": "Marshall®",
-		"Original Model": "Super Lead 100",
+		"Name": "US Deluxe Nrm",
+		"Image": "Fender® - Deluxe Reverb®",
+		"Original Brand": "Fender®",
+		"Original Model": "Deluxe Reverb®",
 		"Type": "Guitar Amp,Amp",
 		"Description": "normal channel"
 	},
 	{
 		"Version": "1.00",
 		"Category": "Amp",
-		"Subcategory": "Bass",
-		"Name": "Ampeg SVT Brt",
-		"Image": "Ampeg® - SVT Brt",
-		"Original Brand": "Ampeg®",
-		"Original Model": "SVT",
-		"Type": "Bass Amp,Amp",
-		"Description": "bright channel"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Amp",
-		"Subcategory": "Bass",
-		"Name": "Ampeg SVT Nrm",
-		"Image": "Ampeg® - SVT Nrm",
-		"Original Brand": "Ampeg®",
-		"Original Model": "SVT",
-		"Type": "Bass Amp,Amp",
-		"Description": "normal channel"
+		"Subcategory": "Guitar",
+		"Name": "US Deluxe Vib",
+		"Image": "Fender® - Deluxe Reverb®",
+		"Original Brand": "Fender®",
+		"Original Model": "Deluxe Reverb®",
+		"Type": "Guitar Amp,Amp",
+		"Description": "vibrato channel"
 	},
 	{
 		"Version": "1.00",
@@ -476,6 +457,25 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "US Small Tweed",
+		"Original Brand": "Fender®",
+		"Original Model": "Champ",
+		"Type": "Guitar Amp,Amp"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "WhoWatt 100",
+		"Image": "Hiwatt® - DR-103 Brill",
+		"Original Brand": "Hiwatt®",
+		"Original Model": "DR-103 Brill",
+		"Type": "Guitar Amp,Amp"
+	},
+	{
+		"Version": "1.00",
 		"Category": "Cab",
 		"Subcategory": "Legacy Single, Legacy Dual",
 		"Name": "1×12 Blue Bell",
@@ -488,12 +488,11 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Cab",
 		"Subcategory": "Legacy Single, Legacy Dual",
-		"Name": "1×12 US Deluxe",
+		"Name": "1×12 Celest 12H",
 		"IsLegacy": "true",
-		"Original Brand": "Fender®",
-		"Original Model": "1×12″ Deluxe Oxford",
-		"Type": "Guitar Cab,Cab",
-		"Description": "1×12″ Fender® Deluxe Oxford"
+		"Original Brand": "÷13®",
+		"Original Model": "1×12″ JRT 9/15 G12 H30",
+		"Type": "Guitar Cab,Cab"
 	},
 	{
 		"Version": "1.00",
@@ -511,22 +510,23 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Cab",
 		"Subcategory": "Legacy Single, Legacy Dual",
-		"Name": "1×12 Celest 12H",
-		"IsLegacy": "true",
-		"Original Brand": "÷13®",
-		"Original Model": "1×12″ JRT 9/15 G12 H30",
-		"Type": "Guitar Cab,Cab"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Cab",
-		"Subcategory": "Legacy Single, Legacy Dual",
 		"Name": "1×12 Lead 80",
 		"IsLegacy": "true",
 		"Original Brand": "Bogner®",
 		"Original Model": "1×12″ Shiva® CL80",
 		"Type": "Guitar Cab,Cab",
 		"Description": "1×12″ Bogner® Shiva® CL80"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Cab",
+		"Subcategory": "Legacy Single, Legacy Dual",
+		"Name": "1×12 US Deluxe",
+		"IsLegacy": "true",
+		"Original Brand": "Fender®",
+		"Original Model": "1×12″ Deluxe Oxford",
+		"Type": "Guitar Cab,Cab",
+		"Description": "1×12″ Fender® Deluxe Oxford"
 	},
 	{
 		"Version": "1.00",
@@ -543,12 +543,12 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Cab",
 		"Subcategory": "Legacy Single, Legacy Dual",
-		"Name": "2×12 Mail C12Q",
+		"Name": "1×8 Small Tweed",
 		"IsLegacy": "true",
-		"Original Brand": "Silverstone®",
-		"Original Model": "2×12″ 1484",
+		"Original Brand": "Fender®",
+		"Original Model": "1×8″ Champ",
 		"Type": "Guitar Cab,Cab",
-		"Description": "2×12″ Silvertone® 1484"
+		"Description": "1×8″ Fender® Champ"
 	},
 	{
 		"Version": "1.00",
@@ -560,6 +560,28 @@ data_line6['Line 6 Helix'] = [
 		"Original Model": "2×12″ AC-30 Fawn Blue",
 		"Type": "Guitar Cab,Cab",
 		"Description": "2×12″ Vox® AC-30 Fawn Blue"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Cab",
+		"Subcategory": "Legacy Single, Legacy Dual",
+		"Name": "2×12 Double C12N",
+		"IsLegacy": "true",
+		"Original Brand": "Fender®",
+		"Original Model": "2×12″ Twin C12N",
+		"Type": "Guitar Cab,Cab",
+		"Description": "2×12″ Fender® Twin C12N"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Cab",
+		"Subcategory": "Legacy Single, Legacy Dual",
+		"Name": "2×12 Interstate",
+		"IsLegacy": "true",
+		"Original Brand": "Dr Z®",
+		"Original Model": "2×12″ Z Best V30",
+		"Type": "Guitar Cab,Cab",
+		"Description": "2×12″ Dr Z® Z Best V30"
 	},
 	{
 		"Version": "1.00",
@@ -577,12 +599,12 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Cab",
 		"Subcategory": "Legacy Single, Legacy Dual",
-		"Name": "2×12 Double C12N",
+		"Name": "2×12 Mail C12Q",
 		"IsLegacy": "true",
-		"Original Brand": "Fender®",
-		"Original Model": "2×12″ Twin C12N",
+		"Original Brand": "Silverstone®",
+		"Original Model": "2×12″ 1484",
 		"Type": "Guitar Cab,Cab",
-		"Description": "2×12″ Fender® Twin C12N"
+		"Description": "2×12″ Silvertone® 1484"
 	},
 	{
 		"Version": "1.00",
@@ -599,34 +621,12 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Cab",
 		"Subcategory": "Legacy Single, Legacy Dual",
-		"Name": "2×12 Interstate",
-		"IsLegacy": "true",
-		"Original Brand": "Dr Z®",
-		"Original Model": "2×12″ Z Best V30",
-		"Type": "Guitar Cab,Cab",
-		"Description": "2×12″ Dr Z® Z Best V30"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Cab",
-		"Subcategory": "Legacy Single, Legacy Dual",
 		"Name": "2×15 Brute",
 		"IsLegacy": "true",
 		"Original Brand": "MESA/Boogie®",
 		"Original Model": "2×15″ EV®",
 		"Type": "Bass Cab,Cab",
 		"Description": "2×15″ MESA/Boogie® 2×15 EV®"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Cab",
-		"Subcategory": "Legacy Single, Legacy Dual",
-		"Name": "4×10 Tweed P10R",
-		"IsLegacy": "true",
-		"Original Brand": "Fender®",
-		"Original Model": "4×10″ Bassman® P10R",
-		"Type": "Guitar Cab,Cab",
-		"Description": "4×10″ Fender® Bassman® P10R"
 	},
 	{
 		"Version": "1.00",
@@ -643,12 +643,12 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Cab",
 		"Subcategory": "Legacy Single, Legacy Dual",
-		"Name": "4×12 SoloLead EM",
+		"Name": "4×10 Tweed P10R",
 		"IsLegacy": "true",
-		"Original Brand": "Soldano®",
-		"Original Model": "4×12″",
+		"Original Brand": "Fender®",
+		"Original Model": "4×10″ Bassman® P10R",
 		"Type": "Guitar Cab,Cab",
-		"Description": "4×12″ Soldano®"
+		"Description": "4×10″ Fender® Bassman® P10R"
 	},
 	{
 		"Version": "1.00",
@@ -665,17 +665,6 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Cab",
 		"Subcategory": "Legacy Single, Legacy Dual",
-		"Name": "4×12 Cali V30",
-		"IsLegacy": "true",
-		"Original Brand": "MESA/Boogie®",
-		"Original Model": "4×12″ 4FB V30",
-		"Type": "Guitar Cab,Cab",
-		"Description": "4×12″ MESA/Boogie® 4FB V30"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Cab",
-		"Subcategory": "Legacy Single, Legacy Dual",
 		"Name": "4×12 Blackback30",
 		"IsLegacy": "true",
 		"Original Brand": "Park®",
@@ -687,12 +676,12 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Cab",
 		"Subcategory": "Legacy Single, Legacy Dual",
-		"Name": "4×12 WhoWatt 100",
+		"Name": "4×12 Cali V30",
 		"IsLegacy": "true",
-		"Original Brand": "Hiwatt®",
-		"Original Model": "4×12″ AP Fane®",
+		"Original Brand": "MESA/Boogie®",
+		"Original Model": "4×12″ 4FB V30",
 		"Type": "Guitar Cab,Cab",
-		"Description": "4×12″ Hiwatt® AP Fane®"
+		"Description": "4×12″ MESA/Boogie® 4FB V30"
 	},
 	{
 		"Version": "1.00",
@@ -731,6 +720,17 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Cab",
 		"Subcategory": "Legacy Single, Legacy Dual",
+		"Name": "4×12 SoloLead EM",
+		"IsLegacy": "true",
+		"Original Brand": "Soldano®",
+		"Original Model": "4×12″",
+		"Type": "Guitar Cab,Cab",
+		"Description": "4×12″ Soldano®"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Cab",
+		"Subcategory": "Legacy Single, Legacy Dual",
 		"Name": "4×12 Uber T75",
 		"IsLegacy": "true",
 		"Original Brand": "Bogner®",
@@ -748,6 +748,17 @@ data_line6['Line 6 Helix'] = [
 		"Original Model": "4×12″ Uberkab V30",
 		"Type": "Guitar Cab,Cab",
 		"Description": "4×12″ Bogner® Uberkab V30"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Cab",
+		"Subcategory": "Legacy Single, Legacy Dual",
+		"Name": "4×12 WhoWatt 100",
+		"IsLegacy": "true",
+		"Original Brand": "Hiwatt®",
+		"Original Model": "4×12″ AP Fane®",
+		"Type": "Guitar Cab,Cab",
+		"Description": "4×12″ Hiwatt® AP Fane®"
 	},
 	{
 		"Version": "1.00",
@@ -775,17 +786,6 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Cab",
 		"Subcategory": "Legacy Single, Legacy Dual",
-		"Name": "1×8 Small Tweed",
-		"IsLegacy": "true",
-		"Original Brand": "Fender®",
-		"Original Model": "1×8″ Champ",
-		"Type": "Guitar Cab,Cab",
-		"Description": "1×8″ Fender® Champ"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Cab",
-		"Subcategory": "Legacy Single, Legacy Dual",
 		"Name": "8×10 Ampeg SVT E",
 		"IsLegacy": "true",
 		"Original Brand": "Ampeg®",
@@ -796,23 +796,13 @@ data_line6['Line 6 Helix'] = [
 	{
 		"Version": "1.00",
 		"Category": "Cab",
-		"Subcategory": "Microphone",
-		"Name": "414 Cond",
+		"Subcategory": "Legacy Single, Legacy Dual",
+		"Name": "Soup Pro Ellipse",
 		"IsLegacy": "true",
-		"Original Brand": "AKG®",
-		"Original Model": "C414 TLII",
-		"Type": "Microphone",
-		"Description": "AKG® C414 TLII"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Cab",
-		"Subcategory": "Microphone",
-		"Name": "4038 Ribbon",
-		"Original Brand": "Coles®",
-		"Original Model": "Coles 4038",
-		"Type": "Microphone",
-		"Description": "Coles® 4038"
+		"Original Brand": "Supro®",
+		"Original Model": "Oval 1×6”×9″ S6616",
+		"Type": "Guitar Cab,Cab",
+		"Description": "1×6”×9″ Supro® S6616"
 	},
 	{
 		"Version": "1.00",
@@ -840,12 +830,11 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Cab",
 		"Subcategory": "Microphone",
-		"Name": "84 Cond",
-		"IsLegacy": "true",
-		"Original Brand": "Neumann®",
-		"Original Model": "KM84",
+		"Name": "121 Ribbon",
+		"Original Brand": "Royer®",
+		"Original Model": "R-121",
 		"Type": "Microphone",
-		"Description": "Neumann® KM84"
+		"Description": "Royer® R-121"
 	},
 	{
 		"Version": "1.00",
@@ -856,58 +845,6 @@ data_line6['Line 6 Helix'] = [
 		"Original Model": "M 160",
 		"Type": "Microphone",
 		"Description": "Beyerdynamic® M 160"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Cab",
-		"Subcategory": "Microphone",
-		"Name": "409 Dynamic",
-		"IsLegacy": "true",
-		"Original Brand": "Sennheiser®",
-		"Original Model": "MD 409",
-		"Type": "Microphone",
-		"Description": "Sennheiser® MD 409"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Cab",
-		"Subcategory": "Microphone",
-		"Name": "421 Dynamic",
-		"Original Brand": "Sennheiser®",
-		"Original Model": "MD 421-U",
-		"Type": "Microphone",
-		"Description": "Sennheiser® MD 421-U"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Cab",
-		"Subcategory": "Legacy Single, Legacy Dual",
-		"Name": "Soup Pro Ellipse",
-		"IsLegacy": "true",
-		"Original Brand": "Supro®",
-		"Original Model": "Oval 1×6”×9″ S6616",
-		"Type": "Guitar Cab,Cab",
-		"Description": "1×6”×9″ Supro® S6616"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Cab",
-		"Subcategory": "Microphone",
-		"Name": "30 Dynamic",
-		"Original Brand": "Heil Sound®",
-		"Original Model": "PR 30",
-		"Type": "Microphone",
-		"Description": "Heil Sound® PR 30"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Cab",
-		"Subcategory": "Microphone",
-		"Name": "121 Ribbon",
-		"Original Brand": "Royer®",
-		"Original Model": "R-121",
-		"Type": "Microphone",
-		"Description": "Royer® R-121"
 	},
 	{
 		"Version": "1.00",
@@ -924,21 +861,53 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Cab",
 		"Subcategory": "Microphone",
-		"Name": "57 Dynamic",
-		"Original Brand": "Shure®",
-		"Original Model": "SM57",
+		"Name": "30 Dynamic",
+		"Original Brand": "Heil Sound®",
+		"Original Model": "PR 30",
 		"Type": "Microphone",
-		"Description": "Shure® SM57"
+		"Description": "Heil Sound® PR 30"
 	},
 	{
 		"Version": "1.00",
 		"Category": "Cab",
 		"Subcategory": "Microphone",
-		"Name": "7 Dynamic",
-		"Original Brand": "Shure®",
-		"Original Model": "SM7",
+		"Name": "4038 Ribbon",
+		"Original Brand": "Coles®",
+		"Original Model": "Coles 4038",
 		"Type": "Microphone",
-		"Description": "Shure® SM7"
+		"Description": "Coles® 4038"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Cab",
+		"Subcategory": "Microphone",
+		"Name": "409 Dynamic",
+		"IsLegacy": "true",
+		"Original Brand": "Sennheiser®",
+		"Original Model": "MD 409",
+		"Type": "Microphone",
+		"Description": "Sennheiser® MD 409"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Cab",
+		"Subcategory": "Microphone",
+		"Name": "414 Cond",
+		"IsLegacy": "true",
+		"Original Brand": "AKG®",
+		"Original Model": "C414 TLII",
+		"Type": "Microphone",
+		"Description": "AKG® C414 TLII"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Cab",
+		"Subcategory": "Microphone",
+		"Name": "421 Dynamic",
+		"Original Brand": "Sennheiser®",
+		"Original Model": "MD 421-U",
+		"Type": "Microphone",
+		"Description": "Sennheiser® MD 421-U"
 	},
 	{
 		"Version": "1.00",
@@ -955,11 +924,42 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Cab",
 		"Subcategory": "Microphone",
+		"Name": "57 Dynamic",
+		"Original Brand": "Shure®",
+		"Original Model": "SM57",
+		"Type": "Microphone",
+		"Description": "Shure® SM57"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Cab",
+		"Subcategory": "Microphone",
 		"Name": "67 Cond",
 		"Original Brand": "Neumann®",
 		"Original Model": "U67",
 		"Type": "Microphone",
 		"Description": "Neumann® U67"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Cab",
+		"Subcategory": "Microphone",
+		"Name": "7 Dynamic",
+		"Original Brand": "Shure®",
+		"Original Model": "SM7",
+		"Type": "Microphone",
+		"Description": "Shure® SM7"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Cab",
+		"Subcategory": "Microphone",
+		"Name": "84 Cond",
+		"IsLegacy": "true",
+		"Original Brand": "Neumann®",
+		"Original Model": "KM84",
+		"Type": "Microphone",
+		"Description": "Neumann® KM84"
 	},
 	{
 		"Version": "1.00",
@@ -997,22 +997,12 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Delay",
 		"Subcategory": "Mono, Stereo",
-		"Name": "Transistor Tape",
-		"Image": "Maestro® - Echoplex EP-3",
-		"Original Brand": "Maestro®",
-		"Original Model": "Echoplex EP-3",
+		"Name": "Ducked Delay",
+		"Image": "TC Electronic® - TC 2290",
+		"Original Brand": "TC Electronic®",
+		"Original Model": "TC 2290",
 		"Type": "Delay",
-		"Description": "Maestro® Echoplex EP-3"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Delay",
-		"Subcategory": "Stereo",
-		"Name": "Harmony Delay",
-		"Original Brand": "Line 6®",
-		"Original Model": "Harmony Delay",
-		"Type": "Delay,Pitch Shifter",
-		"Description": "Line 6 Original"
+		"Description": "TC Electronic® 2290"
 	},
 	{
 		"Version": "1.00",
@@ -1032,6 +1022,47 @@ data_line6['Line 6 Helix'] = [
 		"Original Brand": "Line 6®",
 		"Original Model": "Mod Chorus Echo",
 		"Type": "Delay",
+		"Description": "Line 6 Original"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Delay",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Simple Delay",
+		"Original Brand": "Line 6®",
+		"Original Model": "Simple Delay",
+		"Type": "Delay",
+		"Description": "Line 6 Original"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Delay",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Sweep Echo",
+		"Original Brand": "Line 6®",
+		"Original Model": "Sweep Echo",
+		"Type": "Delay",
+		"Description": "Line 6 Original"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Delay",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Transistor Tape",
+		"Image": "Maestro® - Echoplex EP-3",
+		"Original Brand": "Maestro®",
+		"Original Model": "Echoplex EP-3",
+		"Type": "Delay",
+		"Description": "Maestro® Echoplex EP-3"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Delay",
+		"Subcategory": "Stereo",
+		"Name": "Harmony Delay",
+		"Original Brand": "Line 6®",
+		"Original Model": "Harmony Delay",
+		"Type": "Delay,Pitch Shifter",
 		"Description": "Line 6 Original"
 	},
 	{
@@ -1066,59 +1097,6 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "1.00",
-		"Category": "Delay",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Simple Delay",
-		"Original Brand": "Line 6®",
-		"Original Model": "Simple Delay",
-		"Type": "Delay",
-		"Description": "Line 6 Original"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Delay",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Sweep Echo",
-		"Original Brand": "Line 6®",
-		"Original Model": "Sweep Echo",
-		"Type": "Delay",
-		"Description": "Line 6 Original"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Delay",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Ducked Delay",
-		"Image": "TC Electronic® - TC 2290",
-		"Original Brand": "TC Electronic®",
-		"Original Model": "TC 2290",
-		"Type": "Delay",
-		"Description": "TC Electronic® 2290"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Distortion",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Triangle Fuzz",
-		"Image": "Electro-Harmonix® - Big Muff Pi®",
-		"Original Brand": "Electro-Harmonix®",
-		"Original Model": "Big Muff Pi®",
-		"Type": "Fuzz",
-		"Description": "Electro-Harmonix® Big Muff Pi®"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Distortion",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Minotaur",
-		"Image": "Klon® - Centaur",
-		"Original Brand": "Klon®",
-		"Original Model": "Centaur",
-		"Type": "Overdrive",
-		"Description": "Klon® Centaur"
-	},
-	{
-		"Version": "1.00",
 		"Category": "Distortion",
 		"Subcategory": "Mono, Stereo",
 		"Name": "Arbitrator Fuzz",
@@ -1127,6 +1105,28 @@ data_line6['Line 6 Helix'] = [
 		"Original Model": "Fuzz Face®",
 		"Type": "Fuzz",
 		"Description": "Arbiter® Fuzz Face®"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Distortion",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Compulsive Drive",
+		"Image": "Fulltone® - OCD",
+		"Original Brand": "Fulltone®",
+		"Original Model": "OCD",
+		"Type": "Overdrive",
+		"Description": "Fulltone® OCD"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Distortion",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Hedgehog D9",
+		"Image": "MAXON® - SD9 Sonic Distortion",
+		"Original Brand": "MAXON®",
+		"Original Model": "SD9 Sonic Distortion",
+		"Type": "Distortion",
+		"Description": "MAXON® SD9 Sonic Distortion"
 	},
 	{
 		"Version": "1.00",
@@ -1153,55 +1153,12 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Distortion",
 		"Subcategory": "Mono, Stereo",
-		"Name": "Compulsive Drive",
-		"Image": "Fulltone® - OCD",
-		"Original Brand": "Fulltone®",
-		"Original Model": "OCD",
+		"Name": "Minotaur",
+		"Image": "Klon® - Centaur",
+		"Original Brand": "Klon®",
+		"Original Model": "Centaur",
 		"Type": "Overdrive",
-		"Description": "Fulltone® OCD"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Distortion",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Tycoctavia Fuzz",
-		"Image": "Tycobrahe® - Octavia",
-		"Original Brand": "Tycobrahe®",
-		"Original Model": "Octavia",
-		"Type": "Fuzz",
-		"Description": "Tycobrahe® Octavia"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Distortion",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Top Secret OD",
-		"Image": "DOD® - OD-250",
-		"Original Brand": "DOD®",
-		"Original Model": "OD-250",
-		"Type": "Overdrive",
-		"Description": "DOD® OD-250"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Distortion",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Vermin Dist",
-		"Image": "Pro Co® - Pro Co RAT",
-		"Original Brand": "Pro Co®",
-		"Original Model": "Pro Co RAT",
-		"Type": "Distortion"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Distortion",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Hedgehog D9",
-		"Image": "MAXON® - SD9 Sonic Distortion",
-		"Original Brand": "MAXON®",
-		"Original Model": "SD9 Sonic Distortion",
-		"Type": "Distortion",
-		"Description": "MAXON® SD9 Sonic Distortion"
+		"Description": "Klon® Centaur"
 	},
 	{
 		"Version": "1.00",
@@ -1218,11 +1175,54 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Distortion",
 		"Subcategory": "Mono, Stereo",
+		"Name": "Top Secret OD",
+		"Image": "DOD® - OD-250",
+		"Original Brand": "DOD®",
+		"Original Model": "OD-250",
+		"Type": "Overdrive",
+		"Description": "DOD® OD-250"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Distortion",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Triangle Fuzz",
+		"Image": "Electro-Harmonix® - Big Muff Pi®",
+		"Original Brand": "Electro-Harmonix®",
+		"Original Model": "Big Muff Pi®",
+		"Type": "Fuzz",
+		"Description": "Electro-Harmonix® Big Muff Pi®"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Distortion",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Tycoctavia Fuzz",
+		"Image": "Tycobrahe® - Octavia",
+		"Original Brand": "Tycobrahe®",
+		"Original Model": "Octavia",
+		"Type": "Fuzz",
+		"Description": "Tycobrahe® Octavia"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Distortion",
+		"Subcategory": "Mono, Stereo",
 		"Name": "Valve Driver",
 		"Image": "Chandler® - Tube Driver®",
 		"Original Brand": "Chandler®",
 		"Original Model": "Tube Driver®",
 		"Type": "Overdrive"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Distortion",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Vermin Dist",
+		"Image": "Pro Co® - Pro Co RAT",
+		"Original Brand": "Pro Co®",
+		"Original Model": "Pro Co RAT",
+		"Type": "Distortion"
 	},
 	{
 		"Version": "1.00",
@@ -1233,17 +1233,6 @@ data_line6['Line 6 Helix'] = [
 		"Original Model": "Deluxe Comp",
 		"Type": "Compressor,Dynamics",
 		"Description": "Line 6 Original"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Dynamics",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Red Squeeze",
-		"Image": "MXR® - Dyna Comp",
-		"Original Brand": "MXR®",
-		"Original Model": "Dyna Comp ",
-		"Type": "Compressor,Dynamics",
-		"Description": "MXR® Dyna Comp"
 	},
 	{
 		"Version": "1.00",
@@ -1277,13 +1266,14 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "1.00",
-		"Category": "EQ",
+		"Category": "Dynamics",
 		"Subcategory": "Mono, Stereo",
-		"Name": "Low Cut/High Cut",
-		"Original Brand": "Line 6®",
-		"Original Model": "Low Cut/High Cut",
-		"Type": "Equalizer",
-		"Description": "Line 6 Original"
+		"Name": "Red Squeeze",
+		"Image": "MXR® - Dyna Comp",
+		"Original Brand": "MXR®",
+		"Original Model": "Dyna Comp ",
+		"Type": "Compressor,Dynamics",
+		"Description": "MXR® Dyna Comp"
 	},
 	{
 		"Version": "1.00",
@@ -1294,6 +1284,16 @@ data_line6['Line 6 Helix'] = [
 		"Original Brand": "MXR®",
 		"Original Model": "10-Band Graphic EQ",
 		"Type": "Equalizer"
+	},
+	{
+		"Version": "1.00",
+		"Category": "EQ",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Low Cut/High Cut",
+		"Original Brand": "Line 6®",
+		"Original Model": "Low Cut/High Cut",
+		"Type": "Equalizer",
+		"Description": "Line 6 Original"
 	},
 	{
 		"Version": "1.00",
@@ -1364,33 +1364,11 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "1.00",
-		"Category": "Modulation",
-		"Subcategory": "Stereo",
-		"Name": "122 Rotary",
-		"Original Brand": "Leslie®",
-		"Original Model": "122",
-		"Type": "Tremolo",
-		"Description": "Leslie® 122"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Modulation",
-		"Subcategory": "Stereo",
-		"Name": "145 Rotary",
-		"Original Brand": "Leslie®",
-		"Original Model": "145",
-		"Type": "Tremolo",
-		"Description": "Leslie® 145"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Modulation",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Gray Flanger",
-		"Original Brand": "MXR®",
-		"Original Model": "117 Flanger",
-		"Type": "Flanger",
-		"Description": "MXR® 117 Flanger"
+		"Category": "Merge",
+		"Subcategory": "Merge",
+		"Name": "Mixer",
+		"Original Brand": "Line 6®",
+		"Type": "Split,Phase Invert"
 	},
 	{
 		"Version": "1.00",
@@ -1406,6 +1384,17 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Modulation",
 		"Subcategory": "Mono, Stereo",
+		"Name": "70s Chorus",
+		"Image": "Boss® - CE-1",
+		"Original Brand": "Boss®",
+		"Original Model": "CE-1",
+		"Type": "Chorus,Vibrato",
+		"Description": "BOSS® CE-1"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Modulation",
+		"Subcategory": "Mono, Stereo",
 		"Name": "AM Ring Mod",
 		"Original Brand": "Line 6®",
 		"Original Model": "AM Ring Mod",
@@ -1416,12 +1405,12 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Modulation",
 		"Subcategory": "Mono, Stereo",
-		"Name": "70s Chorus",
-		"Image": "Boss® - CE-1",
+		"Name": "Bubble Vibrato",
+		"Image": "Boss® - VB-2",
 		"Original Brand": "Boss®",
-		"Original Model": "CE-1",
-		"Type": "Chorus,Vibrato",
-		"Description": "BOSS® CE-1"
+		"Original Model": "VB-2",
+		"Type": "Vibrato",
+		"Description": "BOSS® VB-2 Vibrato"
 	},
 	{
 		"Version": "1.00",
@@ -1447,6 +1436,16 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Modulation",
 		"Subcategory": "Mono, Stereo",
+		"Name": "Gray Flanger",
+		"Original Brand": "MXR®",
+		"Original Model": "117 Flanger",
+		"Type": "Flanger",
+		"Description": "MXR® 117 Flanger"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Modulation",
+		"Subcategory": "Mono, Stereo",
 		"Name": "Harmonic Flanger",
 		"Original Brand": "Line 6®",
 		"Original Model": "Harmonic Flanger",
@@ -1457,21 +1456,20 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Modulation",
 		"Subcategory": "Mono, Stereo",
+		"Name": "Optical Trem",
+		"Original Brand": "Fender®",
+		"Type": "Tremolo",
+		"Description": "Fender® optical tremolo circuit"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Modulation",
+		"Subcategory": "Mono, Stereo",
 		"Name": "Script Mod Phase",
 		"Original Brand": "MXR®",
 		"Original Model": "Phase 90",
 		"Type": "Phaser",
 		"Description": "MXR® Phase 90"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Modulation",
-		"Subcategory": "Stereo",
-		"Name": "Pitch Ring Mod",
-		"Original Brand": "Line 6®",
-		"Original Model": "Pitch Ring Mod",
-		"Type": "Modulation,Pitch Shifter",
-		"Description": "Line 6 Original"
 	},
 	{
 		"Version": "1.00",
@@ -1487,22 +1485,41 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Modulation",
 		"Subcategory": "Stereo",
+		"Name": "122 Rotary",
+		"Original Brand": "Leslie®",
+		"Original Model": "122",
+		"Type": "Tremolo",
+		"Description": "Leslie® 122"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Modulation",
+		"Subcategory": "Stereo",
+		"Name": "145 Rotary",
+		"Original Brand": "Leslie®",
+		"Original Model": "145",
+		"Type": "Tremolo",
+		"Description": "Leslie® 145"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Modulation",
+		"Subcategory": "Stereo",
+		"Name": "Pitch Ring Mod",
+		"Original Brand": "Line 6®",
+		"Original Model": "Pitch Ring Mod",
+		"Type": "Modulation,Pitch Shifter",
+		"Description": "Line 6 Original"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Modulation",
+		"Subcategory": "Stereo",
 		"Name": "Trinity Chorus",
 		"Original Brand": "DyTronics®",
 		"Original Model": "Tri-Stereo Chorus",
 		"Type": "Chorus",
 		"Description": "DyTronics Tri-Stereo Chorus"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Modulation",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Bubble Vibrato",
-		"Image": "Boss® - VB-2",
-		"Original Brand": "Boss®",
-		"Original Model": "VB-2",
-		"Type": "Vibrato",
-		"Description": "BOSS® VB-2 Vibrato"
 	},
 	{
 		"Version": "1.00",
@@ -1516,22 +1533,13 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "1.00",
-		"Category": "Modulation",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Optical Trem",
-		"Original Brand": "Fender®",
-		"Type": "Tremolo",
-		"Description": "Fender® optical tremolo circuit"
-	},
-	{
-		"Version": "1.00",
 		"Category": "Pitch/Synth",
-		"Subcategory": "Stereo",
-		"Name": "3 OSC Synth",
-		"Original Brand": "Line 6®",
-		"Original Model": "3 OSC Synth",
-		"Type": "Oscillator",
-		"Description": "Line 6 Original"
+		"Subcategory": "Mono, Stereo",
+		"Name": "Pitch Wham",
+		"Original Brand": "DigiTech®",
+		"Original Model": "Whammy®",
+		"Type": "Pitch Shifter",
+		"Description": "DigiTech Whammy®"
 	},
 	{
 		"Version": "1.00",
@@ -1546,12 +1554,12 @@ data_line6['Line 6 Helix'] = [
 	{
 		"Version": "1.00",
 		"Category": "Pitch/Synth",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Pitch Wham",
-		"Original Brand": "DigiTech®",
-		"Original Model": "Whammy®",
-		"Type": "Pitch Shifter",
-		"Description": "DigiTech Whammy®"
+		"Subcategory": "Stereo",
+		"Name": "3 OSC Synth",
+		"Original Brand": "Line 6®",
+		"Original Model": "3 OSC Synth",
+		"Type": "Oscillator",
+		"Description": "Line 6 Original"
 	},
 	{
 		"Version": "1.00",
@@ -1699,33 +1707,33 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Send/Return",
 		"Subcategory": "Mono",
-		"Name": "Send 1",
+		"Name": "FX Loop 1",
 		"Original Brand": "Line 6®",
-		"Type": "Send"
+		"Type": "FX Loop"
 	},
 	{
 		"Version": "1.00",
 		"Category": "Send/Return",
 		"Subcategory": "Mono",
-		"Name": "Send 2",
+		"Name": "FX Loop 2",
 		"Original Brand": "Line 6®",
-		"Type": "Send"
+		"Type": "FX Loop"
 	},
 	{
 		"Version": "1.00",
 		"Category": "Send/Return",
 		"Subcategory": "Mono",
-		"Name": "Send 3",
+		"Name": "FX Loop 3",
 		"Original Brand": "Line 6®",
-		"Type": "Send"
+		"Type": "FX Loop"
 	},
 	{
 		"Version": "1.00",
 		"Category": "Send/Return",
 		"Subcategory": "Mono",
-		"Name": "Send 4",
+		"Name": "FX Loop 4",
 		"Original Brand": "Line 6®",
-		"Type": "Send"
+		"Type": "FX Loop"
 	},
 	{
 		"Version": "1.00",
@@ -1763,39 +1771,31 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Send/Return",
 		"Subcategory": "Mono",
-		"Name": "FX Loop 1",
+		"Name": "Send 1",
 		"Original Brand": "Line 6®",
-		"Type": "FX Loop"
+		"Type": "Send"
 	},
 	{
 		"Version": "1.00",
 		"Category": "Send/Return",
 		"Subcategory": "Mono",
-		"Name": "FX Loop 2",
+		"Name": "Send 2",
 		"Original Brand": "Line 6®",
-		"Type": "FX Loop"
+		"Type": "Send"
 	},
 	{
 		"Version": "1.00",
 		"Category": "Send/Return",
 		"Subcategory": "Mono",
-		"Name": "FX Loop 3",
+		"Name": "Send 3",
 		"Original Brand": "Line 6®",
-		"Type": "FX Loop"
+		"Type": "Send"
 	},
 	{
 		"Version": "1.00",
 		"Category": "Send/Return",
 		"Subcategory": "Mono",
-		"Name": "FX Loop 4",
-		"Original Brand": "Line 6®",
-		"Type": "FX Loop"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Send/Return",
-		"Subcategory": "Stereo",
-		"Name": "Send 1/2",
+		"Name": "Send 4",
 		"Original Brand": "Line 6®",
 		"Type": "Send"
 	},
@@ -1803,9 +1803,17 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Send/Return",
 		"Subcategory": "Stereo",
-		"Name": "Send 3/4",
+		"Name": "FX Loop 1/2",
 		"Original Brand": "Line 6®",
-		"Type": "Send"
+		"Type": "FX Loop"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Send/Return",
+		"Subcategory": "Stereo",
+		"Name": "FX Loop 3/4",
+		"Original Brand": "Line 6®",
+		"Type": "FX Loop"
 	},
 	{
 		"Version": "1.00",
@@ -1827,25 +1835,17 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Send/Return",
 		"Subcategory": "Stereo",
-		"Name": "FX Loop 1/2",
+		"Name": "Send 1/2",
 		"Original Brand": "Line 6®",
-		"Type": "FX Loop"
+		"Type": "Send"
 	},
 	{
 		"Version": "1.00",
 		"Category": "Send/Return",
 		"Subcategory": "Stereo",
-		"Name": "FX Loop 3/4",
+		"Name": "Send 3/4",
 		"Original Brand": "Line 6®",
-		"Type": "FX Loop"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Split",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Split Y",
-		"Original Brand": "Line 6®",
-		"Type": "Split"
+		"Type": "Send"
 	},
 	{
 		"Version": "1.00",
@@ -1865,22 +1865,20 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "1.00",
+		"Category": "Split",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Split Y",
+		"Original Brand": "Line 6®",
+		"Type": "Split"
+	},
+	{
+		"Version": "1.00",
 		"Category": "Volume/Pan",
 		"Subcategory": "Mono, Stereo",
 		"Name": "Gain",
 		"Original Brand": "Line 6®",
 		"Original Model": "Gain",
 		"Type": "Booster",
-		"Description": "Line 6 Original"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Volume/Pan",
-		"Subcategory": "Stereo",
-		"Name": "Pan",
-		"Original Brand": "Line 6®",
-		"Original Model": "Pan",
-		"Type": "Pan",
 		"Description": "Line 6 Original"
 	},
 	{
@@ -1895,61 +1893,13 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "1.00",
-		"Category": "Wah",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Conductor",
-		"Original Brand": "Maestro®",
-		"Original Model": "Boomerang",
-		"Type": "Wah",
-		"Description": "Maestro® Boomerang"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Wah",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Weeper",
-		"Original Brand": "Arbiter®",
-		"Original Model": "Cry Baby®",
-		"Type": "Wah",
-		"Description": "Arbiter® Cry Baby®"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Wah",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Teardrop 310",
-		"Original Brand": "Dunlop®",
-		"Original Model": "Cry Baby® Fasel model 310",
-		"Type": "Wah",
-		"Description": "Dunlop® Cry Baby® Fasel model 310"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Wah",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Fassel",
-		"Original Brand": "Dunlop®",
-		"Original Model": "Cry Baby® Super",
-		"Type": "Wah",
-		"Description": "Dunlop® Cry Baby® Super"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Wah",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Throaty",
-		"Original Brand": "Real McCoy®",
-		"Original Model": "RMC Real McCoy 1",
-		"Type": "Wah"
-	},
-	{
-		"Version": "1.00",
-		"Category": "Wah",
-		"Subcategory": "Mono, Stereo",
-		"Name": "UK Wah 846",
-		"Original Brand": "Vox®",
-		"Original Model": "V846",
-		"Type": "Wah"
+		"Category": "Volume/Pan",
+		"Subcategory": "Stereo",
+		"Name": "Pan",
+		"Original Brand": "Line 6®",
+		"Original Model": "Pan",
+		"Type": "Pan",
+		"Description": "Line 6 Original"
 	},
 	{
 		"Version": "1.00",
@@ -1975,6 +1925,64 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Wah",
 		"Subcategory": "Mono, Stereo",
+		"Name": "Colorful",
+		"Original Brand": "Colorsound®",
+		"Original Model": "Wah-fuzz",
+		"Type": "Wah,Fuzz",
+		"Description": "Colorsound® Wah-fuzz"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Wah",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Conductor",
+		"Original Brand": "Maestro®",
+		"Original Model": "Boomerang",
+		"Type": "Wah",
+		"Description": "Maestro® Boomerang"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Wah",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Fassel",
+		"Original Brand": "Dunlop®",
+		"Original Model": "Cry Baby® Super",
+		"Type": "Wah",
+		"Description": "Dunlop® Cry Baby® Super"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Wah",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Teardrop 310",
+		"Original Brand": "Dunlop®",
+		"Original Model": "Cry Baby® Fasel model 310",
+		"Type": "Wah",
+		"Description": "Dunlop® Cry Baby® Fasel model 310"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Wah",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Throaty",
+		"Original Brand": "Real McCoy®",
+		"Original Model": "RMC Real McCoy 1",
+		"Type": "Wah"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Wah",
+		"Subcategory": "Mono, Stereo",
+		"Name": "UK Wah 846",
+		"Original Brand": "Vox®",
+		"Original Model": "V846",
+		"Type": "Wah"
+	},
+	{
+		"Version": "1.00",
+		"Category": "Wah",
+		"Subcategory": "Mono, Stereo",
 		"Name": "Vetta Wah",
 		"Original Brand": "Line 6®",
 		"Original Model": "Vetta Wah",
@@ -1985,19 +1993,23 @@ data_line6['Line 6 Helix'] = [
 		"Version": "1.00",
 		"Category": "Wah",
 		"Subcategory": "Mono, Stereo",
-		"Name": "Colorful",
-		"Original Brand": "Colorsound®",
-		"Original Model": "Wah-fuzz",
-		"Type": "Wah,Fuzz",
-		"Description": "Colorsound® Wah-fuzz"
+		"Name": "Weeper",
+		"Original Brand": "Arbiter®",
+		"Original Model": "Cry Baby®",
+		"Type": "Wah",
+		"Description": "Arbiter® Cry Baby®"
 	},
 	{
-		"Version": "1.00",
-		"Category": "Merge",
-		"Subcategory": "Merge",
-		"Name": "Mixer",
-		"Original Brand": "Line 6®",
-		"Type": "Split,Phase Invert"
+		"Version": "1.04",
+		"Category": "Delay",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Reverse Delay"
+	},
+	{
+		"Version": "1.04",
+		"Category": "Delay",
+		"Subcategory": "Stereo",
+		"Name": "Dual Delay"
 	},
 	{
 		"Version": "1.06",
@@ -2072,6 +2084,16 @@ data_line6['Line 6 Helix'] = [
 	{
 		"Version": "1.06",
 		"Category": "Modulation",
+		"Subcategory": "Mono",
+		"Name": "Tremolo",
+		"Original Brand": "Boss®",
+		"Original Model": "PN-2",
+		"Type": "Tremolo",
+		"Description": "BOSS® PN-2"
+	},
+	{
+		"Version": "1.06",
+		"Category": "Modulation",
 		"Subcategory": "Mono, Stereo",
 		"Name": "Deluxe Phaser",
 		"Original Brand": "Line 6®",
@@ -2088,16 +2110,6 @@ data_line6['Line 6 Helix'] = [
 		"Original Model": "Dynamix Flanger",
 		"Type": "Flanger",
 		"Description": "Line 6 Original"
-	},
-	{
-		"Version": "1.06",
-		"Category": "Modulation",
-		"Subcategory": "Mono",
-		"Name": "Tremolo",
-		"Original Brand": "Boss®",
-		"Original Model": "PN-2",
-		"Type": "Tremolo",
-		"Description": "BOSS® PN-2"
 	},
 	{
 		"Version": "1.06",
@@ -2133,26 +2145,6 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.00",
 		"Category": "Amp",
 		"Subcategory": "Guitar",
-		"Name": "Line 6 2204 Mod",
-		"Original Brand": "Line 6®",
-		"Original Model": "2204 Mod",
-		"Type": "Guitar Amp,Amp",
-		"Description": "Line 6 Original based on a hot-rodded Marshall® JCM® 800"
-	},
-	{
-		"Version": "2.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Line 6 Fatality",
-		"Original Brand": "Line 6®",
-		"Original Model": "Fatality",
-		"Type": "Guitar Amp,Amp",
-		"Description": "Line 6 Original"
-	},
-	{
-		"Version": "2.00",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
 		"Name": "Cali IV Lead",
 		"Original Brand": "MESA/Boogie®",
 		"Original Model": "Mk IV",
@@ -2178,6 +2170,26 @@ data_line6['Line 6 Helix'] = [
 		"Original Model": "Mk IV",
 		"Type": "Guitar Amp,Amp",
 		"Description": "Rhythm II channel"
+	},
+	{
+		"Version": "2.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Line 6 2204 Mod",
+		"Original Brand": "Line 6®",
+		"Original Model": "2204 Mod",
+		"Type": "Guitar Amp,Amp",
+		"Description": "Line 6 Original based on a hot-rodded Marshall® JCM® 800"
+	},
+	{
+		"Version": "2.00",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Line 6 Fatality",
+		"Original Brand": "Line 6®",
+		"Original Model": "Fatality",
+		"Type": "Guitar Amp,Amp",
+		"Description": "Line 6 Original"
 	},
 	{
 		"Version": "2.00",
@@ -2272,25 +2284,6 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.20",
 		"Category": "Amp",
 		"Subcategory": "Bass",
-		"Name": "Woody Blue",
-		"Original Brand": "Acoustic®",
-		"Original Model": "360 bass amp",
-		"Type": "Bass Amp,Amp"
-	},
-	{
-		"Version": "2.20",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Line 6 Badonk",
-		"Original Brand": "Line 6®",
-		"Original Model": "Badonk",
-		"Type": "Guitar Amp,Amp",
-		"Description": "Line 6 Original inspired by the original high gain Big Bottom model"
-	},
-	{
-		"Version": "2.20",
-		"Category": "Amp",
-		"Subcategory": "Bass",
 		"Name": "Busy One Ch1",
 		"Original Brand": "Pearce®",
 		"Original Model": "BC-1 Bass Preamp",
@@ -2328,35 +2321,22 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "2.20",
-		"Category": "Cab",
-		"Subcategory": "Legacy Single, Legacy Dual",
-		"Name": "1×12 Del Sol",
-		"IsLegacy": "true",
-		"Original Brand": "Sunn®",
-		"Original Model": "1×12” Coliseum 300 bass cab",
-		"Type": "Guitar Cab,Cab"
+		"Category": "Amp",
+		"Subcategory": "Bass",
+		"Name": "Woody Blue",
+		"Original Brand": "Acoustic®",
+		"Original Model": "360 bass amp",
+		"Type": "Bass Amp,Amp"
 	},
 	{
 		"Version": "2.20",
-		"Category": "Cab",
-		"Subcategory": "Legacy Single, Legacy Dual",
-		"Name": "2×12 Match H30",
-		"IsLegacy": "true",
-		"Original Brand": "Matchless®",
-		"Original Model": "1×12” DC-30 cab (G12H30)",
-		"Type": "Guitar Cab,Cab",
-		"Description": "Matchless® DC-30 cab (12” G12H30 speaker)"
-	},
-	{
-		"Version": "2.20",
-		"Category": "Cab",
-		"Subcategory": "Legacy Single, Legacy Dual",
-		"Name": "2×12 Match G25",
-		"IsLegacy": "true",
-		"Original Brand": "Matchless®",
-		"Original Model": "1×12” DC-30 cab (Greenback 25)",
-		"Type": "Guitar Cab,Cab",
-		"Description": "Matchless® DC-30 cab (12” Greenback 25 speaker)"
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Line 6 Badonk",
+		"Original Brand": "Line 6®",
+		"Original Model": "Badonk",
+		"Type": "Guitar Amp,Amp",
+		"Description": "Line 6 Original inspired by the original high gain Big Bottom model"
 	},
 	{
 		"Version": "2.20",
@@ -2382,12 +2362,11 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.20",
 		"Category": "Cab",
 		"Subcategory": "Legacy Single, Legacy Dual",
-		"Name": "1×18 Woody Blue",
+		"Name": "1×12 Del Sol",
 		"IsLegacy": "true",
-		"Original Brand": "Acoustic®",
-		"Original Model": "1×18” 360 bass cab",
-		"Type": "Bass Cab,Cab",
-		"Description": "Acoustic® 360 18” bass cab"
+		"Original Brand": "Sunn®",
+		"Original Model": "1×12” Coliseum 300 bass cab",
+		"Type": "Guitar Cab,Cab"
 	},
 	{
 		"Version": "2.20",
@@ -2399,6 +2378,39 @@ data_line6['Line 6 Helix'] = [
 		"Original Model": "1×18” Coliseum 300 bass cab",
 		"Type": "Bass Cab,Cab",
 		"Description": "Sunn® Coliseum 300 bass cab (18” speaker)"
+	},
+	{
+		"Version": "2.20",
+		"Category": "Cab",
+		"Subcategory": "Legacy Single, Legacy Dual",
+		"Name": "1×18 Woody Blue",
+		"IsLegacy": "true",
+		"Original Brand": "Acoustic®",
+		"Original Model": "1×18” 360 bass cab",
+		"Type": "Bass Cab,Cab",
+		"Description": "Acoustic® 360 18” bass cab"
+	},
+	{
+		"Version": "2.20",
+		"Category": "Cab",
+		"Subcategory": "Legacy Single, Legacy Dual",
+		"Name": "2×12 Match G25",
+		"IsLegacy": "true",
+		"Original Brand": "Matchless®",
+		"Original Model": "1×12” DC-30 cab (Greenback 25)",
+		"Type": "Guitar Cab,Cab",
+		"Description": "Matchless® DC-30 cab (12” Greenback 25 speaker)"
+	},
+	{
+		"Version": "2.20",
+		"Category": "Cab",
+		"Subcategory": "Legacy Single, Legacy Dual",
+		"Name": "2×12 Match H30",
+		"IsLegacy": "true",
+		"Original Brand": "Matchless®",
+		"Original Model": "1×12” DC-30 cab (G12H30)",
+		"Type": "Guitar Cab,Cab",
+		"Description": "Matchless® DC-30 cab (12” G12H30 speaker)"
 	},
 	{
 		"Version": "2.20",
@@ -2493,29 +2505,11 @@ data_line6['Line 6 Helix'] = [
 	{
 		"Version": "2.30",
 		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Cartographer",
-		"Original Brand": "Ben Adrian®",
-		"Original Model": "Cartographer",
-		"Type": "Guitar Amp,Amp"
-	},
-	{
-		"Version": "2.30",
-		"Category": "Amp",
 		"Subcategory": "Bass",
 		"Name": "Agua 51",
 		"Original Brand": "Aguilar®",
 		"Original Model": "DB751 bass amp",
 		"Type": "Bass Amp,Amp"
-	},
-	{
-		"Version": "2.30",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Voltage Queen",
-		"Original Brand": "Victoria®",
-		"Original Model": "Electro King",
-		"Type": "Guitar Amp,Amp"
 	},
 	{
 		"Version": "2.30",
@@ -2554,9 +2548,27 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.30",
 		"Category": "Amp",
 		"Subcategory": "Guitar",
+		"Name": "Cartographer",
+		"Original Brand": "Ben Adrian®",
+		"Original Model": "Cartographer",
+		"Type": "Guitar Amp,Amp"
+	},
+	{
+		"Version": "2.30",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
 		"Name": "Derailed Ingrid",
 		"Original Brand": "Circuits®",
 		"Original Model": "Trainwreck Circuits® Express",
+		"Type": "Guitar Amp,Amp"
+	},
+	{
+		"Version": "2.30",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Voltage Queen",
+		"Original Brand": "Victoria®",
+		"Original Model": "Electro King",
 		"Type": "Guitar Amp,Amp"
 	},
 	{
@@ -2603,21 +2615,21 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.30",
 		"Category": "Modulation",
 		"Subcategory": "Mono, Stereo",
-		"Name": "Double Take",
-		"Original Brand": "Line 6®",
-		"Original Model": "Double Take",
-		"Type": "Delay,Pitch Shifter,Modulation",
-		"Description": "Line 6 Original doubler"
-	},
-	{
-		"Version": "2.30",
-		"Category": "Modulation",
-		"Subcategory": "Mono, Stereo",
 		"Name": "Bleat Chop Trem",
 		"Original Brand": "Lightfoot Labs©",
 		"Original Model": "Goatkeeper",
 		"Type": "Tremolo",
 		"Description": "Lightfoot Labs© Goatkeeper"
+	},
+	{
+		"Version": "2.30",
+		"Category": "Modulation",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Double Take",
+		"Original Brand": "Line 6®",
+		"Original Model": "Double Take",
+		"Type": "Delay,Pitch Shifter,Modulation",
+		"Description": "Line 6 Original doubler"
 	},
 	{
 		"Version": "2.30",
@@ -2633,6 +2645,16 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.50",
 		"Category": "Amp",
 		"Subcategory": "Guitar",
+		"Name": "Cali Texas Ch2",
+		"Original Brand": "MESA/Boogie®",
+		"Original Model": "Lonestar",
+		"Type": "Guitar Amp,Amp",
+		"Description": "Drive channel"
+	},
+	{
+		"Version": "2.50",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
 		"Name": "Placater Dirty",
 		"Original Brand": "Friedman®",
 		"Original Model": "BE-100",
@@ -2641,13 +2663,25 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "2.50",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Cali Texas Ch2",
-		"Original Brand": "MESA/Boogie®",
-		"Original Model": "Lonestar",
-		"Type": "Guitar Amp,Amp",
-		"Description": "Drive channel"
+		"Category": "Delay",
+		"Subcategory": "Legacy",
+		"Name": "Analog Echo",
+		"IsLegacy": "true",
+		"Original Brand": "Boss®",
+		"Original Model": "DM-2",
+		"Type": "Delay",
+		"Description": "Analog Echo is inspired by* the warm and distorted delays of a Boss® DM2 Analog Echo."
+	},
+	{
+		"Version": "2.50",
+		"Category": "Delay",
+		"Subcategory": "Legacy",
+		"Name": "Analog w/ Mod",
+		"IsLegacy": "true",
+		"Original Brand": "Electro-Harmonix®",
+		"Original Model": "Memory Man",
+		"Type": "Delay",
+		"Description": "Inspired by* the cherished tone of an Electro-Harmonix® Deluxe Memory Man, Analog w/ Mod delivers an organic-sounding analog delay with a generous dollop of lush, spatial chorus."
 	},
 	{
 		"Version": "2.50",
@@ -2686,17 +2720,6 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.50",
 		"Category": "Delay",
 		"Subcategory": "Legacy",
-		"Name": "Analog Echo",
-		"IsLegacy": "true",
-		"Original Brand": "Boss®",
-		"Original Model": "DM-2",
-		"Type": "Delay",
-		"Description": "Analog Echo is inspired by* the warm and distorted delays of a Boss® DM2 Analog Echo."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Delay",
-		"Subcategory": "Legacy",
 		"Name": "Dynamic",
 		"IsLegacy": "true",
 		"Original Brand": "TC Electronic®",
@@ -2719,28 +2742,6 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.50",
 		"Category": "Delay",
 		"Subcategory": "Legacy",
-		"Name": "Tube Echo",
-		"IsLegacy": "true",
-		"Original Brand": "Maestro®",
-		"Original Model": "Echoplex EP-1",
-		"Type": "Delay",
-		"Description": "Like peanut butter and chocolate, tubes and tape are a great combination. Tube Echo is inspired by* a Maestro® EP-1."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Delay",
-		"Subcategory": "Legacy",
-		"Name": "Tape Echo",
-		"IsLegacy": "true",
-		"Original Brand": "Maestro®",
-		"Original Model": "Echoplex EP-3",
-		"Type": "Delay",
-		"Description": "Tape Echo is inspired by* the unmistakable depth and sweetness of the Maestro® EP-3 Echoplex, which used transistor sound electronics instead of tubes."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Delay",
-		"Subcategory": "Legacy",
 		"Name": "Lo Res",
 		"IsLegacy": "true",
 		"Original Brand": "Line 6®",
@@ -2752,22 +2753,12 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.50",
 		"Category": "Delay",
 		"Subcategory": "Legacy",
-		"Name": "Analog w/ Mod",
+		"Name": "Multi-Head",
 		"IsLegacy": "true",
-		"Original Brand": "Electro-Harmonix®",
-		"Original Model": "Memory Man",
+		"Original Brand": "Roland®",
+		"Original Model": "RE-101 Space Echo",
 		"Type": "Delay",
-		"Description": "Inspired by* the cherished tone of an Electro-Harmonix® Deluxe Memory Man, Analog w/ Mod delivers an organic-sounding analog delay with a generous dollop of lush, spatial chorus."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Delay",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Multi Pass",
-		"Original Brand": "Line 6®",
-		"Original Model": "Multi Pass",
-		"Type": "Delay",
-		"Description": "Line 6 Original bandpass-filtered multitap delay"
+		"Description": "Multi-Head delay is inspired by* the sound created by the multiple playback heads of the Roland® RE-101 Space Echo."
 	},
 	{
 		"Version": "2.50",
@@ -2779,17 +2770,6 @@ data_line6['Line 6 Helix'] = [
 		"Original Model": "Ping Pong",
 		"Type": "Delay",
 		"Description": "Two separate channels of delay. The output of each channel bounces into the other to create the ping pong effect."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Delay",
-		"Subcategory": "Legacy",
-		"Name": "Multi-Head",
-		"IsLegacy": "true",
-		"Original Brand": "Roland®",
-		"Original Model": "RE-101 Space Echo",
-		"Type": "Delay",
-		"Description": "Multi-Head delay is inspired by* the sound created by the multiple playback heads of the Roland® RE-101 Space Echo."
 	},
 	{
 		"Version": "2.50",
@@ -2826,25 +2806,35 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "2.50",
-		"Category": "Distortion",
+		"Category": "Delay",
 		"Subcategory": "Legacy",
-		"Name": "Fuzz Pi",
+		"Name": "Tape Echo",
 		"IsLegacy": "true",
-		"Original Brand": "Electro-Harmonix®",
-		"Original Model": "Big Muff Pi",
-		"Type": "Fuzz",
-		"Description": "Fuzz Pi delivers plenty of thick distortion and oceans of sustain inspired by* the tone of an Electro-Harmonix® Big Muff Pi®."
+		"Original Brand": "Maestro®",
+		"Original Model": "Echoplex EP-3",
+		"Type": "Delay",
+		"Description": "Tape Echo is inspired by* the unmistakable depth and sweetness of the Maestro® EP-3 Echoplex, which used transistor sound electronics instead of tubes."
 	},
 	{
 		"Version": "2.50",
-		"Category": "Distortion",
+		"Category": "Delay",
 		"Subcategory": "Legacy",
-		"Name": "Facial Fuzz",
+		"Name": "Tube Echo",
 		"IsLegacy": "true",
-		"Original Brand": "Arbiter®",
-		"Original Model": "Fuzz Face",
-		"Type": "Fuzz",
-		"Description": "Bottom-heavy distortion inspired by* the Arbiter Fuzz Face, which is associated with the tones of Jimi Hendrix and Eric Johnson."
+		"Original Brand": "Maestro®",
+		"Original Model": "Echoplex EP-1",
+		"Type": "Delay",
+		"Description": "Like peanut butter and chocolate, tubes and tape are a great combination. Tube Echo is inspired by* a Maestro® EP-1."
+	},
+	{
+		"Version": "2.50",
+		"Category": "Delay",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Multi Pass",
+		"Original Brand": "Line 6®",
+		"Original Model": "Multi Pass",
+		"Type": "Delay",
+		"Description": "Line 6 Original bandpass-filtered multitap delay"
 	},
 	{
 		"Version": "2.50",
@@ -2862,45 +2852,12 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.50",
 		"Category": "Distortion",
 		"Subcategory": "Legacy",
-		"Name": "Jet Fuzz",
+		"Name": "Classic Dist",
 		"IsLegacy": "true",
-		"Original Brand": "Roland®",
-		"Original Model": "Jet Phaser",
-		"Type": "Fuzz",
-		"Description": "Part fuzz/part phaser, Jet Fuzz delivers the best of both. Inspired by* the Roland® Jet Phaser."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Distortion",
-		"Subcategory": "Legacy",
-		"Name": "Line 6 Distortion",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Original Model": "Line 6 Distortion",
+		"Original Brand": "Pro Co®",
+		"Original Model": "Pro Co RAT",
 		"Type": "Distortion",
-		"Description": "Completely saturated and over the top, Line 6 Distortion is massive and totally crazy."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Distortion",
-		"Subcategory": "Legacy",
-		"Name": "Heavy Dist",
-		"IsLegacy": "true",
-		"Original Brand": "Boss®",
-		"Original Model": "Metal Zone",
-		"Type": "Distortion",
-		"Description": "The industry-standard heavy metal distortion of the late ’80s. Inspired by* a Boss® Metal Zone."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Distortion",
-		"Subcategory": "Legacy",
-		"Name": "Octave Fuzz",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Original Model": "Octave Fuzz",
-		"Type": "Fuzz",
-		"Description": "White-hot fuzz with an octave above! This classic fuzz+octave effect was used by Jimi and other pioneering players. Inspired by* the Tycobrahe® Octavia."
+		"Description": "Angry and aggressive, Classic Distortion is inspired by* a ProCo Rat."
 	},
 	{
 		"Version": "2.50",
@@ -2917,34 +2874,45 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.50",
 		"Category": "Distortion",
 		"Subcategory": "Legacy",
-		"Name": "Overdrive",
+		"Name": "Facial Fuzz",
 		"IsLegacy": "true",
-		"Original Brand": "DOD®",
-		"Original Model": "Preamp 250",
-		"Type": "Overdrive",
-		"Description": "Inspired by* a DOD® Overdrive/Preamp 250, which was designed to slam the input of a tube amp forcing it to distort violently."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Distortion",
-		"Subcategory": "Legacy",
-		"Name": "Classic Dist",
-		"IsLegacy": "true",
-		"Original Brand": "Pro Co®",
-		"Original Model": "Pro Co RAT",
-		"Type": "Distortion",
-		"Description": "Angry and aggressive, Classic Distortion is inspired by* a ProCo Rat."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Distortion",
-		"Subcategory": "Legacy",
-		"Name": "Sub Oct Fuzz",
-		"IsLegacy": "true",
-		"Original Brand": "PAiA®",
-		"Original Model": "Roctave Divider",
+		"Original Brand": "Arbiter®",
+		"Original Model": "Fuzz Face",
 		"Type": "Fuzz",
-		"Description": "Biting fuzz with an octave below! Excellent for bass guitar. Inspired by* the PAiA Roctave Divider."
+		"Description": "Bottom-heavy distortion inspired by* the Arbiter Fuzz Face, which is associated with the tones of Jimi Hendrix and Eric Johnson."
+	},
+	{
+		"Version": "2.50",
+		"Category": "Distortion",
+		"Subcategory": "Legacy",
+		"Name": "Fuzz Pi",
+		"IsLegacy": "true",
+		"Original Brand": "Electro-Harmonix®",
+		"Original Model": "Big Muff Pi",
+		"Type": "Fuzz",
+		"Description": "Fuzz Pi delivers plenty of thick distortion and oceans of sustain inspired by* the tone of an Electro-Harmonix® Big Muff Pi®."
+	},
+	{
+		"Version": "2.50",
+		"Category": "Distortion",
+		"Subcategory": "Legacy",
+		"Name": "Heavy Dist",
+		"IsLegacy": "true",
+		"Original Brand": "Boss®",
+		"Original Model": "Metal Zone",
+		"Type": "Distortion",
+		"Description": "The industry-standard heavy metal distortion of the late ’80s. Inspired by* a Boss® Metal Zone."
+	},
+	{
+		"Version": "2.50",
+		"Category": "Distortion",
+		"Subcategory": "Legacy",
+		"Name": "Jet Fuzz",
+		"IsLegacy": "true",
+		"Original Brand": "Roland®",
+		"Original Model": "Jet Phaser",
+		"Type": "Fuzz",
+		"Description": "Part fuzz/part phaser, Jet Fuzz delivers the best of both. Inspired by* the Roland® Jet Phaser."
 	},
 	{
 		"Version": "2.50",
@@ -2961,6 +2929,17 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.50",
 		"Category": "Distortion",
 		"Subcategory": "Legacy",
+		"Name": "Line 6 Distortion",
+		"IsLegacy": "true",
+		"Original Brand": "Line 6®",
+		"Original Model": "Line 6 Distortion",
+		"Type": "Distortion",
+		"Description": "Completely saturated and over the top, Line 6 Distortion is massive and totally crazy."
+	},
+	{
+		"Version": "2.50",
+		"Category": "Distortion",
+		"Subcategory": "Legacy",
 		"Name": "Line 6 Drive",
 		"IsLegacy": "true",
 		"Original Brand": "Colorsound®",
@@ -2972,12 +2951,45 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.50",
 		"Category": "Distortion",
 		"Subcategory": "Legacy",
+		"Name": "Octave Fuzz",
+		"IsLegacy": "true",
+		"Original Brand": "Line 6®",
+		"Original Model": "Octave Fuzz",
+		"Type": "Fuzz",
+		"Description": "White-hot fuzz with an octave above! This classic fuzz+octave effect was used by Jimi and other pioneering players. Inspired by* the Tycobrahe® Octavia."
+	},
+	{
+		"Version": "2.50",
+		"Category": "Distortion",
+		"Subcategory": "Legacy",
+		"Name": "Overdrive",
+		"IsLegacy": "true",
+		"Original Brand": "DOD®",
+		"Original Model": "Preamp 250",
+		"Type": "Overdrive",
+		"Description": "Inspired by* a DOD® Overdrive/Preamp 250, which was designed to slam the input of a tube amp forcing it to distort violently."
+	},
+	{
+		"Version": "2.50",
+		"Category": "Distortion",
+		"Subcategory": "Legacy",
 		"Name": "Screamer",
 		"IsLegacy": "true",
 		"Original Brand": "Ibanez®",
 		"Original Model": "TS808",
 		"Type": "Overdrive",
 		"Description": "Inspired by the smooth medium-gain tones of the collectable original, Screamer is based on* an Ibanez® Tube Screamer®."
+	},
+	{
+		"Version": "2.50",
+		"Category": "Distortion",
+		"Subcategory": "Legacy",
+		"Name": "Sub Oct Fuzz",
+		"IsLegacy": "true",
+		"Original Brand": "PAiA®",
+		"Original Model": "Roctave Divider",
+		"Type": "Fuzz",
+		"Description": "Biting fuzz with an octave below! Excellent for bass guitar. Inspired by* the PAiA Roctave Divider."
 	},
 	{
 		"Version": "2.50",
@@ -3016,6 +3028,17 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.50",
 		"Category": "Dynamics",
 		"Subcategory": "Legacy",
+		"Name": "Boost Comp",
+		"IsLegacy": "true",
+		"Original Brand": "MXR®",
+		"Original Model": "Micro Amp",
+		"Type": "Booster",
+		"Description": "A punchy boost of gain inspired by* an MXR® Micro Amp. The compressor can add hang time to your sustain and fill out your leads."
+	},
+	{
+		"Version": "2.50",
+		"Category": "Dynamics",
+		"Subcategory": "Legacy",
 		"Name": "Red Comp",
 		"IsLegacy": "true",
 		"Original Brand": "MXR®",
@@ -3033,17 +3056,6 @@ data_line6['Line 6 Helix'] = [
 		"Original Model": "LA-2A",
 		"Type": "Compressor,Dynamics",
 		"Description": "Tube-style compression with added low-end warmth inspired by* the characteristic color of the Teletronix® LA-2A® compressor, a studio standard."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Dynamics",
-		"Subcategory": "Legacy",
-		"Name": "Boost Comp",
-		"IsLegacy": "true",
-		"Original Brand": "MXR®",
-		"Original Model": "Micro Amp",
-		"Type": "Booster",
-		"Description": "A punchy boost of gain inspired by* an MXR® Micro Amp. The compressor can add hang time to your sustain and fill out your leads."
 	},
 	{
 		"Version": "2.50",
@@ -3082,12 +3094,11 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.50",
 		"Category": "Filter",
 		"Subcategory": "Legacy",
-		"Name": "Throbber",
+		"Name": "Obi Wah",
 		"IsLegacy": "true",
-		"Original Brand": "Electrix®",
-		"Original Model": "Filter Factory",
+		"Original Brand": "Oberheim®",
 		"Type": "Filter",
-		"Description": "Perfect for a multitude of cool electronica-style sounds and textures, Throbber is inspired by* the Electrix® Filter Factory."
+		"Description": "Obi Wah creates sequential changes in tone by emphasizing random frequencies. Inspired by* the Oberheim® Voltage Controlled sample-and-hold filter."
 	},
 	{
 		"Version": "2.50",
@@ -3137,22 +3148,12 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.50",
 		"Category": "Filter",
 		"Subcategory": "Legacy",
-		"Name": "Voice Box",
+		"Name": "Throbber",
 		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Original Model": "Voice Box",
+		"Original Brand": "Electrix®",
+		"Original Model": "Filter Factory",
 		"Type": "Filter",
-		"Description": "Let your guitar Come Alive with the sound of a classic talk box. Inspired by vocoders, vocal tracts and surgical tubing."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Filter",
-		"Subcategory": "Legacy",
-		"Name": "Obi Wah",
-		"IsLegacy": "true",
-		"Original Brand": "Oberheim®",
-		"Type": "Filter",
-		"Description": "Obi Wah creates sequential changes in tone by emphasizing random frequencies. Inspired by* the Oberheim® Voltage Controlled sample-and-hold filter."
+		"Description": "Perfect for a multitude of cool electronica-style sounds and textures, Throbber is inspired by* the Electrix® Filter Factory."
 	},
 	{
 		"Version": "2.50",
@@ -3186,6 +3187,17 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "2.50",
+		"Category": "Filter",
+		"Subcategory": "Legacy",
+		"Name": "Voice Box",
+		"IsLegacy": "true",
+		"Original Brand": "Line 6®",
+		"Original Model": "Voice Box",
+		"Type": "Filter",
+		"Description": "Let your guitar Come Alive with the sound of a classic talk box. Inspired by vocoders, vocal tracts and surgical tubing."
+	},
+	{
+		"Version": "2.50",
 		"Category": "Modulation",
 		"Subcategory": "Legacy",
 		"Name": "80A Flanger",
@@ -3194,50 +3206,6 @@ data_line6['Line 6 Helix'] = [
 		"Original Model": "80A Flanger",
 		"Type": "Flanger",
 		"Description": "The gritty and spacey sweeps of 80A Flanger are inspired by* the distinctive sound of the A/DA Flanger."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Modulation",
-		"Subcategory": "Legacy",
-		"Name": "Barberpole",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Original Model": "Barberpole",
-		"Type": "Modulation",
-		"Description": "A classic effect from the world of modular synths. Depending on how you set it, this phaser either sounds like it’s always going up or always down. Set to stereo you get both!"
-	},
-	{
-		"Version": "2.50",
-		"Category": "Modulation",
-		"Subcategory": "Legacy",
-		"Name": "Dual Phaser",
-		"IsLegacy": "true",
-		"Original Brand": "Mu-Tron®",
-		"Original Model": "Bi-Phase",
-		"Type": "Phaser",
-		"Description": "Dual Phaser delivers a big jet sound inspired by* a Mu-Tron® Bi-Phase."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Modulation",
-		"Subcategory": "Legacy",
-		"Name": "Analog Chorus",
-		"IsLegacy": "true",
-		"Original Brand": "Boss®",
-		"Original Model": "CE-1",
-		"Type": "Chorus",
-		"Description": "Inspired by* the big and warm tones of a Boss® CE-1 Chorus Ensemble, the original stompbox chorus."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Modulation",
-		"Subcategory": "Legacy",
-		"Name": "Dimension",
-		"IsLegacy": "true",
-		"Original Brand": "Roland®",
-		"Original Model": "Dimension D",
-		"Type": "Chorus",
-		"Description": "Inspired by* the Roland® Dimension D, one of the first true-stereo chorus units. It’s relatively subtle in nature and became an industry standard for double-track effects."
 	},
 	{
 		"Version": "2.50",
@@ -3254,6 +3222,17 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.50",
 		"Category": "Modulation",
 		"Subcategory": "Legacy",
+		"Name": "Analog Chorus",
+		"IsLegacy": "true",
+		"Original Brand": "Boss®",
+		"Original Model": "CE-1",
+		"Type": "Chorus",
+		"Description": "Inspired by* the big and warm tones of a Boss® CE-1 Chorus Ensemble, the original stompbox chorus."
+	},
+	{
+		"Version": "2.50",
+		"Category": "Modulation",
+		"Subcategory": "Legacy",
 		"Name": "Analog Flanger",
 		"IsLegacy": "true",
 		"Original Brand": "MXR®",
@@ -3265,12 +3244,44 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.50",
 		"Category": "Modulation",
 		"Subcategory": "Legacy",
-		"Name": "Panned Phaser",
+		"Name": "Barberpole",
 		"IsLegacy": "true",
-		"Original Brand": "Ibanez®",
-		"Original Model": "Flying Pan",
+		"Original Brand": "Line 6®",
+		"Original Model": "Barberpole",
+		"Type": "Modulation",
+		"Description": "A classic effect from the world of modular synths. Depending on how you set it, this phaser either sounds like it’s always going up or always down. Set to stereo you get both!"
+	},
+	{
+		"Version": "2.50",
+		"Category": "Modulation",
+		"Subcategory": "Legacy",
+		"Name": "Bias Tremolo",
+		"IsLegacy": "true",
+		"Original Brand": "Vox®",
+		"Type": "Tremolo",
+		"Description": "Bias Trem is inspired by* the 1960 Vox® AC-15 Tremolo, which got its pulse by literally varying the bias of the power amp tubes."
+	},
+	{
+		"Version": "2.50",
+		"Category": "Modulation",
+		"Subcategory": "Legacy",
+		"Name": "Dimension",
+		"IsLegacy": "true",
+		"Original Brand": "Roland®",
+		"Original Model": "Dimension D",
+		"Type": "Chorus",
+		"Description": "Inspired by* the Roland® Dimension D, one of the first true-stereo chorus units. It’s relatively subtle in nature and became an industry standard for double-track effects."
+	},
+	{
+		"Version": "2.50",
+		"Category": "Modulation",
+		"Subcategory": "Legacy",
+		"Name": "Dual Phaser",
+		"IsLegacy": "true",
+		"Original Brand": "Mu-Tron®",
+		"Original Model": "Bi-Phase",
 		"Type": "Phaser",
-		"Description": "A hypnotizing phaser that slithers from side to side. Inspired by* the sound of an Ibanez® Flying Pan, which is a four-stage phase shifter with a panner built in."
+		"Description": "Dual Phaser delivers a big jet sound inspired by* a Mu-Tron® Bi-Phase."
 	},
 	{
 		"Version": "2.50",
@@ -3298,12 +3309,43 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.50",
 		"Category": "Modulation",
 		"Subcategory": "Legacy",
+		"Name": "Opto Tremolo",
+		"IsLegacy": "true",
+		"Original Brand": "Fender®",
+		"Type": "Tremolo",
+		"Description": "Opto Trem is inspired by* the optical tremolo circuit that was used in the blackface Fender® amps like the ’64 Deluxe Reverb®."
+	},
+	{
+		"Version": "2.50",
+		"Category": "Modulation",
+		"Subcategory": "Legacy",
+		"Name": "Panned Phaser",
+		"IsLegacy": "true",
+		"Original Brand": "Ibanez®",
+		"Original Model": "Flying Pan",
+		"Type": "Phaser",
+		"Description": "A hypnotizing phaser that slithers from side to side. Inspired by* the sound of an Ibanez® Flying Pan, which is a four-stage phase shifter with a panner built in."
+	},
+	{
+		"Version": "2.50",
+		"Category": "Modulation",
+		"Subcategory": "Legacy",
 		"Name": "Panner",
 		"IsLegacy": "true",
 		"Original Brand": "Line 6®",
 		"Original Model": "Panner",
 		"Type": "Modulation",
 		"Description": "This effect pans back and forth between your left and right channels. If you run it in mono, it’s basically tremolo."
+	},
+	{
+		"Version": "2.50",
+		"Category": "Modulation",
+		"Subcategory": "Legacy",
+		"Name": "Pattern Tremolo",
+		"IsLegacy": "true",
+		"Original Brand": "Lightfoot Labs©",
+		"Type": "Tremolo",
+		"Description": "Engage up to four tremolo patterns to play in sequence. This is a truly original textural effect inspired by* a Lightfoot Labs Goatkeeper."
 	},
 	{
 		"Version": "2.50",
@@ -3320,28 +3362,6 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.50",
 		"Category": "Modulation",
 		"Subcategory": "Legacy",
-		"Name": "Ring Modulator",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Original Model": "Ring Modulator",
-		"Type": "Ring Modulator",
-		"Description": "Perfect for those late-night jams when only the weirdest, wildest sounds will do."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Modulation",
-		"Subcategory": "Legacy",
-		"Name": "Tri Chorus",
-		"IsLegacy": "true",
-		"Original Brand": "DyTronics®",
-		"Original Model": "Tri-Stereo Chorus",
-		"Type": "Chorus",
-		"Description": "Tri Chorus is inspired by* the larger-than-life sound of a Song Bird/DyTronics Tri-Stereo Chorus."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Modulation",
-		"Subcategory": "Legacy",
 		"Name": "Pitch Vibrato",
 		"IsLegacy": "true",
 		"Original Brand": "Boss®",
@@ -3353,31 +3373,12 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.50",
 		"Category": "Modulation",
 		"Subcategory": "Legacy",
-		"Name": "Bias Tremolo",
+		"Name": "Ring Modulator",
 		"IsLegacy": "true",
-		"Original Brand": "Vox®",
-		"Type": "Tremolo",
-		"Description": "Bias Trem is inspired by* the 1960 Vox® AC-15 Tremolo, which got its pulse by literally varying the bias of the power amp tubes."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Modulation",
-		"Subcategory": "Legacy",
-		"Name": "Opto Tremolo",
-		"IsLegacy": "true",
-		"Original Brand": "Fender®",
-		"Type": "Tremolo",
-		"Description": "Opto Trem is inspired by* the optical tremolo circuit that was used in the blackface Fender® amps like the ’64 Deluxe Reverb®."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Modulation",
-		"Subcategory": "Legacy",
-		"Name": "Pattern Tremolo",
-		"IsLegacy": "true",
-		"Original Brand": "Lightfoot Labs©",
-		"Type": "Tremolo",
-		"Description": "Engage up to four tremolo patterns to play in sequence. This is a truly original textural effect inspired by* a Lightfoot Labs Goatkeeper."
+		"Original Brand": "Line 6®",
+		"Original Model": "Ring Modulator",
+		"Type": "Ring Modulator",
+		"Description": "Perfect for those late-night jams when only the weirdest, wildest sounds will do."
 	},
 	{
 		"Version": "2.50",
@@ -3413,11 +3414,33 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.50",
 		"Category": "Modulation",
 		"Subcategory": "Legacy",
+		"Name": "Tri Chorus",
+		"IsLegacy": "true",
+		"Original Brand": "DyTronics®",
+		"Original Model": "Tri-Stereo Chorus",
+		"Type": "Chorus",
+		"Description": "Tri Chorus is inspired by* the larger-than-life sound of a Song Bird/DyTronics Tri-Stereo Chorus."
+	},
+	{
+		"Version": "2.50",
+		"Category": "Modulation",
+		"Subcategory": "Legacy",
 		"Name": "U-Vibe",
 		"IsLegacy": "true",
 		"Original Brand": "Uni-Vibe®",
 		"Type": "Vibrato,Chorus",
 		"Description": "Inspired by* the pulsing push of the now-legendary Uni-Vibe®. One listen to “Machine Gun” and you’ll be hooked!"
+	},
+	{
+		"Version": "2.50",
+		"Category": "Pitch/Synth",
+		"Subcategory": "Legacy",
+		"Name": "Attack Synth",
+		"IsLegacy": "true",
+		"Original Brand": "Korg®",
+		"Original Model": "X911",
+		"Type": "Synth",
+		"Description": "Inspired by* a waveform and wave-shaping functions of a Korg® X911 Guitar Synth"
 	},
 	{
 		"Version": "2.50",
@@ -3440,17 +3463,6 @@ data_line6['Line 6 Helix'] = [
 		"Original Model": "GR700 Guitar Synth",
 		"Type": "Synth",
 		"Description": "Named Growler for a reason, this model produces a sinister “Grrrrrrrrr” that’s inspired by* a Roland® GR700 Guitar Synth and a Mu-Tron® III."
-	},
-	{
-		"Version": "2.50",
-		"Category": "Pitch/Synth",
-		"Subcategory": "Legacy",
-		"Name": "Synth String",
-		"IsLegacy": "true",
-		"Original Brand": "Roland®",
-		"Original Model": "GR700 Guitar Synth",
-		"Type": "Synth",
-		"Description": "A monophonic synth sound inspired by* the Roland® GR700 Guitar Synth."
 	},
 	{
 		"Version": "2.50",
@@ -3489,12 +3501,12 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.50",
 		"Category": "Pitch/Synth",
 		"Subcategory": "Legacy",
-		"Name": "Attack Synth",
+		"Name": "Synth String",
 		"IsLegacy": "true",
-		"Original Brand": "Korg®",
-		"Original Model": "X911",
+		"Original Brand": "Roland®",
+		"Original Model": "GR700 Guitar Synth",
 		"Type": "Synth",
-		"Description": "Inspired by* a waveform and wave-shaping functions of a Korg® X911 Guitar Synth"
+		"Description": "A monophonic synth sound inspired by* the Roland® GR700 Guitar Synth."
 	},
 	{
 		"Version": "2.50",
@@ -3504,6 +3516,15 @@ data_line6['Line 6 Helix'] = [
 		"Original Brand": "Line 6®",
 		"Type": "Reverb",
 		"Description": "Line 6 Original, Plate Mod similar to Strymon® Big Sky"
+	},
+	{
+		"Version": "2.50",
+		"Category": "Reverb",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Ganymede",
+		"Original Brand": "Line 6®",
+		"Type": "Reverb",
+		"Description": "Line 6 Original, Modulated Reverb Similar to Boss® RV6"
 	},
 	{
 		"Version": "2.50",
@@ -3533,13 +3554,14 @@ data_line6['Line 6 Helix'] = [
 		"Description": "Line 6 Original, Cloud Reverb, Similar to Strymon® Big Sky"
 	},
 	{
-		"Version": "2.50",
-		"Category": "Reverb",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Ganymede",
-		"Original Brand": "Line 6®",
-		"Type": "Reverb",
-		"Description": "Line 6 Original, Modulated Reverb Similar to Boss® RV6"
+		"Version": "2.60",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Cali Texas Ch1",
+		"Original Brand": "MESA/Boogie®",
+		"Original Model": "Lonestar",
+		"Type": "Guitar Amp,Amp",
+		"Description": "Clean channel"
 	},
 	{
 		"Version": "2.60",
@@ -3548,16 +3570,6 @@ data_line6['Line 6 Helix'] = [
 		"Name": "Placater Clean",
 		"Original Brand": "Friedman®",
 		"Original Model": "BE-100",
-		"Type": "Guitar Amp,Amp",
-		"Description": "Clean channel"
-	},
-	{
-		"Version": "2.60",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Cali Texas Ch1",
-		"Original Brand": "MESA/Boogie®",
-		"Original Model": "Lonestar",
 		"Type": "Guitar Amp,Amp",
 		"Description": "Clean channel"
 	},
@@ -3603,47 +3615,6 @@ data_line6['Line 6 Helix'] = [
 	{
 		"Version": "2.80",
 		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Revv Gen Red",
-		"Image": "Revv® - Generator 120 Red",
-		"Original Brand": "Revv®",
-		"Original Model": "Generator 120 (red)",
-		"Type": "Guitar Amp,Amp",
-		"Description": "based on the red (gain 2) channel of the Revv® Generator 120"
-	},
-	{
-		"Version": "2.80",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Grammatico Brt",
-		"Original Brand": "Grammatico®",
-		"Original Model": "Modern 2016 Grammatico LaGrange",
-		"Type": "Guitar Amp,Amp",
-		"Description": "bright channel"
-	},
-	{
-		"Version": "2.80",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Grammatico Jump",
-		"Original Brand": "Grammatico®",
-		"Original Model": "Modern 2016 Grammatico LaGrange",
-		"Type": "Guitar Amp,Amp",
-		"Description": "jumped channels"
-	},
-	{
-		"Version": "2.80",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Grammatico Nrm",
-		"Original Brand": "Grammatico®",
-		"Original Model": "Modern 2016 Grammatico LaGrange",
-		"Type": "Guitar Amp,Amp",
-		"Description": "normal channel"
-	},
-	{
-		"Version": "2.80",
-		"Category": "Amp",
 		"Subcategory": "Bass",
 		"Name": "Ampeg SVT-4 PRO",
 		"Image": "Ampeg® - SVT-4 Pro",
@@ -3683,25 +3654,44 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "2.80",
-		"Category": "Distortion",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Heir Apparent",
-		"Image": "Analogman® - Prince of Tone",
-		"Original Brand": "Analogman®",
-		"Original Model": "Prince of Tone",
-		"Type": "Distortion",
-		"Description": "Analogman Prince of Tone (basically half a King of Tone)"
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Grammatico Brt",
+		"Original Brand": "Grammatico®",
+		"Original Model": "Modern 2016 Grammatico LaGrange",
+		"Type": "Guitar Amp,Amp",
+		"Description": "bright channel"
 	},
 	{
 		"Version": "2.80",
-		"Category": "Distortion",
-		"Subcategory": "Mono, Stereo",
-		"Name": "ZeroAmp Bass DI",
-		"Image": "Tech 21® - SansAmp Bass Driver DI V1",
-		"Original Brand": "Tech 21®",
-		"Original Model": "SansAmp Bass Driver DI V1",
-		"Type": "Overdrive",
-		"Description": "Tech 21® SansAmp Bass Driver DI V1"
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Grammatico Jump",
+		"Original Brand": "Grammatico®",
+		"Original Model": "Modern 2016 Grammatico LaGrange",
+		"Type": "Guitar Amp,Amp",
+		"Description": "jumped channels"
+	},
+	{
+		"Version": "2.80",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Grammatico Nrm",
+		"Original Brand": "Grammatico®",
+		"Original Model": "Modern 2016 Grammatico LaGrange",
+		"Type": "Guitar Amp,Amp",
+		"Description": "normal channel"
+	},
+	{
+		"Version": "2.80",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Revv Gen Red",
+		"Image": "Revv® - Generator 120 Red",
+		"Original Brand": "Revv®",
+		"Original Model": "Generator 120 (red)",
+		"Type": "Guitar Amp,Amp",
+		"Description": "based on the red (gain 2) channel of the Revv® Generator 120"
 	},
 	{
 		"Version": "2.80",
@@ -3718,6 +3708,28 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.80",
 		"Category": "Distortion",
 		"Subcategory": "Mono, Stereo",
+		"Name": "Dhyana Drive",
+		"Image": "Hermida® - Zendrive",
+		"Original Brand": "Hermida®",
+		"Original Model": "Zendrive",
+		"Type": "Overdrive",
+		"Description": "Hermida Zendrive"
+	},
+	{
+		"Version": "2.80",
+		"Category": "Distortion",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Heir Apparent",
+		"Image": "Analogman® - Prince of Tone",
+		"Original Brand": "Analogman®",
+		"Original Model": "Prince of Tone",
+		"Type": "Distortion",
+		"Description": "Analogman Prince of Tone (basically half a King of Tone)"
+	},
+	{
+		"Version": "2.80",
+		"Category": "Distortion",
+		"Subcategory": "Mono, Stereo",
 		"Name": "Tone Sovereign",
 		"Image": "Analogman® - King of Tone V4",
 		"Original Brand": "Analogman®",
@@ -3729,12 +3741,12 @@ data_line6['Line 6 Helix'] = [
 		"Version": "2.80",
 		"Category": "Distortion",
 		"Subcategory": "Mono, Stereo",
-		"Name": "Dhyana Drive",
-		"Image": "Hermida® - Zendrive",
-		"Original Brand": "Hermida®",
-		"Original Model": "Zendrive",
+		"Name": "ZeroAmp Bass DI",
+		"Image": "Tech 21® - SansAmp Bass Driver DI V1",
+		"Original Brand": "Tech 21®",
+		"Original Model": "SansAmp Bass Driver DI V1",
 		"Type": "Overdrive",
-		"Description": "Hermida Zendrive"
+		"Description": "Tech 21® SansAmp Bass Driver DI V1"
 	},
 	{
 		"Version": "2.80",
@@ -3862,12 +3874,12 @@ data_line6['Line 6 Helix'] = [
 		"Version": "3.00",
 		"Category": "Amp",
 		"Subcategory": "Guitar",
-		"Name": "US Princess",
-		"Image": "Fender® - Princeton Reverb®",
-		"Original Brand": "Fender®",
-		"Original Model": "Princeton Reverb®",
+		"Name": "Das Benzin Lead",
+		"Image": "Diezel Amplification® - VH4",
+		"Original Brand": "Diezel Amplification®",
+		"Original Model": "VH4",
 		"Type": "Guitar Amp,Amp",
-		"Description": "based on the Fender® Princeton Reverb"
+		"Description": "based on the Lead channel of the Diezel VH4"
 	},
 	{
 		"Version": "3.00",
@@ -3884,12 +3896,12 @@ data_line6['Line 6 Helix'] = [
 		"Version": "3.00",
 		"Category": "Amp",
 		"Subcategory": "Guitar",
-		"Name": "Das Benzin Lead",
-		"Image": "Diezel Amplification® - VH4",
-		"Original Brand": "Diezel Amplification®",
-		"Original Model": "VH4",
+		"Name": "US Princess",
+		"Image": "Fender® - Princeton Reverb®",
+		"Original Brand": "Fender®",
+		"Original Model": "Princeton Reverb®",
 		"Type": "Guitar Amp,Amp",
-		"Description": "based on the Lead channel of the Diezel VH4"
+		"Description": "based on the Fender® Princeton Reverb"
 	},
 	{
 		"Version": "3.00",
@@ -3916,33 +3928,30 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "3.00",
-		"Category": "Distortion",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Horizon Drive",
-		"Image": "Horizon Devices® - Precision Drive",
-		"Original Brand": "Horizon Devices®",
-		"Original Model": "Precision Drive",
-		"Type": "Distortion,Noise Gate,Dynamics",
-		"Description": "based on the Horizon Devices® Precision Drive. Includes an extra Gate Range parameter that, when set to \"Extended\" drops the gate's threshold down to -90dB"
-	},
-	{
-		"Version": "3.00",
-		"Category": "Distortion",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Swedish Chainsaw",
-		"Image": "Boss® - HM-2",
-		"Original Brand": "Boss®",
-		"Original Model": "HM-2",
-		"Type": "Distortion"
-	},
-	{
-		"Version": "3.00",
-		"Category": "Distortion",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Pocket Fuzz",
+		"Category": "Delay",
+		"Subcategory": "Mono",
+		"Name": "Poly Sustain",
 		"Original Brand": "Line 6®",
+		"Type": "Delay",
+		"Description": "Line 6 Original infinite sustain with a modulated poly pitch engine built in. Similar to EHX® Freeze pedal"
+	},
+	{
+		"Version": "3.00",
+		"Category": "Delay",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Glitch Delay",
+		"Original Brand": "Line 6®",
+		"Type": "Delay",
+		"Description": " Line 6 Original performance delay that lets you freely manipulate the repeats' behavior in real-time"
+	},
+	{
+		"Version": "3.00",
+		"Category": "Distortion",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Ballistic Fuzz",
+		"Original Brand": "Euthymia®",
 		"Type": "Fuzz",
-		"Description": "inspired by the Jordan Boss Tone fuzz"
+		"Description": "based on the Euthymia ICBM fuzz"
 	},
 	{
 		"Version": "3.00",
@@ -3958,10 +3967,31 @@ data_line6['Line 6 Helix'] = [
 		"Version": "3.00",
 		"Category": "Distortion",
 		"Subcategory": "Mono, Stereo",
-		"Name": "Ballistic Fuzz",
-		"Original Brand": "Euthymia®",
+		"Name": "Horizon Drive",
+		"Image": "Horizon Devices® - Precision Drive",
+		"Original Brand": "Horizon Devices®",
+		"Original Model": "Precision Drive",
+		"Type": "Distortion,Noise Gate,Dynamics",
+		"Description": "based on the Horizon Devices® Precision Drive. Includes an extra Gate Range parameter that, when set to \"Extended\" drops the gate's threshold down to -90dB"
+	},
+	{
+		"Version": "3.00",
+		"Category": "Distortion",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Pocket Fuzz",
+		"Original Brand": "Line 6®",
 		"Type": "Fuzz",
-		"Description": "based on the Euthymia ICBM fuzz"
+		"Description": "inspired by the Jordan Boss Tone fuzz"
+	},
+	{
+		"Version": "3.00",
+		"Category": "Distortion",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Swedish Chainsaw",
+		"Image": "Boss® - HM-2",
+		"Original Brand": "Boss®",
+		"Original Model": "HM-2",
+		"Type": "Distortion"
 	},
 	{
 		"Version": "3.00",
@@ -3986,6 +4016,15 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "3.00",
+		"Category": "Looper",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Shuffling Looper",
+		"Original Brand": "Line 6®",
+		"Type": "Looper",
+		"Description": "Line 6 Original. Part looper, part sampler, part inspiration generator, part performance instrument, the Shuffling Looper intelligently chops up your playing and gives you real-time control over reordering, octave shifting, reversing, and repeating. It's all immense fun (even on vocals, drums, and percussion), but you'll want to familiarize yourself with its controls."
+	},
+	{
+		"Version": "3.00",
 		"Category": "Modulation",
 		"Subcategory": "Mono",
 		"Name": "Poly Detune",
@@ -3995,21 +4034,21 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "3.00",
-		"Category": "Delay",
+		"Category": "Pitch/Synth",
 		"Subcategory": "Mono",
-		"Name": "Poly Sustain",
+		"Name": "12 String",
 		"Original Brand": "Line 6®",
-		"Type": "Delay",
-		"Description": "Line 6 Original infinite sustain with a modulated poly pitch engine built in. Similar to EHX® Freeze pedal"
+		"Type": "Pitch Shifter",
+		"Description": "12-string guitar emulation"
 	},
 	{
 		"Version": "3.00",
-		"Category": "Delay",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Glitch Delay",
+		"Category": "Pitch/Synth",
+		"Subcategory": "Mono",
+		"Name": "Poly Capo",
 		"Original Brand": "Line 6®",
-		"Type": "Delay",
-		"Description": " Line 6 Original performance delay that lets you freely manipulate the repeats' behavior in real-time"
+		"Type": "Pitch Shifter",
+		"Description": "A Simpler version of Poly Pitch when you just want to transpose your playing. See Poly Pitch notes above for additional information"
 	},
 	{
 		"Version": "3.00",
@@ -4033,39 +4072,12 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "3.00",
-		"Category": "Pitch/Synth",
-		"Subcategory": "Mono",
-		"Name": "Poly Capo",
-		"Original Brand": "Line 6®",
-		"Type": "Pitch Shifter",
-		"Description": "A Simpler version of Poly Pitch when you just want to transpose your playing. See Poly Pitch notes above for additional information"
-	},
-	{
-		"Version": "3.00",
-		"Category": "Pitch/Synth",
-		"Subcategory": "Mono",
-		"Name": "12 String",
-		"Original Brand": "Line 6®",
-		"Type": "Pitch Shifter",
-		"Description": "12-string guitar emulation"
-	},
-	{
-		"Version": "3.00",
 		"Category": "Volume/Pan",
 		"Subcategory": "Stereo",
 		"Name": "Stereo Imager",
 		"Original Brand": "Line 6®",
 		"Type": "Modulation",
 		"Description": "Line 6 Original. Used to increase the apparent stereo width of your signal when connecting Helix to two amps or a stereo playback system; just make sure there aren't any mono blocks after it!"
-	},
-	{
-		"Version": "3.00",
-		"Category": "Looper",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Shuffling Looper",
-		"Original Brand": "Line 6®",
-		"Type": "Looper",
-		"Description": "Line 6 Original. Part looper, part sampler, part inspiration generator, part performance instrument, the Shuffling Looper intelligently chops up your playing and gives you real-time control over reordering, octave shifting, reversing, and repeating. It's all immense fun (even on vocals, drums, and percussion), but you'll want to familiarize yourself with its controls."
 	},
 	{
 		"Version": "3.10",
@@ -4077,6 +4089,16 @@ data_line6['Line 6 Helix'] = [
 		"Type": "Guitar Amp,Amp",
 		"Description": "based on the Orange® Rockerverb 100 MKIII (Dirty Channel)",
 		"Notes": "NOTE: We decided to slightly alter the model so that at lower settings, the Drive knob's taper exhibits a smoother transition into distortion."
+	},
+	{
+		"Version": "3.10",
+		"Category": "Delay",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Euclidean Delay",
+		"Original Brand": "Line 6®",
+		"Type": "Delay",
+		"Description": "Line 6 Original delay based on Euclidean algorithms. Creates multitap patterns by setting the length of the pattern (Steps) and the number of taps (Fill) in the pattern. The Euclidean algorithm spaces taps as evenly as possible throughout the pattern, resulting in rhythms from traditional to highly complex. Settle in because this one'll require diagrams and charts and whatnot.",
+		"Notes": "TIP: Add two Euclidean Delays in parallel (with different settings) for interesting polyrhythm patterns. When using a stereo playback system, try panning Paths A and B in the Mixer to L100 and R100"
 	},
 	{
 		"Version": "3.10",
@@ -4096,16 +4118,6 @@ data_line6['Line 6 Helix'] = [
 		"Original Brand": "Line 6®",
 		"Description": "Line 6 Original effect that simulates playing a signal back from an analog tape machine. This signal can be distorted, filtered to sound older or more lo-fi, and modulated with wow and flutter.",
 		"Notes": "TIP: users should definitely try it on vocals, drums, keyboards, strings, busses, effects returns, you name it. Anything that needs a bit more punch or vibe."
-	},
-	{
-		"Version": "3.10",
-		"Category": "Delay",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Euclidean Delay",
-		"Original Brand": "Line 6®",
-		"Type": "Delay",
-		"Description": "Line 6 Original delay based on Euclidean algorithms. Creates multitap patterns by setting the length of the pattern (Steps) and the number of taps (Fill) in the pattern. The Euclidean algorithm spaces taps as evenly as possible throughout the pattern, resulting in rhythms from traditional to highly complex. Settle in because this one'll require diagrams and charts and whatnot.",
-		"Notes": "TIP: Add two Euclidean Delays in parallel (with different settings) for interesting polyrhythm patterns. When using a stereo playback system, try panning Paths A and B in the Mixer to L100 and R100"
 	},
 	{
 		"Version": "3.10",
@@ -4136,32 +4148,23 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "3.15",
-		"Category": "Dynamics",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Ampeg Opto Comp",
-		"Original Brand": "Ampeg®",
-		"Original Model": "Octo Comp",
-		"Type": "Compressor",
-		"Description": "Based on the Ampeg® Octo Comp compressor"
-	},
-	{
-		"Version": "3.15",
-		"Category": "Modulation",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Ampeg Liquifier",
-		"Original Brand": "Ampeg®",
-		"Original Model": "Liquifier",
-		"Type": "Modulation,Chorus",
-		"Description": "Based on the Ampeg® Liquifier Chorus"
+		"Category": "Delay",
+		"Subcategory": "Legacy",
+		"Name": "Bubble Echo",
+		"IsLegacy": "true",
+		"Original Brand": "Line 6®",
+		"Type": "Delay",
+		"Description": "Bubble Echo has a sample-and-hold filter on the repeats. It takes a filter sweep (like the one on Sweep Echo), chops it up into little bits, and rearranges them semi-randomly, so that it sounds like sudden little bits of wah pedal randomly sprinkled about"
 	},
 	{
 		"Version": "3.15",
 		"Category": "Delay",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Heliosphere",
+		"Subcategory": "Legacy",
+		"Name": "Phaze Eko",
+		"IsLegacy": "true",
 		"Original Brand": "Line 6®",
-		"Type": "Delay,Reverb",
-		"Description": "Original delay with reverb in the feedback loop"
+		"Type": "Delay",
+		"Description": "Starting with the basic tone of our EP-1 tape delay emulation, they’ve added something very much like a Uni-Vibe to the delay repeats. The result is an echo unit that gives you unique new creative possibilities for adjusting the tone of your delays with a beautiful, burbling texture"
 	},
 	{
 		"Version": "3.15",
@@ -4185,10 +4188,10 @@ data_line6['Line 6 Helix'] = [
 		"Version": "3.15",
 		"Category": "Delay",
 		"Subcategory": "Mono, Stereo",
-		"Name": "Tesselator",
+		"Name": "Heliosphere",
 		"Original Brand": "Line 6®",
-		"Type": "Delay,Pitch Shifter,Filter",
-		"Description": "Tesselator is part morphing delay, part loop sampler, part drone machine... it's stellar for creating rhythmic pads, textures, or pitch/filter ramp effects to play over and has been placed in the Delay category so you can run multiple instances at once. Once audio is captured and repeating, you can effectively transition/morph between two states—First and Last, each with its own time, speed/pitch, HP filter, and LP filter—by applying increasing amounts to each repeat until the target settings are reached"
+		"Type": "Delay,Reverb",
+		"Description": "Original delay with reverb in the feedback loop"
 	},
 	{
 		"Version": "3.15",
@@ -4198,6 +4201,197 @@ data_line6['Line 6 Helix'] = [
 		"Original Brand": "Line 6®",
 		"Type": "Delay",
 		"Description": "Original buffer sampler/delay. Used to capture and loop a short snippet of audio (whose length is determined by the Time parameter) while the block is enabled. Great for rhythmic stutter effects. You could almost consider Ratchet a simplified version of Tesselator, where the audio is captured AFTER the footswitch press, not before"
+	},
+	{
+		"Version": "3.15",
+		"Category": "Delay",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Tesselator",
+		"Original Brand": "Line 6®",
+		"Type": "Delay,Pitch Shifter,Filter",
+		"Description": "Tesselator is part morphing delay, part loop sampler, part drone machine... it's stellar for creating rhythmic pads, textures, or pitch/filter ramp effects to play over and has been placed in the Delay category so you can run multiple instances at once. Once audio is captured and repeating, you can effectively transition/morph between two states—First and Last, each with its own time, speed/pitch, HP filter, and LP filter—by applying increasing amounts to each repeat until the target settings are reached"
+	},
+	{
+		"Version": "3.15",
+		"Category": "Distortion",
+		"Subcategory": "Legacy",
+		"Name": "Bronze Master",
+		"IsLegacy": "true",
+		"Original Brand": "Maestro®",
+		"Original Model": "Bass Brassmaster",
+		"Type": "Distortion",
+		"Description": "Originally designed for bass, but equally cool on guitar, the Maestro® Bass Brassmaster is considered by many to be the Holy Grail of bass distortion units, an ultra-rare bird designed in the early 70’s for Maestro® by synth genius Tom Oberheim."
+	},
+	{
+		"Version": "3.15",
+		"Category": "Distortion",
+		"Subcategory": "Legacy",
+		"Name": "Killer Z",
+		"IsLegacy": "true",
+		"Original Brand": "Boss®",
+		"Original Model": "Metal Zone MT-2",
+		"Type": "Distortion",
+		"Description": "Equipped with a dual gain circuit, the MT-2 provides amazing sustain plus heavy mids and lows similar to a stack of overdriven amps. We’ve simplified the EQ controls a bit to make the Killer Z model, but you’ll still find the sought after flavor of the MT-2 style sound"
+	},
+	{
+		"Version": "3.15",
+		"Category": "Dynamics",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Ampeg Opto Comp",
+		"Original Brand": "Ampeg®",
+		"Original Model": "Octo Comp",
+		"Type": "Compressor",
+		"Description": "Based on the Ampeg® Octo Comp compressor"
+	},
+	{
+		"Version": "3.15",
+		"Category": "Modulation",
+		"Subcategory": "Legacy",
+		"Name": "Random S&H",
+		"IsLegacy": "true",
+		"Original Brand": "Line 6®",
+		"Type": "Modulation",
+		"Description": "This has a similar effect as the old Oberheim® Voltage Controlled Filter. It creates changes in tone by randomly emphasizing certain frequencies. Try pressing the Speed knob to lock it to tempo and playing single chords to that tempo"
+	},
+	{
+		"Version": "3.15",
+		"Category": "Modulation",
+		"Subcategory": "Legacy",
+		"Name": "Sweeper",
+		"IsLegacy": "true",
+		"Original Brand": "Line 6®",
+		"Type": "Modulation",
+		"Description": "Imagine having 2 wah pedals on steroids separated in a stereo field that are pulsating in opposite positions and you’re close to what you’ll hear here. Use the Q and Freq parameters to set the character of the sweep and adjust Depth to go from subtle to full on freak out. Any resemblance to guitar tracks heard in a particular genre of B films is strictly coincidental"
+	},
+	{
+		"Version": "3.15",
+		"Category": "Modulation",
+		"Subcategory": "Legacy",
+		"Name": "Tape Eater",
+		"IsLegacy": "true",
+		"Original Brand": "Line 6®",
+		"Type": "Modulation,Chorus,Distortion",
+		"Description": "If you’ve ever had a cassette player eat a tape before you’ll know what we’re talking about. Try this with a slow speed setting and a 100% wet mix"
+	},
+	{
+		"Version": "3.15",
+		"Category": "Modulation",
+		"Subcategory": "Legacy",
+		"Name": "Warble Matic",
+		"IsLegacy": "true",
+		"Original Brand": "Line 6®",
+		"Type": "Modulation,Phaser",
+		"Description": "This effect is reminiscent of the Sweeper model, but when used subtly it can produce a nice mild phasey sound or with Depth maxed out you can simulate the sound of an alien spacecraft landing in one of those old 50’s sci-fi movies"
+	},
+	{
+		"Version": "3.15",
+		"Category": "Modulation",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Ampeg Liquifier",
+		"Original Brand": "Ampeg®",
+		"Original Model": "Liquifier",
+		"Type": "Modulation,Chorus",
+		"Description": "Based on the Ampeg® Liquifier Chorus"
+	},
+	{
+		"Version": "3.15",
+		"Category": "Pitch/Synth",
+		"Subcategory": "Legacy",
+		"Name": "Analog Synth",
+		"IsLegacy": "true",
+		"Original Brand": "Line 6®",
+		"Type": "Pitch/Synth,Synth",
+		"Description": "These are great for funky synth guitar (or bass) lines. These sounds were made popular by Moog and ARP"
+	},
+	{
+		"Version": "3.15",
+		"Category": "Pitch/Synth",
+		"Subcategory": "Legacy",
+		"Name": "Buzz Wave",
+		"IsLegacy": "true",
+		"Original Brand": "Line 6®",
+		"Type": "Pitch/Synth,Synth,Filter",
+		"Description": "These are cool combinations of saw and square waves with fast vibrato. The 8 different Wave parameters offer different vibrato speeds and different pitches"
+	},
+	{
+		"Version": "3.15",
+		"Category": "Pitch/Synth",
+		"Subcategory": "Legacy",
+		"Name": "Double Bass",
+		"IsLegacy": "true",
+		"Original Brand": "Line 6®",
+		"Type": "Pitch/Synth,Pitch Shifter",
+		"Description": "This effect has two oscillators that track the pitch of your guitar—one square wave tuned one octave down, and one saw tooth wave two octaves down"
+	},
+	{
+		"Version": "3.15",
+		"Category": "Pitch/Synth",
+		"Subcategory": "Legacy",
+		"Name": "Rez Synth",
+		"IsLegacy": "true",
+		"Original Brand": "Line 6®",
+		"Type": "Pitch/Synth,Synth,Filter",
+		"Description": "These are all sweeping low pass filter effects with the resonance set high. Resonance is a peak at the frequency of the low pass filter"
+	},
+	{
+		"Version": "3.15",
+		"Category": "Pitch/Synth",
+		"Subcategory": "Legacy",
+		"Name": "Saturn 5 RingMod",
+		"IsLegacy": "true",
+		"Original Brand": "Line 6®",
+		"Type": "Pitch/Synth,Synth",
+		"Description": "Ring modulators take two signals (one supplied by your guitar, the other supplied by the effect) then adds and subtracts similar frequencies. Electro-Harmonix® makes a ring modulator pedal called the Frequency Analyzer that is a popular guitar effect. The only limiting factor is that the pitch of the signal provided by the effect is constant. Meaning you have to play only in the key of that pitch to be musical"
+	},
+	{
+		"Version": "3.15",
+		"Category": "Pitch/Synth",
+		"Subcategory": "Legacy",
+		"Name": "Seismik Synth",
+		"IsLegacy": "true",
+		"Original Brand": "Line 6®",
+		"Type": "Pitch/Synth,Synth",
+		"Description": "This effect has an oscillator that tracks the pitch of your guitar. You can choose between 8 different wave shapes which give you different “flavors”—all of them one or two octaves down from the original pitch"
+	},
+	{
+		"Version": "3.15",
+		"Category": "Pitch/Synth",
+		"Subcategory": "Legacy",
+		"Name": "String Thory",
+		"IsLegacy": "true",
+		"Original Brand": "Line 6®",
+		"Type": "Pitch/Synth,Synth,Filter",
+		"Description": "This emulates classic synth string sounds like those found in the ARP Solina String Ensemble and the Elka® Synthex. The harder you pick, the brighter the sound. We somehow had two separate effects called \"Synth String\"—one from POD Farm 2.5 and the other from FM4, which was already added to Helix/HX in 1.50. Renamed the POD Farm version \"String Theory\" to avoid confusion"
+	},
+	{
+		"Version": "3.15",
+		"Category": "Pitch/Synth",
+		"Subcategory": "Legacy",
+		"Name": "Synth FX",
+		"IsLegacy": "true",
+		"Original Brand": "Line 6®",
+		"Type": "Pitch/Synth,Synth,Filter",
+		"Description": "These sounds aren’t really designed to be musical. These are more “special effects” sounds. You’ll hear a lot of these kinds of sounds in movie soundtracks"
+	},
+	{
+		"Version": "3.15",
+		"Category": "Pitch/Synth",
+		"Subcategory": "Legacy",
+		"Name": "Synth Harmony",
+		"IsLegacy": "true",
+		"Original Brand": "Line 6®",
+		"Type": "Pitch/Synth,Synth,Pitch Shifter",
+		"Description": "If you loved those big synth leads from 70’s era prog bands then you’ll love this effect. There are two synth waves at work here. Your first two parameters allow you to choose a pitch interval of your original note played. The Wave parameter works differently from what you’d expect with the other synth models; here it controls the gain of the saw wave, while the square wave gain remains constant"
+	},
+	{
+		"Version": "3.15",
+		"Category": "Pitch/Synth",
+		"Subcategory": "Legacy",
+		"Name": "Synth Lead",
+		"IsLegacy": "true",
+		"Original Brand": "Line 6®",
+		"Type": "Pitch/Synth,Synth,Filter",
+		"Description": "These are styled after popular analog monophonic synth lead sounds from Moog, ARP and Sequential Circuits"
 	},
 	{
 		"Version": "3.15",
@@ -4227,186 +4421,104 @@ data_line6['Line 6 Helix'] = [
 		"Description": "Original shimmer reverb. Line 6® originally planned to release Shimmer as two distinctly different reverbs—Luster and Sheen—but combining them into a single model and letting you seamlessly switch back and forth via a footswitch or snapshots seemed cooler"
 	},
 	{
-		"Version": "3.15",
-		"Category": "Distortion",
-		"Subcategory": "Legacy",
-		"Name": "Bronze Master",
-		"IsLegacy": "true",
-		"Original Brand": "Maestro®",
-		"Original Model": "Bass Brassmaster",
-		"Type": "Distortion",
-		"Description": "Originally designed for bass, but equally cool on guitar, the Maestro® Bass Brassmaster is considered by many to be the Holy Grail of bass distortion units, an ultra-rare bird designed in the early 70’s for Maestro® by synth genius Tom Oberheim."
+		"Version": "3.50",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "MOO)))N T Brt",
+		"Original Brand": "Sunn®",
+		"Original Model": "Model T - Bright Channel",
+		"Type": "Guitar Amp,Amp",
+		"Description": "based on* the bright channel of the Sunn® Model T"
 	},
 	{
-		"Version": "3.15",
-		"Category": "Distortion",
-		"Subcategory": "Legacy",
-		"Name": "Killer Z",
-		"IsLegacy": "true",
-		"Original Brand": "Boss®",
-		"Original Model": "Metal Zone MT-2",
-		"Type": "Distortion",
-		"Description": "Equipped with a dual gain circuit, the MT-2 provides amazing sustain plus heavy mids and lows similar to a stack of overdriven amps. We’ve simplified the EQ controls a bit to make the Killer Z model, but you’ll still find the sought after flavor of the MT-2 style sound"
+		"Version": "3.50",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "MOO)))N T Jump",
+		"Original Brand": "Sunn®",
+		"Original Model": "Model T - Jumped",
+		"Type": "Guitar Amp,Amp",
+		"Description": "based on* the normal and bright channels jumped in the Sunn® Model T"
 	},
 	{
-		"Version": "3.15",
-		"Category": "Delay",
-		"Subcategory": "Legacy",
-		"Name": "Phaze Eko",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Type": "Delay",
-		"Description": "Starting with the basic tone of our EP-1 tape delay emulation, they’ve added something very much like a Uni-Vibe to the delay repeats. The result is an echo unit that gives you unique new creative possibilities for adjusting the tone of your delays with a beautiful, burbling texture"
+		"Version": "3.50",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "MOO)))N T Nrm",
+		"Original Brand": "Sunn®",
+		"Original Model": "Model T - Normal Channel",
+		"Type": "Guitar Amp,Amp",
+		"Description": "based on* the normal channel of the Sunn® Model T.\r\n\r\n\"The Moon model is based on a 1974, silver knob Sunn Model T amplifier. This is the early version with the more traditional tone stack. Though it has been repaired over the years, the circuit has every component at stock value. This specific unit has been well used, well maintained, and regularly enveloped in fog.\r\n\r\n\"This amp circuit can best be described as a Fender Tweed Bassman/Marshall JTM45 preamp mated with a very high volume, very flat, ultralinear power amp that uses 6550 tubes. The result of this configuration is a tone with a raw growl that really has a strong punch to the gut. In addition, this configuration takes pedals very well; adding a distortion or booster can turn the amp into a high gain, doom machine.\"\r\n\r\n—Ben Adrian, Sound Design Manager"
 	},
 	{
-		"Version": "3.15",
-		"Category": "Delay",
-		"Subcategory": "Legacy",
-		"Name": "Bubble Echo",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Type": "Delay",
-		"Description": "Bubble Echo has a sample-and-hold filter on the repeats. It takes a filter sweep (like the one on Sweep Echo), chops it up into little bits, and rearranges them semi-randomly, so that it sounds like sudden little bits of wah pedal randomly sprinkled about"
+		"Version": "3.50",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "PV Vitriol Crunch",
+		"Original Brand": "Peavey®",
+		"Original Model": "Invective - Master boost off",
+		"Type": "Guitar Amp,Amp",
+		"Description": "based on* the crunch channel of the Peavey® Invective (Master boost off). Peavey designed this 6L6 tube-powered monster in collaboration with Misha Mansoor of Periphery, with the goal of offering no-compromise, high-gain performance and flexibility."
 	},
 	{
-		"Version": "3.15",
-		"Category": "Modulation",
-		"Subcategory": "Legacy",
-		"Name": "Tape Eater",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Type": "Modulation,Chorus,Distortion",
-		"Description": "If you’ve ever had a cassette player eat a tape before you’ll know what we’re talking about. Try this with a slow speed setting and a 100% wet mix"
+		"Version": "3.50",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "PV Vitriol Lead",
+		"Original Brand": "Peavey®",
+		"Original Model": "Invective - Master boost on",
+		"Type": "Guitar Amp,Amp",
+		"Description": "based on* the lead channel of the Peavey® Invective (Master boost off)"
 	},
 	{
-		"Version": "3.15",
-		"Category": "Modulation",
-		"Subcategory": "Legacy",
-		"Name": "Warble Matic",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Type": "Modulation,Phaser",
-		"Description": "This effect is reminiscent of the Sweeper model, but when used subtly it can produce a nice mild phasey sound or with Depth maxed out you can simulate the sound of an alien spacecraft landing in one of those old 50’s sci-fi movies"
+		"Version": "3.50",
+		"Category": "Cab",
+		"Subcategory": "Microphone",
+		"Name": "40 Dynamic",
+		"Original Brand": "Heil Sound®",
+		"Original Model": "PR 40",
+		"Type": "Microphone",
+		"Description": "Heil Sound® PR 40"
 	},
 	{
-		"Version": "3.15",
-		"Category": "Modulation",
-		"Subcategory": "Legacy",
-		"Name": "Random S&H",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Type": "Modulation",
-		"Description": "This has a similar effect as the old Oberheim® Voltage Controlled Filter. It creates changes in tone by randomly emphasizing certain frequencies. Try pressing the Speed knob to lock it to tempo and playing single chords to that tempo"
+		"Version": "3.50",
+		"Category": "Cab",
+		"Subcategory": "Microphone",
+		"Name": "47 Cond FET",
+		"Original Brand": "Neumann®",
+		"Original Model": "U47 FET",
+		"Type": "Microphone",
+		"Description": "Neumann® U47 FET"
 	},
 	{
-		"Version": "3.15",
-		"Category": "Modulation",
-		"Subcategory": "Legacy",
-		"Name": "Sweeper",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Type": "Modulation",
-		"Description": "Imagine having 2 wah pedals on steroids separated in a stereo field that are pulsating in opposite positions and you’re close to what you’ll hear here. Use the Q and Freq parameters to set the character of the sweep and adjust Depth to go from subtle to full on freak out. Any resemblance to guitar tracks heard in a particular genre of B films is strictly coincidental"
+		"Version": "3.50",
+		"Category": "Cab",
+		"Subcategory": "Microphone",
+		"Name": "52 Dynamic",
+		"Original Brand": "Shure®",
+		"Original Model": "Beta 52A",
+		"Type": "Microphone",
+		"Description": "Shure® Beta 52A"
 	},
 	{
-		"Version": "3.15",
-		"Category": "Pitch/Synth",
-		"Subcategory": "Legacy",
-		"Name": "Rez Synth",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Type": "Pitch/Synth,Synth,Filter",
-		"Description": "These are all sweeping low pass filter effects with the resonance set high. Resonance is a peak at the frequency of the low pass filter"
+		"Version": "3.50",
+		"Category": "Cab",
+		"Subcategory": "Microphone",
+		"Name": "88 Dynamic",
+		"Original Brand": "Beyerdynamic®",
+		"Original Model": "M88TG",
+		"Type": "Microphone",
+		"Description": "Beyerdynamic® M88TG"
 	},
 	{
-		"Version": "3.15",
-		"Category": "Pitch/Synth",
-		"Subcategory": "Legacy",
-		"Name": "Seismik Synth",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Type": "Pitch/Synth,Synth",
-		"Description": "This effect has an oscillator that tracks the pitch of your guitar. You can choose between 8 different wave shapes which give you different “flavors”—all of them one or two octaves down from the original pitch"
-	},
-	{
-		"Version": "3.15",
-		"Category": "Pitch/Synth",
-		"Subcategory": "Legacy",
-		"Name": "Analog Synth",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Type": "Pitch/Synth,Synth",
-		"Description": "These are great for funky synth guitar (or bass) lines. These sounds were made popular by Moog and ARP"
-	},
-	{
-		"Version": "3.15",
-		"Category": "Pitch/Synth",
-		"Subcategory": "Legacy",
-		"Name": "Synth Lead",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Type": "Pitch/Synth,Synth,Filter",
-		"Description": "These are styled after popular analog monophonic synth lead sounds from Moog, ARP and Sequential Circuits"
-	},
-	{
-		"Version": "3.15",
-		"Category": "Pitch/Synth",
-		"Subcategory": "Legacy",
-		"Name": "Synth FX",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Type": "Pitch/Synth,Synth,Filter",
-		"Description": "These sounds aren’t really designed to be musical. These are more “special effects” sounds. You’ll hear a lot of these kinds of sounds in movie soundtracks"
-	},
-	{
-		"Version": "3.15",
-		"Category": "Pitch/Synth",
-		"Subcategory": "Legacy",
-		"Name": "String Thory",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Type": "Pitch/Synth,Synth,Filter",
-		"Description": "This emulates classic synth string sounds like those found in the ARP Solina String Ensemble and the Elka® Synthex. The harder you pick, the brighter the sound. We somehow had two separate effects called \"Synth String\"—one from POD Farm 2.5 and the other from FM4, which was already added to Helix/HX in 1.50. Renamed the POD Farm version \"String Theory\" to avoid confusion"
-	},
-	{
-		"Version": "3.15",
-		"Category": "Pitch/Synth",
-		"Subcategory": "Legacy",
-		"Name": "Saturn 5 RingMod",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Type": "Pitch/Synth,Synth",
-		"Description": "Ring modulators take two signals (one supplied by your guitar, the other supplied by the effect) then adds and subtracts similar frequencies. Electro-Harmonix® makes a ring modulator pedal called the Frequency Analyzer that is a popular guitar effect. The only limiting factor is that the pitch of the signal provided by the effect is constant. Meaning you have to play only in the key of that pitch to be musical"
-	},
-	{
-		"Version": "3.15",
-		"Category": "Pitch/Synth",
-		"Subcategory": "Legacy",
-		"Name": "Synth Harmony",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Type": "Pitch/Synth,Synth,Pitch Shifter",
-		"Description": "If you loved those big synth leads from 70’s era prog bands then you’ll love this effect. There are two synth waves at work here. Your first two parameters allow you to choose a pitch interval of your original note played. The Wave parameter works differently from what you’d expect with the other synth models; here it controls the gain of the saw wave, while the square wave gain remains constant"
-	},
-	{
-		"Version": "3.15",
-		"Category": "Pitch/Synth",
-		"Subcategory": "Legacy",
-		"Name": "Double Bass",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Type": "Pitch/Synth,Pitch Shifter",
-		"Description": "This effect has two oscillators that track the pitch of your guitar—one square wave tuned one octave down, and one saw tooth wave two octaves down"
-	},
-	{
-		"Version": "3.15",
-		"Category": "Pitch/Synth",
-		"Subcategory": "Legacy",
-		"Name": "Buzz Wave",
-		"IsLegacy": "true",
-		"Original Brand": "Line 6®",
-		"Type": "Pitch/Synth,Synth,Filter",
-		"Description": "These are cool combinations of saw and square waves with fast vibrato. The 8 different Wave parameters offer different vibrato speeds and different pitches"
+		"Version": "3.50",
+		"Category": "Cab",
+		"Subcategory": "Microphone",
+		"Name": "D6 Dynamic",
+		"Original Brand": "Audix®",
+		"Original Model": "D6",
+		"Type": "Microphone",
+		"Description": "Audix® D6"
 	},
 	{
 		"Version": "3.50",
@@ -4418,6 +4530,17 @@ data_line6['Line 6 Helix'] = [
 		"Original Model": "1×10″ Fender Princeton Eminence Copperhead",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 1×10″ Fender® Princeton Eminence Copperhead"
+	},
+	{
+		"Version": "3.50",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "1×12 Cali EXT",
+		"Icon": "CABMICIR_HX_1x12CaliEXT",
+		"Original Brand": "MESA/Boogie®",
+		"Original Model": "1×12″ Mesa Boogie Extension Cab",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the 1×12″ Mesa Boogie Extension Cab"
 	},
 	{
 		"Version": "3.50",
@@ -4445,12 +4568,12 @@ data_line6['Line 6 Helix'] = [
 		"Version": "3.50",
 		"Category": "Cab",
 		"Subcategory": "Single, Dual",
-		"Name": "1×12 Cali EXT",
-		"Icon": "CABMICIR_HX_1x12CaliEXT",
-		"Original Brand": "MESA/Boogie®",
-		"Original Model": "1×12″ Mesa Boogie Extension Cab",
-		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* the 1×12″ Mesa Boogie Extension Cab"
+		"Name": "1×15 Ampeg B-15",
+		"Icon": "CABMICIR_HX_1x15AmpegB15",
+		"Original Brand": "Ampeg®",
+		"Original Model": "1×15″ Ampeg® B-15",
+		"Type": "Bass Cab,Cab",
+		"Description": "captured from* the 1×15″ Ampeg® B-15"
 	},
 	{
 		"Version": "3.50",
@@ -4511,23 +4634,34 @@ data_line6['Line 6 Helix'] = [
 		"Version": "3.50",
 		"Category": "Cab",
 		"Subcategory": "Single, Dual",
+		"Name": "2×15 Brute",
+		"Icon": "CABMICIR_HX_2x15Brute",
+		"Original Brand": "MESA/Boogie®",
+		"Original Model": "2×15″ MESA/Boogie® 2×15 EV",
+		"Type": "Bass Cab,Cab",
+		"Description": "captured from* the 2×15″ MESA/Boogie® 2×15 EV"
+	},
+	{
+		"Version": "3.50",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "4×10 Garden",
+		"Icon": "CABMICIR_HX_4x10Garden",
+		"Original Brand": "Eden®",
+		"Original Model": "4×10″ Eden D410XLT",
+		"Type": "Bass Cab,Cab",
+		"Description": "captured from* the 4×10″ Eden D410XLT"
+	},
+	{
+		"Version": "3.50",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
 		"Name": "4×10 Tweed P10R",
 		"Icon": "CABMICIR_HX_4x10TweedP10R",
 		"Original Brand": "Fender®",
 		"Original Model": "4×10″ Fender Bassman® P10R",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 4×10″ Fender Bassman® P10R"
-	},
-	{
-		"Version": "3.50",
-		"Category": "Cab",
-		"Subcategory": "Single, Dual",
-		"Name": "4×12 Greenback25",
-		"Icon": "CABMICIR_HX_4x12Greenback25",
-		"Original Brand": "Marshall®",
-		"Original Model": "4×12″ Marshall® Basketweave G12 M25",
-		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* the 4×12″ Marshall® Basketweave G12 M25"
 	},
 	{
 		"Version": "3.50",
@@ -4572,6 +4706,17 @@ data_line6['Line 6 Helix'] = [
 		"Original Model": "4×12″ MESA/Boogie® 4FB V30",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 4×12″ MESA/Boogie® 4FB V30"
+	},
+	{
+		"Version": "3.50",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "4×12 Greenback25",
+		"Icon": "CABMICIR_HX_4x12Greenback25",
+		"Original Brand": "Marshall®",
+		"Original Model": "4×12″ Marshall® Basketweave G12 M25",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the 4×12″ Marshall® Basketweave G12 M25"
 	},
 	{
 		"Version": "3.50",
@@ -4632,95 +4777,12 @@ data_line6['Line 6 Helix'] = [
 		"Version": "3.50",
 		"Category": "Cab",
 		"Subcategory": "Single, Dual",
-		"Name": "1×15 Ampeg B-15",
-		"Icon": "CABMICIR_HX_1x15AmpegB15",
-		"Original Brand": "Ampeg®",
-		"Original Model": "1×15″ Ampeg® B-15",
-		"Type": "Bass Cab,Cab",
-		"Description": "captured from* the 1×15″ Ampeg® B-15"
-	},
-	{
-		"Version": "3.50",
-		"Category": "Cab",
-		"Subcategory": "Single, Dual",
-		"Name": "2×15 Brute",
-		"Icon": "CABMICIR_HX_2x15Brute",
-		"Original Brand": "MESA/Boogie®",
-		"Original Model": "2×15″ MESA/Boogie® 2×15 EV",
-		"Type": "Bass Cab,Cab",
-		"Description": "captured from* the 2×15″ MESA/Boogie® 2×15 EV"
-	},
-	{
-		"Version": "3.50",
-		"Category": "Cab",
-		"Subcategory": "Single, Dual",
-		"Name": "4×10 Garden",
-		"Icon": "CABMICIR_HX_4x10Garden",
-		"Original Brand": "Eden®",
-		"Original Model": "4×10″ Eden D410XLT",
-		"Type": "Bass Cab,Cab",
-		"Description": "captured from* the 4×10″ Eden D410XLT"
-	},
-	{
-		"Version": "3.50",
-		"Category": "Cab",
-		"Subcategory": "Single, Dual",
 		"Name": "8×10 SVT AV",
 		"Icon": "CABMICIR_HX_8x10SVTAV",
 		"Original Brand": "Ampeg®",
 		"Original Model": "8×10″ Ampeg® SVT® (SVT-810AV Heritage Edition)",
 		"Type": "Bass Cab,Cab",
 		"Description": "captured from* the 8×10″ Ampeg® SVT® (SVT-810AV Heritage Edition)"
-	},
-	{
-		"Version": "3.50",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "MOO)))N T Nrm",
-		"Original Brand": "Sunn®",
-		"Original Model": "Model T - Normal Channel",
-		"Type": "Guitar Amp,Amp",
-		"Description": "based on* the normal channel of the Sunn® Model T.\r\n\r\n\"The Moon model is based on a 1974, silver knob Sunn Model T amplifier. This is the early version with the more traditional tone stack. Though it has been repaired over the years, the circuit has every component at stock value. This specific unit has been well used, well maintained, and regularly enveloped in fog.\r\n\r\n\"This amp circuit can best be described as a Fender Tweed Bassman/Marshall JTM45 preamp mated with a very high volume, very flat, ultralinear power amp that uses 6550 tubes. The result of this configuration is a tone with a raw growl that really has a strong punch to the gut. In addition, this configuration takes pedals very well; adding a distortion or booster can turn the amp into a high gain, doom machine.\"\r\n\r\n—Ben Adrian, Sound Design Manager"
-	},
-	{
-		"Version": "3.50",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "MOO)))N T Brt",
-		"Original Brand": "Sunn®",
-		"Original Model": "Model T - Bright Channel",
-		"Type": "Guitar Amp,Amp",
-		"Description": "based on* the bright channel of the Sunn® Model T"
-	},
-	{
-		"Version": "3.50",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "MOO)))N T Jump",
-		"Original Brand": "Sunn®",
-		"Original Model": "Model T - Jumped",
-		"Type": "Guitar Amp,Amp",
-		"Description": "based on* the normal and bright channels jumped in the Sunn® Model T"
-	},
-	{
-		"Version": "3.50",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "PV Vitriol Crunch",
-		"Original Brand": "Peavey®",
-		"Original Model": "Invective - Master boost off",
-		"Type": "Guitar Amp,Amp",
-		"Description": "based on* the crunch channel of the Peavey® Invective (Master boost off). Peavey designed this 6L6 tube-powered monster in collaboration with Misha Mansoor of Periphery, with the goal of offering no-compromise, high-gain performance and flexibility."
-	},
-	{
-		"Version": "3.50",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "PV Vitriol Lead",
-		"Original Brand": "Peavey®",
-		"Original Model": "Invective - Master boost on",
-		"Type": "Guitar Amp,Amp",
-		"Description": "based on* the lead channel of the Peavey® Invective (Master boost off)"
 	},
 	{
 		"Version": "3.50",
@@ -4736,21 +4798,21 @@ data_line6['Line 6 Helix'] = [
 		"Version": "3.50",
 		"Category": "Distortion",
 		"Subcategory": "Mono, Stereo",
-		"Name": "Vital Dist",
-		"Original Brand": "Earthquaker Devices®",
-		"Original Model": "Life pedal (Amplitude side)",
-		"Type": "Distortion",
-		"Description": "based on* the Earthquaker Devices® Life pedal (Amplitude side)"
-	},
-	{
-		"Version": "3.50",
-		"Category": "Distortion",
-		"Subcategory": "Mono, Stereo",
 		"Name": "Vital Boost",
 		"Original Brand": "Earthquaker Devices®",
 		"Original Model": "Life pedal (Magnitude side)",
 		"Type": "Booster",
 		"Description": "based on* the Earthquaker Devices® Life pedal (Magnitude side)"
+	},
+	{
+		"Version": "3.50",
+		"Category": "Distortion",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Vital Dist",
+		"Original Brand": "Earthquaker Devices®",
+		"Original Model": "Life pedal (Amplitude side)",
+		"Type": "Distortion",
+		"Description": "based on* the Earthquaker Devices® Life pedal (Amplitude side)"
 	},
 	{
 		"Version": "3.50",
@@ -4772,15 +4834,6 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "3.50",
-		"Category": "Reverb",
-		"Subcategory": "Mono, Stereo",
-		"Name": "Dynamic Ambience",
-		"Original Brand": "Line 6®",
-		"Type": "Reverb",
-		"Description": "Line 6 Original ambience reverb. At less extreme settings can be used to \"open up\" the sound of your amp without applying a notable reverb effect. Also utilizes less DSP than other Dynamic reverbs."
-	},
-	{
-		"Version": "3.50",
 		"Category": "Pitch/Synth",
 		"Subcategory": "Mono, Stereo",
 		"Name": "Boctaver",
@@ -4791,53 +4844,22 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "3.50",
-		"Category": "Cab",
-		"Subcategory": "Microphone",
-		"Name": "88 Dynamic",
-		"Original Brand": "Beyerdynamic®",
-		"Original Model": "M88TG",
-		"Type": "Microphone",
-		"Description": "Beyerdynamic® M88TG"
+		"Category": "Reverb",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Dynamic Ambience",
+		"Original Brand": "Line 6®",
+		"Type": "Reverb",
+		"Description": "Line 6 Original ambience reverb. At less extreme settings can be used to \"open up\" the sound of your amp without applying a notable reverb effect. Also utilizes less DSP than other Dynamic reverbs."
 	},
 	{
-		"Version": "3.50",
-		"Category": "Cab",
-		"Subcategory": "Microphone",
-		"Name": "52 Dynamic",
-		"Original Brand": "Shure®",
-		"Original Model": "Beta 52A",
-		"Type": "Microphone",
-		"Description": "Shure® Beta 52A"
-	},
-	{
-		"Version": "3.50",
-		"Category": "Cab",
-		"Subcategory": "Microphone",
-		"Name": "D6 Dynamic",
-		"Original Brand": "Audix®",
-		"Original Model": "D6",
-		"Type": "Microphone",
-		"Description": "Audix® D6"
-	},
-	{
-		"Version": "3.50",
-		"Category": "Cab",
-		"Subcategory": "Microphone",
-		"Name": "40 Dynamic",
-		"Original Brand": "Heil Sound®",
-		"Original Model": "PR 40",
-		"Type": "Microphone",
-		"Description": "Heil Sound® PR 40"
-	},
-	{
-		"Version": "3.50",
-		"Category": "Cab",
-		"Subcategory": "Microphone",
-		"Name": "47 Cond FET",
-		"Original Brand": "Neumann®",
-		"Original Model": "U47 FET",
-		"Type": "Microphone",
-		"Description": "Neumann® U47 FET"
+		"Version": "3.60",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "Agua Sledge",
+		"Original Brand": "Aguilar®",
+		"Original Model": "Tone Hammer",
+		"Type": "Guitar Amp,Amp",
+		"Description": "based on* the Aguilar® Tone Hammer"
 	},
 	{
 		"Version": "3.60",
@@ -4860,13 +4882,23 @@ data_line6['Line 6 Helix'] = [
 	},
 	{
 		"Version": "3.60",
-		"Category": "Amp",
-		"Subcategory": "Guitar",
-		"Name": "Agua Sledge",
-		"Original Brand": "Aguilar®",
-		"Original Model": "Tone Hammer",
-		"Type": "Guitar Amp,Amp",
-		"Description": "based on* the Aguilar® Tone Hammer"
+		"Category": "Cab",
+		"Subcategory": "Microphone",
+		"Name": "84 Ribbon",
+		"Original Brand": "AEA®",
+		"Original Model": "R84",
+		"Type": "Microphone",
+		"Description": "AEA® R84"
+	},
+	{
+		"Version": "3.60",
+		"Category": "Cab",
+		"Subcategory": "Microphone",
+		"Name": "906 Dynamic",
+		"Original Brand": "Sennheiser®",
+		"Original Model": "e906",
+		"Type": "Microphone",
+		"Description": "Sennheiser® e906"
 	},
 	{
 		"Version": "3.60",
@@ -4882,11 +4914,10 @@ data_line6['Line 6 Helix'] = [
 		"Version": "3.60",
 		"Category": "Cab",
 		"Subcategory": "Single, Dual",
-		"Name": "1×12 Open Cream",
-		"Original Brand": "Celestion®",
-		"Original Model": "G12M-65",
-		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* a custom 1×12″ open back cabinet G12M-65"
+		"Name": "1×12 Epicenter",
+		"Original Brand": "Epifani®",
+		"Type": "Bass Cab,Cab",
+		"Description": "captured from* the 1×12″ Epifani® Ultralight series cabinet"
 	},
 	{
 		"Version": "3.60",
@@ -4902,23 +4933,11 @@ data_line6['Line 6 Helix'] = [
 		"Version": "3.60",
 		"Category": "Cab",
 		"Subcategory": "Single, Dual",
-		"Name": "2×12 Silver Bell",
-		"Icon": "CAB_HX_2x12_Match_H30_NEW",
-		"Original Brand": "Vox®",
-		"Original Model": "AC-30TB Silver Alnico",
+		"Name": "1×12 Open Cream",
+		"Original Brand": "Celestion®",
+		"Original Model": "G12M-65",
 		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* the 2×12″ Vox® AC-30TB Silver Alnico"
-	},
-	{
-		"Version": "3.60",
-		"Category": "Cab",
-		"Subcategory": "Single, Dual",
-		"Name": "2×12 Match H30",
-		"Icon": "CAB_HX_2x12_Match_H30_NEW",
-		"Original Brand": "Matchless®",
-		"Original Model": "G12H-30",
-		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* the 2×12″ Matchless® DC-30 custom G12H-30"
+		"Description": "captured from* a custom 1×12″ open back cabinet G12M-65"
 	},
 	{
 		"Version": "3.60",
@@ -4935,20 +4954,23 @@ data_line6['Line 6 Helix'] = [
 		"Version": "3.60",
 		"Category": "Cab",
 		"Subcategory": "Single, Dual",
-		"Name": "4×12 Greenback 20",
-		"Original Brand": "Marshall®",
-		"Original Model": "G12M-20",
+		"Name": "2×12 Match H30",
+		"Icon": "CAB_HX_2x12_Match_H30_NEW",
+		"Original Brand": "Matchless®",
+		"Original Model": "G12H-30",
 		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* the 4×12″ Marshall® Basketweave G12M-20"
+		"Description": "captured from* the 2×12″ Matchless® DC-30 custom G12H-30"
 	},
 	{
 		"Version": "3.60",
 		"Category": "Cab",
 		"Subcategory": "Single, Dual",
-		"Name": "1×12 Epicenter",
-		"Original Brand": "Epifani®",
-		"Type": "Bass Cab,Cab",
-		"Description": "captured from* the 1×12″ Epifani® Ultralight series cabinet"
+		"Name": "2×12 Silver Bell",
+		"Icon": "CAB_HX_2x12_Match_H30_NEW",
+		"Original Brand": "Vox®",
+		"Original Model": "AC-30TB Silver Alnico",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the 2×12″ Vox® AC-30TB Silver Alnico"
 	},
 	{
 		"Version": "3.60",
@@ -4959,6 +4981,16 @@ data_line6['Line 6 Helix'] = [
 		"Original Model": "PR-410HLF",
 		"Type": "Bass Cab,Cab",
 		"Description": "captured from* the 4×10″ Ampeg® PR-410HLF"
+	},
+	{
+		"Version": "3.60",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "4×12 Greenback 20",
+		"Original Brand": "Marshall®",
+		"Original Model": "G12M-20",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the 4×12″ Marshall® Basketweave G12M-20"
 	},
 	{
 		"Version": "3.60",
@@ -4981,33 +5013,34 @@ data_line6['Line 6 Helix'] = [
 		"Description": "inspired by* the Yamaha® RA-200 rotary speaker (famously implemented by Pink Floyd's David Gilmour)."
 	},
 	{
-		"Version": "3.60",
-		"Category": "Cab",
-		"Subcategory": "Microphone",
-		"Name": "906 Dynamic",
-		"Original Brand": "Sennheiser®",
-		"Original Model": "e906",
-		"Type": "Microphone",
-		"Description": "Sennheiser® e906"
+		"Version": "3.70",
+		"Category": "Amp",
+		"Subcategory": "Bass",
+		"Name": "Mandarin 200",
+		"Original Brand": "Orange®",
+		"Original Model": "AD200 MkIII",
+		"Type": "Bass Amp,Amp",
+		"Description": "based on* the Orange® AD200 MkIII bass amp"
 	},
 	{
-		"Version": "3.60",
-		"Category": "Cab",
-		"Subcategory": "Microphone",
-		"Name": "84 Ribbon",
-		"Original Brand": "AEA®",
-		"Original Model": "R84",
-		"Type": "Microphone",
-		"Description": "AEA® R84"
+		"Version": "3.70",
+		"Category": "Amp",
+		"Subcategory": "Bass",
+		"Name": "US Dripman Nrm",
+		"Original Brand": "Fender®",
+		"Original Model": "Bassman",
+		"Type": "Bass Amp,Amp",
+		"Description": "based on* the Fender® Bassman (Silver Panel)"
 	},
 	{
 		"Version": "3.70",
 		"Category": "Amp",
 		"Subcategory": "Guitar",
-		"Name": "Line 6 Clarity",
-		"Original Brand": "Line 6®",
+		"Name": "Brit 2203",
+		"Original Brand": "Marshall®",
+		"Original Model": "JCM800 2203 (Stock)",
 		"Type": "Guitar Amp,Amp",
-		"Description": "Original Amp Design inspired by classic clean solid-state and tube amps. Lots of clean headroom with just a touch of overdrive at the very end of the Drive knob's range."
+		"Description": "based on* the Marshall® JCM800 2203 (Stock)."
 	},
 	{
 		"Version": "3.70",
@@ -5031,10 +5064,10 @@ data_line6['Line 6 Helix'] = [
 		"Version": "3.70",
 		"Category": "Amp",
 		"Subcategory": "Guitar",
-		"Name": "Line 6 Voltage",
+		"Name": "Line 6 Clarity",
 		"Original Brand": "Line 6®",
 		"Type": "Guitar Amp,Amp",
-		"Description": "Line 6® Original inspired by the classic British \"plexi\" amp, but with an additional gain stage and more tonal versatility."
+		"Description": "Original Amp Design inspired by classic clean solid-state and tube amps. Lots of clean headroom with just a touch of overdrive at the very end of the Drive knob's range."
 	},
 	{
 		"Version": "3.70",
@@ -5059,11 +5092,10 @@ data_line6['Line 6 Helix'] = [
 		"Version": "3.70",
 		"Category": "Amp",
 		"Subcategory": "Guitar",
-		"Name": "Brit 2203",
-		"Original Brand": "Marshall®",
-		"Original Model": "JCM800 2203 (Stock)",
+		"Name": "Line 6 Voltage",
+		"Original Brand": "Line 6®",
 		"Type": "Guitar Amp,Amp",
-		"Description": "based on* the Marshall® JCM800 2203 (Stock)."
+		"Description": "Line 6® Original inspired by the classic British \"plexi\" amp, but with an additional gain stage and more tonal versatility."
 	},
 	{
 		"Version": "3.70",
@@ -5074,59 +5106,6 @@ data_line6['Line 6 Helix'] = [
 		"Original Model": "Invective (Clean Channel)",
 		"Type": "Guitar Amp,Amp",
 		"Description": "based on* the Peavey® Invective (Clean Channel)"
-	},
-	{
-		"Version": "3.70",
-		"Category": "Amp",
-		"Subcategory": "Bass",
-		"Name": "US Dripman Nrm",
-		"Original Brand": "Fender®",
-		"Original Model": "Bassman",
-		"Type": "Bass Amp,Amp",
-		"Description": "based on* the Fender® Bassman (Silver Panel)"
-	},
-	{
-		"Version": "3.70",
-		"Category": "Amp",
-		"Subcategory": "Bass",
-		"Name": "Mandarin 200",
-		"Original Brand": "Orange®",
-		"Original Model": "AD200 MkIII",
-		"Type": "Bass Amp,Amp",
-		"Description": "based on* the Orange® AD200 MkIII bass amp"
-	},
-	{
-		"Version": "3.70",
-		"Category": "Cab",
-		"Subcategory": "Single, Dual",
-		"Name": "Soup Pro Ellipse",
-		"Icon": "CAB_HX_Soup_Pro_Ellipse_NEW",
-		"Original Brand": "Supro®",
-		"Original Model": "1×6×9″ Supro® S6616",
-		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* the 1×6×9″ Supro® S6616"
-	},
-	{
-		"Version": "3.70",
-		"Category": "Cab",
-		"Subcategory": "Single, Dual",
-		"Name": "1x8 Small Tweed",
-		"Icon": "CAB_HX_1x8_Small_Tweed_NEW",
-		"Original Brand": "Fender®",
-		"Original Model": "1×8″ Fender® Champ",
-		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* the 1×8″ Fender® Champ"
-	},
-	{
-		"Version": "3.70",
-		"Category": "Cab",
-		"Subcategory": "Single, Dual",
-		"Name": "1×12 Fullerton",
-		"Icon": "CAB_HX_1x12_Fullerton_NEW",
-		"Original Brand": "Fender®",
-		"Original Model": "1×12″ Fender® 5C3 Tweed Deluxe",
-		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* the 1×12″ Fender® 5C3 Tweed Deluxe"
 	},
 	{
 		"Version": "3.70",
@@ -5143,12 +5122,54 @@ data_line6['Line 6 Helix'] = [
 		"Version": "3.70",
 		"Category": "Cab",
 		"Subcategory": "Single, Dual",
+		"Name": "1×12 Fullerton",
+		"Icon": "CAB_HX_1x12_Fullerton_NEW",
+		"Original Brand": "Fender®",
+		"Original Model": "1×12″ Fender® 5C3 Tweed Deluxe",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the 1×12″ Fender® 5C3 Tweed Deluxe"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "1x8 Small Tweed",
+		"Icon": "CAB_HX_1x8_Small_Tweed_NEW",
+		"Original Brand": "Fender®",
+		"Original Model": "1×8″ Fender® Champ",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the 1×8″ Fender® Champ"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
 		"Name": "2×12 Interstate",
 		"Icon": "CAB_HX_2x12_Interstate_NEW",
 		"Original Brand": "Dr Z®",
 		"Original Model": "2×12″ Dr Z® Z Best V30",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 2×12″ Dr Z® Z Best V30"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "2×15 Dripman",
+		"Original Brand": "Fender®",
+		"Original Model": "2×15″ Fender® Bassman JBL D130",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the 2×15″ Fender® Bassman JBL D130"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "4×12 Greenback 30",
+		"Original Brand": "Marshall®",
+		"Original Model": "4×12″ Marshall® Basketweave G12H-30",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the 4×12″ Marshall® Basketweave G12H-30"
 	},
 	{
 		"Version": "3.70",
@@ -5165,32 +5186,23 @@ data_line6['Line 6 Helix'] = [
 		"Version": "3.70",
 		"Category": "Cab",
 		"Subcategory": "Single, Dual",
-		"Name": "4×12 Greenback 30",
-		"Original Brand": "Marshall®",
-		"Original Model": "4×12″ Marshall® Basketweave G12H-30",
-		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* the 4×12″ Marshall® Basketweave G12H-30"
-	},
-	{
-		"Version": "3.70",
-		"Category": "Cab",
-		"Subcategory": "Single, Dual",
-		"Name": "2×15 Dripman",
-		"Original Brand": "Fender®",
-		"Original Model": "2×15″ Fender® Bassman JBL D130",
-		"Type": "Guitar Cab,Cab",
-		"Description": "captured from* the 2×15″ Fender® Bassman JBL D130"
-	},
-	{
-		"Version": "3.70",
-		"Category": "Cab",
-		"Subcategory": "Single, Dual",
 		"Name": "6×10 Cali Power",
 		"Icon": "CAB_HX_6x10_Cali_Power_NEW",
 		"Original Brand": "MESA/Boogie®",
 		"Original Model": "6×10″ MESA/Boogie® Power House",
 		"Type": "Guitar Cab,Cab",
 		"Description": "captured from* the 6×10″ MESA/Boogie® Power House"
+	},
+	{
+		"Version": "3.70",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "Soup Pro Ellipse",
+		"Icon": "CAB_HX_Soup_Pro_Ellipse_NEW",
+		"Original Brand": "Supro®",
+		"Original Model": "1×6×9″ Supro® S6616",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the 1×6×9″ Supro® S6616"
 	},
 	{
 		"Version": "3.70",
@@ -5237,5 +5249,114 @@ data_line6['Line 6 Helix'] = [
 		"Original Brand": "Line 6®",
 		"Type": "Reverb",
 		"Description": "Line 6® Original nonlinear reverb with a variety of decay tail shapes (including multiple reverse reverb shapes)."
+	},
+	{
+		"Version": "3.80",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "EV Panama Blue",
+		"Original Brand": "EVH®",
+		"Original Model": "5150III 100 (Blue Channel)",
+		"Type": "Guitar Amp,Amp",
+		"Description": "based on* the EVH® 5150III 100 [6L6] (Blue Channel)"
+	},
+	{
+		"Version": "3.80",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "EV Panama Red",
+		"Original Brand": "EVH®",
+		"Original Model": "5150III 100 (Red Channel)",
+		"Type": "Guitar Amp,Amp",
+		"Description": "based on* the EVH® 5150III 100 [6L6] (Red Channel)"
+	},
+	{
+		"Version": "3.80",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "German Xtra Blue",
+		"Original Brand": "Bogner®",
+		"Original Model": "Ecstasy 101B (Blue Channel)",
+		"Type": "Guitar Amp,Amp",
+		"Description": "based on* the Bogner® Ecstasy 101B [EL34] (Blue Channel)"
+	},
+	{
+		"Version": "3.80",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "German Xtra Red",
+		"Original Brand": "Bogner®",
+		"Original Model": "Ecstasy 101B (Red Channel)",
+		"Type": "Guitar Amp,Amp",
+		"Description": "based on* the Bogner® Ecstasy 101B [EL34] (Red Channel)"
+	},
+	{
+		"Version": "3.80",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "US Super Nrm",
+		"Original Brand": "Fender®",
+		"Original Model": "Super Reverb (Normal Channel)",
+		"Type": "Guitar Amp,Amp",
+		"Description": "based on* the Fender® Super Reverb (Normal Channel)"
+	},
+	{
+		"Version": "3.80",
+		"Category": "Amp",
+		"Subcategory": "Guitar",
+		"Name": "US Super Vib",
+		"Original Brand": "Fender®",
+		"Original Model": "Super Reverb (Vibrato Channel)",
+		"Type": "Guitar Amp,Amp",
+		"Description": "based on* the Fender® Super Reverb (Vibrato Channel)"
+	},
+	{
+		"Version": "3.80",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "4×10 US Super",
+		"Original Brand": "Fender®",
+		"Original Model": "4×10 Super Reverb",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the Fender® Super Reverb"
+	},
+	{
+		"Version": "3.80",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "4×12 Cartog C90",
+		"Original Brand": "Ben Adrian®",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* Ben Adrian's Cartographer cabinet (Modified Lee Jackson 4x12 with Mesa C90 speakers)"
+	},
+	{
+		"Version": "3.80",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "4×12 Cartog Guv",
+		"Original Brand": "Ben Adrian®",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* Ben Adrian's Cartographer cabinet (Modified Lee Jackson 4x12 with Eminence Governor speakers)"
+	},
+	{
+		"Version": "3.80",
+		"Category": "Cab",
+		"Subcategory": "Single, Dual",
+		"Name": "4×12 SoloLead EM",
+		"Icon": "CAB_HX_4x12_SoloLead_EM_NEW",
+		"Original Brand": "Soldono®",
+		"Original Model": "SLO 4×12 cabinet",
+		"Type": "Guitar Cab,Cab",
+		"Description": "captured from* the Soldano SLO 4x12 cabinet"
+	},
+	{
+		"Version": "3.80",
+		"Category": "Wah",
+		"Subcategory": "Mono, Stereo",
+		"Name": "Teardrop Bass Q",
+		"Original Brand": "Dunlop®",
+		"Original Model": "105Q Bass Wah",
+		"Type": "Wah",
+		"Description": "based on* the Dunlop 105Q bass wah"
 	}
 ];
