@@ -1,3 +1,10 @@
+const BlankVideo = {
+    tonic: '',
+    mode: '',
+    volume: 80,
+    videoId: '8tPnX7OPo0Q',
+    isBlank: true
+};
 class ModePracticeUI {
     constructor(o) {
         const defaults = {
@@ -12,7 +19,7 @@ class ModePracticeUI {
         this.data = o.data;
         this.originalData = [...o.data];
         this.shuffledData = this.shuffle(o.data);
-        this.currentVideoId = null;
+        this.currentMode = BlankVideo;
         this.touchedIds = [];
         this.tonics = [...new Set(this.options.data.map(a => a.tonic))].sort();
         this.modes = [...new Set(this.options.data.map(a => a.mode))];
@@ -20,29 +27,56 @@ class ModePracticeUI {
         this.shuffleEnabled = false;
         this.showPlayer = false;
         this.muted = false;
+        this.minVolume = Math.min(...this.data.map(o => o.volume));
+        this.maxVolume = Math.max(...this.data.map(o => o.volume));
         this.ui = {
             player: $('#player').hide(),
             title: $('#div_title'),
             tonics: $('#list_tonics'),
             modes: $('#list_modes'),
-            actionToggleShuffle: $('#action-toggle-shuffle').prop('title', 'Shuffle Modes'),
-            actionTogglePlayer: $('#action-toggle-player').prop('title', 'Toggle Player'),
-            actionPlay: $('#action-play').prop('title', 'Play').hide(),
-            actionPause: $('#action-pause').prop('title', 'Pause').hide(),
-            actionStop: $('#action-stop').prop('title', 'Stop').hide(),
+            controlToggleShuffle: $('#control-toggle-shuffle').prop('title', 'Shuffle Modes'),
+            controlTogglePlayer: $('#control-toggle-player').prop('title', 'Toggle Player'),
+            controlPlay: $('#control-play').prop('title', 'Play').hide(),
+            controlPause: $('#control-pause').prop('title', 'Pause').hide(),
+            controlStop: $('#control-stop').prop('title', 'Stop').hide(),
+            controlVolume: $('#control-volume').val(80).on('input', function (e) { _this.setVolume(); }).hide(),
         };
         $(document).on('keypress', function (e) {
             if (e.which == 32)
                 _this.togglePlayVideo();
         });
+        $(document).on('mousewheel', function (e) {
+            var current = parseInt(_this.ui.controlVolume.val());
+            var value = current + Math.sign(e.originalEvent.wheelDelta);
+            if (value > 100)
+                value = 100;
+            if (value < 0)
+                value = 0;
+            _this.ui.controlVolume.val(value);
+            _this.setVolume();
+        });
         this.fillTonics();
+        //this.loadVideo(BlankVideo)
     }
-    changeVideo() { this.loadVideo(this.data[0]); }
+    changeVideo() {
+        this.loadVideo(this.data[0]);
+    }
     loadVideo(video) {
+        video = video || this.currentMode;
+        this.currentMode = video;
         //player.cueVideoById('NXCaBnzSTyo', 0)
-        this.player.loadVideoById(video.videoId, video.startTime || 0);
-        this.player.setVolume(video.volume || 80);
+        this.player.loadVideoById(video.videoId, video.startTime);
+        //this.player.setVolume(video.volume || 80);
         this.ui.title.html(`${video.tonic} ${video.mode}`);
+        this.setVolume();
+    }
+    setVolume(volume) {
+        //console.log(this.currentMode)
+        //10^(dB/10)
+        volume = volume || Number.parseInt(this.ui.controlVolume.val());
+        var actualVolume = this.currentMode.volume * volume / this.maxVolume;
+        console.log(`volume: ${volume} actualVolume: ${actualVolume}`);
+        this.player.setVolume(actualVolume);
     }
     fillTonics() {
         let _this = this;
@@ -70,16 +104,16 @@ class ModePracticeUI {
             //if (item.tonic != this.currentTonic) continue;
             let element = $('<li>')
                 .addClass('option_button')
-                .data('videoId', item.id)
+                .data('videoIndex', item.index)
                 .on('click', function () {
-                let id = $(this).data('videoId');
-                _this.currentVideoId = id;
+                let id = $(this).data('videoIndex');
+                _this.currentMode = item;
                 _this.touchedIds.push(id);
-                let o = _this.data.filter(a => a.id == id)[0];
+                let o = _this.data.filter(a => a.index == id)[0];
                 _this.loadVideo(o);
                 //console.log()
             })
-                .html(/*'▶ ' +*/ item.tonic + ' ' + item.mode);
+                .html('▶ ' + /*item.tonic + ' ' +*/ item.mode);
             target.append(element);
         }
         this.updateUIState();
@@ -107,21 +141,22 @@ class ModePracticeUI {
         //this.ui.actionPlay.toggleClass('active-red', state == 1)
         //this.ui.actionPause.toggleClass('active-red', state == 2)
         //this.ui.actionStop.toggleClass('active-red', state == 5)
-        this.ui.actionToggleShuffle.toggleClass('active-green', this.shuffleEnabled);
+        this.ui.controlToggleShuffle.toggleClass('active-green', this.shuffleEnabled);
         this.ui.player.toggle(this.showPlayer);
-        this.ui.actionTogglePlayer.toggleClass('active-green', this.showPlayer);
-        this.ui.actionPlay.toggle(state != 1 && this.currentVideoId != null);
-        this.ui.actionPause.toggle(state == 1);
-        this.ui.actionStop.toggle(state == 1 || state == 2);
+        this.ui.controlTogglePlayer.toggleClass('active-green', this.showPlayer);
+        this.ui.controlPlay.toggle(state != 1 && !this.currentMode.isBlank);
+        this.ui.controlPause.toggle(state == 1);
+        this.ui.controlStop.toggle(state == 1 || state == 2);
+        this.ui.controlVolume.show();
         this.ui.tonics.children().each(function () {
             let element = $(this);
             element.toggleClass('selected', element.data('tonic') == _this.currentTonic);
         });
         this.ui.modes.children().each(function () {
             let element = $(this);
-            let videoId = element.data('videoId');
-            element.toggleClass('selected', videoId == _this.currentVideoId);
-            element.toggleClass('touched', _this.touchedIds.indexOf(videoId) != -1);
+            let videoIndex = element.data('videoIndex');
+            element.toggleClass('selected', videoIndex == _this.currentMode.index);
+            element.toggleClass('touched', _this.touchedIds.indexOf(videoIndex) != -1);
         });
     }
     toggleShuffle() {

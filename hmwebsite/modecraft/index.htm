@@ -62,12 +62,23 @@
 		<div id="player"></div>
 		<div></div>
 
-		<i onclick="ui.toggleShuffle()" class="button hmg-dice" id="action-toggle-shuffle"></i>
-		<i onclick="ui.togglePlayer()" class="button hmg-display" id="action-toggle-player"></i>
-		<i onclick="ui.playVideo()" class="button hmg-action-start-alt" id="action-play"></i>
-		<i onclick="ui.pauseVideo()" class="button hmg-action-pause-alt" id="action-pause"></i>
-		<i onclick="ui.stopVideo()" class="button hmg-action-stop-alt" id="action-stop"></i>
+		<table class="noborder">
+			<tr>
+				<td>
+					<i onclick="ui.toggleShuffle()" class="button hmg-dice" id="control-toggle-shuffle"></i>
+					<i onclick="ui.togglePlayer()" class="button hmg-display" id="control-toggle-player"></i>
+					<i onclick="ui.playVideo()" class="button hmg-action-start-alt" id="control-play"></i>
+					<i onclick="ui.pauseVideo()" class="button hmg-action-pause-alt" id="control-pause"></i>
+					<i onclick="ui.stopVideo()" class="button hmg-action-stop-alt" id="control-stop"></i>
 		<!--<i onclick="ui.toggleMute()" class="button hmg-speaker-disabled"></i>-->
+				</td>
+				<td>
+					<input min="0" max="100" type="range" id="control-volume" style="max-width:100px;margin:0;">
+				</td>
+			</tr>
+		</table>
+
+
 	</div>
 	<script>
 		//let index = 0;
