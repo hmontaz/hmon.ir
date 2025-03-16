@@ -9,12 +9,13 @@ var MIDI = {
 	Channel_7: 0xC7,
 	Channel_8: 0xC8,
 	Channel_9: 0xC9,
-	Channel_10: 0xCa,
-	Channel_11: 0xCb,
-	Channel_12: 0xCc,
-	Channel_13: 0xCd,
-	Channel_14: 0xCe,
-	Channel_15: 0xCf,
+	Channel_10: 0xCA,
+	Channel_11: 0xCB,
+	Channel_12: 0xCC,
+	Channel_13: 0xCD,
+	Channel_14: 0xCE,
+	Channel_15: 0xCF,
+	AllChannels: Array.from({ length: 0xCF - 0xC0 + 1 }, (_, i) => 0xC0 + i),
 	init: function (callback) {
 		var _this = this;
 		if (navigator.requestMIDIAccess) {
@@ -54,7 +55,7 @@ var MIDI = {
 	getOutputs: function () {
 		if (!this.midiAccess) return [];
 		var array = Array.from(this.midiAccess.outputs.values());
-		return array;
+		return array.sort((a, b) => a.name.localeCompare(b.name));
 	},
 
 };

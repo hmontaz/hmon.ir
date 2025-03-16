@@ -1,0 +1,224 @@
+﻿/* Global styles */
+* {
+	font-family: Roboto, HelveticaNeue, Arial, sans-serif;
+	font-stretch: 80%;
+	/*font-size: 11px;*/
+	padding: 0;
+	margin: 0;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+	color: #ddd;
+}
+
+body {
+	/*height: 100%;*/
+	margin: 0;
+}
+
+html {
+	height: 100%;
+	background-color: #8e0805;
+	margin: 0;
+}
+
+table {
+	border-collapse: collapse;
+	display: inline-block;
+
+	td {
+		padding: 0px;
+	}
+}
+
+/* Item styles */
+.itemA, .itemB {
+	padding: 0;
+	border-radius: 10px;
+	display: block;
+	min-width: 110px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.itemA {
+	background-color: black;
+}
+
+.itemB {
+	text-align: right;
+	background-color: #c01b15;
+}
+
+.itemA label, .itemB label {
+	font-size: 12px;
+	/*color: white;*/
+	display: block;
+	cursor: pointer;
+}
+
+.itemA label {
+	margin: 0 0 0 5px;
+}
+
+.itemB label {
+	margin: 0 6px 0 5px;
+}
+
+/*--------------*/
+.itemC, .itemD {
+	padding: 0;
+	margin: 0 5px 0 0;
+	border-radius: 10px;
+	display: block;
+	cursor: pointer;
+}
+
+.itemC {
+	background-color: black;
+	/*color: white;*/
+}
+
+.itemD {
+	background-color: #c01b15;
+	color: black;
+}
+
+.itemC label, .itemD label {
+	text-align: center;
+	font-size: 12px;
+	margin: 2px 2px 0px 2px;
+	display: block;
+	cursor: pointer;
+	/*background-color:green;*/
+}
+
+/*------------*/
+img.led {
+	cursor: pointer;
+	max-width: 16px;
+}
+
+.section-container {
+	border: solid 2px black;
+	border-radius: 10px;
+	overflow: hidden;
+	display: inline-block;
+	background-color: black;
+}
+
+tiny {
+	font-size: 7px;
+}
+
+.optionSet {
+	background-color: black;
+	overflow-y: auto;
+
+	> .optionContainer {
+		background-color: black;
+		display: inline-block;
+		font-size: 12px;
+
+		> .option {
+			color: #8e0805;
+			background-color: black;
+			cursor: pointer;
+			text-align: center;
+			padding: 4px 2px 3px 2px;
+			overflow-x: hidden;
+			white-space: nowrap;
+			font-size: 12px;
+
+			&.pc-offset-option {
+				padding: 9px 9px 9px 9px;
+			}
+
+			&.selected {
+				color: #fdd;
+				background-color: #c01b15;
+			}
+		}
+	}
+}
+
+.digit {
+	height: 37px;
+}
+
+.two-digit {
+	padding: 0px 7px 0px 7px;
+}
+
+.whammyText {
+	display: inline-block;
+	min-width: 45px;
+	font-size: 12px;
+	margin: 1px 0 0 0;
+	color: #cbb;
+}
+/*https://css-tricks.com/custom-scrollbars-in-webkit/*/
+::-webkit-scrollbar {
+	/* 1 */
+	width: 10px;
+}
+
+::-webkit-scrollbar-button {
+	/* 2 */
+	background-color: #222;
+	height: 0px;
+}
+
+::-webkit-scrollbar-track {
+	/* 3 */
+	background-color: rgba(255, 0, 0, .2);
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+	/* 4 */
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	/* 5 */
+	background-color: #a22;
+	border: solid 1px black;
+	border-radius: 5px;
+	width: 8px;
+	margin: 0px;
+}
+
+::-webkit-scrollbar-corner {
+	/* 6 */
+}
+
+::-webkit-resizer {
+	/* 7 */
+}
+
+.section-label {
+	text-align: center;
+	font-size: 11px;
+}
+
+.noborder {
+	border: none;
+	border-spacing: 0;
+	padding: 0;
+	margin: 0;
+	border-collapse: collapse;
+	vertical-align: top;
+
+	td {
+		border: none;
+		border-spacing: 0px;
+		padding: 0;
+		margin: 0;
+		border-collapse: collapse;
+		vertical-align: top;
+	}
+}

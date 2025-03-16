@@ -102,7 +102,13 @@
     <Content Include="default.html" />
     <Content Include="digitech\resources\images\led-off.svg" />
     <Content Include="digitech\resources\images\led-on.svg" />
-    <Content Include="digitech\resources\scripts\midi.js" />
+    <Content Include="digitech\resources\scripts\bundle.js" />
+    <Content Include="digitech\resources\scripts\bundle.min.js">
+      <DependentUpon>bundle.js</DependentUpon>
+    </Content>
+    <Content Include="digitech\resources\stylesheets\default.min.css">
+      <DependentUpon>default.css</DependentUpon>
+    </Content>
     <Content Include="harmoniousmayhem\index.html" />
     <Content Include="harmoniousmayhem\resources\images\icon.png" />
     <Content Include="harmoniousmayhem\resources\images\logo_dark.svg" />
@@ -294,6 +300,8 @@
     <Content Include="modes_on_guitar\resources\images\modes on guitar neck 1,3.svg" />
     <Content Include="random_generator\randomnote.html" />
     <Content Include="random_generator\guitarneck.html" />
+    <TypeScriptCompile Include="digitech\resources\scripts\src\MIDIHelper.ts" />
+    <TypeScriptCompile Include="digitech\resources\scripts\src\UIHandler.ts" />
     <TypeScriptCompile Include="helix\resources\scripts\Settings.ts" />
     <TypeScriptCompile Include="helix\resources\scripts\ThemeHandler.ts" />
     <TypeScriptCompile Include="modecraft\resources\scripts\ModePracticeOptions.ts" />
@@ -326,6 +334,8 @@
     <None Include="bundleconfig.json" />
     <Content Include="harmoniousmayhem\resources\stylesheets\base\default.less" />
     <Content Include="harmoniousmayhem\resources\stylesheets\base\dark.less" />
+    <Content Include="digitech\resources\scripts\ui_handler.js.map" />
+    <Content Include="digitech\resources\stylesheets\less\default.less" />
     <None Include="random_generator\resources\stylesheets\theme-dark.less" />
     <Content Include="random_generator\resources\stylesheets\theme-dark.css">
       <DependentUpon>theme-dark.less</DependentUpon>

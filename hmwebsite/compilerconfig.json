@@ -70,5 +70,14 @@
 	{
 		"outputFile": "harmoniousmayhem/resources/stylesheets/base/default.css",
 		"inputFile": "harmoniousmayhem/resources/stylesheets/base/default.less"
+	},
+	//digitech
+	{
+		"outputFile": "sound/resources/stylesheets/default.css",
+		"inputFile": "sound/resources/stylesheets/default.less"
+	},
+	{
+		"outputFile": "digitech/resources/stylesheets/default.css",
+		"inputFile": "digitech/resources/stylesheets/less/default.less"
 	}
 ]

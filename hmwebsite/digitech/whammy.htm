@@ -32,27 +32,29 @@
 	<meta property="og:url" content="http://hmon.ir/digitech/whammy.htm" />
 	<meta property="article:publisher" content="https://instagram.com/hmontaz/" />
 	<meta property="article:author" content="https://instagram.com/hmontaz/" />
-	<script src="./resources/scripts/midi.js?version=2" type="text/javascript"></script>
-	<script src="./resources/scripts/ui_handler.js?version=2" type="text/javascript"></script>
+	<!--<script src="./resources/scripts/midi.js?version=2" type="text/javascript"></script>-->
+	<!--<script src="resources/scripts/MIDIHelper.js"></script>-->
+	<!--<script src="./resources/scripts/UIHandler.js?version=2" type="text/javascript"></script>-->
+	<script src="resources/scripts/bundle.js"></script>
 	<link href="resources/stylesheets/default.css?version=2" rel="stylesheet" />
 </head>
-<body style="zoom: 1.1;">
-	<div style="margin-top: 2vh; text-align: center;">
-		<div style="display:inline-block;">
+<body style="overflow:hidden;">
+	<div style="text-align: center;">
+		<div id="divMain" style="display: inline-block; margin: 1vh 0 1vh 0;">
 			<div id='panel' style='display:none;margin-bottom:10px;'>
 				<section id="pnlWH" class="section-container">
 					<table class="noborder">
 						<tr style="vertical-align:top;">
 							<td style="background-color:#c01b15;padding:5px;">
 								<div id='column_h'>
-									<div style="font-size:14px;color:white;margin:10 0 10 5;">HARMONY</div>
+									<div style="font-size: 14px; color: white; margin: 10px 0 10px 5px; ">HARMONY</div>
 								</div>
 							</td>
 							<td style="background-color:#c01b15;"><div style="width:4px;"></div></td>
 							<td style="background-color:black;"><div style="width:5px;"></div></td>
 							<td style="background-color:black;padding:5px;">
 								<div id="column_c">
-									<div style="font-size:14px;color:white;margin:10 5 10 0;text-align:right;">WHAMMY</div>
+									<div style="font-size: 14px; color: white; margin: 10px 5px 10px 0; text-align: right; ">WHAMMY</div>
 								</div>
 							</td>
 						</tr>
@@ -63,7 +65,7 @@
 						<tr>
 							<td style="width:240px;background-color:#c01b15;padding:5px;">
 								<div>
-									<div style="font-size:14px;color:white;margin:5 0 10 4;">SHIFT UP</div>
+									<div style="font-size: 14px; color: white; margin: 5px 0 10px 4px;">SHIFT UP</div>
 									<table id='row_up'>
 									</table>
 								</div>
@@ -72,30 +74,31 @@
 						<tr>
 							<td style="background-color:black;padding:5px;">
 								<div>
-									<div style="font-size:14px;color:white;margin:4 0 10 4;">SHIFT DOWN</div>
+									<div style="font-size:14px;color:white;margin:4px 0px 10px 4px;">SHIFT DOWN</div>
 									<table id='row_down'>
 									</table>
 								</div>
 							</td>
 						</tr>
 					</table>
+					<div style="height:13px"></div>
 				</section>
 			</div>
 			<div>
-				<section id="pnlBase" class="optionSet section-container" title="Base">
-					<div class="optionContainer">
-						<div id="btnBase_0" class="option" style="padding:9px 9px 9px 9px;">0</div>
-						<div id="btnBase_1" class="option" style="padding:9px 9px 8px 9px;">1</div>
+				<section id="pnlBase" class="optionSet section-container" title="PC Offset">
+					<div class="optionContainer" style="width:30px;">
+						<div id="btnBase_0" class="option pc-offset-option">0</div>
+						<div id="btnBase_1" class="option pc-offset-option">1</div>
 					</div>
 				</section>
 				<section id="pnlMode" class="optionSet section-container" title="Mode">
-					<div class="optionContainer">
+					<div class="optionContainer" style="width:55px;">
 						<div id="btnCLASSIC" class="option">CLASSIC</div>
 						<div id="btnCHORDS" class="option">CHORDS</div>
 						<div id="btnDT" class="option">DT</div>
 					</div>
 				</section>
-				<section style="padding:0 6px 0 6px;" class="section-container">
+				<section class="section-container two-digit">
 					<div>
 						<div style="background-color:black;display:inline-block;">
 							<table style="padding-top:1px;">
@@ -103,8 +106,8 @@
 									<td colspan=2 style="color:white;text-align:center;font-size:11px;">ACTIVE</td>
 								</tr>
 								<tr>
-									<td><img id="digit_a_1" src='../resources/images/seven-segments/0.svg' style="width:30px;"></td>
-									<td><img id="digit_a_0" src='../resources/images/seven-segments/0.svg' style="width:30px;"></td>
+									<td><img id="digit_a_1" class="digit" src='../resources/images/seven-segments/0.svg'></td>
+									<td><img id="digit_a_0" class="digit" src='../resources/images/seven-segments/0.svg'></td>
 								</tr>
 								<tr>
 									<td colspan=2 style="color:white;text-align:center;font-size:11px;">PC</td>
@@ -113,7 +116,7 @@
 						</div>
 					</div>
 				</section>
-				<section style="padding:0 6px 0 6px;" class="section-container">
+				<section class="section-container two-digit">
 					<div>
 						<div style="background-color:black;display:inline-block;">
 							<table style="padding-top:1px;">
@@ -121,8 +124,8 @@
 									<td colspan=2 style="color:white;text-align:center;font-size:11px;">BYPASS</td>
 								</tr>
 								<tr>
-									<td><img id="digit_b_1" src='../resources/images/seven-segments/0.svg' style="width:30px;"></td>
-									<td><img id="digit_b_0" src='../resources/images/seven-segments/0.svg' style="width:30px;"></td>
+									<td><img id="digit_b_1" class="digit" src='../resources/images/seven-segments/0.svg'></td>
+									<td><img id="digit_b_0" class="digit" src='../resources/images/seven-segments/0.svg'></td>
 								</tr>
 								<tr>
 									<td colspan=2 style="color:white;text-align:center;font-size:11px;">PC</td>
@@ -134,36 +137,32 @@
 			</div>
 			<table class="noborder">
 				<tr>
-					<td><div class="section-label">Command</div></td>
-					<td>&nbsp;</td>
-					<td><div class="section-label">Live Midi Output</div></td>
-				</tr>
-				<tr>
 					<td>
-						<section id="pnlCommand" class="optionSet section-container" title="Command">
-							<div class="optionContainer">
-								<div id="btnMUTE" class="option">OFF</div>
-								<div id="btnACTIVE" class="option">ACTIVE</div>
-								<div id="btnBYPASS" class="option">BYPASS</div>
+						<div class="section-label">Live Midi Output</div>
+						<section id="pnlOutput" class="optionSet section-container" title="Output" style="height:63px;display:block;">
+							<div id="output_options" class="optionContainer" style="width: 126px;">
 							</div>
 						</section>
 					</td>
-					<td></td>
+					<td>&nbsp;</td>
 					<td>
-						<section id="pnlOutput" class="optionSet section-container" title="Output" style="width:190px;height:63px;">
-							<div id="output_options" class="optionContainer">
+						<div class="section-label">Channel</div>
+						<section id="pnlChannel" class="optionSet section-container" title="Channel" style="display: block">
+							<div class="optionContainer" style="width:35px; height: 63px;">
+							</div>
+						</section>
+					</td>
+					<td>&nbsp;</td>
+					<td>
+						<div class="section-label">Command</div>
+						<section id="pnlCommand" class="optionSet section-container" title="Command">
+							<div class="optionContainer" style="width: 55px; height: 63px;">
 							</div>
 						</section>
 					</td>
 				</tr>
 			</table>
-
-			<div>
-
-
-			</div>
 			<div><img style="width:253px;" src='resources/images/whammy.svg' /></div>
-			<br>
 			<div class='page-info' style="font-size:10px;color:#fdd;">
 				by <a href="https://www.hmon.ir" style="color:white;">Hossein Montazeri</a>
 			</div>
@@ -173,13 +172,35 @@
 		var handler = null;
 
 		$(document).ready(function () {
-
-			MIDI.init(function () {
-				//console.log(MIDI.getOutputs());
-				handler = new WhammyHandler();
-			});
-
+			handler = new UIHandler();
+			//setTimeout(function () { $(window).resize(); }, 500);
+			//setTimeout(function () { $(window).resize(); }, 1000);
+			//setTimeout(function () { $(window).resize(); }, 2000);
 		});
+		var divMain = $('#divMain');
+		$(window).on('load', function (e) {
+			//console.log('loaded')
+			$(window).resize();
+		});
+		$(window).resize(function (e) {
+			//divMain
+
+			var w = $(window).width();
+			var h = $(window).height();
+
+			var zoomFactor_w = w / divMain.width();
+			var zoomFactor_h = h / (divMain.height() + 24);
+			//console.log(`${zoomFactor_w} ${zoomFactor_h}`)
+			var zoomFactor = Math.floor(Math.min(zoomFactor_w, zoomFactor_h) * 10) / 10;
+			divMain.css({
+				//'border': 'solid 1px black',
+				'zoom': zoomFactor
+			});
+			handler.resize();
+			//console.log(zoomFactor)
+			//console.log(`w: ${w} h: ${h} ${zoomFactor}`)
+		});
+
 	</script>
 </body>
 </html>

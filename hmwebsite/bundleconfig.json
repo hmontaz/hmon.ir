@@ -22,6 +22,14 @@
 			"resources/stylesheets/scroll/dark.css"
 		]
 	},
+	//DigiTech
+	{
+		"outputFileName": "digitech/resources/scripts/bundle.js",
+		"inputFiles": [
+			"digitech/resources/scripts/src/MIDIHelper.js",
+			"digitech/resources/scripts/src/UIHandler.js"
+		]
+	},
 	//Harmonious Mayhem
 	{
 		"outputFileName": "harmoniousmayhem/resources/stylesheets/theme_dark.css",

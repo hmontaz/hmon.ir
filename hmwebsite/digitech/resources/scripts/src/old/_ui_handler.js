@@ -1,4 +1,6 @@
-﻿var WhammyHandler = function () {
+﻿/// <reference path="midi.js" />
+
+var WhammyHandler = function () {
 	this.init();
 }
 
@@ -7,6 +9,7 @@ WhammyHandler.prototype.base = 0;
 WhammyHandler.prototype.mode = 0;// 0:CLASSIC 1:CHORDS 2:DT
 WhammyHandler.prototype.outputCommand = 1;// 0:MUTE 1:ACTIVE 2:BYPASS
 WhammyHandler.prototype.outputIndex = 0;
+WhammyHandler.prototype.midiOutputs = [];
 WhammyHandler.prototype.list_0 = ['-OCT,+OCT', '-5TH,-4TH', '-4TH,-3RD', '+5TH,+7TH', '+5TH,+6TH', '+4TH,+5TH', '+3RD,+4TH', '+♭3RD,+3RD', '+2ND,+3RD', null, 'SHALLOW'];
 WhammyHandler.prototype.list_1 = ['+2 OCT', '+ OCT', '+ 5TH', '+ 4TH', '- 2ND', '- 4TH', '- 5TH', '- OCT', '- 2OCT', 'DIVE BOMB', 'DEEP'];
 WhammyHandler.prototype.list_dt_0 = ['1', '2', '3', '4', '5', '6', '7', '<tiny><br><br><sup>OCT</sup><br></tiny>', '<tiny><sup>OCT</sup><br>&#43;<br><sup>DRY</sup></tiny>'];
@@ -14,6 +17,7 @@ WhammyHandler.prototype.list_dt_1 = ['1', '2', '3', '4', '5', '6', '7', '<tiny><
 
 WhammyHandler.prototype.init = function () {
 	var _this = this;
+	this.midiOutputs = MIDI.getOutputs().sort(function (a, b) { return a.name.localeCompare(b.name); })
 	this.load();
 	this.fillMidiOutputs();
 
@@ -34,7 +38,7 @@ WhammyHandler.prototype.init = function () {
 		_this.index += Math.sign(e.originalEvent.wheelDelta);
 		_this.update();
 	});
-	$(pnlBase).bind('mousewheel', function (e) {
+	/*$(pnlBase).bind('mousewheel', function (e) {
 		if (e.originalEvent.wheelDelta > 0)
 			_this.base = 0;
 		else
@@ -55,21 +59,27 @@ WhammyHandler.prototype.init = function () {
 	});
 	$(pnlOutput).bind('mousewheel', function (e) {
 		_this.outputIndex -= Math.sign(e.originalEvent.wheelDelta);
-		_this.outputIndex = Math.min(_this.outputIndex, MIDI.getOutputs().length - 1);
+		_this.outputIndex = Math.min(_this.outputIndex, _this.midiOutputs.length - 1);
 		_this.outputIndex = Math.max(_this.outputIndex, 0);
 		_this.update();
+	});*/
+	$(document).ready(function () {
+		$("div#output-3")[0]/*.focus().find(":selected")[0]*/.scrollIntoView();
+		$("#output_options").click(function () {
+
+		});
 	});
 }
 WhammyHandler.prototype.fillMidiOutputs = function () {
 	var _this = this;
-	var outputs = MIDI.getOutputs().sort(function (a, b) { return a.name.localeCompare(b.name); });
+	var outputs = this.midiOutputs
 	for (var i = 0; i < outputs.length; i++) {
 		var output = outputs[i];
 		//console.log(output);
 		//var text = output.name + ' [' + output.manufacturer + ']';
 		var text = output.name;
 		var option = $('<div>')
-			.prop('id', 'output_' + i)
+			.prop('id', output.id)
 			.addClass('output_option')
 			.addClass('option')
 			.data('output-index', i)
@@ -109,12 +119,14 @@ WhammyHandler.prototype.update = function () {
 	//$('#result').html("["+value+"]");
 	//console.log(value_on)
 	if (MIDI !== undefined) {
-		var outputs = MIDI.getOutputs();
+		var outputs = this.midiOutputs
 		if (outputs.length > 0) {
 			this.outputIndex = this.outputIndex % outputs.length;
 			var output = outputs[this.outputIndex];
-			if (this.outputCommand == 1) output.send([0xc0, value_on]);
-			if (this.outputCommand == 2) output.send([0xc0, value_off]);
+			const channel = MIDI.Channel_0;
+			//const channel = MIDI.Channel_15;
+			if (this.outputCommand == 1) output.send([channel, value_on]);
+			if (this.outputCommand == 2) output.send([channel, value_off]);
 		}
 	}
 	digit_a_1.src = '../resources/images/seven-segments/' + Math.floor(value_on / 10) + '.svg';
@@ -134,7 +146,7 @@ WhammyHandler.prototype.update = function () {
 	//var outputs = MIDI.getOutputs();
 	//console.log(this.outputIndex);
 	$('.output_option').removeClass('selected');
-	$('[id=output_' + this.outputIndex + ']').addClass('selected');
+	$(`[id=${this.midiOutputs[this.outputIndex].id}]`).addClass('selected');
 	//for (var i = 0; i < outputs.length; i++) {
 	//	var output = outputs[i];
 	//}
