@@ -254,7 +254,7 @@ class UIHandler {
             const tr = $('<tr>').appendTo(table);
             if (!item) {
                 skipped++;
-                tr.append($('<td></td>'));
+                tr.append($('<td style="height:20px"></td>'));
                 return;
             }
             div.addClass(cssClass);
