@@ -12,9 +12,10 @@
 	<div class="controls">
 		<table>
 			<tr>
-				<td>		<label>Strings: <input type="number" id="strings" min="1" value="6" onchange="fretboard.renderFretboard()" /></label></td>
+				<td><label>Strings: <input type="number" id="strings" min="1" value="6" onchange="fretboard.renderFretboard()" /></label></td>
 				<td><label>Frets: <input type="number" id="frets" min="1" value="24" onchange="fretboard.renderFretboard()" /></label></td>
-				<td><button onclick="fretboard.downloadSVG()">Download SVG</button></td>
+				<td><button onclick="fretboard.download('svg')">Download SVG</button></td>
+				<td><button onclick="fretboard.download('png')">Download PNG</button></td>
 				<td id="colors">
 					<!--<span class="color-box red selected"></span>
 					<span class="color-box green"></span>
@@ -33,22 +34,16 @@
 	<script>
 		var fretboard = new Fretboard('fretboard-container')
 		var availableColors = fretboard.getAvailableColors()
-		console.log(availableColors)
 
 		availableColors.forEach(function (color) {
 			var colorBox = document.createElement('span')
 			colorBox.title = color.name
 			colorBox.className = 'color-box'// + color.defaultColor
-			//debugger
-			//colorBox.style.backgroundColor = color.defaultStyle.backgroundColor
 			fretboard.expandStyle(colorBox, color.defaultStyle)
 			colorBox.setAttribute('data-color', color.name)
-			//colorBox.setAttribute('data-name',)
 			colorBox.onclick = function () {
 				var colorName = this.getAttribute('data-color')
-				//console.log(colorName)
 				fretboard.setColor(colorName)
-				//fretboard.renderFretboard()
 			}
 			document.getElementById('colors').appendChild(colorBox)
 		})

@@ -1,8 +1,8 @@
 class Fretboard {
 	private noteNames: string[] = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
 	private tuning: string[] = ['E', 'B', 'G', 'D', 'A', 'E', 'B', 'F#'];
-	private fretWidthBase: number = 70;
-	private radius: number = 20;
+	private fretWidthBase: number = 95;
+	private radius: number = 18;
 	private container: HTMLElement;
 	private selectedColor: any = null; // Initialize selectedColor to null
 	private fretboardTheme: any = {
@@ -22,7 +22,7 @@ class Fretboard {
 			{
 				name: 'Red',
 				icon: {
-					defaultSyle: {
+					defaultStyle: {
 						backgroundColor: 'hsl(0, 100%, 32%)',
 					},
 					hoverStyle: {
@@ -49,7 +49,7 @@ class Fretboard {
 			{
 				name: 'Yellow',
 				icon: {
-					defaultSyle: {
+					defaultStyle: {
 						backgroundColor: 'hsl(60, 100%, 32%)',
 					},
 					hoverStyle: {
@@ -58,10 +58,10 @@ class Fretboard {
 				},
 				normal: {
 					circleStyle: {
-						fill: 'rgba(51, 51, 51, .8)',
+						fill: 'rgba(51, 51, 51, .5)',
 					},
 					textStyle: {
-						fill: 'rgba(221, 221, 221, .8)'
+						fill: 'hsla(60, 100%, 50%, .5)'
 					},
 				},
 				selected: {
@@ -69,14 +69,14 @@ class Fretboard {
 						fill: 'rgba(255, 255, 51, .8)',
 					},
 					textStyle: {
-						fill: 'rgba(255, 255, 200, .8)'
+						fill: 'hsl(60, 100%, 10%)'
 					},
 				},
 			},
 			{
 				name: 'Magenta',
 				icon: {
-					defaultSyle: {
+					defaultStyle: {
 						backgroundColor: 'hsl(300, 100%, 32%)',
 					},
 					hoverStyle: {
@@ -85,10 +85,10 @@ class Fretboard {
 				},
 				normal: {
 					circleStyle: {
-						fill: 'rgba(51, 51, 51, .8)',
+						fill: 'rgba(51, 51, 51, .5)',
 					},
 					textStyle: {
-						fill: 'rgba(221, 221, 221, .8)'
+						fill: 'rgba(221, 221, 221, .5)'
 					},
 				},
 				selected: {
@@ -103,7 +103,7 @@ class Fretboard {
 			{
 				name: 'Green',
 				icon: {
-					defaultSyle: {
+					defaultStyle: {
 						backgroundColor: 'hsl(120, 100%, 32%)',
 					},
 					hoverStyle: {
@@ -112,10 +112,10 @@ class Fretboard {
 				},
 				normal: {
 					circleStyle: {
-						fill: 'rgba(51, 51, 51, .8)',
+						fill: 'rgba(51, 51, 51, .5)',
 					},
 					textStyle: {
-						fill: 'rgba(221, 221, 221, .8)'
+						fill: 'rgba(221, 221, 221, .5)'
 					},
 				},
 				selected: {
@@ -130,7 +130,7 @@ class Fretboard {
 			{
 				name: 'Orange',
 				icon: {
-					defaultSyle: {
+					defaultStyle: {
 						backgroundColor: 'hsl(39, 100%, 50%)',
 					},
 					hoverStyle: {
@@ -139,10 +139,10 @@ class Fretboard {
 				},
 				normal: {
 					circleStyle: {
-						fill: 'rgba(51, 51, 51, .8)',
+						fill: 'rgba(51, 51, 51, .5)',
 					},
 					textStyle: {
-						fill: 'rgba(221, 221, 221, .8)'
+						fill: 'rgba(221, 221, 221, .5)'
 					},
 				},
 				selected: {
@@ -157,7 +157,7 @@ class Fretboard {
 			{
 				name: 'Blue',
 				icon: {
-					defaultSyle: {
+					defaultStyle: {
 						backgroundColor: 'hsl(240, 100%, 32%)',
 					},
 					hoverStyle: {
@@ -166,10 +166,10 @@ class Fretboard {
 				},
 				normal: {
 					circleStyle: {
-						fill: 'rgba(51, 51, 51, .8)',
+						fill: 'rgba(51, 51, 51, .5)',
 					},
 					textStyle: {
-						fill: 'rgba(221, 221, 221, .8)'
+						fill: 'rgba(221, 221, 221, .5)'
 					},
 				},
 				selected: {
@@ -184,7 +184,7 @@ class Fretboard {
 			{
 				name: 'Cyan',
 				icon: {
-					defaultSyle: {
+					defaultStyle: {
 						backgroundColor: 'hsl(180, 100%, 32%)',
 					},
 					hoverStyle: {
@@ -193,10 +193,10 @@ class Fretboard {
 				},
 				normal: {
 					circleStyle: {
-						fill: 'rgba(51, 51, 51, .8)',
+						fill: 'rgba(51, 51, 51, .5)',
 					},
 					textStyle: {
-						fill: 'rgba(221, 221, 221, .8)'
+						fill: 'rgba(221, 221, 221, .5)'
 					},
 				},
 				selected: {
@@ -225,7 +225,7 @@ class Fretboard {
 	}
 
 	private getFretWidth(f: number): number {
-		return this.fretWidthBase - f * this.fretWidthBase * (6 / 1100);
+		return this.fretWidthBase - f * this.fretWidthBase * (10 / 1000);
 	}
 
 	private getFretX(f: number): number {
@@ -273,9 +273,9 @@ class Fretboard {
 
 			const fretLine = document.createElementNS('http://www.w3.org/2000/svg', 'line');
 			fretLine.setAttribute('x1', x.toString());
-			fretLine.setAttribute('y1', (fretWidth / 2).toString());
+			fretLine.setAttribute('y1', '40');
 			fretLine.setAttribute('x2', x.toString());
-			fretLine.setAttribute('y2', (height - fretWidth / 2).toString());
+			fretLine.setAttribute('y2', (height - 40).toString());
 			fretLine.setAttribute('stroke', 'gold');
 			fretLine.setAttribute('stroke-width', f === 0 ? '4' : '2');
 			svg.appendChild(fretLine);
@@ -284,10 +284,8 @@ class Fretboard {
 				const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
 				label.setAttribute('x', fretMid.toString());
 				label.setAttribute('y', '15');
-				//label.setAttribute('text-anchor', 'middle');
-				//label.setAttribute('font-size', '12');
 				label.textContent = f.toString();
-				//debugger
+
 				this.expandStyle(label, this.fretboardTheme.labelStyle);
 				svg.appendChild(label);
 			}
@@ -312,54 +310,40 @@ class Fretboard {
 
 				const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
 				g.appendChild(circle);
-				g.appendChild(text);				
+				g.appendChild(text);
 
 				svg.appendChild(g);
 
-				//const theme = this.fretboardTheme.availableColors[0];
-				//const theme = this.fretboardTheme.availableColors[this.fretboardTheme.availableColors.length - 1];
-							
-
 				const updateColors = (circle: SVGCircleElement, text: SVGTextElement, selected: boolean) => {
-					const theme = this.selectedColor	
-					//const fill = selected ? note_theme.selected.fill : note_theme.normal.fill;
-					//const textColor = selected ? note_theme.selected.text : note_theme.normal.text;
-					//circle.setAttribute('fill', fill);
-					//text.setAttribute('fill', textColor);
-					//debugger
-					//g.setAttribute('data-colorName', this.selectedColor.name); // Set the color name as a data attribute)
-					//console.log(this.selectedColor.name)
-					//console.log(g.getAttribute('data-colorName'))
-					const style = selected ? theme.selected : theme.normal;
-					this.expandStyle(circle, style.circleStyle);
-					this.expandStyle(text, style.textStyle);
+					const theme = this.selectedColor
+					const style = selected ? theme.selected : theme.normal
+					this.expandStyle(circle, style.circleStyle)
+					this.expandStyle(text, style.textStyle)
 				}
 
 				circle.addEventListener('click', () => {
-					circle.classList.toggle('selected');
-					text.classList.toggle('selected');
-					const selected = circle.classList.contains('selected');
-					updateColors(circle, text, selected);
+					circle.classList.toggle('selected')
+					text.classList.toggle('selected')
+					const selected = circle.classList.contains('selected')
+					updateColors(circle, text, selected)
 
 				});
 				text.addEventListener('click', () => {
-					circle.classList.toggle('selected');
-					text.classList.toggle('selected');
-					const selected = circle.classList.contains('selected');
-					updateColors(circle, text, selected);
+					circle.classList.toggle('selected')
+					text.classList.toggle('selected')
+					const selected = circle.classList.contains('selected')
+					updateColors(circle, text, selected)
 				});
 				updateColors(circle, text, false); // Set initial color
-				//svg.appendChild(circle);
-				//svg.appendChild(text);
 			}
 		}
 
-		this.container.innerHTML = '';
-		this.container.appendChild(svg);
+		this.container.innerHTML = ''
+		this.container.appendChild(svg)
 	}
 
 	private camelToKebab(str: string): string {
-		return str.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+		return str.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase()
 	}
 
 	private parseStyle(style: string): Record<string, string> {
@@ -374,42 +358,40 @@ class Fretboard {
 
 	// Convert object to inline style string
 	private styleObjectToString(style: Record<string, string>): string {
-		//return "background-color:red;";
-		const s = Object.entries(style)
+		return Object.entries(style)
 			.map(([key, value]) => `${this.camelToKebab(key)}: ${value}`)
 			.join('; ');
-		//console.log(style);
-		//console.log(s);
-		return s;
 	}
 
 	private kebabToCamel(str: string): string {
-		return str.replace(/-([a-z])/g, (_, g) => g.toUpperCase());
+		return str.replace(/-([a-z])/g, (_, g) => g.toUpperCase())
 	}
 
 	public expandStyle(element: SVGElement, style: Record<string, string>): void {
-		//debugger
 		const styleObject = {
 			...this.parseStyle(element.getAttribute('style') ?? ''),
 			...style
 		};
 
-		element.setAttribute('style', this.styleObjectToString(styleObject));
+		element.setAttribute('style', this.styleObjectToString(styleObject))
 	}
 
 	public setColor(name: string): void {
 		this.selectedColor = this.fretboardTheme.availableColors.find(color => color.name === name)
-		//debugger
-		//console.log(selectedColor);
-		//if (selectedColor) {
-		//	this.fretboardTheme.availableColors.forEach(color => {
-		//		color.icon.defaultSyle.backgroundColor = color.name === name ? selectedColor.icon.defaultSyle.backgroundColor : 'hsl(0, 0%, 50%)';
-		//	});
-		//	this.render();
-		//}
 	}
 
-	public downloadSVG(): void {
+	public download(format: 'svg' | 'png' | 'jpeg' = 'svg'): void {
+		if (format === 'svg') {
+			this.downloadSVG();
+			return
+		}
+		if (format === 'png' || format === 'jpeg') {
+			this.downloadRaster(format);
+			return
+		}
+		console.error('Unsupported format. Use "svg", "png", or "jpeg".');
+	}
+	private downloadSVG(): void {
 		const svg = this.container.querySelector('svg');
 		if (!svg) return;
 
@@ -427,11 +409,53 @@ class Fretboard {
 		URL.revokeObjectURL(url);
 	}
 
+	private downloadRaster(format: 'png' | 'jpeg' = 'png'): void {
+		const svg = this.container.querySelector('svg');
+		if (!svg) return;
+
+		const serializer = new XMLSerializer();
+		const svgString = serializer.serializeToString(svg);
+
+		const svgBlob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
+		const url = URL.createObjectURL(svgBlob);
+
+		const image = new Image();
+		image.onload = () => {
+			const canvas = document.createElement('canvas');
+			canvas.width = svg.clientWidth;
+			canvas.height = svg.clientHeight;
+			const ctx = canvas.getContext('2d');
+			if (!ctx) {
+				console.error('Canvas context not available.');
+				return;
+			}
+
+			// Draw SVG image onto canvas
+			ctx.drawImage(image, 0, 0);
+
+			// Determine MIME type and file extension
+			const mimeType = format === 'jpeg' ? 'image/jpeg' : 'image/png';
+			const extension = format === 'jpeg' ? 'jpeg' : 'png';
+
+			const dataURL = canvas.toDataURL(mimeType);
+			const link = document.createElement('a');
+			link.href = dataURL;
+			link.download = `fretboard.${extension}`;
+			document.body.appendChild(link);
+			link.click();
+			document.body.removeChild(link);
+
+			URL.revokeObjectURL(url);
+		};
+		image.onerror = (err) => {
+			console.error('Failed to load SVG for raster export', err);
+		};
+		image.src = url;
+	}
+
 	public getAvailableColors(): any[] {
 
-		//return this.fretboardTheme.availableColors.map((color) => { ...color.icon})
-		//console.log(this.fretboardTheme.availableColors);
-		return this.fretboardTheme.availableColors.map((color) => ({ defaultStyle: color.icon.defaultSyle, hoverStyle: color.icon.hoverStyle, name: color.name }))
+		return this.fretboardTheme.availableColors.map((color) => ({ defaultStyle: color.icon.defaultStyle, hoverStyle: color.icon.hoverStyle, name: color.name }))
 
 	}
 }
