@@ -79,5 +79,10 @@
 	{
 		"outputFile": "digitech/resources/stylesheets/default.css",
 		"inputFile": "digitech/resources/stylesheets/less/default.less"
-	}
+	},
+	//Fretboard
+	{
+		"outputFile": "fretboard/resources/stylesheets/default.css",
+		"inputFile": "fretboard/resources/stylesheets/src/default.less"
+	},
 ]

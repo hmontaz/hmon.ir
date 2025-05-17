@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>7-String Fretboard Visualizer</title>
+	<link href="resources/stylesheets/default.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="controls">
+		<table>
+			<tr>
+				<td>		<label>Strings: <input type="number" id="strings" min="1" value="6" onchange="fretboard.renderFretboard()" /></label></td>
+				<td><label>Frets: <input type="number" id="frets" min="1" value="24" onchange="fretboard.renderFretboard()" /></label></td>
+				<td><button onclick="fretboard.downloadSVG()">Download SVG</button></td>
+				<td id="colors">
+					<!--<span class="color-box red selected"></span>
+					<span class="color-box green"></span>
+					<span class="color-box blue"></span>
+					<span class="color-box yellow"></span>
+					<span class="color-box magenta"></span>
+					<span class="color-box cyan"></span>
+					<span class="color-box orange"></span>-->
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="fretboard-container"></div>
+
+	<script src="resources/scripts/bundle.js"></script>
+	<script>
+		var fretboard = new Fretboard('fretboard-container')
+		var availableColors = fretboard.getAvailableColors()
+		console.log(availableColors)
+
+		availableColors.forEach(function (color) {
+			var colorBox = document.createElement('span')
+			colorBox.title = color.name
+			colorBox.className = 'color-box'// + color.defaultColor
+			//debugger
+			//colorBox.style.backgroundColor = color.defaultStyle.backgroundColor
+			fretboard.expandStyle(colorBox, color.defaultStyle)
+			colorBox.setAttribute('data-color', color.name)
+			//colorBox.setAttribute('data-name',)
+			colorBox.onclick = function () {
+				var colorName = this.getAttribute('data-color')
+				//console.log(colorName)
+				fretboard.setColor(colorName)
+				//fretboard.renderFretboard()
+			}
+			document.getElementById('colors').appendChild(colorBox)
+		})
+
+	</script>
+</body>
+
+</html>
