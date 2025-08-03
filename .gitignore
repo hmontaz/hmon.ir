@@ -4,11 +4,9 @@
 
 /hmwebsite/obj/Debug
 /packages
-/hmwebsite/helix/resources/.ignore
+.ignore
 /hmwebsite/hmwebsite.csproj.user
 /hmwebsite/beat/resources/.ignore
-/hmwebsite/digitech/resources/.ignore
-/hmwebsite/chords/resources/.ignore
-/hmwebsite/icons/resources/.ignore
 /.vs
 /hmwebsite/bin
+/hmwebsite/obj

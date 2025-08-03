@@ -1,0 +1,58 @@
+﻿body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+.controls {
+  margin-bottom: 20px;
+}
+button {
+  margin-right: 10px;
+}
+a {
+  color: inherit;
+}
+.page-info {
+  font-size: 12px;
+  padding: 2px;
+}
+input {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  padding: 4px;
+}
+button {
+  border-radius: 5px;
+  background-color: #333;
+  color: #bbb;
+  border: 1px solid #555;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #444;
+}
+.note {
+  cursor: pointer;
+}
+text {
+  cursor: pointer;
+  -moz-user-select: inherit;
+  -ms-user-select: inherit;
+  -webkit-user-select: inherit;
+  user-select: inherit;
+}
+.color-box {
+  border: solid 1px #222;
+  display: inline-block;
+  min-width: 29px;
+  min-height: 29px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 2px 4px 0 0;
+}
+.divider {
+  color: gray;
+}

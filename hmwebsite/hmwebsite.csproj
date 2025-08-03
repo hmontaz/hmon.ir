@@ -99,7 +99,14 @@
     <Content Include="chords\resources\scripts\init.js" />
     <Content Include="chords\resources\stylesheets\theme_dark.css" />
     <Content Include="chords\resources\stylesheets\theme_default.css" />
-    <Content Include="default.html" />
+    <Content Include="dist\src\music\GuitarNote.js" />
+    <Content Include="dist\src\music\GuitarTuning.js" />
+    <Content Include="dist\src\music\GuitarVisualizer.js" />
+    <Content Include="dist\src\music\KeyboardVisualizer.js" />
+    <Content Include="dist\src\music\MIDI.js" />
+    <Content Include="dist\src\music\MIDINote.js" />
+    <Content Include="dist\src\SVGTools.js" />
+    <Content Include="index.html" />
     <Content Include="digitech\resources\images\led-off.svg" />
     <Content Include="digitech\resources\images\led-on.svg" />
     <Content Include="digitech\resources\scripts\bundle.js" />
@@ -107,6 +114,25 @@
       <DependentUpon>bundle.js</DependentUpon>
     </Content>
     <Content Include="digitech\resources\stylesheets\default.min.css">
+      <DependentUpon>default.css</DependentUpon>
+    </Content>
+    <Content Include="fretboard\fretboard.html" />
+    <TypeScriptCompile Include="src\music\GuitarNote.ts" />
+    <TypeScriptCompile Include="src\music\GuitarTuning.ts" />
+    <TypeScriptCompile Include="src\music\KeyboardVisualizer.ts" />
+    <TypeScriptCompile Include="src\music\MIDI.ts" />
+    <TypeScriptCompile Include="src\music\GuitarVisualizer.ts" />
+    <Content Include="dist\src\SVGTools.js.map" />
+    <Content Include="dist\src\music\GuitarNote.js.map" />
+    <Content Include="dist\src\music\GuitarTuning.js.map" />
+    <Content Include="dist\src\music\GuitarVisualizer.js.map" />
+    <Content Include="dist\src\music\KeyboardVisualizer.js.map" />
+    <Content Include="dist\src\music\MIDI.js.map" />
+    <Content Include="dist\src\music\MIDINote.js.map" />
+    <None Include="fretboard\resources\stylesheets\src\default.less" />
+    <Content Include="fretboard\resources\images\fretboard-preview.svg" />
+    <Content Include="fretboard\resources\stylesheets\default.css" />
+    <Content Include="fretboard\resources\stylesheets\default.min.css">
       <DependentUpon>default.css</DependentUpon>
     </Content>
     <Content Include="harmoniousmayhem\index.html" />
@@ -302,6 +328,9 @@
     <Content Include="random_generator\guitarneck.html" />
     <TypeScriptCompile Include="digitech\resources\scripts\src\MIDIHelper.ts" />
     <TypeScriptCompile Include="digitech\resources\scripts\src\UIHandler.ts" />
+    <TypeScriptCompile Include="tests\music\MIDINote.test.ts" />
+    <TypeScriptCompile Include="src\music\MIDINote.ts" />
+    <TypeScriptCompile Include="src\SVGTools.ts" />
     <TypeScriptCompile Include="helix\resources\scripts\Settings.ts" />
     <TypeScriptCompile Include="helix\resources\scripts\ThemeHandler.ts" />
     <TypeScriptCompile Include="modecraft\resources\scripts\ModePracticeOptions.ts" />
@@ -309,10 +338,14 @@
     <TypeScriptCompile Include="random_generator\resources\scripts\RandomNoteGenerator.ts" />
     <TypeScriptCompile Include="random_generator\resources\scripts\GuitarNote.ts" />
     <Content Include="resources\hm-glyphs\test.html" />
+    <Content Include="resources\images\fretboard-preview.png" />
     <Content Include="resources\images\harmonious_mayhem_small_white.svg" />
     <Content Include="resources\images\icons\amazon-music.svg" />
     <Content Include="resources\images\icons\apple-music.svg" />
+    <Content Include="resources\images\icons\github-black.svg" />
+    <Content Include="resources\images\icons\github-white.svg" />
     <Content Include="resources\images\icons\instagram.svg" />
+    <Content Include="resources\images\icons\nuget_logo.svg" />
     <Content Include="resources\images\icons\spotify.svg" />
     <Content Include="resources\images\icons\youtube-music.svg" />
     <Content Include="resources\images\icons\youtube.svg" />
@@ -336,6 +369,7 @@
     <Content Include="harmoniousmayhem\resources\stylesheets\base\dark.less" />
     <Content Include="digitech\resources\scripts\ui_handler.js.map" />
     <Content Include="digitech\resources\stylesheets\less\default.less" />
+    <Content Include="package.json" />
     <None Include="random_generator\resources\stylesheets\theme-dark.less" />
     <Content Include="random_generator\resources\stylesheets\theme-dark.css">
       <DependentUpon>theme-dark.less</DependentUpon>
@@ -955,8 +989,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="fretboard\resources\scripts\" />
     <Folder Include="helix\resources\actual_models\_\" />
     <Folder Include="random_generator\resources\images\" />
+    <Folder Include="tests\resources\scripts\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="random_generator\resources\scripts\GuitarNeck.ts" />

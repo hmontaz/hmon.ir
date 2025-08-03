@@ -2,51 +2,136 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>7-String Fretboard Visualizer</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159979228-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-159979228-2');
+	</script>
+	<meta charset="UTF-8" />
+	<!-- Primary Meta Tags -->
+	<meta name="title" content="7-String Guitar Fretboard Visualizer | Hossein Montazeri">
+	<meta name="description" content="Interactive 7-string guitar fretboard visualizer with note names, color themes, inlays, and SVG/PNG export. Created by Hossein Montazeri.">
+	<meta name="keywords" content="guitar fretboard, 7-string guitar, fretboard visualizer, guitar tool, SVG fretboard, Hossein Montazeri, guitar notes, guitar app, online guitar tool">
+	<meta name="author" content="Hossein Montazeri">
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://hmon.ir/fretboard/fretboard.html">
+	<meta property="og:title" content="7-String Guitar Fretboard Visualizer">
+	<meta property="og:description" content="Visualize guitar fretboards, choose colors, and export SVG/PNG. Created by Hossein Montazeri.">
+	<meta property="og:image" content="https://hmon.ir/resources/images/fretboard-preview.png">
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:url" content="https://hmon.ir/fretboard/fretboard.html">
+	<meta name="twitter:title" content="7-String Guitar Fretboard Visualizer">
+	<meta name="twitter:description" content="Colorful and interactive fretboard generator by Hossein Montazeri.">
+	<meta name="twitter:image" content="https://hmon.ir/resources/images/fretboard-preview.png">
+	<!-- Favicon -->
+	<link rel="icon" href="https://www.hmon.ir/resources/favicon.ico" type="image/x-icon">
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.hmon.ir/tools/fretboard/fretboard.html">
+	<!-- Language -->
+	<meta http-equiv="Content-Language" content="en">
 	<link href="resources/stylesheets/default.css" rel="stylesheet" />
+	<link href="../resources/hm-glyphs/style.css" rel="stylesheet" />
 </head>
 
 <body>
-	<div class="controls">
-		<table>
+	<div class="page_title">
+		<table class="noborder" style="width:100%;">
 			<tr>
-				<td><label>Strings: <input type="number" id="strings" min="1" value="6" onchange="fretboard.renderFretboard()" /></label></td>
-				<td><label>Frets: <input type="number" id="frets" min="1" value="24" onchange="fretboard.renderFretboard()" /></label></td>
-				<td><button onclick="fretboard.download('svg')">Download SVG</button></td>
-				<td><button onclick="fretboard.download('png')">Download PNG</button></td>
-				<td id="colors">
-					<!--<span class="color-box red selected"></span>
-					<span class="color-box green"></span>
-					<span class="color-box blue"></span>
-					<span class="color-box yellow"></span>
-					<span class="color-box magenta"></span>
-					<span class="color-box cyan"></span>
-					<span class="color-box orange"></span>-->
+				<td><span id='divTitle' style="font-size:26px;">Guitar Fretboard Visualizer</span></td>
+				<td style="text-align:right;">
+					<span>
+						<a href="https://paypal.me/hmontaz" target="_blank" style="text-decoration:none;">
+							<img src="../resources/images/donate.svg" style="display:inline-block; width:105px;margin:0;" />
+						</a>
+					</span>
+				</td>
+			</tr>
+		</table>
+		<table style="width:100%;">
+			<tr>
+				<td>
+					<div class='page-info'>by <a href="https://www.hmon.ir">Hossein Montazeri</a></div>
 				</td>
 			</tr>
 		</table>
 	</div>
+	<div class="controls">
+		<table>
+			<tr>
+				<!--<td><label>Strings: <input type="number" id="strings" min="1" value="6" onchange="fretboard.renderFretboard()" /></label></td>-->
+				<!--<td><label>Frets: <input type="number" id="frets" min="1" value="24" onchange="fretboard.renderFretboard()" /></label></td>-->
+				<td><button onclick="fretboard.download('svg')"><i class="hmg-download"></i> Download SVG</button></td>
+				<td><button onclick="fretboard.download('png')"><i class="hmg-download"></i> Download PNG</button></td>
+				<td class="divider"><i class="hmg-divider"></i></td>
+				<td id="colors"></td>
+				<td class="divider"><i class="hmg-divider"></i></td>
+				<td><button onclick="window.clearNotes()"><i class="hmg-action-cancel"></i> Clear </button></td>
+			</tr>
+		</table>
+	</div>
 	<div id="fretboard-container"></div>
+	<div id="keyboard-container"></div>
 
-	<script src="resources/scripts/bundle.js"></script>
-	<script>
-		var fretboard = new Fretboard('fretboard-container')
+	<script type="module">
+		import Fretboard from '../dist/src/music/GuitarVisualizer.js';
+		import KeyboardVisualizer from '../dist/src/music/KeyboardVisualizer.js';
+		import Midi from '../dist/src/music/MIDI.js';
+		import MIDINote from '../dist/src/music/MIDINote.js';
+		import SVGTools from '../dist/src/SVGTools.js'
+
+		window.fretboard = new Fretboard('fretboard-container')
+		window.keyboard = new KeyboardVisualizer('keyboard-container');
 		var availableColors = fretboard.getAvailableColors()
 
 		availableColors.forEach(function (color) {
 			var colorBox = document.createElement('span')
 			colorBox.title = color.name
 			colorBox.className = 'color-box'// + color.defaultColor
-			fretboard.expandStyle(colorBox, color.defaultStyle)
+			SVGTools.expandStyle(colorBox, color.defaultStyle)
 			colorBox.setAttribute('data-color', color.name)
 			colorBox.onclick = function () {
 				var colorName = this.getAttribute('data-color')
 				fretboard.setColor(colorName)
+				keyboard.setColor(colorName)
 			}
+			/*colorBox.onclick = function () {
+				document.querySelectorAll('.color-box').forEach(box => box.classList.remove('selected'));
+				this.classList.add('selected');
+				fretboard.setColor(this.getAttribute('data-color'));
+			}*/
 			document.getElementById('colors').appendChild(colorBox)
 		})
+
+		fretboard.setColor('Red')
+		keyboard.setColor('Red')
+
+		// Instantiate MIDI listener
+		const midi = new Midi();
+
+		// Connect MIDI note events to keyboard
+		midi.setNoteOnHandler((noteNumber) => {
+			window.fretboard.turnNoteOn(noteNumber);
+			window.keyboard.turnNoteOn(noteNumber);
+		});
+
+		midi.setNoteOffHandler((noteNumber) => {
+			window.fretboard.turnNoteOff(noteNumber);
+			window.keyboard.turnNoteOff(noteNumber);
+		});
+
+		window.clearNotes = () => {
+			window.fretboard.clearFrets()
+			window.keyboard.clearKeys()
+		}
 
 	</script>
 </body>

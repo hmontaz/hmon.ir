@@ -39,17 +39,15 @@
 	</div>
 	<div style="padding:0 10px 0 10px">
 		<div>
-			<div class="section_button selected" name="main">My Projects</div>
-			<!--
-			<div class="section_button" name="music">My Music</div>
-			<div class="section_button" name="projects">Projects</div>
-				-->
-			<div class="section_button" name="about">About</div>
+			<div class="section_button selected" sectionName="tools">🧰 Tools</div>
+			<div class="section_button" sectionName="codeLab">💻 Code Lab</div>
+			<div class="section_button" sectionName="music">🎵 My Music</div>
+			<div class="section_button" sectionName="about">About</div>
 		</div>
 	</div>
-	<section style="vertical-align:top;">
-		<div class="card" name="main">
-			<a href="helix/fx_finder.htm" title="Helix Effect Finder">
+	<section style="vertical-align:top;" sectionName="tools">
+		<div class="card">
+			<a href="helix/fx_finder.htm" title="Helix Effect Finder" target="_blank">
 				<h4>Helix Effect Finder</h4>
 			</a>
 			<br>
@@ -57,7 +55,7 @@
 				<div>
 					List of Line 6 Helix effects & blocks with search and filter capability, including images, description and real world counterparts
 				</div>
-				<a href="helix/fx_finder.htm" title="Helix Effect Finder">
+				<a href="helix/fx_finder.htm" title="Helix Effect Finder" target="_blank">
 					<img src="resources/images/helix-fx-finder.png" style="width:250px" />
 				</a>
 				<br />
@@ -66,7 +64,7 @@
 				<iframe width="350" height="150" src="https://www.youtube.com/embed/wgsdMF9ZyEs"></iframe>
 			</div>
 		</div>
-		<div class="card" name="main">
+		<div class="card">
 			<h4>Whammy MIDI Assistant</h4>
 			<br>
 			<div>Interactive tool to easily find actual PC number to switch Digitech Whammy Pedal. It also allows you to directly control the pedal using a MIDI cable</div>
@@ -77,33 +75,78 @@
 			</div>
 			<br />
 			<br />
-			<a href="digitech/whammy.htm" title="Whammy MIDI Assistant">
+			<a href="digitech/whammy.htm" title="Whammy MIDI Assistant" target="_blank">
 				<img src="resources/images/digitech-whammy.png" style="height:300px" />
 			</a>
 		</div>
-		<div class="card" name="main">
+		<div class="card">
 			<h4>Beat Calculator</h4>
 			<br />
 			<div>
 				Convert BPM to ms and vise versa using this tool
 			</div>
 			<br />
-			<a href="beat/calculator.htm">
+			<a href="beat/calculator.htm" target="_blank">
 				<img src="resources/images/beat-calculator.png" style="width:250px;" />
 			</a>
 		</div>
-		<div class="card" name="main">
+		<div class="card">
+			<h4>Fretboard</h4>
+			<br />
+			<div>
+				A powerful tool for guitarists and composers to map out musical ideas directly on the fretboard. This interactive visualizer links guitar neck and piano keyboard views, helping you understand note positions, chord shapes, and scales across both instruments. Supports MIDI keyboard input and allows exporting your layouts for sharing or practice. Ideal for songwriting, teaching, or exploring new fretboard patterns.
+			</div>
+			<br />
+			<a href="fretboard/fretboard.html" target="_blank">
+				<img src="resources/images/fretboard-preview.png" style="width:200px" />
+			</a>
+		</div>
+		<div class="card">
+			<h4>Guitar Chord Voicings</h4>
+			<br />
+			<div>
+				Guitar Chord Voicing Reference
+			</div>
+			<br />
+			<a href="chords/default.htm" target="_blank">
+				<img src="resources/images/chord-voicings.png" style="width:350px" />
+			</a>
+		</div>
+		<div class="card">
 			<h4>Mode Craft</h4>
 			<br />
 			<div>
 				Enhance your mode mastery with diverse backing tracks covering every key. Explore and practice modes seamlessly, supported by dynamic backing arrangements designed to elevate your musical journey.
 			</div>
 			<br />
-			<a href="modecraft/index.htm">
+			<a href="modecraft/index.htm" target="_blank">
 				<img src="resources/images/mode-craft.png" style="width:200px" />
 			</a>
 		</div>
-		<div class="card" name="main">
+	</section>
+	<section sectionName="codeLab">
+		<div class="card">
+			<h4>Github</h4>
+			<a href="https://github.com/hmontaz/" target="_blank">
+				<img src="resources/images/icons/github-white.svg" />
+			</a>
+		</div>
+		<div class="card">
+			<h4>Nuget Packages</h4>
+			<a href="https://www.nuget.org/packages/hmlib.PersianDate/" target="_blank">
+				<img src="resources/images/icons/nuget_logo.svg" style="width:16px" />
+				Persian Date
+			</a>
+		</div>
+		<div class="card">
+			<h4>Black Folder Icons</h4>
+			<a href="icons/index.html" target="_blank">
+				<img src="resources/images/thumbnail-black folder.png" />
+			</a>
+		</div>
+	</section>
+	<section sectionName="music">
+		<div class="card">
 			<h4>Naturium</h4>
 			<table>
 				<tr>
@@ -134,7 +177,7 @@
 				</tr>
 			</table>
 		</div>
-		<div class="card" name="main">
+		<div class="card">
 			<a href="harmoniousmayhem/index.html">
 				<h4>Harmonious Mayhem</h4>
 			</a>
@@ -149,26 +192,9 @@
 				</a>
 			</div>
 		</div>
-		<div class="card" name="main">
-			<h4>Guitar Chord Voicings</h4>
-			<br />
-			<div>
-				Guitar Chord Voicing Reference
-			</div>
-			<br />
-			<a href="chords/default.htm">
-				<img src="resources/images/chord-voicings.png" style="width:350px" />
-			</a>
-		</div>
-		<div class="card" name="main">
-			<h4>Black Folder Icons</h4>
-			<a href="icons/index.html">
-				<img src="resources/images/thumbnail-black folder.png" />
-			</a>
-		</div>
 	</section>
-	<section>
-		<div class="card" name="about">
+	<section sectionName="about">
+		<div class="card">
 			<table>
 				<!--<tr>
 					<td>
@@ -205,7 +231,7 @@
 				<tr>
 					<td class="fa fa-envelope-o"></td>
 					<td>
-						<a href="mailto: hm.webmaster@gmail.com">hm.webmaster<span class="fa fa-at"></span>gmail.co</a>
+						<a href="mailto: hm.webmaster@gmail.com">hm.webmaster<span class="fa fa-at"></span>gmail.com</a>
 					</td>
 				</tr>
 				<tr>
@@ -215,26 +241,40 @@
 	</section>
 	<script>
 		function init() {
-			var name = localStorage.getItem('current_tab') || 'main';
-			if (['main', 'misc', 'about'].indexOf(name) == -1) name = 'main';
-			var sections = $('.card');
+			var name = localStorage.getItem('current_tab') || 'tools';
+			var sections = $('section[sectionName]');
+			var sectionNames = sections.map((i, el) => $(el).attr('sectionName')).get();
+			//console.log(sections.length, sectionNames);
+
+			sections.each(function (_, el) {
+				var section = $(el);
+				var sectionName = section.attr('sectionName')
+				var cards = section.children('div.card');
+				cards.each(function (_, card) {
+					$(card).attr('sectionName', sectionName)
+				})
+				console.log(sectionName, cards);
+			});
+
+			if (sectionNames.indexOf(name) == -1) name = 'tools';
 			function update() {
-				for (var i = 0; i < sections.length; i++) {
-					var section = $(sections[i]);
-					var n = section.attr('name');
+				var cards = $('.card');
+				for (var i = 0; i < cards.length; i++) {
+					var section = $(cards[i]);
+					var n = section.attr('sectionName');
 					if (n == name)
 						$(section).show();
 					else
 						$(section).hide();
 				}
 				buttons.removeClass('selected');
-				$('.section_button[name=' + name + ']').addClass('selected');
+				$('.section_button[sectionName=' + name + ']').addClass('selected');
 			}
 			var buttons = $('.section_button');
 			buttons.click(function () {
 				buttons.removeClass('selected');
 				$(this).addClass('selected');
-				name = $(this).attr('name');
+				name = $(this).attr('sectionName');
 				localStorage.setItem('current_tab', name);
 				update();
 			});

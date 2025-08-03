@@ -1,22 +1,83 @@
-class Fretboard {
-	private noteNames: string[] = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
-	private tuning: string[] = ['E', 'B', 'G', 'D', 'A', 'E', 'B', 'F#'];
+import GuitarTuning from "./GuitarTuning.js";
+import GuitarNote from "./GuitarNote.js";
+import SVGTools from "../SVGTools.js";
+
+/*interface ITheme {
+	radius: number;
+	stringGauge: number[];
+	stringGaugeRatio: number;
+	stringSpacing: number;
+	labelStyle: Record<string, string>;
+	svgStyle: Record<string, string>;
+	noteStyle: {
+		normal?: {
+			circleStyle?: Record<string, string>;
+			textStyle?: Record<string, string>;
+		};
+	};
+	availableColors: Array<{
+		name: string;
+		icon: {
+			defaultStyle: Record<string, string>;
+			hoverStyle: Record<string, string>;
+			selected: Record<string, string>;
+		};
+		selected: {
+			circleStyle: Record<string, string>;
+			textStyle: Record<string, string>;
+		};
+	}>;
+}*/
+
+class FretNote {
+	guitarNote: GuitarNote;
+	circle: SVGElement;
+	text: SVGElement;
+	colorIndex?: number;
+	constructor(guitarNote: GuitarNote, circle: SVGElement, text: SVGElement, colorIndex?: number) {
+		this.guitarNote = guitarNote;
+		this.circle = circle;
+		this.text = text;
+		this.colorIndex = colorIndex;
+	}
+}
+
+class GuitarVisualizer {
+	private tuning: GuitarTuning = new GuitarTuning([64, 59, 55, 50, 45, 40, 35, 30]);//E4 B3 G3 D3 A2 E2 B1 F#1;
 	private fretWidthBase: number = 95;
-	private radius: number = 18;
 	private container: HTMLElement;
-	private selectedColor: any = null; // Initialize selectedColor to null
-	private fretboardTheme: any = {
+	private selectedColor: any = null;
+	private numberOfStrings: number = 7;
+	private numberOfFrets: number = 24;
+	private fretNotes: FretNote[] = [];
+
+	private fretboardTheme = {
+		radius: 18,
+		stringGauge: [9, 11, 16, 24, 34, 49, 64, 80, 108],
+		stringGaugeRatio: 1 / 30,
+		stringSpacing: 36,
 		labelStyle: {
 			fill: 'rgb(150,150,150)',
 			marginRight: '10px',
 			textAnchor: 'middle',
-			fontSize: '12px',
+			fontSize: '14px',
+			fontWeight: 'bold'
 		},
 		svgStyle: {
 			marginTop: '20px',
 			border: '1px solid #444',
 			backgroundColor: 'rgba(0, 0, 0, 1)',
-			fontFamily: 'sans-serif',
+			fontFamily: 'sans-serif'
+		},
+		noteStyle: {
+			normal: {
+				circleStyle: {
+					fill: 'rgba(51, 51, 51, .5)',
+				},
+				textStyle: {
+					fill: 'rgba(221, 221, 221, .5)'
+				},
+			},
 		},
 		availableColors: [
 			{
@@ -27,14 +88,6 @@ class Fretboard {
 					},
 					hoverStyle: {
 						backgroundColor: 'rgba(255, 0, 0, 1)',
-					},
-				},
-				normal: {
-					circleStyle: {
-						fill: 'rgba(51, 51, 51, .5)',
-					},
-					textStyle: {
-						fill: 'rgba(221, 221, 221, .5)'
 					},
 				},
 				selected: {
@@ -56,14 +109,6 @@ class Fretboard {
 						backgroundColor: 'rgba(255, 255, 0, 1)',
 					},
 				},
-				normal: {
-					circleStyle: {
-						fill: 'rgba(51, 51, 51, .5)',
-					},
-					textStyle: {
-						fill: 'hsla(60, 100%, 50%, .5)'
-					},
-				},
 				selected: {
 					circleStyle: {
 						fill: 'rgba(255, 255, 51, .8)',
@@ -81,14 +126,6 @@ class Fretboard {
 					},
 					hoverStyle: {
 						backgroundColor: 'rgba(255, 0, 255, 1)',
-					},
-				},
-				normal: {
-					circleStyle: {
-						fill: 'rgba(51, 51, 51, .5)',
-					},
-					textStyle: {
-						fill: 'rgba(221, 221, 221, .5)'
 					},
 				},
 				selected: {
@@ -110,14 +147,6 @@ class Fretboard {
 						backgroundColor: 'rgba(0, 255, 0, 1)',
 					},
 				},
-				normal: {
-					circleStyle: {
-						fill: 'rgba(51, 51, 51, .5)',
-					},
-					textStyle: {
-						fill: 'rgba(221, 221, 221, .5)'
-					},
-				},
 				selected: {
 					circleStyle: {
 						fill: 'rgba(51, 153, 51, .8)',
@@ -135,14 +164,6 @@ class Fretboard {
 					},
 					hoverStyle: {
 						backgroundColor: 'rgba(255, 165, 0, 1)',
-					},
-				},
-				normal: {
-					circleStyle: {
-						fill: 'rgba(51, 51, 51, .5)',
-					},
-					textStyle: {
-						fill: 'rgba(221, 221, 221, .5)'
 					},
 				},
 				selected: {
@@ -164,14 +185,6 @@ class Fretboard {
 						backgroundColor: 'rgba(0, 0, 255, 1)',
 					},
 				},
-				normal: {
-					circleStyle: {
-						fill: 'rgba(51, 51, 51, .5)',
-					},
-					textStyle: {
-						fill: 'rgba(221, 221, 221, .5)'
-					},
-				},
 				selected: {
 					circleStyle: {
 						fill: 'rgba(51, 153, 255, .8)',
@@ -191,14 +204,6 @@ class Fretboard {
 						backgroundColor: 'rgba(0, 255, 255, 1)',
 					},
 				},
-				normal: {
-					circleStyle: {
-						fill: 'rgba(51, 51, 51, .5)',
-					},
-					textStyle: {
-						fill: 'rgba(221, 221, 221, .5)'
-					},
-				},
 				selected: {
 					circleStyle: {
 						fill: 'rgba(153, 255, 255, .8)',
@@ -215,13 +220,8 @@ class Fretboard {
 		const container = document.getElementById(containerId);
 		if (!container) throw new Error(`Container with ID '${containerId}' not found`);
 		this.container = container;
-		this.selectedColor = this.fretboardTheme.availableColors[0]; // Set default color
-		this.render(); // Initial render
-	}
-
-	private getNoteName(baseNote: string, fret: number): string {
-		const index = (this.noteNames.indexOf(baseNote) + fret) % 12;
-		return this.noteNames[index];
+		this.selectedColor = this.fretboardTheme.availableColors[0];
+		this.render();
 	}
 
 	private getFretWidth(f: number): number {
@@ -234,66 +234,78 @@ class Fretboard {
 	}
 
 	public render(): void {
-		const numStrings = parseInt((document.getElementById('strings') as HTMLInputElement).value, 10);
-		const numFrets = parseInt((document.getElementById('frets') as HTMLInputElement).value, 10);
-		const height = 40 * numStrings + 40;
+		const topMargin = 50;
+		const height = this.fretboardTheme.stringSpacing * this.numberOfStrings + topMargin;
 
 		const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-		svg.setAttribute('width', (this.getFretX(numFrets + 1)).toString());
+		svg.setAttribute('width', (this.getFretX(this.numberOfFrets + 1)).toString());
 		svg.setAttribute('height', height.toString());
 		svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-		//svg.setAttribute('style', `margin-top: ${fretboardTheme.marginTop}; border: ${fretboardTheme.border}; background-color: ${fretboardTheme.backgroundColor};`);
-		/*const styleObject = {
-			...this.parseStyle(svg.getAttribute('style') ?? ''),
-			...fretboardTheme
-		};
 
-		svg.setAttribute('style', this.styleObjectToString(styleObject));*/
-		this.expandStyle(svg, this.fretboardTheme.svgStyle);
+		SVGTools.expandStyle(svg, this.fretboardTheme.svgStyle);
 		// Strings
-		for (let s = 0; s < numStrings; s++) {
-			const y = s * 40 + 40;
+		for (let s = 0; s < this.numberOfStrings; s++) {
+			const y = s * this.fretboardTheme.stringSpacing + topMargin;
 			const stringLine = document.createElementNS('http://www.w3.org/2000/svg', 'line');
 			stringLine.setAttribute('x1', this.getFretX(0).toString());
 			stringLine.setAttribute('y1', y.toString());
 			stringLine.setAttribute('x2', this.getFretX(24).toString());
 			stringLine.setAttribute('y2', y.toString());
 			stringLine.setAttribute('stroke', 'silver');
-			stringLine.setAttribute('stroke-width', '2');
+			//stringLine.setAttribute('stroke-width', (.3 * s + .5).toString());
+			const stringWidth = this.fretboardTheme.stringGauge[s] * this.fretboardTheme.stringGaugeRatio;
+			stringLine.setAttribute('stroke-width', stringWidth.toString());
+
 			svg.appendChild(stringLine);
 		}
 
 		// Frets and notes
-		for (let f = 0; f <= numFrets; f++) {
+		for (let f = 0; f <= this.numberOfFrets; f++) {
 			const x = this.getFretX(f);
 			const nextX = this.getFretX(f + 1);
-			const w = (nextX - x) / 2;
-			const fretWidth = this.getFretWidth(f);
-			const fretMid = x - (f === 0 ? this.radius : w);
+			const fretTop = topMargin;
+			const fretBottom = height - this.fretboardTheme.stringSpacing;
+			const fretWidth = (nextX - x) / 2;
+			const fretMid = x - (f === 0 ? this.fretboardTheme.radius : fretWidth);
+			const labelY = topMargin - 25
+			const showInlay = [3, 5, 7, 9, 12, 15, 17, 19, 22].includes(f)
 
-			const fretLine = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-			fretLine.setAttribute('x1', x.toString());
-			fretLine.setAttribute('y1', '40');
-			fretLine.setAttribute('x2', x.toString());
-			fretLine.setAttribute('y2', (height - 40).toString());
-			fretLine.setAttribute('stroke', 'gold');
-			fretLine.setAttribute('stroke-width', f === 0 ? '4' : '2');
-			svg.appendChild(fretLine);
+			if (showInlay) {
+				const fretInlay = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+				fretInlay.setAttribute('cx', (fretMid - fretWidth * .5).toString());
+				//fretInlay.setAttribute('cy', (labelY - 6).toString());
+				fretInlay.setAttribute('cy', (fretTop + fretBottom) / 2 - 6 + 'px');
+				fretInlay.setAttribute('r', '10'.toString());
+				SVGTools.expandStyle(fretInlay, { fill: 'rgba(255, 255, 255, .8)', })
+				svg.appendChild(fretInlay);
+			}
 
 			if (f > 0) {
 				const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
 				label.setAttribute('x', fretMid.toString());
-				label.setAttribute('y', '15');
+				label.setAttribute('y', labelY.toString());
 				label.textContent = f.toString();
 
-				this.expandStyle(label, this.fretboardTheme.labelStyle);
+				SVGTools.expandStyle(label, this.fretboardTheme.labelStyle);
 				svg.appendChild(label);
 			}
 
-			for (let s = 0; s < numStrings; s++) {
-				const y = s * 40 + 40;
-				const openNote = this.tuning[s % this.tuning.length];
-				const noteName = this.getNoteName(openNote, f);
+			const fretLine = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+			fretLine.setAttribute('x1', x.toString());
+			fretLine.setAttribute('y1', fretTop.toString());
+			fretLine.setAttribute('x2', x.toString());
+			fretLine.setAttribute('y2', fretBottom.toString());
+			fretLine.setAttribute('stroke', 'gold');
+			fretLine.setAttribute('stroke-width', f === 0 ? '4' : '2');
+			svg.appendChild(fretLine);
+
+			for (let s = 0; s < this.numberOfStrings; s++) {
+				const y = s * this.fretboardTheme.stringSpacing + topMargin;
+				const guitarNote = this.tuning.newGuitarNote(s, f);
+				//const midiNumber = this.getMidiNumber(s, f);
+				//const noteName = this.getNoteName(midiNumber);
+				//const midiNumber = guitarNote.midiNumber;
+				const noteName = guitarNote.getNoteName();
 
 				const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
 				text.setAttribute('x', fretMid.toString());
@@ -305,7 +317,7 @@ class Fretboard {
 				const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
 				circle.setAttribute('cx', fretMid.toString());
 				circle.setAttribute('cy', y.toString());
-				circle.setAttribute('r', this.radius.toString());
+				circle.setAttribute('r', this.fretboardTheme.radius.toString());
 				circle.setAttribute('class', 'note');
 
 				const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
@@ -316,9 +328,9 @@ class Fretboard {
 
 				const updateColors = (circle: SVGCircleElement, text: SVGTextElement, selected: boolean) => {
 					const theme = this.selectedColor
-					const style = selected ? theme.selected : theme.normal
-					this.expandStyle(circle, style.circleStyle)
-					this.expandStyle(text, style.textStyle)
+					const style = selected ? theme.selected : theme.normal || this.fretboardTheme.noteStyle.normal
+					SVGTools.expandStyle(circle, style.circleStyle)
+					SVGTools.expandStyle(text, style.textStyle)
 				}
 
 				circle.addEventListener('click', () => {
@@ -335,32 +347,29 @@ class Fretboard {
 					updateColors(circle, text, selected)
 				});
 				updateColors(circle, text, false); // Set initial color
+
+				const fretNote = new FretNote(guitarNote, circle, text, undefined);
+				this.fretNotes.push(fretNote);
 			}
 		}
-
 		this.container.innerHTML = ''
 		this.container.appendChild(svg)
 	}
-
+	/*
 	private camelToKebab(str: string): string {
 		return str.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase()
 	}
 
 	private parseStyle(style: string): Record<string, string> {
 		return style.split(';').reduce((acc, part) => {
-			const [key, value] = part.split(':').map(s => s.trim());
-			if (key && value) {
-				acc[this.kebabToCamel(key)] = value;
-			}
+			const [key, value] = part.split(':').map(s => s.trim())
+			if (key && value) acc[this.kebabToCamel(key)] = value
 			return acc;
 		}, {} as Record<string, string>);
 	}
 
-	// Convert object to inline style string
 	private styleObjectToString(style: Record<string, string>): string {
-		return Object.entries(style)
-			.map(([key, value]) => `${this.camelToKebab(key)}: ${value}`)
-			.join('; ');
+		return Object.entries(style).map(([key, value]) => `${this.camelToKebab(key)}: ${value}`).join('; ')
 	}
 
 	private kebabToCamel(str: string): string {
@@ -374,23 +383,18 @@ class Fretboard {
 		};
 
 		element.setAttribute('style', this.styleObjectToString(styleObject))
-	}
+	}*/
 
 	public setColor(name: string): void {
-		this.selectedColor = this.fretboardTheme.availableColors.find(color => color.name === name)
+		this.selectedColor = this.fretboardTheme.availableColors.find(color => color.name === name);
 	}
 
 	public download(format: 'svg' | 'png' | 'jpeg' = 'svg'): void {
-		if (format === 'svg') {
-			this.downloadSVG();
-			return
-		}
-		if (format === 'png' || format === 'jpeg') {
-			this.downloadRaster(format);
-			return
-		}
-		console.error('Unsupported format. Use "svg", "png", or "jpeg".');
+		if (format === 'svg') return this.downloadSVG();
+		if (format === 'png' || format === 'jpeg') return this.downloadRaster(format);
+		console.error('Unsupported format. Use "svg", "png", or "jpeg".')
 	}
+
 	private downloadSVG(): void {
 		const svg = this.container.querySelector('svg');
 		if (!svg) return;
@@ -454,8 +458,50 @@ class Fretboard {
 	}
 
 	public getAvailableColors(): any[] {
-
-		return this.fretboardTheme.availableColors.map((color) => ({ defaultStyle: color.icon.defaultStyle, hoverStyle: color.icon.hoverStyle, name: color.name }))
-
+		return this.fretboardTheme.availableColors.map(c => ({ defaultStyle: c.icon.defaultStyle, hoverStyle: c.icon.hoverStyle, name: c.name }));
 	}
+
+	public clearFrets(): void {
+		this.fretNotes.forEach(note => note.colorIndex = undefined);
+		this.updateFretboard();
+	}
+
+	public turnNoteOn(midiNumber: number): void {
+		//const noteName = this.noteNames[midiNumber % 12];
+		const colorIndex = this.getAvailableColors().findIndex(c => c.name == this.selectedColor.name);
+		this.fretNotes.forEach(fretNote => {
+			//if (note.noteName === noteName) { note.colorIndex = 0; }
+			if (fretNote.guitarNote.midiNumber === midiNumber) {
+				fretNote.colorIndex = colorIndex;
+			}
+		});
+		this.updateFretboard();
+	}
+
+	public turnNoteOff(midiNumber: number): void {
+		//const noteName = this.noteNames[midiNumber % 12];
+		this.fretNotes.forEach(note => {
+			if (note.guitarNote.midiNumber === midiNumber) {
+				note.colorIndex = undefined;
+			}
+		});
+		this.updateFretboard();
+	}
+
+	private updateFretboard(): void {
+		this.fretNotes.forEach(note => {
+			const { circle, text, colorIndex } = note;
+			if (colorIndex != null && colorIndex >= 0) {
+				const theme = this.fretboardTheme.availableColors[colorIndex];
+				SVGTools.expandStyle(circle, theme.selected.circleStyle);
+				SVGTools.expandStyle(text, theme.selected.textStyle);
+			} else {
+				SVGTools.expandStyle(circle, this.fretboardTheme.noteStyle.normal.circleStyle);
+				SVGTools.expandStyle(text, this.fretboardTheme.noteStyle.normal.textStyle);
+			}
+		});
+	}
+
 }
+
+export default GuitarVisualizer;

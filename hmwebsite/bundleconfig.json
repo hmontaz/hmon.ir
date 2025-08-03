@@ -30,13 +30,6 @@
 			"digitech/resources/scripts/src/UIHandler.js"
 		]
 	},
-	//Fretboard
-	{
-		"outputFileName": "fretboard/resources/scripts/bundle.js",
-		"inputFiles": [
-			"fretboard/resources/scripts/src/fretboard_script.js"
-		]
-	},	
 	//Harmonious Mayhem
 	{
 		"outputFileName": "harmoniousmayhem/resources/stylesheets/theme_dark.css",
