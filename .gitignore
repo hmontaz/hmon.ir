@@ -10,3 +10,4 @@
 /.vs
 /hmwebsite/bin
 /hmwebsite/obj
+/hmwebsite/node_modules
