@@ -20,10 +20,17 @@ a {
 	border-radius: 5px;
 	padding: 2px;
 	margin: 1px;
-	font-size: 12px;
+	font-size: 11px;
 	background-color: white;
 	cursor: pointer;
 	text-decoration: none;
+	text-align: center;
+}
+
+.img-container {
+	width: 128px;
+	height: 128px;
+	margin: 1px;
 }
 
 

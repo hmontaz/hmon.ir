@@ -12,7 +12,7 @@
 		gtag('config', 'UA-159979228-2');
 	</script>
 
-	<title>Black Folder Icons</title>
+	<title>Icons</title>
 	<!--<meta charset="Unicode" />-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
 	<meta http-equiv="X-UA-Compatible" content="IE=9" />
@@ -33,13 +33,14 @@
 	<meta property="article:publisher" content="https://instagram.com/hmontaz/" />
 	<meta property="article:author" content="https://instagram.com/hmontaz/" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-	<script src="resources/scripts/data.js"></script>
+	<script src="resources/scripts/data-blackfolder.js"></script>
+	<script src="resources/scripts/data-daw.js"></script>
 	<script src="resources/scripts/handler.js"></script>
 	<link href="resources/stylesheets/theme_default.css" rel="stylesheet" />
 	<link href="resources/stylesheets/theme_dark.css" rel="stylesheet" />
 </head>
 <body>
-	<div style="padding:5px;">by <a href="../default.html">Hossein Montazeri</a></div>
+	<div style="padding:5px;">by <a href="../index.html">Hossein Montazeri</a></div>
 	<div id="content"></div>
 	<script>
 		String.prototype.toCamelCase = function () {
@@ -57,7 +58,11 @@
 			return temp;
 		}
 		$(document).ready(function () {
-			handler.init();
+			var params = new URLSearchParams(window.location.search);
+			var src = params.get('src') ?? 'blackfolder';
+			if (src == 'blackfolder') document.title = "Black Folder Icons";
+			if (src == 'daw') document.title = "DAW Track Icons";
+			handler.init(src, icons[src]);
 		});
 	</script>
 </body>
