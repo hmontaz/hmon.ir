@@ -51,7 +51,6 @@
 					var url = $(this).attr('download_url');
 					var filename = $(this).attr('download_filename');
 					_this.download(url, filename);
-					//console.log(download_url);
 				});
 		}
 	},
