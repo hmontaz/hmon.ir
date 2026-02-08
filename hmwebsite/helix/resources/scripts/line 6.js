@@ -4854,11 +4854,11 @@ data_line6['Line 6 Helix'] = [
 	{
 		"Version": "3.60",
 		"Category": "Amp",
-		"Subcategory": "Guitar",
+		"Subcategory": "Bass",
 		"Name": "Agua Sledge",
 		"Original Brand": "Aguilar®",
 		"Original Model": "Tone Hammer",
-		"Type": "Guitar Amp,Amp",
+		"Type": "Bass Amp,Amp",
 		"Description": "based on* the Aguilar® Tone Hammer"
 	},
 	{
